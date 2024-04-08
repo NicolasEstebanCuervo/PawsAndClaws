@@ -1,0 +1,2170 @@
+{
+    "animals": [
+        {
+            "id": 1,
+            "name": "Rocky",
+            "age": "2 años",
+            "pet": "Perro",
+            "sex": "macho",
+            "breed": "Labrador Retriever",
+            "information": {
+                "description": "Rocky ama jugar a buscar y es genial con los niños.",
+                "conditions": [
+                    "Pulgas",
+                    "Estómago sensible"
+                ]
+            }
+        },
+        {
+            "id": 2,
+            "name": "Burro",
+            "age": "3 años",
+            "pet": "Gato",
+            "sex": "hembra",
+            "breed": "Siamesa",
+            "information": {
+                "description": "Burro es un gato vocal y cariñoso que disfruta siendo el centro de atención."
+            }
+        },
+        {
+            "id": 3,
+            "name": "Max",
+            "age": "1 año",
+            "pet": "Perro",
+            "sex": "macho",
+            "breed": "Pastor Alemán",
+            "information": {
+                "description": "Max es un perro altamente inteligente y enérgico que prosperaría en un hogar activo.",
+                "conditions": [
+                    "Alergias estacionales"
+                ]
+            }
+        },
+        {
+            "id": 4,
+            "name": "Buddy",
+            "age": "4 años",
+            "pet": "Gato",
+            "sex": "hembra",
+            "breed": "Maine Coon",
+            "information": {
+                "description": "Buddy es un gigante gentil que disfruta descansando y siendo acariciado."
+            }
+        },
+        {
+            "id": 5,
+            "name": "Cooper",
+            "age": "2 años",
+            "pet": "Perro",
+            "sex": "macho",
+            "breed": "Golden Retriever",
+            "information": {
+                "description": "Cooper es un perro amigable y extrovertido a quien le encanta hacer nuevos amigos."
+            }
+        },
+        {
+            "id": 6,
+            "name": "Milo",
+            "age": "3 años",
+            "pet": "Gato",
+            "sex": "macho",
+            "breed": "Bengalí",
+            "information": {
+                "description": "Milo es un gato juguetón y curioso que disfruta explorando su entorno.",
+                "conditions": [
+                    "Tártaro dental leve"
+                ]
+            }
+        },
+        {
+            "id": 7,
+            "name": "Lucy",
+            "age": "2 años",
+            "pet": "Perro",
+            "sex": "hembra",
+            "breed": "Caniche",
+            "information": {
+                "description": "Lucy es una perra inteligente y obediente que está ansiosa por complacer a su dueño.",
+                "conditions": [
+                    "Ácaros de los oídos"
+                ]
+            }
+        },
+        {
+            "id": 8,
+            "name": "Oliver",
+            "age": "1 año",
+            "pet": "Gato",
+            "sex": "macho",
+            "breed": "Sphynx",
+            "information": {
+                "description": "Oliver es un gato sin pelo conocido por su naturaleza traviesa y juguetona."
+            }
+        },
+        {
+            "id": 9,
+            "name": "Sam",
+            "age": "3 años",
+            "pet": "Perro",
+            "sex": "macho",
+            "breed": "Boxer",
+            "information": {
+                "description": "Sam es un perro fuerte y enérgico que se desenvolvería bien en un hogar activo."
+            }
+        },
+        {
+            "id": 10,
+            "name": "Chloe",
+            "age": "2 años",
+            "pet": "Gato",
+            "sex": "hembra",
+            "breed": "Persa",
+            "information": {
+                "description": "Chloe es una gata tranquila y gentil que disfruta de un ambiente pacífico y tranquilo."
+            }
+        },
+        {
+            "id": 11,
+            "name": "Leo",
+            "age": "4 años",
+            "pet": "Perro",
+            "sex": "macho",
+            "breed": "Beagle",
+            "information": {
+                "description": "Leo es un perro leal y cariñoso que disfruta de largos paseos."
+            }
+        },
+        {
+            "id": 12,
+            "name": "Sasha",
+            "age": "2 años",
+            "pet": "Gato",
+            "sex": "hembra",
+            "breed": "Azul Ruso",
+            "information": {
+                "description": "Sasha es una gata tranquila y observadora a la que le encanta acurrucarse en lugares cálidos."
+            }
+        },
+        {
+            "id": 13,
+            "name": "Maximus",
+            "age": "3 años",
+            "pet": "Perro",
+            "sex": "macho",
+            "breed": "Rottweiler",
+            "information": {
+                "description": "Maximus es un perro protector y leal que se vincula estrechamente con su familia.",
+                "conditions": [
+                    "Displasia de cadera"
+                ]
+            }
+        },
+        {
+            "id": 14,
+            "name": "Cleo",
+            "age": "2 años",
+            "pet": "Gato",
+            "sex": "hembra",
+            "breed": "Calico",
+            "information": {
+                "description": "Cleo es una gata independiente y aventurera que ama explorar al aire libre."
+            }
+        },
+        {
+            "id": 15,
+            "name": "Duke",
+            "age": "1 año",
+            "pet": "Perro",
+            "sex": "macho",
+            "breed": "Husky",
+            "information": {
+                "description": "Duke es un perro juguetón y enérgico que disfruta corriendo y jugando a buscar."
+            }
+        },
+        {
+            "id": 16,
+            "name": "Mia",
+            "age": "3 años",
+            "pet": "Gato",
+            "sex": "hembra",
+            "breed": "Persa",
+            "information": {
+                "description": "Mia es una gata elegante y afectuosa que disfruta descansando en lugares soleados.",
+                "conditions": [
+                    "Bolas de pelo"
+                ]
+            }
+        },
+        {
+            "id": 17,
+            "name": "Rocky",
+            "age": "2 años",
+            "pet": "Perro",
+            "sex": "macho",
+            "breed": "Dálmata",
+            "information": {
+                "description": "Rocky es un perro amistoso y juguetón que se lleva bien con otras mascotas."
+            }
+        },
+        {
+            "id": 18,
+            "name": "Lola",
+            "age": "1 año",
+            "pet": "Gato",
+            "sex": "hembra",
+            "breed": "British Shorthair",
+            "information": {
+                "description": "Lola es una gata dulce y afectuosa que ama acurrucarse con su dueño.",
+                "conditions": [
+                    "Alergias"
+                ]
+            }
+        },
+        {
+            "id": 19,
+            "name": "Bailey",
+            "age": "4 años",
+            "pet": "Perro",
+            "sex": "hembra",
+            "breed": "Border Collie",
+            "information": {
+                "description": "Bailey es una perra inteligente y leal que sobresale en el entrenamiento de obediencia."
+            }
+        },
+        {
+            "id": 20,
+            "name": "Oreo",
+            "age": "2 años",
+            "pet": "Gato",
+            "sex": "macho",
+            "breed": "Tuxedo",
+            "information": {
+                "description": "Oreo es un gato juguetón y travieso que ama perseguir punteros láser."
+            }
+        },
+        {
+            "id": 21,
+            "name": "Molly",
+            "age": "2 años",
+            "pet": "Perro",
+            "sex": "hembra",
+            "breed": "Pastor aleman",
+            "information": {
+                "description": "Molly es una perra enérgica y leal que ama el pastoreo y el entrenamiento de agilidad.",
+                "conditions": [
+                    "Ansiedad durante tormentas"
+                ]
+            }
+        },
+        {
+            "id": 22,
+            "name": "Simba",
+            "age": "3 años",
+            "pet": "Gato",
+            "sex": "macho",
+            "breed": "Maine Coon",
+            "information": {
+                "description": "Simba es un gato majestuoso e independiente que disfruta descansando en perchas altas."
+            }
+        },
+        {
+            "id": 23,
+            "name": "Riley",
+            "age": "1.5 años",
+            "pet": "Perro",
+            "sex": "macho",
+            "breed": "Golden Retriever",
+            "information": {
+                "description": "Riley es un perro amistoso y juguetón que ama nadar y jugar a buscar.",
+                "conditions": [
+                    "Miedo a ruidos fuertes"
+                ]
+            }
+        },
+        {
+            "id": 24,
+            "name": "Sophie",
+            "age": "2 años",
+            "pet": "Gato",
+            "sex": "hembra",
+            "breed": "Ragdoll",
+            "information": {
+                "description": "Sophie es una gata gentil y afectuosa que adora acurrucarse con su dueño.",
+                "conditions": [
+                    "Piel sensible"
+                ]
+            }
+        },
+        {
+            "id": 25,
+            "name": "Coco",
+            "age": "4 años",
+            "pet": "Perro",
+            "sex": "macho",
+            "breed": "Boxer",
+            "information": {
+                "description": "Coco es un perro fuerte y enérgico que ama las aventuras al aire libre."
+            }
+        },
+        {
+            "id": 26,
+            "name": "Luna",
+            "age": "2.5 años",
+            "pet": "Gato",
+            "sex": "hembra",
+            "breed": "Scottish Fold",
+            "information": {
+                "description": "Luna es una gata juguetona y curiosa que disfruta persiguiendo juguetes y explorando."
+            }
+        },
+        {
+            "id": 27,
+            "name": "Baxter",
+            "age": "1 año",
+            "pet": "Perro",
+            "sex": "macho",
+            "breed": "Corgi",
+            "information": {
+                "description": "Baxter es un perro inteligente y cariñoso que ama aprender nuevos trucos."
+            }
+        },
+        {
+            "id": 28,
+            "name": "Nala",
+            "age": "2.5 años",
+            "pet": "Gato",
+            "sex": "hembra",
+            "breed": "Birmano",
+            "information": {
+                "description": "Nala es una gata elegante y elegante que disfruta descansando en lugares soleados.",
+                "conditions": [
+                    "Sobreacicalamiento"
+                ]
+            }
+        },
+        {
+            "id": 29,
+            "name": "Toby",
+            "age": "3 años",
+            "pet": "Perro",
+            "sex": "macho",
+            "breed": "Shih Tzu",
+            "information": {
+                "description": "Toby es un perro amigable y extrovertido que ama conocer gente nueva y otros perros.",
+                "conditions": [
+                    "Infecciones crónicas del oído"
+                ]
+            }
+        },
+        {
+            "id": 30,
+            "name": "Misty",
+            "age": "2 años",
+            "pet": "Gato",
+            "sex": "hembra",
+            "breed": "chartreux",
+            "information": {
+                "description": "Misty es una gata tranquila y gentil que disfruta acurrucándose en los regazos para dormir."
+            }
+        }
+    ],
+    "products": [
+        {
+            "title": "Purina Cat Chow Vida Sana para Gatos",
+            "description": "Purina Cat Chow es una comida para gatos que da los nutrientes y vitaminas necesarias provenientes de ingredientes naturales: pollo, salmón, queso, tomate, espinaca y zanahoria. Da la energía suficiente para cada día con el fin de que tu gato se sienta feliz y saludable.",
+            "img": "https://www.depelos.co/static/food/2504-Captura%20de%20Pantalla%202023-06-27%20a%20la(s)%205.52.07%20p.%C2%A0m.160x230q98.jpg",
+            "weight": "1.3 kg",
+            "price": "$46.000",
+            "mainCategory": "food",
+            "petCategory": "cat",
+            "id": 1
+        },
+        {
+            "title": "Solla NutreCat Home para Gatos",
+            "description": "Solla Nutrecat Home es una comida para gatos adultos de casa o que realizan poca actividad física. Es un delicioso concentrado para gatos con mezcla de sabores: pollo, carne y pescado, que vela por la salud general de tu gatico propiciandole una comida nutritiva, balanceada y completa.",
+            "img": "https://www.depelos.co/static/food/4484-comida-gatos-nutrecat-home-depelos160x230q98.jpg",
+            "weight": "3 kg",
+            "price": "$93.900",
+            "mainCategory": "food",
+            "petCategory": "cat",
+            "id": 2
+        },
+        {
+            "title": "Solla NutreCat Liberty para Gatos",
+            "description": "Solla NutreCat Liberty es una comida para gatos que realizan actividad adentro y afuera de la casa. Este alimento para gatos se realiza con pollo como proteína principal y aporta la energía necesaria, gracias a sus ingredientes naturales, para promover el bienestar en su jornada diaria.",
+            "img": "https://www.depelos.co/static/food/4071-arenas-para-perros-nutrecat-liberty-depelos160x230q98.jpg",
+            "weight": "8 kg",
+            "price": "$111.050",
+            "mainCategory": "food",
+            "petCategory": "cat",
+            "id": 3
+        },
+        {
+            "title": "Purina Cat Chow Gatitos para Gatos",
+            "description": "Purina Cat Chow Gatitos es una comida para gatitos menores de un año y gatas en gestación o lactancia. Contiene DHA para estimular el crecimiento óptimo del cerebro y las vitaminas necesarias para asegurar el mejor desarrollo físico durante la primera etapa de vida de tu peludo.",
+            "img": "https://www.depelos.co/static/food/7929-Captura%20de%20Pantalla%202023-06-27%20a%20la(s)%205.48.26%20p.%C2%A0m.160x230q98.jpg",
+            "weight": "8 kg",
+            "price": "$110.500",
+            "mainCategory": "food",
+            "petCategory": "cat",
+            "id": 4
+        },
+        {
+            "title": "Purina Cat Chow Adultos Pescado para Gatos",
+            "description": "Purina Cat Chow Adultos Pescado es una comida para gatos adultos que se realiza con pescado con el fin de asegurar una gran palatabilidad e incluir la cantidad suficiente de Omega 3 y 6 que mejoran notoriamente la salud y la bellza del pelo y la piel.",
+            "img": "https://www.depelos.co/static/food/2086-Captura%20de%20Pantalla%202023-06-27%20a%20la(s)%205.57.03%20p.%C2%A0m.160x230q98.jpg",
+            "weight": "1,5 kg",
+            "price": "$45.000",
+            "mainCategory": "food",
+            "petCategory": "cat",
+            "id": 5
+        },
+        {
+            "title": "Purina Cat Chow Adultos Hogareños para Gatos",
+            "description": "Purina Cat Chow Adultos Hogareños es una comida para gatos de casa que realizan poca actividad física en su jornada diaria normal. Contiene fibras naturales (soya y celulosa) que ayudan a mejorar la digestión y disminuyen la formación de bolas de pelo que pueden ser una gran molestia para tu peludo.",
+            "img": "https://www.depelos.co/static/food/4237-Captura%20de%20Pantalla%202023-06-27%20a%20la(s)%205.55.59%20p.%C2%A0m.160x230q98.jpg",
+            "weight": "8 kg",
+            "price": "$155.600",
+            "mainCategory": "food",
+            "petCategory": "cat",
+            "id": 6
+        },
+        {
+            "title": "Purina Cat Chow Adultos Carne para Gatos",
+            "description": "Purina Cat Chow Adultos Activos Carne es una comida para gatos que realizan moderada o alta actividad física en su jornada diaria. Contiene carne como uno de sus principales ingredientes para brindar la cantidad de hierro necesaria para fortalecer los músculos y los nutrientes necesarios para fomentar el bienestar de tu peludo.",
+            "img": "https://www.depelos.co/static/food/9881-Captura%20de%20Pantalla%202023-06-27%20a%20la(s)%205.58.12%20p.%C2%A0m.160x230q98.jpg",
+            "weight": "1,5 kg",
+            "price": "$45.000",
+            "mainCategory": "food",
+            "petCategory": "cat",
+            "id": 7
+        },
+        {
+            "title": "Purina Cat Chow Adultos Delimix para Gatos",
+            "description": "Purina Cat Chow Adultos Delimix es una comida para gatos adultos con paladares un poco más exigentes a la hora de comer y que realizan actividad física en su jornada. Se prepara con un mix de tres tipos de proteína: carne, pollo y pescado que fomentan la vitalidad y el bienestar de tu peludo.",
+            "img": "https://www.depelos.co/static/food/4246-Captura%20de%20Pantalla%202023-06-27%20a%20la(s)%205.54.19%20p.%C2%A0m.160x230q98.jpg",
+            "weight": "8 kg",
+            "price": "$155.000",
+            "mainCategory": "food",
+            "petCategory": "cat",
+            "id": 8
+        },
+        {
+            "title": "Purina Cat Chow Esterilizados Pescado para Gatos",
+            "description": "Purina Cat Chow Castrados es una comida para gatos mayores de 6 meses que pasaron por el proceso de castración. Después de este procedimiento los gatos necesitan la mejor alimentación ya que tienden a subir de peso. Este alimento para gatos se realiza con ingredientes naturales para asegurar un dieta completa, saludable y deliciosa.",
+            "img": "https://www.depelos.co/static/food/535-Captura%20de%20Pantalla%202023-06-27%20a%20la(s)%206.00.24%20p.%C2%A0m.160x230q98.jpg",
+            "weight": "1,5 kg",
+            "price": "$46.000",
+            "mainCategory": "food",
+            "petCategory": "cat",
+            "id": 9
+        },
+        {
+            "title": "Chunky Pollo para Gatos para Gatos",
+            "description": "Chunky Pollo para Gatos es una comida para gatos que se realiza con pollo como fuente de proteína principal. Brinda los nutrientes necesarios para una buena alimentación, disminuye la formación de bolas de pelos y controla la acidez de la orina.",
+            "img": "https://www.depelos.co/static/food/3478-CHUNKY%20GATOS%20POLLO160x230q98.jpg",
+            "weight": "8 kg",
+            "price": "$157.500",
+            "mainCategory": "food",
+            "petCategory": "cat",
+            "id": 10
+        },
+        {
+            "title": "Acana Meadowlands para Gatos",
+            "description": "Acana Meadowlands es una comida para gatos que contiene 75% de proteína. Su formula contiene 5 tipos diferentes de proteína: pollo, pavo, bagre, huevos y trucha. Este deliciosos alimento para gatos también se realiza con frutas y verduras para ofrecer una dienta completa, nutritiva y saludable. No contiene granos.",
+            "img": "https://www.depelos.co/static/food/1982-comida-gatos-acana-meadowland-depelos160x230q98.jpg",
+            "weight": "1,5 kg",
+            "price": "$43.300",
+            "mainCategory": "food",
+            "petCategory": "cat",
+            "id": 11
+        },
+        {
+            "title": "Canidae Grain Free PURE Sea para Gatos",
+            "description": "Canidae Grain Free PURE Sea es un alimento para perros hecho con 7 ingredientes claves y que tiene carne magra de salmón como fuente principal de proteína. Contiene vitaminas, minerales y probióticos para mejor absorción y digestión. Fórmula libre de granos",
+            "img": "https://www.depelos.co/static/food/3572-canidae-grain-free-pure-sea-gatos-depelos-compania160x230q98.jpg",
+            "weight": "8 kg",
+            "price": "$154.800",
+            "mainCategory": "food",
+            "petCategory": "cat",
+            "id": 12
+        },
+        {
+            "title": "Canidae All Life Stages Formula para Gatos",
+            "description": "La fórmula para todas las etapas de vida de Canidae All Life Stages contiene ingredientes premium y proteínas óptimas para nutrir a tu gato. No contiene maíz, soya o trigo.",
+            "img": "https://www.depelos.co/static/food/1531-canidae-all-life-stages-gatos-depelos-compania160x230q98.jpg",
+            "weight": "15 kg",
+            "price": "$261.000",
+            "mainCategory": "food",
+            "petCategory": "cat",
+            "id": 13
+        },
+        {
+            "title": "Chunky Gatos Salmón para Gatos",
+            "description": "Chunky gatos salmón es un alimento completo para gatos adultos de todas las razas. Cuenta con un sabor y olor característico a salmón, que lo convierte en la opción ideal para cualquier gato. Recuerda que tu gato es adulto después de los 14 meses aproximadamente, consulta con tu veterinario.",
+            "img": "https://www.depelos.co/static/food/8030-CHUNKY%20GATOS%20SALMON160x230q98.jpg",
+            "weight": "10 kg",
+            "price": "$191.500",
+            "mainCategory": "food",
+            "petCategory": "cat",
+            "id": 14
+        },
+        {
+            "title": "Nupec Felino Kitten para Gatos",
+            "description": "Nupec Felino Kitten, es un alimento para gatitos cachorros. Los primeros meses de vida de los gatitos son clave para determinar su calidad de vida en etapa adulta. Por ello, hemos formulado una nutrición especializada que asegura su óptimo desarrollo cognitivo, inmune, óseo y muscular.",
+            "img": "https://www.depelos.co/static/food/1421-Nupec-comida-para-gatitos-depelos160x230q98.jpg",
+            "weight": "1.5 kg",
+            "price": "$46.500",
+            "mainCategory": "food",
+            "petCategory": "cat",
+            "id": 15
+        },
+        {
+            "title": "Nupec Gato Adulto para Gatos",
+            "description": "Nupec Gato Adulto, es un alimento para gatos con un estilo de vida hogareño. Por ello hemos formulado una nutrición especializada con un balance de ingredientes que regulan el sistema nervioso y mantienen una condición corporal saludable.",
+            "img": "https://www.depelos.co/static/food/1535-Nupec-comida-para-gatos-adulto-indoor-depelos160x230q98.jpg",
+            "weight": "8 kg",
+            "price": "$157.500",
+            "mainCategory": "food",
+            "petCategory": "cat",
+            "id": 16
+        },
+        {
+            "title": "Country Value Formula Premium Cat para Gatos",
+            "description": "Country Value Premium Cat Formula (Fórmula Premium para gatos) es un alimento con una fuente de proteína de pollo especializada, grasa de excelente calidad y ácido linoleico en su contenido, para el mantenimiento de piel y pelo sanos en tu peludo.",
+            "img": "https://www.depelos.co/static/food/6618-country-value-gatos-adultos-2-kg160x230q98.jpg",
+            "weight": "8 kg",
+            "price": "$110.000",
+            "mainCategory": "food",
+            "petCategory": "cat",
+            "id": 17
+        },
+        {
+            "title": "Miaumor Gato Adulto para Gatos",
+            "description": "Miaumor es un alimento formulado para gatos adultos de todas las razas y tamaños desde el primer año de vida. Formulado con Lifeforz para garantizar la nutrición adecuada de la mascota y mejorar su calidad de vida. Libre de colorantes.",
+            "img": "https://www.depelos.co/static/food/9607-Miaumor_comida_para_gatos_depelos160x230q98.jpg",
+            "weight": "1.8 kg",
+            "price": "$127.700",
+            "mainCategory": "food",
+            "petCategory": "cat",
+            "id": 18
+        },
+        {
+            "title": "Chunky Gatitos Pollo y Cordero para Gatos",
+            "description": "Chunky Gatitos es un concentrado para gatitos o gatos bebes con rico sabor a pollo y a cordero. Es un alimento para gatitos ideal para empezar a suministrar después de la separación de la madre o el destete.",
+            "img": "https://www.depelos.co/static/food/3941-CHUNKY%20GATICOS160x230q98.jpg",
+            "weight": "2.27 Kg",
+            "price": "Agotado",
+            "mainCategory": "food",
+            "petCategory": "cat",
+            "id": 19
+        },
+        {
+            "title": "Nucat Gato Adulto para Gatos",
+            "description": "Nucat es una comida especial para gatos, que contiene la proteína de carne indispensable para tu gato y está formulado para su óptimo desarrollo. Hecho con una Fórmula de calidad y Alta palatabilidad",
+            "img": "https://www.depelos.co/static/food/3741-NUCAT160x230q98.jpg",
+            "weight": "3.63 Kg",
+            "price": "Agotado",
+            "mainCategory": "food",
+            "petCategory": "cat",
+            "id": 20
+        },
+        {
+            "title": "Nupec Felino Hairball Control para Gatos",
+            "description": "Nupec Felino Hairball Control, es un alimento con nutrición especializada, para gatos adultos, balanceado en fibras y ácidos grasos Omega 3 y 6 que mantiene el sistema digestivo de tu gato saludable, disminuyendo la formación de bolas de pelo y brindándole máxima protección de piel y pelaje.",
+            "img": "https://www.depelos.co/static/food/4418-Concentrado%20Nupec%20felino%20Hairball%20Control%20de%20pelos%20compania%20160x230q98.jpg",
+            "weight": "8 kg",
+            "price": "$112.000",
+            "mainCategory": "food",
+            "petCategory": "cat",
+            "id": 21
+        },
+        {
+            "title": "Nupec Felino Senior para Gatos",
+            "description": "Nupec Felino Senior, es un alimento para gatos mayores formulado con una nutrición especializada con un balance de ingredientes que previene el envejecimiento celular, manteniéndolo activo y sano por más tiempo; Cubriendo así las necesidades propias de un adulto de etapa madura",
+            "img": "https://www.depelos.co/static/food/4552-Concentrado%20Nupec%20felino%20Senior%20De%20Pelos%20Compania160x230q98.jpg",
+            "weight": "1.5 kg",
+            "price": "$68.531",
+            "mainCategory": "food",
+            "petCategory": "cat",
+            "id": 22
+        },
+        {
+            "title": "Monello Select Gatos Castrados para Gatos",
+            "description": "Monello Select Gatos Castrado es un alimento cuidadosamente desarrollado para satisfacer las necesidades nutricionales de los gatos adultos con más de 12 meses, castrados. En esta condición, los gatos son menos activos, usan menos energía y son propensos a ganar peso, por eso su fórmula se caracteriza por calorías reducidas.",
+            "img": "https://www.depelos.co/static/food/7040-Concentrado%20Monello%20Select%20Gato%20Adultos%20Castrados%20Frango%20&%20Arroz160x230q98.jpg",
+            "weight": "3 kg",
+            "price": "$134.636",
+            "mainCategory": "food",
+            "petCategory": "cat",
+            "id": 23
+        },
+        {
+            "title": "Monello Select Gato Adulto para Gatos",
+            "description": "Monello Select Cat Adulto es cuidadosamente desarrollado para satisfacer las necesidades nutricionales de los gatos adultos con más de 12 meses. Formulado con proteína animal como primer ingrediente y digestibilidad superior que 80%, además de fibras y minerales que auxilian en el mantenimiento de la musculatura y del peso ideal.",
+            "img": "https://www.depelos.co/static/food/6201-Concentrado%20Monello%20Select%20Gato%20Adultos%20Carne%20y%20Hi%CC%81gado160x230q98.jpg",
+            "weight": "1.5 kg",
+            "price": "$63.050",
+            "mainCategory": "food",
+            "petCategory": "cat",
+            "id": 24
+        },
+        {
+            "title": "Monello Select Gatitos para Gatos",
+            "description": "Monello Select Gatitos es un alimento ideal para tu peludo. Los gatitos en crecimiento están sujetos a múltiples factores de estrés en las primeras etapas de la vida. Una dieta con formulación equilibrada de calidad puede ayudar en el desarrollo saludable.",
+            "img": "https://www.depelos.co/static/food/1722-Concentrado%20Monello%20Select%20Gato%20Cachorros%20salmao%20&%20arroz160x230q98.jpg",
+            "weight": "3 kg",
+            "price": "$120.413",
+            "mainCategory": "food",
+            "petCategory": "cat",
+            "id": 25
+        },
+        {
+            "title": "Monello Cat Salmón, Atún y Pollo para Gatos",
+            "description": "Monello Gatos Adultos Salmón y Pollo fue pensada para agradar al paladar exigente de los felinos y proveer los nutrientes necesarios para una vida más activa y sana. La fórmula cuenta con la adición de ingredientes de calidad superior, que ayudan en el mantenimiento del sistema cognitivo, y aumenta el bienestar.",
+            "img": "https://www.depelos.co/static/food/4443-Concentrado%20Monello%20SEM%20salmao%20e%20frango%20gato160x230q98.jpg",
+            "weight": "20 lb",
+            "price": "$148.300",
+            "mainCategory": "food",
+            "petCategory": "cat",
+            "id": 26
+        },
+        {
+            "title": "Monello Cat Gatitos Salmón y Pollo para Gatos",
+            "description": "El alimento Monello Cat Gatitos Salmón y Pollo es libre de colorantes y aromatizantes artificiales. Conserva su receta original, con la adición de harina y aceite de salmón, ingredientes nobles y de excelencia que actúan en las defensas del organismo y proporcionan a los felinos un desarrollo cognitivo sano.",
+            "img": "https://www.depelos.co/static/food/5175-Concentrado%20Monello%20SEM%20salmao%20e%20frango%20gato%20kitty160x230q98.jpg",
+            "weight": "1.5 kg",
+            "price": "Agotado",
+            "mainCategory": "food",
+            "petCategory": "cat",
+            "id": 27
+        },
+        {
+            "title": "Monello Cat Castrados Pavo y Salmón para Gatos",
+            "description": "Monello Gatos Castrados Pavo y Salmón está desarrollada especialmente para la etapa posterior a la castración de los felinos, cuando suelen reducir el ritmo de las actividades, y quedan más propensos a la obesidad. Por eso, la fórmula tiene calorías reducidas y la adición de L-carnitina.",
+            "img": "https://www.depelos.co/static/food/24-Concentrado%20Monello%20SEM%20peru%20e%20salmao%20gato160x230q98.jpg",
+            "weight": "3 kg",
+            "price": "Agotado",
+            "mainCategory": "food",
+            "petCategory": "cat",
+            "id": 28
+        },
+        {
+            "title": "Naturalis Filhotes Frango e Peixe Chicken & Fish para Gatos",
+            "description": "Naturalis Filhotes Frango e Peixe Chicken & Fish es un alimento super premium, especial para gatitos que están en su etapa de cachorros. Está elaborado con proteínas de alta calidad, que le ayudaran a tener un desarrollo completo.",
+            "img": "https://www.depelos.co/static/food/9572-Concentrado%20Naturalis%20Total%20Super%20premium%20pet%20Food%20Filhote%20Kitten%20frango%20y%20Peixe%20chicken%20y%20fish%20gatito160x230q98.jpg",
+            "weight": "8 kg",
+            "price": "Agotado",
+            "mainCategory": "food",
+            "petCategory": "cat",
+            "id": 29
+        },
+        {
+            "title": "Naturalis Adulto Castrado Salmon & Fruits para Gatos",
+            "description": "Naturalis Adulto Castrado Salmon & Fruits es un alimento super premium para gatos castrados. Hecho con los mejores ingredientes, sin colorantes ni conservantes artificiales, es 100% natural y saludable.",
+            "img": "https://www.depelos.co/static/food/5106-Concentrado%20Naturalis%20Total%20Super%20premium%20pet%20Food%20Adulto%20Castrado%20Salmao%20y%20Frutas%20Gato160x230q98.jpg",
+            "weight": "8 kg",
+            "price": "$128.000",
+            "mainCategory": "food",
+            "petCategory": "cat",
+            "id": 30
+        },
+        {
+            "title": "Purina Cat Chow Vida Sana para Gatos",
+            "description": "Purina Cat Chow es una comida para gatos que da los nutrientes y vitaminas necesarias provenientes de ingredientes naturales: pollo, salmón, queso, tomate, espinaca y zanahoria. Da la energía suficiente para cada día con el fin de que tu gato se sienta feliz y saludable.",
+            "img": "https://www.depelos.co/static/food/2504-Captura%20de%20Pantalla%202023-06-27%20a%20la(s)%205.52.07%20p.%C2%A0m.160x230q98.jpg",
+            "weight": "1.3 kg",
+            "price": "$46.000",
+            "mainCategory": "food",
+            "petCategory": "cat",
+            "id": 31
+        },
+        {
+            "title": "Solla NutreCat Home para Gatos",
+            "description": "Solla Nutrecat Home es una comida para gatos adultos de casa o que realizan poca actividad física. Es un delicioso concentrado para gatos con mezcla de sabores: pollo, carne y pescado, que vela por la salud general de tu gatico propiciandole una comida nutritiva, balanceada y completa.",
+            "img": "https://www.depelos.co/static/food/4484-comida-gatos-nutrecat-home-depelos160x230q98.jpg",
+            "weight": "3 kg",
+            "price": "$93.900",
+            "mainCategory": "food",
+            "petCategory": "cat",
+            "id": 32
+        },
+        {
+            "title": "Solla NutreCat Liberty para Gatos",
+            "description": "Solla NutreCat Liberty es una comida para gatos que realizan actividad adentro y afuera de la casa. Este alimento para gatos se realiza con pollo como proteína principal y aporta la energía necesaria, gracias a sus ingredientes naturales, para promover el bienestar en su jornada diaria.",
+            "img": "https://www.depelos.co/static/food/4071-arenas-para-perros-nutrecat-liberty-depelos160x230q98.jpg",
+            "weight": "8 kg",
+            "price": "$111.050",
+            "mainCategory": "food",
+            "petCategory": "cat",
+            "id": 33
+        },
+        {
+            "title": "Purina Cat Chow Gatitos para Gatos",
+            "description": "Purina Cat Chow Gatitos es una comida para gatitos menores de un año y gatas en gestación o lactancia. Contiene DHA para estimular el crecimiento óptimo del cerebro y las vitaminas necesarias para asegurar el mejor desarrollo físico durante la primera etapa de vida de tu peludo.",
+            "img": "https://www.depelos.co/static/food/7929-Captura%20de%20Pantalla%202023-06-27%20a%20la(s)%205.48.26%20p.%C2%A0m.160x230q98.jpg",
+            "weight": "8 kg",
+            "price": "$110.500",
+            "mainCategory": "food",
+            "petCategory": "cat",
+            "id": 34
+        },
+        {
+            "title": "Purina Cat Chow Adultos Pescado para Gatos",
+            "description": "Purina Cat Chow Adultos Pescado es una comida para gatos adultos que se realiza con pescado con el fin de asegurar una gran palatabilidad e incluir la cantidad suficiente de Omega 3 y 6 que mejoran notoriamente la salud y la bellza del pelo y la piel.",
+            "img": "https://www.depelos.co/static/food/2086-Captura%20de%20Pantalla%202023-06-27%20a%20la(s)%205.57.03%20p.%C2%A0m.160x230q98.jpg",
+            "weight": "1,5 kg",
+            "price": "$45.000",
+            "mainCategory": "food",
+            "petCategory": "cat",
+            "id": 35
+        },
+        {
+            "title": "Purina Cat Chow Adultos Hogareños para Gatos",
+            "description": "Purina Cat Chow Adultos Hogareños es una comida para gatos de casa que realizan poca actividad física en su jornada diaria normal. Contiene fibras naturales (soya y celulosa) que ayudan a mejorar la digestión y disminuyen la formación de bolas de pelo que pueden ser una gran molestia para tu peludo.",
+            "img": "https://www.depelos.co/static/food/4237-Captura%20de%20Pantalla%202023-06-27%20a%20la(s)%205.55.59%20p.%C2%A0m.160x230q98.jpg",
+            "weight": "8 kg",
+            "price": "$155.600",
+            "mainCategory": "food",
+            "petCategory": "cat",
+            "id": 36
+        },
+        {
+            "title": "Purina Cat Chow Adultos Carne para Gatos",
+            "description": "Purina Cat Chow Adultos Activos Carne es una comida para gatos que realizan moderada o alta actividad física en su jornada diaria. Contiene carne como uno de sus principales ingredientes para brindar la cantidad de hierro necesaria para fortalecer los músculos y los nutrientes necesarios para fomentar el bienestar de tu peludo.",
+            "img": "https://www.depelos.co/static/food/9881-Captura%20de%20Pantalla%202023-06-27%20a%20la(s)%205.58.12%20p.%C2%A0m.160x230q98.jpg",
+            "weight": "1,5 kg",
+            "price": "$45.000",
+            "mainCategory": "food",
+            "petCategory": "cat",
+            "id": 37
+        },
+        {
+            "title": "Purina Cat Chow Adultos Delimix para Gatos",
+            "description": "Purina Cat Chow Adultos Delimix es una comida para gatos adultos con paladares un poco más exigentes a la hora de comer y que realizan actividad física en su jornada. Se prepara con un mix de tres tipos de proteína: carne, pollo y pescado que fomentan la vitalidad y el bienestar de tu peludo.",
+            "img": "https://www.depelos.co/static/food/4246-Captura%20de%20Pantalla%202023-06-27%20a%20la(s)%205.54.19%20p.%C2%A0m.160x230q98.jpg",
+            "weight": "8 kg",
+            "price": "$155.000",
+            "mainCategory": "food",
+            "petCategory": "cat",
+            "id": 38
+        },
+        {
+            "title": "Purina Cat Chow Esterilizados Pescado para Gatos",
+            "description": "Purina Cat Chow Castrados es una comida para gatos mayores de 6 meses que pasaron por el proceso de castración. Después de este procedimiento los gatos necesitan la mejor alimentación ya que tienden a subir de peso. Este alimento para gatos se realiza con ingredientes naturales para asegurar un dieta completa, saludable y deliciosa.",
+            "img": "https://www.depelos.co/static/food/535-Captura%20de%20Pantalla%202023-06-27%20a%20la(s)%206.00.24%20p.%C2%A0m.160x230q98.jpg",
+            "weight": "1,5 kg",
+            "price": "$46.000",
+            "mainCategory": "food",
+            "petCategory": "cat",
+            "id": 39
+        },
+        {
+            "title": "Chunky Pollo para Gatos para Gatos",
+            "description": "Chunky Pollo para Gatos es una comida para gatos que se realiza con pollo como fuente de proteína principal. Brinda los nutrientes necesarios para una buena alimentación, disminuye la formación de bolas de pelos y controla la acidez de la orina.",
+            "img": "https://www.depelos.co/static/food/3478-CHUNKY%20GATOS%20POLLO160x230q98.jpg",
+            "weight": "8 kg",
+            "price": "$157.500",
+            "mainCategory": "food",
+            "petCategory": "cat",
+            "id": 40
+        },
+        {
+            "title": "Acana Meadowlands para Gatos",
+            "description": "Acana Meadowlands es una comida para gatos que contiene 75% de proteína. Su formula contiene 5 tipos diferentes de proteína: pollo, pavo, bagre, huevos y trucha. Este deliciosos alimento para gatos también se realiza con frutas y verduras para ofrecer una dienta completa, nutritiva y saludable. No contiene granos.",
+            "img": "https://www.depelos.co/static/food/1982-comida-gatos-acana-meadowland-depelos160x230q98.jpg",
+            "weight": "1,5 kg",
+            "price": "$43.300",
+            "mainCategory": "food",
+            "petCategory": "cat",
+            "id": 41
+        },
+        {
+            "title": "Canidae Grain Free PURE Sea para Gatos",
+            "description": "Canidae Grain Free PURE Sea es un alimento para perros hecho con 7 ingredientes claves y que tiene carne magra de salmón como fuente principal de proteína. Contiene vitaminas, minerales y probióticos para mejor absorción y digestión. Fórmula libre de granos",
+            "img": "https://www.depelos.co/static/food/3572-canidae-grain-free-pure-sea-gatos-depelos-compania160x230q98.jpg",
+            "weight": "8 kg",
+            "price": "$154.800",
+            "mainCategory": "food",
+            "petCategory": "cat",
+            "id": 42
+        },
+        {
+            "title": "Canidae All Life Stages Formula para Gatos",
+            "description": "La fórmula para todas las etapas de vida de Canidae All Life Stages contiene ingredientes premium y proteínas óptimas para nutrir a tu gato. No contiene maíz, soya o trigo.",
+            "img": "https://www.depelos.co/static/food/1531-canidae-all-life-stages-gatos-depelos-compania160x230q98.jpg",
+            "weight": "15 kg",
+            "price": "$261.000",
+            "mainCategory": "food",
+            "petCategory": "cat",
+            "id": 43
+        },
+        {
+            "title": "Chunky Gatos Salmón para Gatos",
+            "description": "Chunky gatos salmón es un alimento completo para gatos adultos de todas las razas. Cuenta con un sabor y olor característico a salmón, que lo convierte en la opción ideal para cualquier gato. Recuerda que tu gato es adulto después de los 14 meses aproximadamente, consulta con tu veterinario.",
+            "img": "https://www.depelos.co/static/food/8030-CHUNKY%20GATOS%20SALMON160x230q98.jpg",
+            "weight": "10 kg",
+            "price": "$191.500",
+            "mainCategory": "food",
+            "petCategory": "cat",
+            "id": 44
+        },
+        {
+            "title": "Nupec Felino Kitten para Gatos",
+            "description": "Nupec Felino Kitten, es un alimento para gatitos cachorros. Los primeros meses de vida de los gatitos son clave para determinar su calidad de vida en etapa adulta. Por ello, hemos formulado una nutrición especializada que asegura su óptimo desarrollo cognitivo, inmune, óseo y muscular.",
+            "img": "https://www.depelos.co/static/food/1421-Nupec-comida-para-gatitos-depelos160x230q98.jpg",
+            "weight": "1.5 kg",
+            "price": "$46.500",
+            "mainCategory": "food",
+            "petCategory": "cat",
+            "id": 45
+        },
+        {
+            "title": "Nupec Gato Adulto para Gatos",
+            "description": "Nupec Gato Adulto, es un alimento para gatos con un estilo de vida hogareño. Por ello hemos formulado una nutrición especializada con un balance de ingredientes que regulan el sistema nervioso y mantienen una condición corporal saludable.",
+            "img": "https://www.depelos.co/static/food/1535-Nupec-comida-para-gatos-adulto-indoor-depelos160x230q98.jpg",
+            "weight": "8 kg",
+            "price": "$157.500",
+            "mainCategory": "food",
+            "petCategory": "cat",
+            "id": 46
+        },
+        {
+            "title": "Country Value Formula Premium Cat para Gatos",
+            "description": "Country Value Premium Cat Formula (Fórmula Premium para gatos) es un alimento con una fuente de proteína de pollo especializada, grasa de excelente calidad y ácido linoleico en su contenido, para el mantenimiento de piel y pelo sanos en tu peludo.",
+            "img": "https://www.depelos.co/static/food/6618-country-value-gatos-adultos-2-kg160x230q98.jpg",
+            "weight": "8 kg",
+            "price": "$110.000",
+            "mainCategory": "food",
+            "petCategory": "cat",
+            "id": 47
+        },
+        {
+            "title": "Miaumor Gato Adulto para Gatos",
+            "description": "Miaumor es un alimento formulado para gatos adultos de todas las razas y tamaños desde el primer año de vida. Formulado con Lifeforz para garantizar la nutrición adecuada de la mascota y mejorar su calidad de vida. Libre de colorantes.",
+            "img": "https://www.depelos.co/static/food/9607-Miaumor_comida_para_gatos_depelos160x230q98.jpg",
+            "weight": "1.8 kg",
+            "price": "$127.700",
+            "mainCategory": "food",
+            "petCategory": "cat",
+            "id": 48
+        },
+        {
+            "title": "Chunky Gatitos Pollo y Cordero para Gatos",
+            "description": "Chunky Gatitos es un concentrado para gatitos o gatos bebes con rico sabor a pollo y a cordero. Es un alimento para gatitos ideal para empezar a suministrar después de la separación de la madre o el destete.",
+            "img": "https://www.depelos.co/static/food/3941-CHUNKY%20GATICOS160x230q98.jpg",
+            "weight": "2.27 Kg",
+            "price": "Agotado",
+            "mainCategory": "food",
+            "petCategory": "cat",
+            "id": 49
+        },
+        {
+            "title": "Nucat Gato Adulto para Gatos",
+            "description": "Nucat es una comida especial para gatos, que contiene la proteína de carne indispensable para tu gato y está formulado para su óptimo desarrollo. Hecho con una Fórmula de calidad y Alta palatabilidad",
+            "img": "https://www.depelos.co/static/food/3741-NUCAT160x230q98.jpg",
+            "weight": "3.63 Kg",
+            "price": "Agotado",
+            "mainCategory": "food",
+            "petCategory": "cat",
+            "id": 50
+        },
+        {
+            "title": "Nupec Felino Hairball Control para Gatos",
+            "description": "Nupec Felino Hairball Control, es un alimento con nutrición especializada, para gatos adultos, balanceado en fibras y ácidos grasos Omega 3 y 6 que mantiene el sistema digestivo de tu gato saludable, disminuyendo la formación de bolas de pelo y brindándole máxima protección de piel y pelaje.",
+            "img": "https://www.depelos.co/static/food/4418-Concentrado%20Nupec%20felino%20Hairball%20Control%20de%20pelos%20compania%20160x230q98.jpg",
+            "weight": "8 kg",
+            "price": "$112.000",
+            "mainCategory": "food",
+            "petCategory": "cat",
+            "id": 51
+        },
+        {
+            "title": "Nupec Felino Senior para Gatos",
+            "description": "Nupec Felino Senior, es un alimento para gatos mayores formulado con una nutrición especializada con un balance de ingredientes que previene el envejecimiento celular, manteniéndolo activo y sano por más tiempo; Cubriendo así las necesidades propias de un adulto de etapa madura",
+            "img": "https://www.depelos.co/static/food/4552-Concentrado%20Nupec%20felino%20Senior%20De%20Pelos%20Compania160x230q98.jpg",
+            "weight": "1.5 kg",
+            "price": "$68.531",
+            "mainCategory": "food",
+            "petCategory": "cat",
+            "id": 52
+        },
+        {
+            "title": "Monello Select Gatos Castrados para Gatos",
+            "description": "Monello Select Gatos Castrado es un alimento cuidadosamente desarrollado para satisfacer las necesidades nutricionales de los gatos adultos con más de 12 meses, castrados. En esta condición, los gatos son menos activos, usan menos energía y son propensos a ganar peso, por eso su fórmula se caracteriza por calorías reducidas.",
+            "img": "https://www.depelos.co/static/food/7040-Concentrado%20Monello%20Select%20Gato%20Adultos%20Castrados%20Frango%20&%20Arroz160x230q98.jpg",
+            "weight": "3 kg",
+            "price": "$134.636",
+            "mainCategory": "food",
+            "petCategory": "cat",
+            "id": 53
+        },
+        {
+            "title": "Monello Select Gato Adulto para Gatos",
+            "description": "Monello Select Cat Adulto es cuidadosamente desarrollado para satisfacer las necesidades nutricionales de los gatos adultos con más de 12 meses. Formulado con proteína animal como primer ingrediente y digestibilidad superior que 80%, además de fibras y minerales que auxilian en el mantenimiento de la musculatura y del peso ideal.",
+            "img": "https://www.depelos.co/static/food/6201-Concentrado%20Monello%20Select%20Gato%20Adultos%20Carne%20y%20Hi%CC%81gado160x230q98.jpg",
+            "weight": "1.5 kg",
+            "price": "$63.050",
+            "mainCategory": "food",
+            "petCategory": "cat",
+            "id": 54
+        },
+        {
+            "title": "Monello Select Gatitos para Gatos",
+            "description": "Monello Select Gatitos es un alimento ideal para tu peludo. Los gatitos en crecimiento están sujetos a múltiples factores de estrés en las primeras etapas de la vida. Una dieta con formulación equilibrada de calidad puede ayudar en el desarrollo saludable.",
+            "img": "https://www.depelos.co/static/food/1722-Concentrado%20Monello%20Select%20Gato%20Cachorros%20salmao%20&%20arroz160x230q98.jpg",
+            "weight": "3 kg",
+            "price": "$120.413",
+            "mainCategory": "food",
+            "petCategory": "cat",
+            "id": 55
+        },
+        {
+            "title": "Monello Cat Salmón, Atún y Pollo para Gatos",
+            "description": "Monello Gatos Adultos Salmón y Pollo fue pensada para agradar al paladar exigente de los felinos y proveer los nutrientes necesarios para una vida más activa y sana. La fórmula cuenta con la adición de ingredientes de calidad superior, que ayudan en el mantenimiento del sistema cognitivo, y aumenta el bienestar.",
+            "img": "https://www.depelos.co/static/food/4443-Concentrado%20Monello%20SEM%20salmao%20e%20frango%20gato160x230q98.jpg",
+            "weight": "20 lb",
+            "price": "$148.300",
+            "mainCategory": "food",
+            "petCategory": "cat",
+            "id": 56
+        },
+        {
+            "title": "Monello Cat Gatitos Salmón y Pollo para Gatos",
+            "description": "El alimento Monello Cat Gatitos Salmón y Pollo es libre de colorantes y aromatizantes artificiales. Conserva su receta original, con la adición de harina y aceite de salmón, ingredientes nobles y de excelencia que actúan en las defensas del organismo y proporcionan a los felinos un desarrollo cognitivo sano.",
+            "img": "https://www.depelos.co/static/food/5175-Concentrado%20Monello%20SEM%20salmao%20e%20frango%20gato%20kitty160x230q98.jpg",
+            "weight": "1.5 kg",
+            "price": "Agotado",
+            "mainCategory": "food",
+            "petCategory": "cat",
+            "id": 57
+        },
+        {
+            "title": "Monello Cat Castrados Pavo y Salmón para Gatos",
+            "description": "Monello Gatos Castrados Pavo y Salmón está desarrollada especialmente para la etapa posterior a la castración de los felinos, cuando suelen reducir el ritmo de las actividades, y quedan más propensos a la obesidad. Por eso, la fórmula tiene calorías reducidas y la adición de L-carnitina.",
+            "img": "https://www.depelos.co/static/food/24-Concentrado%20Monello%20SEM%20peru%20e%20salmao%20gato160x230q98.jpg",
+            "weight": "3 kg",
+            "price": "Agotado",
+            "mainCategory": "food",
+            "petCategory": "cat",
+            "id": 58
+        },
+        {
+            "title": "Naturalis Filhotes Frango e Peixe Chicken & Fish para Gatos",
+            "description": "Naturalis Filhotes Frango e Peixe Chicken & Fish es un alimento super premium, especial para gatitos que están en su etapa de cachorros. Está elaborado con proteínas de alta calidad, que le ayudaran a tener un desarrollo completo.",
+            "img": "https://www.depelos.co/static/food/9572-Concentrado%20Naturalis%20Total%20Super%20premium%20pet%20Food%20Filhote%20Kitten%20frango%20y%20Peixe%20chicken%20y%20fish%20gatito160x230q98.jpg",
+            "weight": "8 kg",
+            "price": "Agotado",
+            "mainCategory": "food",
+            "petCategory": "cat",
+            "id": 59
+        },
+        {
+            "title": "Naturalis Adulto Castrado Salmon & Fruits para Gatos",
+            "description": "Naturalis Adulto Castrado Salmon & Fruits es un alimento super premium para gatos castrados. Hecho con los mejores ingredientes, sin colorantes ni conservantes artificiales, es 100% natural y saludable.",
+            "img": "https://www.depelos.co/static/food/5106-Concentrado%20Naturalis%20Total%20Super%20premium%20pet%20Food%20Adulto%20Castrado%20Salmao%20y%20Frutas%20Gato160x230q98.jpg",
+            "weight": "8 kg",
+            "price": "$128.000",
+            "mainCategory": "food",
+            "petCategory": "cat",
+            "id": 60
+        },
+        {
+            "title": "Guaumor Cachorro Raza Pequeña para Perros",
+            "description": "Guaumor Puppy Small Breed es un alimento para perros completo y balanceado, creado para cachorros de razas pequeñas, ideal desde el destete hasta el primer año de vida. Es una deliciosa comida que ofrece todos los nutrientes para fortalecer huesos, el sistema digestivo e inmune y mejorar la calidad del pelaje.",
+            "img": "https://www.depelos.co/static/food/3525-Guaumor%20Cachorro%20Raza%20Peque%C3%B1a%20para%20Perros160x230q98.jpg",
+            "weight": "8 kg",
+            "price": "$78.030",
+            "mainCategory": "food",
+            "petCategory": "dog",
+            "id": 61
+        },
+        {
+            "title": "Country Value Puppy para Perros",
+            "description": "Country Value para Cachorros es una comida premium para cachorros cuya principal fuente de proteína es el pollo. Este alimento para perritos contiene todos sus nutrientes en porciones más pequeñas con el fin de mejorar la digestión, gastar menos dinero y facilitar el proceso de limpieza.",
+            "img": "https://www.depelos.co/static/food/9498-Concentrado%20Country%20Value%20Puppy%20160x230q98.jpg",
+            "weight": "40 lb",
+            "price": "$308.600",
+            "mainCategory": "food",
+            "petCategory": "dog",
+            "id": 62
+        },
+        {
+            "title": "Guaumor Cachorro Raza Mediana y Grande para Perros",
+            "description": "Guaumor Cachorros Razas Grandes y Medianas es una comida para cachorros que cubre las necesidades nutricionales de los cachorros de razas mediana y grande durante su primer año de desarrollo. Es un delicioso alimento para perritos que ofrece la cantidad adecuada de nutrientes para asegurar su crecimiento saludable",
+            "img": "https://www.depelos.co/static/food/4830-Guaumor_cachorros_raza_mediana_y_grande_comida_para_perros_depelos160x230q98.jpg",
+            "weight": "8 kg",
+            "price": "$78.710",
+            "mainCategory": "food",
+            "petCategory": "dog",
+            "id": 63
+        },
+        {
+            "title": "Country Value Adult para Perros",
+            "description": "Country Value para Adultos es una comida para perro adultos de cualquier aza. Se realiza con ingredientes naturales, dentro de ellos carne de cerdo fresca, con el fin de brindar una nutrición completa, balanceada y una alta palatabilidad que atrae la tención de tu peludo. Es un alimento para perro muy digestible para mejorar la digestión.",
+            "img": "https://www.depelos.co/static/food/3809-Country%20Value%20Adult%20160x230q98.jpg",
+            "weight": "17 kg",
+            "price": "$160.480",
+            "mainCategory": "food",
+            "petCategory": "dog",
+            "id": 64
+        },
+        {
+            "title": "Purina Dog Chow Cachorros Minis y Pequeños para Perros",
+            "description": "Purina Dog Chow Cachorros Razas Pequeñas para Cachorros es un alimento para perros adultos que pertenecen a razas pequeñas (menos de 10 kg). Esta comida para perros proporciona una dieta balanceada, integral y adaptada para fomentar el desarollo óptimo de los organos vitales en su primera etapa de vida.",
+            "img": "https://www.depelos.co/static/food/462-Captura%20de%20Pantalla%202023-06-27%20a%20la(s)%206.06.57%20p.%C2%A0m.160x230q98.jpg",
+            "weight": "25 kg",
+            "price": "$212.925",
+            "mainCategory": "food",
+            "petCategory": "dog",
+            "id": 65
+        },
+        {
+            "title": "Chunky Adultos Pollo para Perros",
+            "description": "Chunky Canine Adult es una comida para perros seco cuya principal fuente de proteína es pollo. Se realiza con ingredeintes seleccionados que dan la mejor nutrición para que tu peludo conserve su bienestar y energía. Es un alimento para perros con presentación de nuggets crocantes rellenos de pollo que llamara la atención de tu peludo.",
+            "img": "https://www.depelos.co/static/food/6095-Chunky-comida-para-perros-adultos-pollo-depelos160x230q98.jpg",
+            "weight": "50 lb",
+            "price": "$279.850",
+            "mainCategory": "food",
+            "petCategory": "dog",
+            "id": 66
+        },
+        {
+            "title": "Guaumor Adulto Raza Pequeña para Perros",
+            "description": "Guamor Adultos Razas Pequeñas es una comida para perros adultos que asegura la adecuada asimilación del alimento y mejora el funcionamiento del sistema digestivo. Este alimento se desarrolla especialmente para perros adultos de razas pequeñas mayores de un año.",
+            "img": "https://www.depelos.co/static/food/5638-Guaumor%20Adulto%20Raza%20Peque%C3%B1a%20para%20Perros160x230q98.jpg",
+            "weight": "2 kg",
+            "price": "$42.000",
+            "mainCategory": "food",
+            "petCategory": "dog",
+            "id": 67
+        },
+        {
+            "title": "Purina Dog Chow Cachorros Medianos y Grandes para Perros",
+            "description": "Purina Dog Chow Cachorros Razas Medianas y Grandes es un alimento para Cachorros que pertenecen a razas medianas o grandes (más de 10 kg). Este concentrado brinda una comida para perros balanceada, deliciosa y completa con 23 vitaminas y nutrientes que fortalecen los órganos escenciales, los huesos y el cerebro.",
+            "img": "https://www.depelos.co/static/food/2286-Captura%20de%20Pantalla%202023-06-27%20a%20la(s)%206.10.22%20p.%C2%A0m.160x230q98.jpg",
+            "weight": "8 kg",
+            "price": "$141.000",
+            "mainCategory": "food",
+            "petCategory": "dog",
+            "id": 68
+        },
+        {
+            "title": "Chunky Adultos Cordero Arroz y Salmón para Perros",
+            "description": "Chunky Adulto Cordero, Arroz y Salmón es un alimento para perros adultos. Se realiza especialmente para aquellos que sufren de alergias alimentarias reflejadas en la piel. Para evitarlas, esta comida para perros está formulada con ingredientes no alergénicos: salmón y córdero, junto con una mezcla de ingredientes seleccionados.",
+            "img": "https://www.depelos.co/static/food/2777-Chunky-comida-para-perros-adultos-cordero-depelos160x230q98.jpg",
+            "weight": "17 kg",
+            "price": "$250.000",
+            "mainCategory": "food",
+            "petCategory": "dog",
+            "id": 69
+        },
+        {
+            "title": "Guaumor Adulto Raza Mediana y Grande para Perros",
+            "description": "Guaumor Adult Large Breed es una comida para perros adultos de razas grandes y medianas. Es un alimento para perros que contiene un perfil de proteínas, calcio y antioxidantes balanceados, lo que le da un aporte energético adecuado a sus requerimientos.",
+            "img": "https://www.depelos.co/static/food/832-Guaumor_adultos_raza_mediana_grande_comida_para_perros_depelos160x230q98.jpg",
+            "weight": "25 kg",
+            "price": "$188.000",
+            "mainCategory": "food",
+            "petCategory": "dog",
+            "id": 70
+        },
+        {
+            "title": "Chunky Adultos Razas Pequeñas Pollo para Perros",
+            "description": "Chunky Adultos Razas Pequeñas está formulado para cumplir los requerimientos nutricionales de tu perro adulto de raza pequeña.",
+            "img": "https://www.depelos.co/static/food/7345-Concentrado%20Chunky%20Adultos%20Razas%20Peque%C3%B1as%20Pollo160x230q98.jpg",
+            "weight": "8 kg",
+            "price": "$71.230",
+            "mainCategory": "food",
+            "petCategory": "dog",
+            "id": 71
+        },
+        {
+            "title": "Purina Dog Chow Adultos Minis y Pequeños para Perros",
+            "description": "Purina Dog Chow Adultos Razas Pequeñas es una comida para cachorros formulada especialmente para perros adultos que pesan hasta 9Kg. Es un alimento que aporta los nutrientes necesarios para que tu perrito de raza pequeña tenga una vida más larga. Contiene un alto porcentaje de proteína, fibras naturales y calcio para mantener su salud general.",
+            "img": "https://www.depelos.co/static/food/1076-Captura%20de%20Pantalla%202023-06-27%20a%20la(s)%206.11.29%20p.%C2%A0m.160x230q98.jpg",
+            "weight": "2 kg",
+            "price": "$48.000",
+            "mainCategory": "food",
+            "petCategory": "dog",
+            "id": 72
+        },
+        {
+            "title": "Chunky Adultos Mayores para Perros",
+            "description": "Chunky Adultos Mayores es un alimento seco y balanceado para perros a partir de los 5 años de edad. Se fórmual se realiza con carne y pollo como fuentes de proteína principal. Esta comida se presenta en una crqoeuta blanda que protege músculos, huesos y fomenta la digestión.",
+            "img": "https://www.depelos.co/static/food/516-Chunky-comida-para-perros-adultos-mayores-depelos160x230q98.jpg",
+            "weight": "4 kg",
+            "price": "$75.000",
+            "mainCategory": "food",
+            "petCategory": "dog",
+            "id": 73
+        },
+        {
+            "title": "Purina Dog Chow Adultos Medianos y Grandes para Perros",
+            "description": "Purina Dog Chow Adultos Razas Medianas y Grandes es una comida para perros dirigida especialmente a adultos que pesan más de 10 Kg. Este alimento para perros contiene proteina de alta calidad, calcio, fibras naturales y taurina para asegurar el bienestar y la salud general de tu peludo.",
+            "img": "https://www.depelos.co/static/food/7686-Captura%20de%20Pantalla%202023-06-27%20a%20la(s)%206.12.29%20p.%C2%A0m.160x230q98.jpg",
+            "weight": "8 kg",
+            "price": "$135.000",
+            "mainCategory": "food",
+            "petCategory": "dog",
+            "id": 74
+        },
+        {
+            "title": "Purina Dog Chow Control de Peso para Perros",
+            "description": "Purina Dog Chow Light Sano y en Forma es una comida para perros formulada para aquellos con problemas de peso o que realizan baja actividad física en su jornada diaria. Este alimento para perros contiene ingredientes bajos en calorías y de alta calidad que ayudan a controlar y mantener su peso.",
+            "img": "https://www.depelos.co/static/food/5131-Captura%20de%20Pantalla%202023-06-27%20a%20la(s)%206.14.22%20p.%C2%A0m.160x230q98.jpg",
+            "weight": "17 kg",
+            "price": "$247.000",
+            "mainCategory": "food",
+            "petCategory": "dog",
+            "id": 75
+        },
+        {
+            "title": "Purina Dog Chow Longevidad Adultos 7+ para Perros",
+            "description": "Purina Dog Chow Adultos 7+ Edad Madura es una comida para perros hecha específicamente para adultos mayores de 7 años. Es un alimento para perros que contiene todos los ingredientes y nutrientes necesarios que ayudan conservar la vitalidad y cuidar las partes que pueden verse más afectadas por la edad.",
+            "img": "https://www.depelos.co/static/food/1005-Captura%20de%20Pantalla%202023-06-27%20a%20la(s)%206.16.19%20p.%C2%A0m.160x230q98.jpg",
+            "weight": "22.7 kg",
+            "price": "$296.000",
+            "mainCategory": "food",
+            "petCategory": "dog",
+            "id": 76
+        },
+        {
+            "title": "Acana Free Run Poultry para Perros",
+            "description": "Acana Free Run Poultry es una comida para perros carnívoros que aman la proteína. Su fórmula se realiza con ingredientes naturales, incluyendo frutas y verduras, que brindas minerales y vitaminas adecuadas para beneficiar el cuidado de tu peludo. No contiene gluten ni granos.",
+            "img": "https://www.depelos.co/static/food/6485-5824-Acana-comida-para-perros-heritage-depelos160x230q98.jpg",
+            "weight": "12 kg",
+            "price": "$165.000",
+            "mainCategory": "food",
+            "petCategory": "dog",
+            "id": 77
+        },
+        {
+            "title": "Acana Fresh Water Fish para Perros",
+            "description": "Acana Fresh Water Fishes es una comida para perros con paladares refinados que prefieren el pescado sobre otras proteínas. Este alimento para perros se realiza con trucha arcoiris, pescado blanco, perca amarilla, frutas y verduras que proveen los nutrientes adecuados para mantener el bienestar y la salud general.",
+            "img": "https://www.depelos.co/static/food/3725-9746-Acana-comida-para-perros-heritage-pescado-depelos160x230q98.jpg",
+            "weight": "8 kg",
+            "price": "$66.045",
+            "mainCategory": "food",
+            "petCategory": "dog",
+            "id": 78
+        },
+        {
+            "title": "Acana Pork & Squash para Perros",
+            "description": "Acana Pork & Squash es una comida para perros realizada con una única fuente de proteína, en este caso, cerdo. Es un alimento para perros con 60% de contenido proteico y 40% de contenido de frutas y verduras. No contiene gluten , papa ni granos con el fin de evitar molestias estomacales.",
+            "img": "https://www.depelos.co/static/food/8931-WhatsApp%20Image%202024-01-19%20at%2011.18.54%20AM160x230q98.jpg",
+            "weight": "17 kg",
+            "price": "$121.380",
+            "mainCategory": "food",
+            "petCategory": "dog",
+            "id": 79
+        },
+        {
+            "title": "Sportsman's Pride Active Puppy & Adult Formula con pollo 27-17 para Perros",
+            "description": "Sportsman ́s Pride Puppy es una comida especial para cachorros durante su primer año de vida. Esta fórmula contiene todos los bloques de construcción necesarios para el desarrollo exitoso de tu cachorro. Formulado con Pollo de alto valor proteico y la inclusión de prebióticos y probióticos para mantener un sistema digestivo saludable.",
+            "img": "https://www.depelos.co/static/food/406-DESAROLLO%20DE%20POLLO160x230q98.jpg",
+            "weight": "25 kg",
+            "price": "$171.955",
+            "mainCategory": "food",
+            "petCategory": "dog",
+            "id": 80
+        },
+        {
+            "title": "Sportsman's Pride Mantenimiento Formula 21-12 Pollo para Perros",
+            "description": "Sportsman ́s Pride Maintenance es una dieta completa y balanceada que promueve una vida sana y longeva. Esta formulada con proteínas de alta calidad y está especialmente diseñada para satisfacer las necesidades diarias de nutrientes de perros adultos Mejorado con vitaminas y minerales esenciales que cubre todas las bases para la salud general",
+            "img": "https://www.depelos.co/static/food/471-MANTENIMIENTO160x230q98.jpg",
+            "weight": "8 kg",
+            "price": "$90.000",
+            "mainCategory": "food",
+            "petCategory": "dog",
+            "id": 81
+        },
+        {
+            "title": "Sportsman's Pride Premium Chicken Formula Dog Food para Perros",
+            "description": "Sportsman ́s Pride Premium Chicken está diseñado para darle a los perros activos y de trabajo, la nutrición que necesitan para estar en óptimas condiciones físicas. Formulado con Pollo de alto valor proteico y la inclusión de prebióticos y probióticos para mantener un sistema digestivo saludable.",
+            "img": "https://www.depelos.co/static/food/7796-CHICKEN%20PREMIUM160x230q98.jpg",
+            "weight": "4 kg",
+            "price": "$74.000",
+            "mainCategory": "food",
+            "petCategory": "dog",
+            "id": 82
+        },
+        {
+            "title": "Sportsman's Pride Lamb Meal & Rice Formula Dog Food para Perros",
+            "description": "Sportsman's Pride Lamb Meal & Rice Formula es una comida de harina de cordero de alta calidad y altamente digerible, diseñada para perros que prefieren el sabor del cordero o que son sensibles a la soya, maíz, trigo o a la carne de res o de pollo. Esta fórmula ayuda a promover un pelaje brillante y un sistema inmunológico fuerte para una vida",
+            "img": "https://www.depelos.co/static/food/5378-PROTEINAS%20ALTERNATIVAS%20CORDERO160x230q98.jpg",
+            "weight": "8 kg",
+            "price": "$138.000",
+            "mainCategory": "food",
+            "petCategory": "dog",
+            "id": 83
+        },
+        {
+            "title": "Sportsman's Pride Limited Ingredient Turkey Formula Dog Food para Perros",
+            "description": "Especial para perros sensibles a granos como el maíz, el trigo o los productos de soya e incluso fuentes de carne de uso prolongado como la carne de res o el pollo. Cada ingrediente de este concentrado es saludable y fácil de digerir además contiene las cantidades adecuadas de vitaminas y minerales para una satisfacción y mejores resultados",
+            "img": "https://www.depelos.co/static/food/5158-LIMITE%20DE%20INGREDIENTES%20PAVO160x230q98.jpg",
+            "weight": "17 kg",
+            "price": "$249.000",
+            "mainCategory": "food",
+            "petCategory": "dog",
+            "id": 84
+        },
+        {
+            "title": "Nupec Cachorros para Perros",
+            "description": "Nupec Cachorros es un alimento para perros con un balance nutricional adecuado para el óptimo desarrollo de tu cachorro. En esta etapa tu perrito necesita el doble de energía que un adulto del mismo peso, por ello esta comida tiene el balance ideal de vitaminas, minerales, grasas, proteínas y energía adecuados.",
+            "img": "https://www.depelos.co/static/food/8732-comida_perros_Nupec_Cachorro_depelos160x230q98.jpg",
+            "weight": "12 kg",
+            "price": "$152.000",
+            "mainCategory": "food",
+            "petCategory": "dog",
+            "id": 85
+        },
+        {
+            "title": "Nupec Adultos para Perros",
+            "description": "Nupec Adultos, es un alimento para perros que en su etapa adulta brinda un aporte de nutrientes óptimo para conservar su masa muscular, vitalidad y un pelaje sano. Es una comida con la selección de vitaminas, minerales y aporte de proteína adecuados para reforzar su sistema inmune y, asegurar una condición física fuerte y saludable.",
+            "img": "https://www.depelos.co/static/food/1470-comida_perros_Nupec_Adulto_depelos160x230q98.jpg",
+            "weight": "4 kg",
+            "price": "$75.500",
+            "mainCategory": "food",
+            "petCategory": "dog",
+            "id": 86
+        },
+        {
+            "title": "Nupec Senior para Perros",
+            "description": "Nupec Senior es un alimento para perros que requieren una nutrición que cubra las necesidades propias de un adulto en etapa madura. Esta comida contiene los nutrientes esenciales para retrasar el envejecimiento del organismo, fortaleciendo el sistema inmune y las articulaciones, manteniéndolo activo y sano por más tiempo.",
+            "img": "https://www.depelos.co/static/food/5180-comida_perros_Nupec_Senior_depelos160x230q98.jpg",
+            "weight": "8 kg",
+            "price": "$131.000",
+            "mainCategory": "food",
+            "petCategory": "dog",
+            "id": 87
+        },
+        {
+            "title": "Nupec Cachorro Raza Pequeña para Perros",
+            "description": "Nupec cachorro de raza pequeña es un alimento para perros que alcanzan su etapa adulta en menor tiempo (de 7 a 12 meses), y que tienen un tracto digestivo con una capacidad limitada. Es un alimento con densidad nutricional y energética que les ayuda a potencializar el crecimiento que definirá su calidad de vida adulta.",
+            "img": "https://www.depelos.co/static/food/8137-comida_perros_Nupec_Cachorro_Razas_Pequenas_depelos160x230q98.jpg",
+            "weight": "17 kg",
+            "price": "$242.000",
+            "mainCategory": "food",
+            "petCategory": "dog",
+            "id": 88
+        },
+        {
+            "title": "Nupec Adulto Raza Pequeña para Perros",
+            "description": "Nupec Adulto Raza Pequeña, es un alimento para perros con una croqueta de forma y textura adecuada para facilitar su masticación. Un perro de raza pequeña es más activo; sin embargo, la capacidad de su tracto digestivo es limitada y necesitan un alimento con una densidad nutricional y energética adecuada para conservar su masa muscular.",
+            "img": "https://www.depelos.co/static/food/1614-Concentrado%20Nupec%20Adulto%20Razas%20Peque%C3%B1as%20-%20perro-Depeloscompania160x230q98.jpg",
+            "weight": "22.7 kg",
+            "price": "$285.000",
+            "mainCategory": "food",
+            "petCategory": "dog",
+            "id": 89
+        },
+        {
+            "title": "Nupec Senior Razas Pequeñas para Perros",
+            "description": "Nupec Senior Razas Pequeñas, es un alimento para perros que requieren de una nutrición especifica que cubra sus necesidades. Por ello hemos diseñado una comida con los nutrientes esenciales para retrasar el envejecimiento del organismo, fortaleciendo el sistema inmune y las articulaciones; manteniéndolo activo y sano por más tiempo.",
+            "img": "https://www.depelos.co/static/food/8180-comida_perros_Nupec_Senior_Razas_Pequenas_depelos160x230q98.jpg",
+            "weight": "2 kg",
+            "price": "$47.000",
+            "mainCategory": "food",
+            "petCategory": "dog",
+            "id": 90
+        },
+        {
+            "title": "Guaumor Cachorro Raza Pequeña para Perros",
+            "description": "Guaumor Puppy Small Breed es un alimento para perros completo y balanceado, creado para cachorros de razas pequeñas, ideal desde el destete hasta el primer año de vida. Es una deliciosa comida que ofrece todos los nutrientes para fortalecer huesos, el sistema digestivo e inmune y mejorar la calidad del pelaje.",
+            "img": "https://www.depelos.co/static/food/3525-Guaumor%20Cachorro%20Raza%20Peque%C3%B1a%20para%20Perros160x230q98.jpg",
+            "weight": "8 kg",
+            "price": "$78.030",
+            "mainCategory": "food",
+            "petCategory": "dog",
+            "id": 91
+        },
+        {
+            "title": "Country Value Puppy para Perros",
+            "description": "Country Value para Cachorros es una comida premium para cachorros cuya principal fuente de proteína es el pollo. Este alimento para perritos contiene todos sus nutrientes en porciones más pequeñas con el fin de mejorar la digestión, gastar menos dinero y facilitar el proceso de limpieza.",
+            "img": "https://www.depelos.co/static/food/9498-Concentrado%20Country%20Value%20Puppy%20160x230q98.jpg",
+            "weight": "40 lb",
+            "price": "$308.600",
+            "mainCategory": "food",
+            "petCategory": "dog",
+            "id": 92
+        },
+        {
+            "title": "Guaumor Cachorro Raza Mediana y Grande para Perros",
+            "description": "Guaumor Cachorros Razas Grandes y Medianas es una comida para cachorros que cubre las necesidades nutricionales de los cachorros de razas mediana y grande durante su primer año de desarrollo. Es un delicioso alimento para perritos que ofrece la cantidad adecuada de nutrientes para asegurar su crecimiento saludable",
+            "img": "https://www.depelos.co/static/food/4830-Guaumor_cachorros_raza_mediana_y_grande_comida_para_perros_depelos160x230q98.jpg",
+            "weight": "8 kg",
+            "price": "$78.710",
+            "mainCategory": "food",
+            "petCategory": "dog",
+            "id": 93
+        },
+        {
+            "title": "Country Value Adult para Perros",
+            "description": "Country Value para Adultos es una comida para perro adultos de cualquier aza. Se realiza con ingredientes naturales, dentro de ellos carne de cerdo fresca, con el fin de brindar una nutrición completa, balanceada y una alta palatabilidad que atrae la tención de tu peludo. Es un alimento para perro muy digestible para mejorar la digestión.",
+            "img": "https://www.depelos.co/static/food/3809-Country%20Value%20Adult%20160x230q98.jpg",
+            "weight": "17 kg",
+            "price": "$160.480",
+            "mainCategory": "food",
+            "petCategory": "dog",
+            "id": 94
+        },
+        {
+            "title": "Purina Dog Chow Cachorros Minis y Pequeños para Perros",
+            "description": "Purina Dog Chow Cachorros Razas Pequeñas para Cachorros es un alimento para perros adultos que pertenecen a razas pequeñas (menos de 10 kg). Esta comida para perros proporciona una dieta balanceada, integral y adaptada para fomentar el desarollo óptimo de los organos vitales en su primera etapa de vida.",
+            "img": "https://www.depelos.co/static/food/462-Captura%20de%20Pantalla%202023-06-27%20a%20la(s)%206.06.57%20p.%C2%A0m.160x230q98.jpg",
+            "weight": "25 kg",
+            "price": "$212.925",
+            "mainCategory": "food",
+            "petCategory": "dog",
+            "id": 95
+        },
+        {
+            "title": "Chunky Adultos Pollo para Perros",
+            "description": "Chunky Canine Adult es una comida para perros seco cuya principal fuente de proteína es pollo. Se realiza con ingredeintes seleccionados que dan la mejor nutrición para que tu peludo conserve su bienestar y energía. Es un alimento para perros con presentación de nuggets crocantes rellenos de pollo que llamara la atención de tu peludo.",
+            "img": "https://www.depelos.co/static/food/6095-Chunky-comida-para-perros-adultos-pollo-depelos160x230q98.jpg",
+            "weight": "50 lb",
+            "price": "$279.850",
+            "mainCategory": "food",
+            "petCategory": "dog",
+            "id": 96
+        },
+        {
+            "title": "Guaumor Adulto Raza Pequeña para Perros",
+            "description": "Guamor Adultos Razas Pequeñas es una comida para perros adultos que asegura la adecuada asimilación del alimento y mejora el funcionamiento del sistema digestivo. Este alimento se desarrolla especialmente para perros adultos de razas pequeñas mayores de un año.",
+            "img": "https://www.depelos.co/static/food/5638-Guaumor%20Adulto%20Raza%20Peque%C3%B1a%20para%20Perros160x230q98.jpg",
+            "weight": "2 kg",
+            "price": "$42.000",
+            "mainCategory": "food",
+            "petCategory": "dog",
+            "id": 97
+        },
+        {
+            "title": "Purina Dog Chow Cachorros Medianos y Grandes para Perros",
+            "description": "Purina Dog Chow Cachorros Razas Medianas y Grandes es un alimento para Cachorros que pertenecen a razas medianas o grandes (más de 10 kg). Este concentrado brinda una comida para perros balanceada, deliciosa y completa con 23 vitaminas y nutrientes que fortalecen los órganos escenciales, los huesos y el cerebro.",
+            "img": "https://www.depelos.co/static/food/2286-Captura%20de%20Pantalla%202023-06-27%20a%20la(s)%206.10.22%20p.%C2%A0m.160x230q98.jpg",
+            "weight": "8 kg",
+            "price": "$141.000",
+            "mainCategory": "food",
+            "petCategory": "dog",
+            "id": 98
+        },
+        {
+            "title": "Chunky Adultos Cordero Arroz y Salmón para Perros",
+            "description": "Chunky Adulto Cordero, Arroz y Salmón es un alimento para perros adultos. Se realiza especialmente para aquellos que sufren de alergias alimentarias reflejadas en la piel. Para evitarlas, esta comida para perros está formulada con ingredientes no alergénicos: salmón y córdero, junto con una mezcla de ingredientes seleccionados.",
+            "img": "https://www.depelos.co/static/food/2777-Chunky-comida-para-perros-adultos-cordero-depelos160x230q98.jpg",
+            "weight": "17 kg",
+            "price": "$250.000",
+            "mainCategory": "food",
+            "petCategory": "dog",
+            "id": 99
+        },
+        {
+            "title": "Guaumor Adulto Raza Mediana y Grande para Perros",
+            "description": "Guaumor Adult Large Breed es una comida para perros adultos de razas grandes y medianas. Es un alimento para perros que contiene un perfil de proteínas, calcio y antioxidantes balanceados, lo que le da un aporte energético adecuado a sus requerimientos.",
+            "img": "https://www.depelos.co/static/food/832-Guaumor_adultos_raza_mediana_grande_comida_para_perros_depelos160x230q98.jpg",
+            "weight": "25 kg",
+            "price": "$188.000",
+            "mainCategory": "food",
+            "petCategory": "dog",
+            "id": 100
+        },
+        {
+            "title": "Chunky Adultos Razas Pequeñas Pollo para Perros",
+            "description": "Chunky Adultos Razas Pequeñas está formulado para cumplir los requerimientos nutricionales de tu perro adulto de raza pequeña.",
+            "img": "https://www.depelos.co/static/food/7345-Concentrado%20Chunky%20Adultos%20Razas%20Peque%C3%B1as%20Pollo160x230q98.jpg",
+            "weight": "8 kg",
+            "price": "$71.230",
+            "mainCategory": "food",
+            "petCategory": "dog",
+            "id": 101
+        },
+        {
+            "title": "Purina Dog Chow Adultos Minis y Pequeños para Perros",
+            "description": "Purina Dog Chow Adultos Razas Pequeñas es una comida para cachorros formulada especialmente para perros adultos que pesan hasta 9Kg. Es un alimento que aporta los nutrientes necesarios para que tu perrito de raza pequeña tenga una vida más larga. Contiene un alto porcentaje de proteína, fibras naturales y calcio para mantener su salud general.",
+            "img": "https://www.depelos.co/static/food/1076-Captura%20de%20Pantalla%202023-06-27%20a%20la(s)%206.11.29%20p.%C2%A0m.160x230q98.jpg",
+            "weight": "2 kg",
+            "price": "$48.000",
+            "mainCategory": "food",
+            "petCategory": "dog",
+            "id": 102
+        },
+        {
+            "title": "Chunky Adultos Mayores para Perros",
+            "description": "Chunky Adultos Mayores es un alimento seco y balanceado para perros a partir de los 5 años de edad. Se fórmual se realiza con carne y pollo como fuentes de proteína principal. Esta comida se presenta en una crqoeuta blanda que protege músculos, huesos y fomenta la digestión.",
+            "img": "https://www.depelos.co/static/food/516-Chunky-comida-para-perros-adultos-mayores-depelos160x230q98.jpg",
+            "weight": "4 kg",
+            "price": "$75.000",
+            "mainCategory": "food",
+            "petCategory": "dog",
+            "id": 103
+        },
+        {
+            "title": "Purina Dog Chow Adultos Medianos y Grandes para Perros",
+            "description": "Purina Dog Chow Adultos Razas Medianas y Grandes es una comida para perros dirigida especialmente a adultos que pesan más de 10 Kg. Este alimento para perros contiene proteina de alta calidad, calcio, fibras naturales y taurina para asegurar el bienestar y la salud general de tu peludo.",
+            "img": "https://www.depelos.co/static/food/7686-Captura%20de%20Pantalla%202023-06-27%20a%20la(s)%206.12.29%20p.%C2%A0m.160x230q98.jpg",
+            "weight": "8 kg",
+            "price": "$135.000",
+            "mainCategory": "food",
+            "petCategory": "dog",
+            "id": 104
+        },
+        {
+            "title": "Purina Dog Chow Control de Peso para Perros",
+            "description": "Purina Dog Chow Light Sano y en Forma es una comida para perros formulada para aquellos con problemas de peso o que realizan baja actividad física en su jornada diaria. Este alimento para perros contiene ingredientes bajos en calorías y de alta calidad que ayudan a controlar y mantener su peso.",
+            "img": "https://www.depelos.co/static/food/5131-Captura%20de%20Pantalla%202023-06-27%20a%20la(s)%206.14.22%20p.%C2%A0m.160x230q98.jpg",
+            "weight": "17 kg",
+            "price": "$247.000",
+            "mainCategory": "food",
+            "petCategory": "dog",
+            "id": 105
+        },
+        {
+            "title": "Purina Dog Chow Longevidad Adultos 7+ para Perros",
+            "description": "Purina Dog Chow Adultos 7+ Edad Madura es una comida para perros hecha específicamente para adultos mayores de 7 años. Es un alimento para perros que contiene todos los ingredientes y nutrientes necesarios que ayudan conservar la vitalidad y cuidar las partes que pueden verse más afectadas por la edad.",
+            "img": "https://www.depelos.co/static/food/1005-Captura%20de%20Pantalla%202023-06-27%20a%20la(s)%206.16.19%20p.%C2%A0m.160x230q98.jpg",
+            "weight": "22.7 kg",
+            "price": "$296.000",
+            "mainCategory": "food",
+            "petCategory": "dog",
+            "id": 106
+        },
+        {
+            "title": "Acana Free Run Poultry para Perros",
+            "description": "Acana Free Run Poultry es una comida para perros carnívoros que aman la proteína. Su fórmula se realiza con ingredientes naturales, incluyendo frutas y verduras, que brindas minerales y vitaminas adecuadas para beneficiar el cuidado de tu peludo. No contiene gluten ni granos.",
+            "img": "https://www.depelos.co/static/food/6485-5824-Acana-comida-para-perros-heritage-depelos160x230q98.jpg",
+            "weight": "12 kg",
+            "price": "$165.000",
+            "mainCategory": "food",
+            "petCategory": "dog",
+            "id": 107
+        },
+        {
+            "title": "Acana Fresh Water Fish para Perros",
+            "description": "Acana Fresh Water Fishes es una comida para perros con paladares refinados que prefieren el pescado sobre otras proteínas. Este alimento para perros se realiza con trucha arcoiris, pescado blanco, perca amarilla, frutas y verduras que proveen los nutrientes adecuados para mantener el bienestar y la salud general.",
+            "img": "https://www.depelos.co/static/food/3725-9746-Acana-comida-para-perros-heritage-pescado-depelos160x230q98.jpg",
+            "weight": "8 kg",
+            "price": "$66.045",
+            "mainCategory": "food",
+            "petCategory": "dog",
+            "id": 108
+        },
+        {
+            "title": "Acana Pork & Squash para Perros",
+            "description": "Acana Pork & Squash es una comida para perros realizada con una única fuente de proteína, en este caso, cerdo. Es un alimento para perros con 60% de contenido proteico y 40% de contenido de frutas y verduras. No contiene gluten , papa ni granos con el fin de evitar molestias estomacales.",
+            "img": "https://www.depelos.co/static/food/8931-WhatsApp%20Image%202024-01-19%20at%2011.18.54%20AM160x230q98.jpg",
+            "weight": "17 kg",
+            "price": "$121.380",
+            "mainCategory": "food",
+            "petCategory": "dog",
+            "id": 109
+        },
+        {
+            "title": "Sportsman's Pride Active Puppy & Adult Formula con pollo 27-17 para Perros",
+            "description": "Sportsman ́s Pride Puppy es una comida especial para cachorros durante su primer año de vida. Esta fórmula contiene todos los bloques de construcción necesarios para el desarrollo exitoso de tu cachorro. Formulado con Pollo de alto valor proteico y la inclusión de prebióticos y probióticos para mantener un sistema digestivo saludable.",
+            "img": "https://www.depelos.co/static/food/406-DESAROLLO%20DE%20POLLO160x230q98.jpg",
+            "weight": "25 kg",
+            "price": "$171.955",
+            "mainCategory": "food",
+            "petCategory": "dog",
+            "id": 110
+        },
+        {
+            "title": "Sportsman's Pride Mantenimiento Formula 21-12 Pollo para Perros",
+            "description": "Sportsman ́s Pride Maintenance es una dieta completa y balanceada que promueve una vida sana y longeva. Esta formulada con proteínas de alta calidad y está especialmente diseñada para satisfacer las necesidades diarias de nutrientes de perros adultos Mejorado con vitaminas y minerales esenciales que cubre todas las bases para la salud general",
+            "img": "https://www.depelos.co/static/food/471-MANTENIMIENTO160x230q98.jpg",
+            "weight": "8 kg",
+            "price": "$90.000",
+            "mainCategory": "food",
+            "petCategory": "dog",
+            "id": 111
+        },
+        {
+            "title": "Sportsman's Pride Premium Chicken Formula Dog Food para Perros",
+            "description": "Sportsman ́s Pride Premium Chicken está diseñado para darle a los perros activos y de trabajo, la nutrición que necesitan para estar en óptimas condiciones físicas. Formulado con Pollo de alto valor proteico y la inclusión de prebióticos y probióticos para mantener un sistema digestivo saludable.",
+            "img": "https://www.depelos.co/static/food/7796-CHICKEN%20PREMIUM160x230q98.jpg",
+            "weight": "4 kg",
+            "price": "$74.000",
+            "mainCategory": "food",
+            "petCategory": "dog",
+            "id": 112
+        },
+        {
+            "title": "Sportsman's Pride Lamb Meal & Rice Formula Dog Food para Perros",
+            "description": "Sportsman's Pride Lamb Meal & Rice Formula es una comida de harina de cordero de alta calidad y altamente digerible, diseñada para perros que prefieren el sabor del cordero o que son sensibles a la soya, maíz, trigo o a la carne de res o de pollo. Esta fórmula ayuda a promover un pelaje brillante y un sistema inmunológico fuerte para una vida",
+            "img": "https://www.depelos.co/static/food/5378-PROTEINAS%20ALTERNATIVAS%20CORDERO160x230q98.jpg",
+            "weight": "8 kg",
+            "price": "$138.000",
+            "mainCategory": "food",
+            "petCategory": "dog",
+            "id": 113
+        },
+        {
+            "title": "Sportsman's Pride Limited Ingredient Turkey Formula Dog Food para Perros",
+            "description": "Especial para perros sensibles a granos como el maíz, el trigo o los productos de soya e incluso fuentes de carne de uso prolongado como la carne de res o el pollo. Cada ingrediente de este concentrado es saludable y fácil de digerir además contiene las cantidades adecuadas de vitaminas y minerales para una satisfacción y mejores resultados",
+            "img": "https://www.depelos.co/static/food/5158-LIMITE%20DE%20INGREDIENTES%20PAVO160x230q98.jpg",
+            "weight": "17 kg",
+            "price": "$249.000",
+            "mainCategory": "food",
+            "petCategory": "dog",
+            "id": 114
+        },
+        {
+            "title": "Nupec Cachorros para Perros",
+            "description": "Nupec Cachorros es un alimento para perros con un balance nutricional adecuado para el óptimo desarrollo de tu cachorro. En esta etapa tu perrito necesita el doble de energía que un adulto del mismo peso, por ello esta comida tiene el balance ideal de vitaminas, minerales, grasas, proteínas y energía adecuados.",
+            "img": "https://www.depelos.co/static/food/8732-comida_perros_Nupec_Cachorro_depelos160x230q98.jpg",
+            "weight": "12 kg",
+            "price": "$152.000",
+            "mainCategory": "food",
+            "petCategory": "dog",
+            "id": 115
+        },
+        {
+            "title": "Nupec Adultos para Perros",
+            "description": "Nupec Adultos, es un alimento para perros que en su etapa adulta brinda un aporte de nutrientes óptimo para conservar su masa muscular, vitalidad y un pelaje sano. Es una comida con la selección de vitaminas, minerales y aporte de proteína adecuados para reforzar su sistema inmune y, asegurar una condición física fuerte y saludable.",
+            "img": "https://www.depelos.co/static/food/1470-comida_perros_Nupec_Adulto_depelos160x230q98.jpg",
+            "weight": "4 kg",
+            "price": "$75.500",
+            "mainCategory": "food",
+            "petCategory": "dog",
+            "id": 116
+        },
+        {
+            "title": "Nupec Senior para Perros",
+            "description": "Nupec Senior es un alimento para perros que requieren una nutrición que cubra las necesidades propias de un adulto en etapa madura. Esta comida contiene los nutrientes esenciales para retrasar el envejecimiento del organismo, fortaleciendo el sistema inmune y las articulaciones, manteniéndolo activo y sano por más tiempo.",
+            "img": "https://www.depelos.co/static/food/5180-comida_perros_Nupec_Senior_depelos160x230q98.jpg",
+            "weight": "8 kg",
+            "price": "$131.000",
+            "mainCategory": "food",
+            "petCategory": "dog",
+            "id": 117
+        },
+        {
+            "title": "Nupec Cachorro Raza Pequeña para Perros",
+            "description": "Nupec cachorro de raza pequeña es un alimento para perros que alcanzan su etapa adulta en menor tiempo (de 7 a 12 meses), y que tienen un tracto digestivo con una capacidad limitada. Es un alimento con densidad nutricional y energética que les ayuda a potencializar el crecimiento que definirá su calidad de vida adulta.",
+            "img": "https://www.depelos.co/static/food/8137-comida_perros_Nupec_Cachorro_Razas_Pequenas_depelos160x230q98.jpg",
+            "weight": "17 kg",
+            "price": "$242.000",
+            "mainCategory": "food",
+            "petCategory": "dog",
+            "id": 118
+        },
+        {
+            "title": "Nupec Adulto Raza Pequeña para Perros",
+            "description": "Nupec Adulto Raza Pequeña, es un alimento para perros con una croqueta de forma y textura adecuada para facilitar su masticación. Un perro de raza pequeña es más activo; sin embargo, la capacidad de su tracto digestivo es limitada y necesitan un alimento con una densidad nutricional y energética adecuada para conservar su masa muscular.",
+            "img": "https://www.depelos.co/static/food/1614-Concentrado%20Nupec%20Adulto%20Razas%20Peque%C3%B1as%20-%20perro-Depeloscompania160x230q98.jpg",
+            "weight": "22.7 kg",
+            "price": "$285.000",
+            "mainCategory": "food",
+            "petCategory": "dog",
+            "id": 119
+        },
+        {
+            "title": "Nupec Senior Razas Pequeñas para Perros",
+            "description": "Nupec Senior Razas Pequeñas, es un alimento para perros que requieren de una nutrición especifica que cubra sus necesidades. Por ello hemos diseñado una comida con los nutrientes esenciales para retrasar el envejecimiento del organismo, fortaleciendo el sistema inmune y las articulaciones; manteniéndolo activo y sano por más tiempo.",
+            "img": "https://www.depelos.co/static/food/8180-comida_perros_Nupec_Senior_Razas_Pequenas_depelos160x230q98.jpg",
+            "weight": "2 kg",
+            "price": "$47.000",
+            "mainCategory": "food",
+            "petCategory": "dog",
+            "id": 120
+        },
+        {
+            "title": "Alimento Húmedo para Gatos en Lata Dr. Clauder's Paté de Pavo",
+            "img": "https://www.depelos.co/static/products/5240-comida-humeda-lata-gatos-dr-clauders-pavo-depelos387x430q99.jpg",
+            "description": "Dr Clauder's Paté de Pavo en Lata es una comida para gatos adultos. Este alimento húmedo presentado en paté con sabor a pavo en lata se realiza con los ingredientes más deliciosos y naturales para que tu gato lo disfrute, se sienta saludable y nutrido.  ",
+            "price": "$15.700 - $21.600",
+            "mainCategory": "food",
+            "petCategory": "cat",
+            "id": 121
+        },
+        {
+            "title": "Alimento Húmedo Dr Clauder's Renal Para Gato en Lata - 200g",
+            "img": "https://www.depelos.co/static/products/9735-Captura%20de%20pantalla%202020-06-24%20a%20las%201.34.08%20p.m.387x430q99.jpg",
+            "description": "El alimento Húmedo Dr Clauder's Renal, en su presentación de lata, es un alimento húmedo y completo para gatos adultos. Esta comida es especialmente formulada para contribuir con el funcionamiento del riñón en caso de insuficiencia renal crónica en tu peludo.",
+            "price": "$15.600",
+            "mainCategory": "food",
+            "petCategory": "cat",
+            "id": 122
+        },
+        {
+            "title": "Alimento Húmedo en Lata para Gatos Royal Canin Adult Instinctive",
+            "img": "https://www.depelos.co/static/products/9975-royal-canin-lata-adult-instinctive-depelos387x430q99.jpg",
+            "description": "Royal Canin ha formulado un alimento húmedo, en presentación de lata, especialmente para aquellos gatos con apetito exigente que son difícilmente atraídos por las comidas tradicionales. Instinctive es esa gran apuesta de comida, la cual, contiene un perfil macronuticional óptimo que aporta todo lo que tu gato necesita para tener un buen estado de salud en general.",
+            "price": "$9.900 - $29.700",
+            "mainCategory": "food",
+            "petCategory": "cat",
+            "id": 123
+        },
+        {
+            "title": "Alimento Húmedo en Sobre Felix Classic con Salmón",
+            "img": "https://www.depelos.co/static/products/7901-FELIX-WET-ADT-SALMON-85G-FRONT-1000x1000387x430q99.jpg",
+            "description": "Purina Felix Sobre de salmon es un delicioso alimento húmedo completo y balanceado para gatos adultos, compuesto por deliciosos trocitos de salmon, tu gato hará hasta lo imposible para comerlo todos los días.",
+            "price": "$3.448",
+            "mainCategory": "food",
+            "petCategory": "cat",
+            "id": 124
+        },
+        {
+            "title": "Alimento Húmedo para Gatos Dr. Clauder's Crevetten & Kabeljau - 100g",
+            "img": "https://www.depelos.co/static/products/798-Captura%20de%20pantalla%202020-06-24%20a%20las%2012.58.33%20p.m.387x430q99.jpg",
+            "description": "El alimento Húmedo para Gatos Dr. Clauder’s Crevetten & Kabeljau, es un alimento húmedo en salsa con piezas de gambas y bacalao, especial para gatos. Esta comida viene con un gran contenido proteínico que contribuye con el desarrollo y mantenimiento de un estado ideal de salud de tu peludo.",
+            "price": "$9.100",
+            "mainCategory": "food",
+            "petCategory": "cat",
+            "id": 125
+        },
+        {
+            "title": "Alimento Húmedo en Sobre Felix Classic con Cordero",
+            "img": "https://www.depelos.co/static/products/2088-FELIX-WET-ADT-CORDERO-85G-FRONT-1000x1000387x430q99.jpg",
+            "description": "Purina Felix Sobre de Cordero es un delicioso alimento húmedo completo y balanceado para gatos adultos, compuesto por deliciosos trocitos de Cordero, tu gato hará hasta lo imposible para comerlo todos los días.",
+            "price": "$3.448",
+            "mainCategory": "food",
+            "petCategory": "cat",
+            "id": 126
+        },
+        {
+            "title": "Alimento Húmedo para Gatos Dr. Clauder's Pouch Pollo y Pato en gelatina - 100g",
+            "img": "https://www.depelos.co/static/products/2114-dr-clauders-pouch-para-gatos-sabor-pollo-y-pato-387x430q99.jpg",
+            "description": "El Alimento Húmedo Dr. Clauder’s Cat Huhnchen & Ente es un alimento húmedo para gatos altamente palatable y formulado con un gran contenido proteínico que contribuye con el desarrollo y mantenimiento muscular de tu peludo. Esta comida tiene un cuadro nutricional completo que ayuda con el cuidado de la salud del felino.",
+            "price": "$9.100",
+            "mainCategory": "food",
+            "petCategory": "cat",
+            "id": 127
+        },
+        {
+            "title": "Alimento Húmedo para Gatos en lata Dr. Clauder's Intestinal",
+            "img": "https://www.depelos.co/static/products/5008-dr-clauders-intestinal-gato-depelos387x430q99.jpg",
+            "description": "Dr. Clauder's Intestinal es un alimento húmedo para Gatos en lata que se realiza específicamente para aquellos que sufren de trastornos de absorción intestinal o cualquier problema relacionado con el sistema digestivo",
+            "price": "$15.600",
+            "mainCategory": "food",
+            "petCategory": "cat",
+            "id": 128
+        },
+        {
+            "title": "Purina Pro Plan Alimento húmedo Gato Adulto - Salmón 85g",
+            "img": "https://www.depelos.co/static/products/6290-Captura%20de%20pantalla%202020-10-29%20a%20las%2011.16.26%20a.m.387x430q99.jpg",
+            "description": "Purina Pro Plan Alimento húmedo Gato Adulto de Salmón, es un alimento húmedo completo y balanceado para gatos adultos de todas las razas. PURINA PRO PLAN alimento húmedo combina la nutrición que tu deseas con el sabor que a ellos les encanta. Un alimento 100% completo y balanceado, con deliciosos trozos en salsa y beneficios nutricionales únicos para cada necesidad.",
+            "price": "$8.500",
+            "mainCategory": "food",
+            "petCategory": "cat",
+            "id": 129
+        },
+        {
+            "title": "Alimento Húmedo en Lata para Gatos Royal Canin Renal Support E",
+            "img": "https://www.depelos.co/static/products/84-Alimento%20humedo%20Renal%20E%20feline%20lata387x430q99.jpg",
+            "description": "Royal Canin Renal Support E Alimento Húmedo, que viene en presentación de lata, es especialmente formulada para cuidar la salud renal de tu gato adulto. La formula de esta comida húmeda ayudará a estimular el apetito de tu peludo y la dieta rica en energía proporcionará un soporte nutricional en porciones pequeñas, ya que los gatos con problemas renales tienen menos apetito. Este paté puede ser mezclado con cualquier otra de las fórmulas de Royal Canin Renal Support.",
+            "price": "$19.400",
+            "mainCategory": "food",
+            "petCategory": "cat ",
+            "id": 130
+        },
+        {
+            "title": "Evolve Pollo Lata para Perros",
+            "img": "https://www.depelos.co/static/products/3805-Evolve_alimento_humedo_para_perros_pollo_classic_depelos387x430q99.jpg",
+            "description": "Evolve Pollo Lata es una comida para perros en lata realizada con ingredientes naturales cuyo principal componente es proteína de pollo y caldo de pollo. Este delicioso alimento húmedo se le puede dar a perros en cualquier etapa de su vida. ",
+            "price": "$13.800",
+            "mainCategory": "food",
+            "petCategory": "dog",
+            "id": 131
+        },
+        {
+            "title": "Evolve Pavo Lata para Perros",
+            "img": "https://www.depelos.co/static/products/4108-Evolve_alimento_humedo_para_perros_pavo_classic_depelos387x430q99.jpg",
+            "description": "Evolve Pavo Lata es un alimento húmedo para perros en lata con sabor a Pavo que se le puede brindar a cualquier perrito sin importar su edad. Evolve realiza esta deliciosa comida únicamente con ingredientes naturales, en este caso, el componente principal es proteína de pavo con caldo de pavo para humedecer. ",
+            "price": "$13.800",
+            "mainCategory": "food",
+            "petCategory": "dog",
+            "id": 132
+        },
+        {
+            "title": "Hill's Prescription Diet Canine Gastrointestinal Health i/d Low Fat Lata",
+            "img": "https://www.depelos.co/static/products/4677-Hills%20prescription%20Diet%20Digestive%20Care%20i_d%20low%20fat%20original%20flavor%20-%20nuevo387x430q99.jpg",
+            "description": "Hill's  Prescription Diet - Gastrointestinal Health i/d  Low Fat - Lata es una comida húmeda para perros que tiene problemas digestivos. Estos problemas pueden hacer que tu perro tenga menos energía y se sienta más decaído. ",
+            "price": "$30.800",
+            "mainCategory": "food",
+            "petCategory": "dog",
+            "id": 133
+        },
+        {
+            "title": "Alimento Húmedo para Perros en Lata Dr. Clauder's Sensible Salmón y Papa",
+            "img": "https://www.depelos.co/static/products/comida-para-perros-bogota-dr-clauders-lata-sensible-salmon-domicilio387x430q99.jpg",
+            "description": "El Alimento Húmedo para Perros en Lata Dr. Clauder's Sensible Salmón y Papa, es una dieta a base de carne de salmón y papa. Su fórmula contiene únicamente el salmón como fuente de proteína hipoalergénica.",
+            "price": "$21.300",
+            "mainCategory": "food",
+            "petCategory": "dog",
+            "id": 134
+        },
+        {
+            "title": "Alimento Húmedo para Perros en Lata Dr. Clauder's Pavo y Papa",
+            "img": "https://www.depelos.co/static/products/8441-Dr.-Clauders-Turkey-Potato-Pro-Hair-and-Skin-Lata-1-2000x2000387x430q99.jpg",
+            "description": "Dr. Clauder's Pavo y Papa es un alimento húmedo para perros de todas las razas, en edad adulta, en lata, que funciona como única alimentación a lo largo del día. Su fórmula contiene carne de pavo y papa con el fin de asegurar una excelente palatabilidad.",
+            "price": "$16.100 - $25.900",
+            "mainCategory": "food",
+            "petCategory": "dog",
+            "id": 135
+        },
+        {
+            "title": "Hill's Prescription Diet - Canine Gastrointestinal Health i/d Lata",
+            "img": "https://www.depelos.co/static/products/8980-Hills%20prescription%20Diet%20Digestive%20Care%20i_d%20with%20turkey%20-%20nuevo387x430q99.jpg",
+            "description": "Hll's Prescription Diet Gastrointestinal Health i/d lata es una comida húmeda para perros, en lata , que tienen problemas con su salud digestiva debido a alergías, indiscreción alimenticia o faltas de enzimas. ",
+            "price": "$29.300",
+            "mainCategory": "food",
+            "petCategory": "dog",
+            "id": 136
+        },
+        {
+            "title": "Alimento Húmedo en Lata para Perros Royal Canin Renal Support E",
+            "img": "https://www.depelos.co/static/products/6655-royal-canin-renal-support-e-lata-1-depelos387x430q99.jpg",
+            "description": "El alimento húmedo para perros Royal Canin Renal Support E es un alimento altamente digestible y con alto contenido energético. Su fórmula baja en fósforo y proteína, combinada con EPA, DHA y antioxidantes, nutre y da soporte a la función renal de tu perro, disminuyendo el avance de la enfermedad.",
+            "price": "$28.000",
+            "mainCategory": "food",
+            "petCategory": "dog",
+            "id": 137
+        },
+        {
+            "title": "Purina Pro Plan Alimento húmedo Adulto - Pollo en Salsa 100g",
+            "img": "https://www.depelos.co/static/products/5571-Captura%20de%20pantalla%202020-06-10%20a%20las%2010.57.32%20a.m.387x430q99.jpg",
+            "description": "Purina Pro Plan Alimento húmedo Adulto Pollo en Salsa, es un alimento completo y balanceado para perros adultos de todas las razas.",
+            "price": "$7.500",
+            "mainCategory": "food",
+            "petCategory": "dog",
+            "id": 138
+        },
+        {
+            "title": "Alimento Húmedo para Perros Dr. Clauder's Pate Prebiótico Pato - 100g",
+            "img": "https://www.depelos.co/static/products/8016-dr-clauders-cup-pouch-para-perros-de-todas-las-razas-con-prebioticos-care-de-pato-387x430q99.jpg",
+            "description": "Dr. Clauder's Dog Duck, en su presentación en lata, es un alimento para perros a base de carne de pato en deliciosa salsa con prebióticos para una flora intestinal óptima. Los ingredientes añadidos promueven un cuidado ideal y prevención en las distintas áreas, gracias a la inulina añadida (derivado de alcachofas), con efecto prebiótico que refuerza la proliferación de bacterias intestinales benéficas de tu peludo.",
+            "price": "$8.000",
+            "mainCategory": "food",
+            "petCategory": "dog",
+            "id": 139
+        },
+        {
+            "title": "Alimento Húmedo en Lata para Perros Royal Canin Mini Puppy",
+            "img": "https://www.depelos.co/static/products/1555-comida-humeda-lata-perros-royal-canin-puppy-depelos387x430q99.jpg",
+            "description": "Royal Canin Mini Puppy es adecuando para cachorros de hasta 10 meses de edad con un peso de hasta 10kg. Este alimento húmedo es especialmente formulado con todos los nutrientes que tu peludo necesita para su desarrollo.",
+            "price": "$11.700",
+            "mainCategory": "food",
+            "petCategory": "dog",
+            "id": 140
+        },
+        {
+            "title": "Portapasabocas Kong Extreme",
+            "img": "https://www.depelos.co/static/products/7246-Captura%20de%20pantalla%202020-06-07%20a%20las%204.18.46%20p.m.387x430q99.jpg",
+            "description": "El Kong Extreme es un juguete diseñado especialmente para perros de mordida muy fuerte, hecho con un caucho muy resistible. Se recomienda el compuesto de goma negra super resistente y duradero para los masticadores más enérgicos. Aporta beneficios y ayuda a satisfacer las necesidades instintivas de los perros. La exclusiva fórmula de caucho ultraduradero completamente natural de Kong está diseñada para masticadores decididos, y sus rebotes erráticos satisfacen las necesidades de juego de cualquier perro.",
+            "price": "$41.000 - $128.700",
+            "mainCategory": "toy",
+            "petCategory": "dog",
+            "id": 141
+        },
+        {
+            "title": "Hueso Kong Classic",
+            "img": "https://www.depelos.co/static/products/5364-Captura%20de%20pantalla%202020-06-05%20a%20las%203.43.54%20p.m.387x430q99.jpg",
+            "description": "El Kong Goodie Bone, es un hueso de caucho para perros, ideal para aquellos que se divierten masticando juguetes. Este hueso incluye los Goodie Grippers patentados que convierten a este juguete entretenido en todo un desafío que deleitará a su perro con los bocados que lleva en su interior, ya que puede rellenarse con las croquetas favoritas de tu perrito. ",
+            "price": "$41.000 - $79.700",
+            "mainCategory": "toy",
+            "petCategory": "dog",
+            "id": 142
+        },
+        {
+            "title": "Juguete para Perros Kong Wobbler",
+            "img": "https://www.depelos.co/static/products/4319-Captura%20de%20pantalla%202020-06-07%20a%20las%204.26.36%20p.m.387x430q99.jpg",
+            "description": "El juguete para perros Kong Wobbler va soltando poco a poco snacks, treats o comida para tu peludo. Se mantiene de pie hasta que tu peludo lo empuje con su nariz o pata y va dejando de a pocos recompensas mientras que se mueve, rueda y gira. Su movimiento impredecible hace que así pase el tiempo, siga siendo un juguete muy entretenido y desafiante para tu peludo. Adicional, también puedes usarlo como 'plato de comida' para tu perro, ayudando a que tu peludo coma más lento.",
+            "price": "$91.200",
+            "mainCategory": "toy",
+            "petCategory": "dog",
+            "id": 143
+        },
+        {
+            "title": "Juguete para Perros Kong Classic",
+            "img": "https://www.depelos.co/static/products/9569-juguetes-para-perros-mordedor-kong-classic-1-juguetes-perros-depelos387x430q99.jpg",
+            "description": "Kong Classic es un juguete para perros hecho de goma super resistente que será la compañía inseparable de tu perro. Este juguete para perros es ideal para peludos muy activos o que necesiten gastar mucha energía. Es perfecto para rellenar con las galletas o treats preferidos de tu peludo. ",
+            "price": "$40.100 - $65.500",
+            "mainCategory": "toy",
+            "petCategory": "dog",
+            "id": 144
+        },
+        {
+            "title": "Alfombra Olfativa para perros",
+            "img": "https://www.depelos.co/static/products/835-Captura%20de%20pantalla%202019-08-31%20a%20las%208.42.03%20p.m.387x430q99.jpg",
+            "description": "Alfombra Olfativa, con un exclusivo diseño hecho a mano a base de materiales durables y extremadamente cómodos para que tu peludo descanse plácidamente. ",
+            "price": "$83.500 - $150.000",
+            "mainCategory": "toy",
+            "petCategory": "dog",
+            "id": 145
+        },
+        {
+            "title": "Kong Flyer Classic",
+            "img": "https://www.depelos.co/static/products/8495-Captura%20de%20pantalla%202020-06-05%20a%20las%205.21.59%20p.m.387x430q99.jpg",
+            "description": "Kong Flyer Classic Frisbee, es un juguete para Perros, en forma de disco volador perfecto para juegos de buscar y recoger. Es perfecto para compartir largas horas de juego con tu perro, además es delicado con los dientes y encías de tu peludo. ",
+            "price": "$62.800 - $65.700",
+            "mainCategory": "toy",
+            "petCategory": "dog",
+            "id": 146
+        },
+        {
+            "title": "Pelota para perros Kong Ball",
+            "img": "https://www.depelos.co/static/products/9391-[KB2%20KO]%20KONG%20PERRO%20CAUCHO%20CLASSIC%20PELOTA%20SMALL387x430q99.jpg",
+            "description": "La Pelota Kong Biscuit Ball es un juguete para perros. Con un diseño único que sorprenderá constantemente a tu perro debido a su centro hueco y a los cuatro orificios con forma de hueso que te permitirán introducir las croquetas o los bocados favoritos de tu perro. Estas pelotas son juguetes resistentes, impredecibles y muy divertidos para masticar, perseguir y atrapar durante horas de juego interminables.",
+            "mainCategory": "toy",
+            "petCategory": "dog",
+            "id": 147
+        },
+        {
+            "title": "Pelotas para Perros Kong Sports",
+            "img": "https://www.depelos.co/static/products/2177-Captura%20de%20pantalla%202020-06-07%20a%20las%204.46.20%20p.m.387x430q99.jpg",
+            "description": "Las pelotas para perros de Kong Sport Balls son más resistentes que cualquier bola de tenis normal. Aguantan los jugos de lanzar y traer, rebotan mucho para que el juego sea más divertido y no chirrean. ",
+            "price": "$24.300 - $29.900",
+            "mainCategory": "toy",
+            "petCategory": "dog",
+            "id": 148
+        },
+        {
+            "title": "Kong Perro Caucho Extreme Pelota con Cuerda Large",
+            "img": "https://www.depelos.co/static/products/2333-Captura%20de%20pantalla%202021-07-08%20a%20las%208.45.50%20p.m.387x430q99.jpg",
+            "description": "La Extreme Kong Ball with Rope agrega una diversidad duradera a los juegos de búsqueda y tirón. Hecho de caucho KONG Extreme, la pelota está diseñada para durabilidad para un juego interactivo duradero. La cuerda de algodón 100% también recompensa el comportamiento de masticación apropiado mientras masajea los dientes y las encías. Todo esto se suma a episodios lúdicos de compromiso mentalmente estimulante y enriquecedor.",
+            "price": "$79.300",
+            "mainCategory": "toy",
+            "petCategory": "dog",
+            "id": 149
+        },
+        {
+            "title": "Squeak Air Pelota",
+            "img": "https://www.depelos.co/static/products/5090-Captura%20de%20pantalla%202020-06-07%20a%20las%201.09.30%20p.m.387x430q99.jpg",
+            "description": "La Kong AirDog Squeakair Ball combina dos juguetes clásicos para perros, la pelota de tenis y el chirriador para crear el juguete de buscar y recoger perfecto. ",
+            "price": "$19.300 - $31.500",
+            "mainCategory": "toy",
+            "petCategory": "dog",
+            "id": 150
+        },
+        {
+            "title": "Wobbler Con Plumas",
+            "img": "https://www.depelos.co/static/products/6095-Captura%20de%20pantalla%202020-06-10%20a%20las%206.54.29%20p.m.387x430q99.jpg",
+            "description": "Wobbler con Plumas es un juguete especial para gatos, que les incentiva la actividad de caza para conservar su instinto. Con un diseño especial, podrás poner sus galletas favoritas en su interior y el tendrá que sacarlas. Además  en la parte superior lleva un llamativo peluche en forma de cola que simula un ratón, lo cual incentiva su instinto de una forma divertida.  ",
+            "price": "$95.600",
+            "mainCategory": "toy",
+            "petCategory": "cat",
+            "id": 151
+        },
+        {
+            "title": "Vara Lure Para Gatos",
+            "img": "https://www.depelos.co/static/products/2673-67844%20PS_-MBdGx17f8_b5wTl-rMU387x430q99.jpg",
+            "description": "La Vara Lure para gatos es perfecta para brimdarle momentos de mucha diversión a tu gatito. Comparte mometos ¡De Pelos! con tu peludo y fomenta su instinto de caza al mismo tiempo que ayudas a que se ejercite.",
+            "price": "$35.700",
+            "mainCategory": "toy",
+            "petCategory": "cat",
+            "id": 152
+        },
+        {
+            "title": "Alfombra Olfativa para gatos",
+            "img": "https://www.depelos.co/static/products/7869-Captura%20de%20pantalla%202019-08-31%20a%20las%208.42.03%20p.m.387x430q99.jpg",
+            "description": "Alfombra Olfativa, con un exclusivo diseño hecho a mano a base de materiales durables y extremadamente cómodos para que tu peludo descanse plácidamente. ",
+            "price": "$65.714 - $83.500",
+            "mainCategory": "toy",
+            "petCategory": "cat",
+            "id": 153
+        },
+        {
+            "title": "Petstages Gimnasio Wobble Track Para Gatos",
+            "img": "https://www.depelos.co/static/products/142-67760%20PS_-MBdGx16tFCrzdzYRGJm387x430q99.jpg",
+            "description": "Seguro que tu gato se divertirá persiguiendo, golpeando y golpeando la pista de bamboleo de Petstages mientras la pelota corre alrededor de la pista doble y se balancea con plumas de juguete ¡Con múltiples formas de jugar el doble de diversión, el juguete Ring Track para gatos es la forma perfecta de fomentar el juego activo!",
+            "price": "$120.000",
+            "mainCategory": "toy",
+            "petCategory": "cat",
+            "id": 154
+        },
+        {
+            "title": "Kong Gato Vara Curlz",
+            "img": "https://www.depelos.co/static/products/3346-Captura%20de%20pantalla%202020-10-27%20a%20las%209.44.03%20a.m.387x430q99.jpg",
+            "description": "Esta Varita brillante para gato es perfecta, el retroceso loco-rápido sellado en las espirales tejidas duraderas significa que cuando tu gato se abalanza sobre el objetivo de la pluma y la cinta, son recompensados ​​con más acción salvaje y de alta velocidad que los lanza a una mayor diversión.",
+            "price": "$46.100",
+            "mainCategory": "toy",
+            "petCategory": "cat",
+            "id": 155
+        },
+        {
+            "title": "Pelotas Pom Pom x4 unidades",
+            "img": "https://www.depelos.co/static/products/2960-Captura%20de%20Pantalla%202023-03-01%20a%20la(s)%209.20.03%20p.%C2%A0m.387x430q99.jpg",
+            "description": "Las wool pom poms, son una pelotas en lana rellenas de catnip multicoloridas que le van a encantar a tu gatito y le van a brindar momentos de jueo y diversión. Además por estar rellenas de catnip lo va a relajar y liberar estrés. ",
+            "price": "$17.000",
+            "mainCategory": "toy",
+            "petCategory": "cat",
+            "id": 156
+        },
+        {
+            "title": "Churu Nourish",
+            "img": "https://www.depelos.co/static/products/3821-Churu-Nourish-gatos_de%20pelos%20compania387x430q99.jpg",
+            "description": "Churu Nourish es un revolucionario concepto de snack funcional, cremoso, atrayente y sano para gatos que les ayuda a abrir el apetito y mejora el estado anímico en gatos senior, gatitos débiles o animales convalecientes.",
+            "price": "$180.200",
+            "mainCategory": "snack",
+            "petCategory": "cat",
+            "id": 157
+        },
+        {
+            "title": "Snack para Gatos Churu Pops Tuna - Atún 60gr",
+            "img": "https://www.depelos.co/static/products/8223-snack%20churu%20pops%2060g387x430q99.jpg",
+            "description": "Estos sabrosos snacks para gatos, hechos 100% con atún silvestre puro y natural. Churu Pops posee un elevado contenido de humedad que tu peludo requiere para su salud. ",
+            "price": "$14.000",
+            "mainCategory": "snack",
+            "petCategory": "cat",
+            "id": 158
+        },
+        {
+            "title": "Snack para Gatos Churu Tuna - Atún - 4 unidades 56gr",
+            "img": "https://www.depelos.co/static/products/2158-Snack_Churu_Tuna%20_Atun%20_56_Gr_snack_para_gatos_depelos387x430q99.jpg",
+            "description": "Estos sabrosos snacks para gatos (hechos con atún silvestre o pollo criados en granjas, con componentes puros y naturales), tienen un alto contenido de humedad que es necesario para la salud de los felinos, no contiene cereales, conservantes, ni colorantes artificiales, además posee una textura cremosa con un sabroso sabor que es de mucho agrado para los gatos.",
+            "price": "$14.000 - $33.500",
+            "mainCategory": "snack",
+            "petCategory": "cat",
+            "id": 159
+        },
+        {
+            "title": "Churu Bites Chicken - Tuna Recipe Wraps 30g",
+            "img": "https://www.depelos.co/static/products/3537-inaba-churu-bites-wraps-de-atun-387x430q99.jpg",
+            "description": "Churu Bites Chicken Tuna - Recipe es un snack con el doble de textura que le encatará a tu gato. Cada tubo está hecho con una suave pasta de pollo al horno sin cereales, conservantes, carragenanos ni colorantes artificiales. Los centros tienen un delicioso relleno Churu de INABA para darle a tu gato el doble de textura.",
+            "price": "$12.600",
+            "mainCategory": "snack",
+            "petCategory": "cat",
+            "id": 160
+        },
+        {
+            "title": "Churu Tuna Recipe With Clam Flavor - Atún y Almeja 56g",
+            "img": "https://www.depelos.co/static/products/1430-EU113-removebg-preview387x430q99.jpg",
+            "description": "Churu de Atún con sabor a Almeja para gatos, es un alimento complementario para la dieta diaria de tu peludo, hecha a base de ingredientes naturales sin cereales y con un sabor que le encantará a tu gato por su consistencia cremosa, irresistible y muy fácil de administrar. Hecho con la más alta calidad, bajo en calorías, contiene colágeno y vitamina E.",
+            "price": "$14.000",
+            "mainCategory": "snack",
+            "petCategory": "cat",
+            "id": 161
+        },
+        {
+            "title": "Emerald Pet Feline Dental Treats - Atún 85g",
+            "img": "https://www.depelos.co/static/products/9315-17_Feline_Dental_Tuna_Front387x430q99.jpg",
+            "description": "Los snacks de Emerald para gato son dental care, libres de granos, sin maíz, trigo, soya ni lácteos. Hechos en Estados Unidos, naturales 100%, en forma de pez que los hace más atractivos para los felinos, además que estimula la masticación ya que son crujientes. ",
+            "price": "$20.200",
+            "mainCategory": "snack",
+            "petCategory": "cat",
+            "id": 162
+        },
+        {
+            "title": "Evolve Snack Grain Free Pavo para Perro 340gr",
+            "img": "https://www.depelos.co/static/products/635-snacks_perro_Evolve_Grain_Free_jerky_bites_pavo_depelos387x430q99.jpg",
+            "description": "Evolve Jerky Pavo es una carne deshidratada para perros con sabor a pavo,guisantes y bayas. Es un snack nutritivo y promueve un sistema inmune saludable ya que dentro de sus ingredientes se encuentra una gran cantidad de vitaminas, minerales, vegetales y frutas. No contiene granos. Su envase contiene aprox. 340 g.  ",
+            "price": "$30.100",
+            "mainCategory": "snack",
+            "petCategory": "dog",
+            "id": 163
+        },
+        {
+            "title": "SmartBones Pollo Medium",
+            "img": "https://www.depelos.co/static/products/9723-13702052-smartbones-pollo-medium387x430q99.jpg",
+            "description": "Los Snacks premium  SmartBones para perros, están hechos con vegetales y con una deliciosa capa interna de pollo. Idela para tu perro raza mediana. ",
+            "price": "$22.700",
+            "mainCategory": "snack",
+            "petCategory": "dog",
+            "id": 164
+        },
+        {
+            "title": "Churu Dog Chicken Recipe 56g - 4 Unidades",
+            "img": "https://www.depelos.co/static/products/4288-INABA_DOG_SNACK_CHURU_CHICKEN_POLLO_56_GR387x430q99.jpg",
+            "description": "El Churu para perros con sabor a pollo es una deliciosa y nutritiva opción que tus peludos compañeros adorarán. Este producto ofrece una experiencia culinaria única para tu perro, ya que combina el irresistible sabor del pollo con una textura suave y húmeda que se desliza fácilmente del envase.",
+            "price": "$14.000",
+            "mainCategory": "snack",
+            "petCategory": "dog",
+            "id": 165
+        },
+        {
+            "title": "Galletas Happy Tails Banano & Canela",
+            "img": "https://www.depelos.co/static/products/3705-snacks-perros-happy-tails-banano-canela-depelos387x430q99.jpg",
+            "description": "Happy Tails son galletas hechas a mano, horneadas sin químicos, sin preservativos, ni soya, sin sales ni grasas añadidas. Son galletas con sabor a Banano y Canela 100% naturales y deliciosas preparadas con ingredientes de la más alta calidad. ",
+            "price": "$16.500",
+            "mainCategory": "snack",
+            "petCategory": "dog",
+            "id": 166
+        },
+        {
+            "title": "Churu Bites Chicken With Tuna Recipe Wraps 96g - 8 unidades",
+            "img": "https://www.depelos.co/static/products/5780-[USD722%20IN]%20INABA%20DOG%20SNACK%20CHURU%20-%20BITES%20CHICKEN%20RECIPE%20WRAPS%20CHICKEN%20WITH%20TUNA%20RECIPE387x430q99.jpg",
+            "description": "Churu Bites Chicken With Tuna Recipe Wraps, es un snacks para perros que está hecho con deliciosos ingredientes de alta calidad, incluyendo pollo de granja y/o atún natural capturado en la naturaleza.",
+            "price": "$29.000",
+            "mainCategory": "snack",
+            "petCategory": "dog",
+            "id": 167
+        },
+        {
+            "title": "Hill's Science Diet Jerky Mini-Strips Chicken - 200g",
+            "img": "https://www.depelos.co/static/products/8163-Captura%20de%20pantalla%202020-03-28%20a%20las%2010.04.14%20p.m.387x430q99.jpg",
+            "description": "Hill's Science Diet Jerky Mini-Strips with Real Chicken son deliciosos premios naturales hechos con solamente los mejores ingredientes. Del tamaño de un bocado y hechos con pollo verdadero para ubn sabor que hace agitar las colas. Sin sabores o conservadores artificiales.",
+            "price": "$50.100",
+            "mainCategory": "snack",
+            "petCategory": "dog",
+            "id": 168
+        },
+        {
+            "title": "Kit de Inicio - 3 Productos (Pipigel + Popocatch + Morderoff)",
+            "img": "https://www.depelos.co/static/products/2672-Captura%20de%20pantalla%202021-07-20%20a%20las%209.58.35%20p.m.387x430q99.jpg",
+            "description": "Lleva este fabuoso kit para tu peludo, que te ayudará a tener un hogar limpio y agradable para tu perro y para ti. Este kit incluye: ",
+            "mainCategory": "hygiene",
+            "petCategory": "dog",
+            "id": 169
+        },
+        {
+            "title": "Pipi Gel Para Perros - 170 g",
+            "img": "https://www.depelos.co/static/products/3162-213932%20-%201387x430q99.jpg",
+            "description": "Pipi Gel para perros es un producto que es 100 % natural, indicado para convertir la orina de tu perro en gel, este funciona bloqueando el olor a amoniaco. No es nocivo para los niños, ni para los peludos, no contiene aldehídos y no deja ningún tipo de manchas ni residuos.",
+            "price": "$25.000",
+            "mainCategory": "hygiene",
+            "petCategory": "dog",
+            "id": 170
+        },
+        {
+            "title": "Enjuague Bucal para Perros Dental Fresh",
+            "img": "https://www.depelos.co/static/products/94-enjuague-bucal-para-perros-dental-fresh-original-depelos387x430q99.jpg",
+            "description": "Dental Fresh Original para perros es el único enjuague bucal para perros clínicamente comprobado presentado en botella. Restaura el esmalte de los dientes, elimina las manchas, disminuye el sarro y quita la placa para mejorar la salud de los dientes y blanquear la sonrisa. ",
+            "price": "$39.900 - $59.800",
+            "mainCategory": "hygiene",
+            "petCategory": "dog",
+            "id": 171
+        },
+        {
+            "title": "Cero olor en el Ambiente Para Perros",
+            "img": "https://www.depelos.co/static/products/9230-213935%20-%201387x430q99.jpg",
+            "description": "Amamos a nuestros peludo, per a veces se crean olores no tan agradables, por eso, Cero olor en el Ambiente para perros de Cat Can, es un ambientador que te ayudará a controlar los malos olores en el hogar, neutraliza y elimina rápidamente olores fuertes o desagradables. Además es un elemento de uso seguro, eficaz y natural. ",
+            "price": "$6.000 - $17.500",
+            "mainCategory": "hygiene",
+            "petCategory": "dog",
+            "id": 172
+        },
+        {
+            "title": "Wags & Wiggles Pañales X-Small 12 unidades",
+            "img": "https://www.depelos.co/static/products/3621-Captura%20de%20pantalla%202020-06-18%20a%20las%209.20.58%20a.m.387x430q99.jpg",
+            "description": "Wags & Wiggles Pañales desechables para perros están diseñados para la comodidad y un ajuste seguro para tu perro, estos pañales súper absorbentes, transpirables y a prueba de fugas son la solución perfecta para ayudar a proteger tu hogar, muebles y pisos. ",
+            "price": "$26.400",
+            "mainCategory": "hygiene",
+            "petCategory": "dog",
+            "id": 173
+        },
+        {
+            "title": "Baño seco para perro cachorro Dinky",
+            "img": "https://www.depelos.co/static/products/8211-ban%CC%83o-seco-perros-cachorros-dinky-de-pelos387x430q99.jpg",
+            "description": "Baño seco para perro cachorro Dinky es una espuma que limpia a tu perrito sin necesidad de utilizar agua. Se destinado a cachorros de cualquier raza, es de uso sencillo y rápido. Ofrece un delicioso aroma, contiene extractos de avena y algodón para dar suavizar el pelaje de tu peludo para que se facilite peinarlo.",
+            "price": "$28.000",
+            "mainCategory": "hygiene",
+            "petCategory": "dog",
+            "id": 174
+        },
+        {
+            "title": "Eliminador de olores Petys",
+            "img": "https://www.depelos.co/static/products/9303-adios-olores-petys-depelos387x430q99.jpg",
+            "description": "Eliminador de olores Petys es un spray que elimina los edores producidos por los perritos en la casa. Los malos olores vienen acompañados de muchas bacterias que pueden ser dañinas para la salud tanto de tu peludo como para la tuya y la de tu familia. ",
+            "price": "$6.500",
+            "mainCategory": "hygiene",
+            "petCategory": "dog",
+            "id": 175
+        },
+        {
+            "title": "Furminator Cepillo Dual Para Perro",
+            "img": "https://www.depelos.co/static/products/583-Fuminator_cepillos_dual_depelos387x430q99.jpg",
+            "description": "El cepillo doble FURminator Dual Grooming Brush con cerdas duras y blandas, cepilla y limpia la capa superior del pelo de tu perro. Usar a diario de 5 a 10 minutos por sesión.",
+            "price": "$100.900",
+            "mainCategory": "hygiene",
+            "petCategory": "dog",
+            "id": 176
+        },
+        {
+            "title": "Wags & Wiggles Pañitos Freshen Cereza - Tarro 50 Unidades",
+            "img": "https://www.depelos.co/static/products/7914-Captura%20de%20pantalla%202020-06-17%20a%20las%209.39.34%20p.m.387x430q99.jpg",
+            "description": "Los pañitos suaves de Wags & Wiggles Freshen con aroma a Cereza son ideales para desodorizar, refrescar y limpiar sin irritar la piel de tu perrito. Estas toallitas multiusos hidratantes y nutritivas de alta calidad acondicionan y suavizan el pelaje de su perro, dejando un brillo hermoso. Son excelentes para limpiar y desodorizar las orejas, las patas, la cara y el cuerpo de su perro y cuentan con limpiadores suaves e ingredientes naturales e hidratantes como el aloe vera y el aceite de semilla de jojoba. ",
+            "price": "$21.300",
+            "mainCategory": "hygiene",
+            "petCategory": "dog",
+            "id": 177
+        },
+        {
+            "title": "Wags & Wiggles Grooming Cepillo Doble Pelo Corto",
+            "img": "https://www.depelos.co/static/products/5046-9694-WW-LARGE387x430q99.jpg",
+            "description": "El cepillo Wags & Wiggles Grooming Cepillo Doble Pelo Corto, es un cepillo ideal para perro perros medianos/ grandes de pelo corto. Las cerdas especializadas y el regular uso del cepillo van a permitir que el pelaje de su perro se mantenga saludable.",
+            "price": "$41.600",
+            "mainCategory": "hygiene",
+            "petCategory": "dog",
+            "id": 178
+        },
+        [
+            {
+                "title": "Natures Miracle No Más Marcas Spray Gatos 24 Onzas",
+                "img": "https://www.depelos.co/static/products/5291-13702034-natures-miracle-no-mas-marcas387x430q99.jpg",
+                "description": "Natures Miracle no más marcas spray Gatos, es un quitamanchas y olores para gatos y evita marquen territorio en las zonas de la casa donde ya lo ha hecho ates. Cuando se usa para limpiar un área previamente rociada por un gato, Natures Miracle no más marcas spray deja aroma a hierba de limón y canela y evita que los gatos regresen a la zona, por eso, es ideal para usar cuando se trata de romper este tipo de hábitos de los gatos.",
+                "price": "$42.200",
+                "mainCategory": "hygiene",
+                "petCategory": "cat"
+            },
+            {
+                "title": "Eliminador de olores Petys",
+                "img": "https://www.depelos.co/static/products/9685-adios-olores-petys-depelos-2387x430q99.jpg",
+                "description": "Eliminador de olores Petys que se presenta en un spray con válvula grande para mejorar la difusión entre el líquido y el aire. Se encarga de eliminar el 99% de las bacterias que se asocian con el mal olor que deja un peludo en la casa, con el fin de evitar enfermedades o efectos asociados con estas bacterias. ",
+                "price": "$18.500",
+                "mainCategory": "hygiene",
+                "petCategory": "cat"
+            },
+            {
+                "title": "Shampoo para gatos Dinky",
+                "img": "https://www.depelos.co/static/products/9618-shampoo-gatos-dinky-de-pelos387x430q99.jpg",
+                "description": "Dinky ofrece una fórmula que incluye shampoo y acondicionador para gatos en un solo producto con delicioso aroma derivado del extracto de vegetales de coco. ",
+                "price": "$24.000",
+                "mainCategory": "hygiene",
+                "petCategory": "cat"
+            },
+            {
+                "title": "Wags & Wiggles Pañitos Purify Manzana Hipoalergénicos - 100 Unidades",
+                "img": "https://www.depelos.co/static/products/4374-12826%20W&W%20MANZANA%20GA_-M9_0KlMHpwpGWTTPjVo387x430q99.jpg",
+                "description": "Los divertidos y funcionales pañitos para gatos de Whiskers & Wiggles hacen que cuidar a tu precioso gatito sea fácil y divertido. Los artículos de aseo para gatos son extravagantes, coloridos y divertidos. Estas toallitas hipoalergénicas para gatos están aquí para ayudarte a bañar a tu gato con algo de amor Esta fórmula suave limpia el pelaje de la suciedad molesta y la caspa, a la vez que neutraliza los olores. El aroma afrutado de manzana verde deja a tu gato oliendo delicioso entre baños.",
+                "price": "$37.000",
+                "mainCategory": "hygiene",
+                "petCategory": "cat"
+            },
+            {
+                "title": "Spray para peinar gatos Dinky",
+                "img": "https://www.depelos.co/static/products/402-spay-para-peinar-para-perros-gatos-dinky-de-pelos-150387x430q99.jpg",
+                "description": "Spray para peinar gatos Dinky se utiliza para dejar el pelo más sedoso y suave con el fin de facilitar el peinado de tu peludo.",
+                "price": "$28.000",
+                "mainCategory": "hygiene",
+                "petCategory": "cat"
+            },
+            {
+                "title": "Popo Catch Compactador de Heces para gatos - 300 g",
+                "img": "https://www.depelos.co/static/products/3483-213933%20-%201387x430q99.jpg",
+                "description": "Popo Catch compactador de heces para gatos está hecho a base de un mineral de origen natural con gran capacidad de absorción, que se adhiere a las heces compactándolas y por lo tanto facilitando su recogida y desecho. Puede ser usado como abono orgánico. ",
+                "price": "$22.500",
+                "mainCategory": "hygiene",
+                "petCategory": "cat"
+            }
+        ],
+        {
+            "title": "Pipi Gel Para Gatos - 170 g",
+            "img": "https://www.depelos.co/static/products/2428-213932%20-%201387x430q99.jpg",
+            "description": "Pipi Gel para gatos es un producto que es 100 % natural, indicado para convertir la orina de tu perro en gel, éste funciona bloqueando el olor a amoniaco. No es nocivo para los niños, ni para los peludos, no contiene aldehídos y no deja ningún tipo de manchas o residuos.",
+            "price": "$25.000",
+            "mainCategory": "hygiene",
+            "petCategory": "cat",
+            "id": 180
+        },
+        {
+            "title": "Natures Miracle Removedor Avanzado Manchas y Olores Para Gatos - 17.5 Oz",
+            "img": "https://www.depelos.co/static/products/4044-Captura%20de%20pantalla%202020-11-23%20a%20las%203.08.56%20p.m.387x430q99.jpg",
+            "description": "El Removedor Avanzado de Manchas Y Olores de Nature Miracle tiene una fórmula enzimática que tiene ingredientes que son seguros para tu gato y la familia.",
+            "price": "$35.500",
+            "mainCategory": "hygiene",
+            "petCategory": "cat",
+            "id": 181
+        },
+        {
+            "title": "Furminator Deslanador Gato Grande",
+            "img": "https://www.depelos.co/static/products/7068-Fuminator_cepillos_para_gatos_med_depelos387x430q99.jpg",
+            "description": "El cepillo Furminator Deslanador Gato Grande, es esencial para gatos de tamaño grande, viene para pelo largo y corto, elimina hasta el 99 % del pelo suelto procedente de la muda. Úselo 1 o 2 veces a la semana en sesiones de 10 a 20 minutos sobre el pelo seco. ",
+            "price": "$128.800 - $131.400",
+            "mainCategory": "hygiene",
+            "petCategory": "cat",
+            "id": 182
+        }
+    ]
+}

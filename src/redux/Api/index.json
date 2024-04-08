@@ -1,0 +1,354 @@
+{
+    "animals": [
+        {
+            "id": 1,
+            "name": "Rocky",
+            "age": "2 años",
+            "pet": "Perro",
+            "sex": "macho",
+            "breed": "Labrador Retriever",
+            "information": {
+                "description": "Rocky ama jugar a buscar y es genial con los niños.",
+                "description_large": "Rocky es un Labrador Retriever enérgico y juguetón que siempre está listo para una nueva aventura. Con su cola en constante movimiento y su mirada amistosa, es difícil resistirse a su encanto. Es un compañero leal y dedicado que trae alegría a cada momento con su energía positiva.",
+                "owner": "Paws and Claws",
+                "history": "Rocky fue rescatado por el refugio Paws and Claws después de ser encontrado solo en la calle. Desde entonces, ha demostrado ser un perro valiente y amoroso que está listo para encontrar un hogar lleno de amor y aventuras. Su historia de superación demuestra el increíble poder del cuidado y la compasión."
+            }
+        },
+        {
+            "id": 2,
+            "name": "Burro",
+            "age": "3 años",
+            "pet": "Gato",
+            "sex": "hembra",
+            "breed": "Siamesa",
+            "information": {
+                "description": "Burro es un gato vocal y cariñoso que disfruta siendo el centro de atención.",
+                "description_large": "Burro es una gata Siamesa elegante y vocal que siempre busca la compañía de su familia. Con su pelaje suave y su mirada expresiva, es difícil resistirse a su encanto. Le encanta ser el centro de atención y recibir mimos suaves.",
+                "owner": "Paws and Claws",
+                "history": "Burro fue rescatada por el refugio Paws and Claws después de ser encontrada sola en la calle. Desde entonces, ha demostrado ser una gata amorosa y sociable que está lista para encontrar un hogar lleno de amor y atención. Su historia de superación demuestra el increíble poder del cuidado y la compasión."
+            }
+        },
+        {
+            "id": 3,
+            "name": "Max",
+            "age": "1 año",
+            "pet": "Perro",
+            "sex": "macho",
+            "breed": "Pastor Alemán",
+            "information": {
+                "description": "Max es un perro altamente inteligente y enérgico que prosperaría en un hogar activo.",
+                "description_large": "Max es un Pastor Alemán inteligente y enérgico que siempre está listo para un nuevo desafío. Con su mirada penetrante y su presencia imponente, es el compañero perfecto para cualquier aventura. Es leal y dedicado, siempre dispuesto a proteger y cuidar a su familia.",
+                "owner": "Paws and Claws",
+                "history": "Max fue rescatado por el refugio Paws and Claws después de ser abandonado en la calle. Desde entonces, ha demostrado ser un perro valiente y leal que está listo para encontrar un hogar lleno de amor y aventuras. Su historia de superación demuestra el increíble poder del cuidado y la compasión."
+            }
+        },
+        {
+            "id": 4,
+            "name": "Buddy",
+            "age": "4 años",
+            "pet": "Gato",
+            "sex": "hembra",
+            "breed": "Maine Coon",
+            "information": {
+                "description": "Buddy es un gigante gentil que disfruta descansando y siendo acariciado.",
+                "description_large": "Buddy es una gata Maine Coon gentil y cariñosa que siempre está lista para recibir mimos y caricias. Con su pelaje exuberante y su mirada serena, es el compañero perfecto para momentos de tranquilidad y relajación. Le encanta descansar en lugares acogedores y ser el centro de atención.",
+                "owner": "Paws and Claws",
+                "history": "Buddy fue rescatada por el refugio Paws and Claws después de ser encontrada sola en la calle. Desde entonces, ha demostrado ser una gata amorosa y tranquila que está lista para encontrar un hogar lleno de amor y cariño. Su historia de superación demuestra el increíble poder del cuidado y la compasión."
+            }
+        },
+        {
+            "id": 5,
+            "name": "Cooper",
+            "age": "2 años",
+            "pet": "Perro",
+            "sex": "macho",
+            "breed": "Golden Retriever",
+            "information": {
+                "description": "Cooper es un perro amigable y extrovertido a quien le encanta hacer nuevos amigos.",
+                "description_large": "Cooper es un Golden Retriever amigable y extrovertido que siempre está listo para hacer nuevos amigos. Con su cola en constante movimiento y su mirada curiosa, es imposible resistirse a su encanto. Es un compañero leal y dedicado que trae alegría a cada momento con su energía positiva.",
+                "owner": "Paws and Claws",
+                "history": "Cooper fue rescatado por el refugio Paws and Claws después de ser encontrado solo en la calle. Desde entonces, ha demostrado ser un perro amoroso y juguetón que está listo para encontrar un hogar lleno de amor y aventuras. Su historia de superación demuestra el increíble poder del cuidado y la compasión."
+            }
+        },
+        {
+            "id": 6,
+            "name": "Milo",
+            "age": "3 años",
+            "pet": "Gato",
+            "sex": "macho",
+            "breed": "Bengalí",
+            "information": {
+                "description": "Milo es un gato juguetón y curioso que disfruta explorando su entorno.",
+                "description_large": "Milo es un gato Bengalí juguetón y curioso que siempre está listo para explorar. Con su pelaje exótico y su mirada vivaz, es difícil resistirse a su encanto. Le encanta investigar cada rincón de su hogar y jugar con juguetes que estimulan su mente y su cuerpo.",
+                "owner": "Paws and Claws",
+                "history": "Milo fue rescatado por el refugio Paws and Claws después de ser encontrado solo en la calle. Desde entonces, ha demostrado ser un gato valiente y aventurero que está listo para encontrar un hogar lleno de amor y emoción. Su historia de superación demuestra el increíble poder del cuidado y la compasión."
+            }
+        },
+        {
+            "id": 7,
+            "name": "Lucy",
+            "age": "2 años",
+            "pet": "Perro",
+            "sex": "hembra",
+            "breed": "Caniche",
+            "information": {
+                "description": "Lucy es una perra inteligente y obediente que está ansiosa por complacer a su dueño.",
+                "description_large": "Lucy es una Caniche inteligente y obediente que siempre está ansiosa por complacer a su dueño. Con su pelaje esponjoso y su mirada atenta, es el compañero perfecto para cualquier tarea. Es leal y dedicada, siempre dispuesta a aprender y a hacer feliz a su familia.",
+                "owner": "Paws and Claws",
+                "history": "Lucy fue rescatada por el refugio Paws and Claws después de ser encontrada sola en la calle. Desde entonces, ha demostrado ser una perra leal y cariñosa que está lista para encontrar un hogar lleno de amor y afecto. Su historia de superación demuestra el increíble poder del cuidado y la compasión."
+            }
+        },
+        {
+            "id": 8,
+            "name": "Oliver",
+            "age": "1 año",
+            "pet": "Gato",
+            "sex": "macho",
+            "breed": "Sphynx",
+            "information": {
+                "description": "Oliver es un gato sin pelo conocido por su naturaleza traviesa y juguetona.",
+                "description_large": "Oliver es un gato Sphynx sin pelo conocido por su naturaleza traviesa y juguetona. Con su piel suave y su mirada traviesa, siempre está listo para una nueva travesura. Le encanta explorar su entorno y encontrar nuevos lugares para esconderse y jugar.",
+                "owner": "Paws and Claws",
+                "history": "Oliver fue rescatado por el refugio Paws and Claws después de ser encontrado solo en la calle. Desde entonces, ha demostrado ser un gato juguetón y curioso que está listo para encontrar un hogar lleno de amor y diversión. Su historia de superación demuestra el increíble poder del cuidado y la compasión."
+            }
+        },
+        {
+            "id": 9,
+            "name": "Sam",
+            "age": "3 años",
+            "pet": "Perro",
+            "sex": "macho",
+            "breed": "Boxer",
+            "information": {
+                "description": "Sam es un perro fuerte y enérgico que se desenvolvería bien en un hogar activo.",
+                "description_large": "Sam es un Boxer fuerte y enérgico que siempre está listo para una nueva aventura. Con su cola en constante movimiento y su mirada curiosa, es difícil resistirse a su encanto. Es leal y dedicado, siempre dispuesto a proteger y cuidar a su familia.",
+                "owner": "Paws and Claws",
+                "history": "Sam fue rescatado por el refugio Paws and Claws después de ser encontrado solo en la calle. Desde entonces, ha demostrado ser un perro valiente y leal que está listo para encontrar un hogar lleno de amor y aventuras. Su historia de superación demuestra el increíble poder del cuidado y la compasión."
+            }
+        },
+        {
+            "id": 10,
+            "name": "Leo",
+            "age": "4 años",
+            "pet": "Perro",
+            "sex": "macho",
+            "breed": "Beagle",
+            "information": {
+                "description": "Leo es un perro leal y cariñoso que disfruta de largos paseos.",
+                "description_large": "Leo es un Beagle leal y cariñoso que siempre está listo para un nuevo paseo. Con su nariz curiosa y su cola en constante movimiento, es el compañero perfecto para cualquier aventura al aire libre. Es amigable y juguetón, siempre dispuesto a hacer nuevos amigos en el camino.",
+                "owner": "Paws and Claws",
+                "history": "Leo fue rescatado por el refugio Paws and Claws después de ser encontrado solo en la calle. Desde entonces, ha demostrado ser un perro amoroso y enérgico que está listo para encontrar un hogar lleno de amor y diversión. Su historia de superación demuestra el increíble poder del cuidado y la compasión."
+            }
+        },
+        {
+            "id": 11,
+            "name": "Sasha",
+            "age": "2 años",
+            "pet": "Gato",
+            "sex": "hembra",
+            "breed": "Azul Ruso",
+            "information": {
+                "description": "Sasha es una gata tranquila y observadora a la que le encanta acurrucarse en lugares cálidos.",
+                "description_large": "Sasha es una gata Azul Ruso tranquila y observadora que siempre busca un lugar cálido para acurrucarse. Con su pelaje suave y su mirada tranquila, es el compañero perfecto para momentos de tranquilidad y relajación. Le encanta observar su entorno y disfrutar de la compañía de su familia.",
+                "owner": "Paws and Claws",
+                "history": "Sasha fue rescatada por el refugio Paws and Claws después de ser encontrada sola en la calle. Desde entonces, ha demostrado ser una gata amorosa y tranquila que está lista para encontrar un hogar lleno de amor y calidez. Su historia de superación demuestra el increíble poder del cuidado y la compasión."
+            }
+        },
+        {
+            "id": 12,
+            "name": "Maximus",
+            "age": "3 años",
+            "pet": "Perro",
+            "sex": "macho",
+            "breed": "Rottweiler",
+            "information": {
+                "description": "Maximus es un perro protector y leal que se vincula estrechamente con su familia.",
+                "description_large": "Maximus es un Rottweiler protector y leal que siempre está listo para cuidar a su familia. Con su presencia imponente y su mirada penetrante, es el guardián perfecto para cualquier hogar. Es cariñoso y devoto, siempre dispuesto a proteger y cuidar a sus seres queridos.",
+                "owner": "Paws and Claws",
+                "history": "Maximus fue rescatado por el refugio Paws and Claws después de ser encontrado solo en la calle. Desde entonces, ha demostrado ser un perro valiente y leal que está listo para encontrar un hogar lleno de amor y protección. Su historia de superación demuestra el increíble poder del cuidado y la compasión."
+            }
+        },
+        {
+            "id": 13,
+            "name": "Cleo",
+            "age": "2 años",
+            "pet": "Gato",
+            "sex": "hembra",
+            "breed": "Calico",
+            "information": {
+                "description": "Cleo es una gata independiente y aventurera que ama explorar al aire libre.",
+                "description_large": "Cleo es una gata Calico independiente y aventurera que siempre está lista para explorar el mundo exterior. Con su pelaje multicolor y su espíritu audaz, es difícil resistirse a su encanto. Le encanta investigar cada rincón de su entorno y descubrir nuevas aventuras en cada esquina.",
+                "owner": "Paws and Claws",
+                "history": "Cleo fue rescatada por el refugio Paws and Claws después de ser encontrada sola en la calle. Desde entonces, ha demostrado ser una gata valiente y curiosa que está lista para encontrar un hogar lleno de amor y aventuras. Su historia de superación demuestra el increíble poder del cuidado y la compasión."
+            }
+        },
+        {
+            "id": 14,
+            "name": "Duke",
+            "age": "1 año",
+            "pet": "Perro",
+            "sex": "macho",
+            "breed": "Husky",
+            "information": {
+                "description": "Duke es un perro juguetón y enérgico que disfruta corriendo y jugando a buscar.",
+                "description_large": "Duke es un Husky juguetón y enérgico que siempre está listo para correr y jugar. Con su pelaje espeso y su mirada traviesa, es el compañero perfecto para cualquier aventura al aire libre. Le encanta correr y jugar a buscar, mostrando su velocidad y agilidad en cada movimiento.",
+                "owner": "Paws and Claws",
+                "history": "Duke fue rescatado por el refugio Paws and Claws después de ser encontrado solo en la calle. Desde entonces, ha demostrado ser un perro amoroso y enérgico que está listo para encontrar un hogar lleno de amor y diversión. Su historia de superación demuestra el increíble poder del cuidado y la compasión."
+            }
+        },
+        {
+            "id": 15,
+            "name": "Mia",
+            "age": "3 años",
+            "pet": "Gato",
+            "sex": "hembra",
+            "breed": "Persa",
+            "information": {
+                "description": "Mia es una gata elegante y afectuosa que disfruta descansando en lugares soleados.",
+                "description_large": "Mia es una gata Persa elegante y afectuosa que siempre busca un lugar soleado para descansar. Con su pelaje suave y su mirada tranquila, es el compañero perfecto para momentos de paz y tranquilidad. Le encanta disfrutar del sol y relajarse en lugares acogedores.",
+                "owner": "Paws and Claws",
+                "history": "Mia fue rescatada por el refugio Paws and Claws después de ser encontrada sola en la calle. Desde entonces, ha demostrado ser una gata amorosa y tranquila que está lista para encontrar un hogar lleno de amor y calidez. Su historia de superación demuestra el increíble poder del cuidado y la compasión."
+            }
+        },
+        {
+            "id": 16,
+            "name": "Rocky",
+            "age": "2 años",
+            "pet": "Perro",
+            "sex": "macho",
+            "breed": "Dálmata",
+            "information": {
+                "description": "Rocky es un perro amistoso y juguetón que se lleva bien con otras mascotas.",
+                "description_large": "Rocky es un Dálmata amistoso y juguetón que siempre está listo para hacer nuevos amigos. Con su pelaje moteado y su mirada alegre, es difícil resistirse a su encanto. Le encanta jugar y correr, mostrando su energía y entusiasmo en cada juego.",
+                "owner": "Paws and Claws",
+                "history": "Rocky fue rescatado por el refugio Paws and Claws después de ser encontrado solo en la calle. Desde entonces, ha demostrado ser un perro amoroso y enérgico que está listo para encontrar un hogar lleno de amor y diversión. Su historia de superación demuestra el increíble poder del cuidado y la compasión."
+            }
+        },
+        {
+            "id": 17,
+            "name": "Lola",
+            "age": "1 año",
+            "pet": "Gato",
+            "sex": "hembra",
+            "breed": "British Shorthair",
+            "information": {
+                "description": "Lola es una gata dulce y afectuosa que ama acurrucarse con su dueño.",
+                "description_large": "Lola es una gata British Shorthair dulce y afectuosa que siempre está lista para acurrucarse con su dueño. Con su pelaje suave y su mirada tierna, es el compañero perfecto para momentos de cariño y afecto. Le encanta estar cerca de su familia y disfrutar de su compañía.",
+                "owner": "Paws and Claws",
+                "history": "Lola fue rescatada por el refugio Paws and Claws después de ser encontrada sola en la calle. Desde entonces, ha demostrado ser una gata amorosa y tranquila que está lista para encontrar un hogar lleno de amor y calidez. Su historia de superación demuestra el increíble poder del cuidado y la compasión."
+            }
+        },
+        {
+            "id": 18,
+            "name": "Bailey",
+            "age": "4 años",
+            "pet": "Perro",
+            "sex": "hembra",
+            "breed": "Border Collie",
+            "information": {
+                "description": "Bailey es una perra inteligente y leal que sobresale en el entrenamiento de obediencia.",
+                "description_large": "Bailey es una Border Collie inteligente y leal que siempre está lista para aprender. Con su mirada atenta y su cola en constante movimiento, es la compañera perfecta para cualquier tarea. Es cariñosa y dedicada, siempre dispuesta a complacer a su familia.",
+                "owner": "Paws and Claws",
+                "history": "Bailey fue rescatada por el refugio Paws and Claws después de ser encontrada sola en la calle. Desde entonces, ha demostrado ser una perra valiente y leal que está lista para encontrar un hogar lleno de amor y aventuras. Su historia de superación demuestra el increíble poder del cuidado y la compasión."
+            }
+        },
+        {
+            "id": 19,
+            "name": "Cooper",
+            "age": "3 años",
+            "pet": "Perro",
+            "sex": "macho",
+            "breed": "Pitbull",
+            "information": {
+                "description": "Cooper es un perro cariñoso y protector que se lleva bien con los niños.",
+                "description_large": "Cooper es un Pitbull cariñoso y protector que siempre está listo para cuidar a su familia. Con su presencia imponente y su mirada gentil, es el compañero perfecto para cualquier hogar. Es leal y dedicado, siempre dispuesto a proteger y cuidar a sus seres queridos.",
+                "owner": "Paws and Claws",
+                "history": "Cooper fue rescatado por el refugio Paws and Claws después de ser encontrado solo en la calle. Desde entonces, ha demostrado ser un perro valiente y leal que está listo para encontrar un hogar lleno de amor y protección. Su historia de superación demuestra el increíble poder del cuidado y la compasión."
+            }
+        },
+        {
+            "id": 20,
+            "name": "Charlie",
+            "age": "3 años",
+            "pet": "Perro",
+            "sex": "macho",
+            "breed": "Bulldog",
+            "information": {
+                "description": "Charlie es un perro amistoso y juguetón que disfruta de la compañía de su familia.",
+                "description_large": "Charlie es un Bulldog Francés amistoso y juguetón que siempre busca la compañía de su familia. Con su nariz arrugada y su cola en constante movimiento, es difícil resistirse a su encanto. Le encanta jugar y recibir mimos suaves de sus seres queridos.",
+                "owner": "Paws and Claws",
+                "history": "Charlie fue rescatado por el refugio Paws and Claws después de ser encontrado solo en la calle. Desde entonces, ha demostrado ser un perro amoroso y enérgico que está listo para encontrar un hogar lleno de amor y diversión. Su historia de superación demuestra el increíble poder del cuidado y la compasión."
+            }
+        },
+        {
+            "id": 21,
+            "name": "Luna",
+            "age": "2 años",
+            "pet": "Gato",
+            "sex": "hembra",
+            "breed": "Siamés",
+            "information": {
+                "description": "Luna es una gata elegante y reservada que disfruta de momentos de tranquilidad.",
+                "description_large": "Luna es una gata Siamés elegante y reservada que siempre busca momentos de paz y tranquilidad. Con su pelaje suave y su mirada misteriosa, es difícil resistirse a su encanto. Le encanta relajarse en lugares acogedores y disfrutar de la serenidad de su hogar.",
+                "owner": "Paws and Claws",
+                "history": "Luna fue rescatada por el refugio Paws and Claws después de ser encontrada sola en la calle. Desde entonces, ha demostrado ser una gata amorosa y tranquila que está lista para encontrar un hogar lleno de amor y calidez. Su historia de superación demuestra el increíble poder del cuidado y la compasión."
+            }
+        },
+        {
+            "id": 22,
+            "name": "Milo",
+            "age": "1 año",
+            "pet": "Perro",
+            "sex": "macho",
+            "breed": "Chihuahua",
+            "information": {
+                "description": "Milo es un perro pequeño y valiente que no tiene miedo de desafiar a perros más grandes.",
+                "description_large": "Milo es un Chihuahua pequeño y valiente que siempre está listo para enfrentar nuevos desafíos. Con su personalidad intrépida y su mirada audaz, no tiene miedo de desafiar a perros más grandes que él. Es leal y dedicado, siempre dispuesto a proteger y cuidar a su familia.",
+                "owner": "Paws and Claws",
+                "history": "Milo fue rescatado por el refugio Paws and Claws después de ser encontrado solo en la calle. Desde entonces, ha demostrado ser un perro valiente y leal que está listo para encontrar un hogar lleno de amor y protección. Su historia de superación demuestra el increíble poder del cuidado y la compasión."
+            }
+        },
+        {
+            "id": 23,
+            "name": "Bella",
+            "age": "3 años",
+            "pet": "Gato",
+            "sex": "hembra",
+            "breed": "Ragdoll",
+            "information": {
+                "description": "Bella es una gata tranquila y cariñosa que se lleva bien con otros animales.",
+                "description_large": "Bella es una gata Ragdoll tranquila y cariñosa que siempre está lista para hacer nuevos amigos. Con su pelaje suave y su mirada tierna, es difícil resistirse a su encanto. Le encanta compartir momentos de cariño y afecto con su familia y otros animales.",
+                "owner": "Paws and Claws",
+                "history": "Bella fue rescatada por el refugio Paws and Claws después de ser encontrada sola en la calle. Desde entonces, ha demostrado ser una gata amorosa y tranquila que está lista para encontrar un hogar lleno de amor y amistad. Su historia de superación demuestra el increíble poder del cuidado y la compasión."
+            }
+        },
+        {
+            "id": 24,
+            "name": "Bentley",
+            "age": "2 años",
+            "pet": "Perro",
+            "sex": "macho",
+            "breed": "Pug",
+            "information": {
+                "description": "Bentley es un perro encantador y juguetón que adora la compañía de las personas.",
+                "description_large": "Bentley es un Pug encantador y juguetón que siempre busca la compañía de las personas. Con su carácter travieso y su mirada tierna, es difícil resistirse a su encanto. Le encanta jugar y recibir mimos suaves de sus seres queridos.",
+                "owner": "Paws and Claws",
+                "history": "Bentley fue rescatado por el refugio Paws and Claws después de ser encontrado solo en la calle. Desde entonces, ha demostrado ser un perro amoroso y enérgico que está listo para encontrar un hogar lleno de amor y diversión. Su historia de superación demuestra el increíble poder del cuidado y la compasión."
+            }
+        },
+        {
+            "id": 25,
+            "name": "Bailey",
+            "age": "4 años",
+            "pet": "Perro",
+            "sex": "hembra",
+            "breed": "Shih Tzu",
+            "information": {
+                "description": "Bailey es una perra cariñosa y tranquila que disfruta de largos paseos por el parque.",
+                "description_large": "Bailey es una Shih Tzu cariñosa y tranquila que siempre está lista para dar largos paseos por el parque. Con su pelaje suave y su mirada tierna, es el compañero perfecto para momentos de paz y tranquilidad. Le encanta explorar su entorno y disfrutar del aire fresco.",
+                "owner": "Paws and Claws",
+                "history": "Bailey fue rescatada por el refugio Paws and Claws después de ser encontrada sola en la calle. Desde entonces, ha demostrado ser una perra amorosa y tranquila que está lista para encontrar un hogar lleno de amor y aventuras. Su historia de superación demuestra el increíble poder del cuidado y la compasión."
+            }
+        }
+    ]
+}
