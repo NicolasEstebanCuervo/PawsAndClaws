@@ -3,7 +3,7 @@ import { NavBar } from "../components/componentsGlobals/navbar";
 import Footer from "../components/componentsGlobals/footer";
 import { ListAnimalInAdoption } from "../components/componentsAdoptionPage/listAnimalInAdoption";
 import { FunFactsAdoption } from "../components/componentsAdoptionPage/funFactsAdoption";
-import { ContentAdoptionPage } from "../components/componentsAdoptionPage/contentAdoptionPage";
+import { HeaderAdoption } from "../components/componentsAdoptionPage/headerAdoption";
 import { VetContentAdoptionPage } from "../components/componentsAdoptionPage/vetContentAdoptionPage";
 import { SearchInput } from "../components/componentsAdoptionPage/searchInput";
 
@@ -11,7 +11,7 @@ export const AdoptionPage = () => {
     return (
         <ContainerPage>
             <NavBar />
-            <ContentAdoptionPage/>
+            <HeaderAdoption/>
             <SearchInput />
             <ListAnimalInAdoption indexArray1={0} indexArray2={12}/>
             <VetContentAdoptionPage/>

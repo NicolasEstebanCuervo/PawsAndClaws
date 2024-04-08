@@ -24,7 +24,7 @@ export const FunFactsAdoption = () => {
         },
     };
 
-    const datos = [
+    const facts = [
         "Los perros tienen un sentido del olfato muy agudo, siendo capaces de detectar olores hasta 100,000 veces mejor que los humanos.",
         "Los perros pueden ser entrenados para realizar una variedad de tareas, desde ayudar a personas con discapacidades hasta detectar drogas y explosivos.",
         "Los perros tienen una gran variedad de ladridos, gruñidos y otros sonidos que utilizan para comunicarse con otros perros y con los humanos.",
@@ -43,7 +43,7 @@ export const FunFactsAdoption = () => {
                 initial="hidden"
                 animate={inView ? "visible" : "hidden"}
             >
-                    {datos.map((dato, index) => (
+                    {facts.map((fact, index) => (
                         <ContainerFact
                             key={index}
                             variants={{
@@ -51,11 +51,11 @@ export const FunFactsAdoption = () => {
                                 visible: {
                                     x:
                                         Math.cos(
-                                            (index / datos.length) * 2 * Math.PI
+                                            (index / facts.length) * 2 * Math.PI
                                         ) * 500,
                                     y:
                                         Math.sin(
-                                            (index / datos.length) * 2 * Math.PI
+                                            (index / facts.length) * 2 * Math.PI
                                         ) * 350,
                                     opacity: 1,
                                     transition: {
@@ -65,7 +65,7 @@ export const FunFactsAdoption = () => {
                                 },
                             }}
                         >
-                            <MM>{dato}</MM>
+                            <MM>{fact}</MM>
                         </ContainerFact>
                     ))}
                 <ImagePet

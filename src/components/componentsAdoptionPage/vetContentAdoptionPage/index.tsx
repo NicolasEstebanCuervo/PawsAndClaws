@@ -42,13 +42,14 @@ const SectionVetContent = styled.section`
     justify-content: center;
     align-items: center;
     margin: 10rem;
-    gap: 2rem;
+    gap: 3rem;
 `
 
 const TextsVetContent = styled.div`
     display: flex;
     flex-direction: column;
     width: 45%;
+    gap: 1rem;
 `
 
 const Button = styled.button`

@@ -9,7 +9,7 @@ export const ImagesGenerator = async (breed: string) => {
         `https://pixabay.com/api/?key=37848833-62f906d3f5b6f66e64578261a&q=${breed}&image_type=photo&category=animals`
     );
     const response = await data.json();
-    const image = response.hits[7].largeImageURL;
+    const image = response.hits[0].largeImageURL;
     return image;
 };
 

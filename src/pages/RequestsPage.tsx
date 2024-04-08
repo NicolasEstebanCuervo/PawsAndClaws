@@ -3,7 +3,7 @@ import * as color from "../theme/colors";
 import { NavBar } from "../components/componentsGlobals/navbar";
 import Footer from "../components/componentsGlobals/footer";
 
-export const StorePage = () => {
+export const RequestsPage = () => {
     return (
         <ContainerPage>
             <NavBar />

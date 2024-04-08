@@ -1,9 +1,9 @@
 import styled from "@emotion/styled";
-import * as color from "../theme/colors";
-import { NavBar } from "../components/componentsGlobals/navbar";
-import Footer from "../components/componentsGlobals/footer";
+import * as color from "../../theme/colors";
+import { NavBar } from "../../components/componentsGlobals/navbar";
+import Footer from "../../components/componentsGlobals/footer";
 
-export const AppointmentScheduledPage = () => {
+export const StorePage = () => {
     return (
         <ContainerPage>
             <NavBar />

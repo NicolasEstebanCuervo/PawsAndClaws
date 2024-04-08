@@ -39,7 +39,7 @@ export const ProductCart = ({
                 src={product.imageInfo.thumbnailUrl}
                 alt={`Imagen de ${product.name}`}
             />
-            <TexsProductCart>
+            <div>
                 <MM>{product.name}</MM>
                 <MM style={{fontWeight:"bold"}}>$ {quantityProduct.toFixed(2)}</MM>
                 <button onClick={incrementProduct}>
@@ -50,10 +50,10 @@ export const ProductCart = ({
                     <Icons className="bi bi-dash"></Icons>
                 </button>
 
-                <button onClick={deleteProduct}>
-                    <Icons className="bi bi-dash"></Icons>
-                </button>
-            </TexsProductCart>
+                <ButtonDelete onClick={deleteProduct}>
+                    <Icons className="bi bi-x"></Icons>
+                </ButtonDelete>
+            </div>
         </ContainerProductCart>
     );
 };
@@ -64,12 +64,13 @@ const ContainerProductCart = styled.div`
     justify-content: center;
     align-items: center;
     width: 100%;
+    position: relative;
 `;
 const ImgProductCart = styled.img`
     width: 9rem;
     padding: 0 10px;
 `;
-const TexsProductCart = styled.div``;
+
 const Icons = styled.i`
     font-size: 2.1rem;
     cursor: pointer;
@@ -78,3 +79,9 @@ const Icons = styled.i`
         opacity: 0.5;
     }
 `;
+
+const ButtonDelete = styled.button`
+    position: absolute;
+    top: -0.5rem;
+    right: 0;
+`

@@ -7,9 +7,9 @@ import { useDispatch } from "react-redux";
 import { useEffect } from "react";
 import { setAnimals } from "./redux/reducers/animalSlice";
 import { FetchAnimals } from "./redux/Api";
-import { StorePage } from "./pages/StorePage";
+import { StorePage } from "./redux/Api/StorePage";
 import { AppointmentPage } from "./pages/AppointmentPage";
-import { AppointmentScheduledPage } from "./pages/AppointmentScheduledPage";
+import { RequestsPage } from "./pages/RequestsPage";
 
 function App() {
 
@@ -24,11 +24,14 @@ function App() {
             <Routes>
                 <Route path="/" element={<IndexPage></IndexPage>}></Route>
                 <Route path="/adoption" element={<AdoptionPage></AdoptionPage>}></Route>
-                <Route path="/store" element={<StorePage></StorePage>}></Route>
-                <Route path="/appointment" element={<AppointmentPage></AppointmentPage>}></Route>
-                <Route path="/appointment/scheduled" element={<AppointmentScheduledPage></AppointmentScheduledPage>}></Route>
                 <Route path="/animals/adoption/:id" element={<AnimalInAdoptionPage></AnimalInAdoptionPage>}></Route>
+
+
+                <Route path="/store" element={<StorePage></StorePage>}></Route>
                 <Route path="/products/:id" element={<ReviewProductPage></ReviewProductPage>}></Route>
+
+                <Route path="/appointment" element={<AppointmentPage></AppointmentPage>}></Route>
+                <Route path="/requests" element={<RequestsPage></RequestsPage>}></Route>
             </Routes>
         </BrowserRouter>
     );

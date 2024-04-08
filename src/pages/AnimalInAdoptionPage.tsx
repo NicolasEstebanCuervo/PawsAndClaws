@@ -9,10 +9,10 @@ export const AnimalInAdoptionPage = () => {
     return (
         <ContainerPage>
             <NavBar />
-            <ContainerContent>
+            <ContainerContentForm>
                 <AnimalInformation />
                 <FormAnimalInAdoption />
-            </ContainerContent>
+            </ContainerContentForm>
 
             <Footer />
         </ContainerPage>
@@ -28,7 +28,7 @@ const ContainerPage = styled.main`
     background: ${color.White};
 `;
 
-const ContainerContent = styled.main`
+const ContainerContentForm = styled.main`
     display: flex;
     gap: 5rem;
     width: 80%;

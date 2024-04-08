@@ -3,7 +3,7 @@ import * as color from "../../../theme/colors";
 import ImageBackground from "../../../assets/images/BackgroundHeaderAdoptionPage.png";
 import { LM, XLLLM, XLLM, XLM } from "../../../theme/fonts";
 
-export const ContentAdoptionPage = () => {
+export const HeaderAdoption = () => {
     return (
         <SectionFunFacts>
             <SubContainerFunFacts>

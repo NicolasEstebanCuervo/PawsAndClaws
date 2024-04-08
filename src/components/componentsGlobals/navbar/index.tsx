@@ -67,8 +67,8 @@ export const NavBar = () => {
                         <MLM as={Link} to="/appointment">
                             Citas
                         </MLM>
-                        <MLM as={Link} to="/appointment/scheduled">
-                            Mis citas
+                        <MLM as={Link} to="/requests">
+                            Mis solicitudes
                         </MLM>
                     </LinksContainer>
                 </Navbar.Collapse>
