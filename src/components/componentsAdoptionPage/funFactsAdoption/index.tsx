@@ -1,5 +1,4 @@
 import styled from "@emotion/styled";
-import { useState } from "react";
 import { motion } from "framer-motion";
 import { useInView } from "react-intersection-observer";
 import * as color from "../../../theme/colors";
@@ -85,7 +84,6 @@ const SectionFunFacts = styled.section`
     flex-direction: column;
     align-items: center;
     position: relative;
-    margin-top: 10rem;
     padding: 5rem 0 50rem;
     background: ${color.Cream};
     background: url(${ImageBackground});

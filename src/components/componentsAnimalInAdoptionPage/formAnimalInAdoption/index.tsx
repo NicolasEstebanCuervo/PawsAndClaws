@@ -72,7 +72,7 @@ export const FormAnimalInAdoption = () => {
         dispatch(
             setInputValueChanged({
                 fieldName: "housingAdoption",
-                value: "Selecciona",
+                value: "Selecciona una opción",
             })
         );
         dispatch(
@@ -84,25 +84,25 @@ export const FormAnimalInAdoption = () => {
         dispatch(
             setInputValueChanged({
                 fieldName: "fencedYardAdoption",
-                value: "Selecciona",
+                value: "Selecciona una opción",
             })
         );
         dispatch(
             setInputValueChanged({
                 fieldName: "previousPetsAdoption",
-                value: "Selecciona",
+                value: "Selecciona una opción",
             })
         );
         dispatch(
             setInputValueChanged({
                 fieldName: "currentPetsAdoption",
-                value: "Selecciona",
+                value: "Selecciona una opción",
             })
         );
         dispatch(
             setInputValueChanged({
                 fieldName: "adoptedPetsAdoption",
-                value: "Selecciona",
+                value: "Selecciona una opción",
             })
         );
     };

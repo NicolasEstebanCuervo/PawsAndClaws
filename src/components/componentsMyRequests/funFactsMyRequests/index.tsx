@@ -3,9 +3,9 @@ import { motion } from "framer-motion";
 import { useInView } from "react-intersection-observer";
 import * as color from "../../../theme/colors";
 import { MM, XLLM } from "../../../theme/fonts";
-import ImageBackground from "../../../assets/images/BackgroundFacts.webp";
+import ImageBackground from "../../../assets/images/BackgroundFactsAdoption.png";
 
-export const FunFactsIndex = () => {
+export const FunFactsMyRequests = () => {
     const [ref, inView] = useInView({
         triggerOnce: true,
         threshold: 0.1,
@@ -24,19 +24,21 @@ export const FunFactsIndex = () => {
     };
 
     const facts = [
-        "Los gatos tienen un sentido del olfato muy agudo, siendo capaces de detectar olores hasta 14 veces mejor que los humanos.",
-        "Los gatos tienen la habilidad de enderezar su cuerpo durante una caída desde una gran altura, lo que les permite aterrizar en sus patas. Esto se conoce como el 'reflejo de enderezamiento'.",
-        "Los gatos pueden dormir hasta 16 horas al día, pero esta cantidad varía según la edad y el nivel de actividad del gato.",
-        "La pupila vertical de los gatos les permite una mejor visión nocturna y la capacidad de percibir movimientos rápidos con mayor claridad.",
-        "Los gatos tienen un tercer párpado llamado 'membrana nictitante' que les protege los ojos y ayuda a mantenerlos lubricados.",
-        "Algunos gatos tienen la capacidad de caminar en una superficie muy estrecha, como una barandilla o un alféizar, gracias a su extraordinario equilibrio.",
-        "Los gatos tienen glándulas odoríferas en varias partes de su cuerpo, incluyendo la barbilla, la frente y las patas, que utilizan para marcar su territorio.",
-        "Los gatos son conocidos por su agilidad y capacidad de saltar. Pueden saltar hasta seis veces la longitud de su cuerpo en un solo salto.",
+        "Tanto los perros como los gatos son domesticados desde hace miles de años, convirtiéndolos en compañeros leales del ser humano.",
+        "Los perros y los gatos tienen diferentes tipos de huellas digitales en sus almohadillas, lo que los hace únicos y fácilmente identificables.",
+        "A pesar de ser depredadores naturales, algunos perros y gatos pueden llevarse sorprendentemente bien y formar vínculos de amistad duraderos.",
+        "Tanto los perros como los gatos tienen una variedad de vocalizaciones para comunicarse, incluyendo maullidos, ladridos, ronroneos y gruñidos.",
+        "Los perros y los gatos tienen sentidos agudos, como la vista y el oído, que les permiten percibir el mundo de manera única y especializada.",
+        "Perros y gatos pueden proporcionar apoyo emocional a las personas y ayudar en terapias para mejorar la salud mental.",
+        "Algunos perros y gatos son famosos en internet y en las redes sociales, ganando seguidores por su encanto y travesuras.",
+        "Tanto los perros como los gatos disfrutan de la interacción social con humanos y otros animales, lo que los hace compañeros sociales ideales.",
+        "Los perros y los gatos tienen habilidades de caza innatas, aunque la mayoría de las veces prefieren ser mimados por sus dueños.",
+        "Los perros y los gatos pueden ser entrenados para realizar trucos y obedecer comandos, lo que demuestra su inteligencia y capacidad de aprendizaje."
     ];
 
     return (
         <SectionFunFacts ref={ref}>
-            <XLLM>¿Sabías esto de los gatos?</XLLM>
+            <XLLM>¿Sabías esto de los perros y gatos?</XLLM>
             <SubContainerFunFacts
                 variants={container}
                 initial="hidden"
@@ -51,7 +53,7 @@ export const FunFactsIndex = () => {
                                     x:
                                         Math.cos(
                                             (index / facts.length) * 2 * Math.PI
-                                        ) * 500,
+                                        ) * 650,
                                     y:
                                         Math.sin(
                                             (index / facts.length) * 2 * Math.PI
@@ -68,7 +70,7 @@ export const FunFactsIndex = () => {
                         </ContainerFact>
                     ))}
                 <ImagePet
-                    src={require("../../../assets/images/FunFact1.webp")}
+                    src={require("../../../assets/images/FunFact2.webp")}
                     alt="Imagen de una mascota"
                 />
             </SubContainerFunFacts>
@@ -84,7 +86,6 @@ const SectionFunFacts = styled.section`
     flex-direction: column;
     align-items: center;
     position: relative;
-    margin-top: 10rem;
     padding: 5rem 0 50rem;
     background: ${color.Cream};
     background: url(${ImageBackground});
@@ -99,9 +100,9 @@ const SubContainerFunFacts = styled(motion.div)`
 const ImagePet = styled.img`
     position: relative !important;
     top: 5rem;
-    left: 7rem;
+    left: 15rem;
     transform: translate(-60%, -50%);
-    width: 15rem;
+    width: 25rem;
     margin-top: 20rem;
     filter: drop-shadow(1px 1px 20px ${color.Brown});
 `;
@@ -111,5 +112,4 @@ const ContainerFact = styled(motion.div)`
     position: absolute;
     width: 25rem;
     top: 25rem;
-    right: -5rem;
 `;

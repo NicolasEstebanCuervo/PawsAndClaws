@@ -50,7 +50,7 @@ interface GlobalInterface {
     animalSelected: IAnimal | any;
     animalsFiltered: IAnimal[];
     inputFilterAnimals: string;
-    petsAdopted: IFormAdoption[];
+    adoptionsRequests: IFormAdoption[];
     appointmentRequests: IFormAppointment[];
 }
 
@@ -59,7 +59,7 @@ const initialStates: GlobalInterface = {
     animalSelected: [],
     animalsFiltered: [],
     inputFilterAnimals: "",
-    petsAdopted: [],
+    adoptionsRequests: [],
     appointmentRequests: [],
 };
 
@@ -87,10 +87,24 @@ export const AnimalSlice = createSlice({
             (state as any)[fieldName] = value;
         },
         createAdoptionRequest: (state, action) => {
-            state.petsAdopted = [...state.petsAdopted, action.payload];
+            state.adoptionsRequests = [...state.adoptionsRequests, action.payload];
         },
         createAppointmentRequest: (state, action) => {
             state.appointmentRequests = [...state.appointmentRequests, action.payload];
+        },
+        deleteAdoptionsRequests: (state, action) => {
+            state.adoptionsRequests = state.adoptionsRequests.filter(
+                (animal: IFormAdoption) => {
+                    return animal.id !== action.payload.id;
+                }
+            );
+        },
+        deleteAppointmentsRequests: (state, action) => {
+            state.appointmentRequests = state.appointmentRequests.filter(
+                (animal: IFormAppointment) => {
+                    return animal.id !== action.payload.id;
+                }
+            );
         },
     },
 });
@@ -101,7 +115,9 @@ export const {
     setFilteredAnimals,
     createAdoptionRequest,
     setInputValueChanged,
-    createAppointmentRequest
+    createAppointmentRequest,
+    deleteAdoptionsRequests,
+    deleteAppointmentsRequests
 } = AnimalSlice.actions;
 
 export default AnimalSlice.reducer;

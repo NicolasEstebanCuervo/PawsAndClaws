@@ -15,7 +15,7 @@ export const FrequentQuestions = () => {
         <SectionFrequentQuestions>
             <TitleReviews>Preguntas frecuentes</TitleReviews>
             <SubContainerFrequentQuestions>
-                <Accordion defaultIndex={[0]} allowMultiple borderBottom="transparent">
+                <Accordion allowMultiple borderBottom="transparent">
                     <AccordionItem borderTop="none">
                         <h2>
                             <AccordionButton

@@ -79,12 +79,12 @@ export const CardProduct = ({ product }: { product: IProduct }) => {
                     {product.priceInfo?.currentPrice?.priceString ? (
                         <MM>
                             $
-                            {parseFloat(
+                            {(parseFloat(
                                 (product.priceInfo?.currentPrice?.priceString).slice(
                                     1,
                                     7
                                 )
-                            ) - 2}
+                            ) - 2).toFixed(2)}
                         </MM>
                     ) : (
                         <MM>Agotado</MM>
@@ -117,6 +117,7 @@ const ImgProduct = styled.img`
     width: 18rem;
     height: 15rem;
     border-radius: 0.3rem;
+    background: ${color.White};
 `;
 
 const TitleProduct = styled(LM)`

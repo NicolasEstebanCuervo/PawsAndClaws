@@ -4,19 +4,18 @@ import Footer from "../components/componentsGlobals/footer";
 import { ListAnimalInAdoption } from "../components/componentsAdoptionPage/listAnimalInAdoption";
 import { FunFactsAdoption } from "../components/componentsAdoptionPage/funFactsAdoption";
 import { HeaderAdoption } from "../components/componentsAdoptionPage/headerAdoption";
-import { VetContentAdoptionPage } from "../components/componentsAdoptionPage/vetContentAdoptionPage";
 import { SearchInput } from "../components/componentsAdoptionPage/searchInput";
 
 export const AdoptionPage = () => {
+
     return (
         <ContainerPage>
             <NavBar />
             <HeaderAdoption/>
             <SearchInput />
             <ListAnimalInAdoption indexArray1={0} indexArray2={12}/>
-            <VetContentAdoptionPage/>
-            <ListAnimalInAdoption indexArray1={13} indexArray2={30}/>
             <FunFactsAdoption />
+            <ListAnimalInAdoption indexArray1={13} indexArray2={30}/>
             <Footer />
         </ContainerPage>
     );

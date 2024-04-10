@@ -18,6 +18,7 @@ export const SearchInput = () => {
 
     return (
         <SectionSearchInput>
+            <SubContainerSearchInput>
             <InputGroup>
                 <Input
                     pr="4.5rem"
@@ -30,6 +31,7 @@ export const SearchInput = () => {
                     <i className="bi bi-search"></i>
                 </InputRightElement>
             </InputGroup>
+            </SubContainerSearchInput>
         </SectionSearchInput>
     );
 };
@@ -38,6 +40,13 @@ const SectionSearchInput = styled.section`
     display: flex;
     justify-content: center;
     align-items: center;
-    width: 50%;
-    margin-top: 5rem;
+    width: 100%;
+    background: ${color.Cream};
+    padding: 5rem 0 3rem;
 `;
+
+const SubContainerSearchInput = styled.div`
+    width: 50%;
+    background: #fff;
+    border-radius: 0.4rem;
+`
