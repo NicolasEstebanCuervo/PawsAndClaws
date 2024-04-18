@@ -11,6 +11,8 @@ import {
 import { useRef } from "react";
 import { ListProductsCart } from "./ListProductsCart";
 import { useSelector } from "react-redux";
+import { LM, XLM } from "../../../theme/fonts";
+import { Link } from "react-router-dom";
 
 export const Cart = ({
     isOpen,
@@ -40,18 +42,19 @@ export const Cart = ({
                     <ListProductsCart />
                 </DrawerBody>
 
-                {productsInTheCart.productsInTheCart <= 0 ? (
-                    null
-            ) : (
-
-                <DrawerFooter borderTopWidth="1px">
-                    <Button variant="outline" mr={3} onClick={onClose}>
-                        Cancelar
-                    </Button>
-                    <Button colorScheme="green">Comprar</Button>
-                </DrawerFooter>
-
-            )}
+                {productsInTheCart.productsInTheCart <= 0 ? null : (
+                    <DrawerFooter justifyContent={"space-between"} borderTopWidth="1px">
+                        <LM>Total: {productsInTheCart.totalPrice.toFixed(2)}</LM>
+                        <div>
+                            <Button variant="outline" mr={3} onClick={onClose}>
+                                Cancelar
+                            </Button>
+                            <Link to="/pay">
+                            <Button colorScheme="green">Comprar</Button>
+                            </Link>
+                        </div>
+                    </DrawerFooter>
+                )}
             </DrawerContent>
         </Drawer>
     );

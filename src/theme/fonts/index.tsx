@@ -41,11 +41,13 @@ export const XLM = styled.h2`
 `;
 export const XLLM = styled.h1`
     font-size: 3rem;
+    margin: 0;
     color: ${({ colorText }: { colorText?: string }) =>
         colorText ? `${colorText}` : `${color.Black}`};
 `;
 export const XLLLM = styled.h1`
     font-size: 5rem;
+    margin: 0;
     color: ${({ colorText }: { colorText?: string }) =>
         colorText ? `${colorText}` : `${color.Black}`};
 `;

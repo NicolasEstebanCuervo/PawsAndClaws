@@ -1,4 +1,4 @@
-import { createSlice } from "@reduxjs/toolkit";
+import { createSlice, current } from "@reduxjs/toolkit";
 
 export interface IAnimal {
     id: number;
@@ -68,19 +68,14 @@ export const AnimalSlice = createSlice({
     initialState: initialStates,
     reducers: {
         setAnimals: (state, action) => {
-            state.animals = [...state.animals, action.payload];
-            state.animalsFiltered = [...state.animals, action.payload];
+            state.animals = [...state.animals, ...action.payload];
+            state.animalsFiltered = [...state.animals, ...action.payload];
         },
         setAnimalSelected: (state, action) => {
             state.animalSelected = [action.payload];
         },
-
         setFilteredAnimals: (state, action) => {
-            const animalsFiltered = state.animals.filter((animal: IAnimal) => {
-                return animal.name.includes(action.payload);
-            });
-
-            state.animalsFiltered = animalsFiltered;
+            state.animalsFiltered = [...action.payload];
         },
         setInputValueChanged: (state, action) => {
             const { fieldName, value } = action.payload;
@@ -117,7 +112,7 @@ export const {
     setInputValueChanged,
     createAppointmentRequest,
     deleteAdoptionsRequests,
-    deleteAppointmentsRequests
+    deleteAppointmentsRequests,
 } = AnimalSlice.actions;
 
 export default AnimalSlice.reducer;

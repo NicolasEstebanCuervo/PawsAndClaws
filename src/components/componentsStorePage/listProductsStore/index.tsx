@@ -6,7 +6,7 @@ import { IProduct, setProducts } from "../../../redux/reducers/productsSlice";
 import { FetchProducts } from "../../../redux/Api";
 import * as color from "../../../theme/colors"
 
-export const ListProductsStore = ({indexA,indexB,background}:{indexA:number,indexB:number,background:boolean}) => {
+export const ListProductsStore = ({indexA,indexB}:{indexA:number,indexB:number}) => {
     const dispatch = useDispatch();
     const products = useSelector((state: any) => state.ProductSlice.products);
 
@@ -21,10 +21,8 @@ export const ListProductsStore = ({indexA,indexB,background}:{indexA:number,inde
 
     const productsMap = products[0];
 
-
-    console.log(productsMap)
     return (
-        <SectionProducts background={background}>
+        <SectionProducts>
             <SubContainerProducts>
                 {productsMap &&
                     productsMap
@@ -45,8 +43,6 @@ const SectionProducts = styled.div`
     min-width: 100%;
     gap: 3rem;
     padding: 3rem 0;
-    background: ${({background}:{background:boolean})=>
-        background ? `${color.Cream}` : `${color.White}`};
 `;
 const SubContainerProducts = styled.div`
     display: grid;

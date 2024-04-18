@@ -2,16 +2,18 @@ import { Input, Select } from "@chakra-ui/react";
 import styled from "@emotion/styled";
 import * as color from "../../../theme/colors";
 import { useDispatch, useSelector } from "react-redux";
-import { ChangeEvent, FormEvent } from "react";
+import { ChangeEvent, FormEvent, useState } from "react";
 import {
     createAppointmentRequest,
     setInputValueChanged,
 } from "../../../redux/reducers/animalSlice";
 import { v4 as uuidv4 } from "uuid";
+import { PopNotification } from "../../componentsGlobals/pop-up/popNotification";
 
 export const FormAppointment = () => {
     const inputsForm = useSelector((state: any) => state.AnimalSlice);
     const dispatch = useDispatch();
+    const [activePop, setActivePop] = useState(false);
 
     const handleInputChange =
         (inputName: string) => (e: ChangeEvent<HTMLInputElement>) => {
@@ -46,6 +48,12 @@ export const FormAppointment = () => {
                 reasonAppointment: inputsForm.reasonAppointment,
             })
         );
+
+        setActivePop(true);
+
+        setInterval(() => {
+            setActivePop(false);
+        }, 100);
 
         dispatch(
             setInputValueChanged({ fieldName: "fullNameAdoption", value: "" })
@@ -118,6 +126,7 @@ export const FormAppointment = () => {
                     id="ownerName"
                     name="ownerName"
                     placeholder="Nombre completo"
+                    maxLength={30}                    
                     required
                     value={inputsForm.fullNameAppointment}
                     onChange={handleInputChange("fullNameAppointment")}
@@ -132,6 +141,7 @@ export const FormAppointment = () => {
                     placeholder="Número de teléfono"
                     value={inputsForm.phoneNumberAppointment}
                     onChange={handleInputChange("phoneNumberAppointment")}
+                    maxLength={15}                    
                     required
                 />
             </div>
@@ -144,6 +154,7 @@ export const FormAppointment = () => {
                     placeholder="Correo electrónico"
                     value={inputsForm.emailAppointment}
                     onChange={handleInputChange("emailAppointment")}
+                    maxLength={50}                    
                     required
                 />
             </div>
@@ -156,6 +167,7 @@ export const FormAppointment = () => {
                     placeholder="Nombre de la mascota"
                     value={inputsForm.petNameAppointment}
                     onChange={handleInputChange("petNameAppointment")}
+                    maxLength={30}                    
                     required
                 />
             </div>
@@ -168,6 +180,7 @@ export const FormAppointment = () => {
                     placeholder="Especie de la mascota"
                     value={inputsForm.petSpeciesAppointment}
                     onChange={handleInputChange("petSpeciesAppointment")}
+                    maxLength={15}                    
                     required
                 />
             </div>
@@ -180,18 +193,20 @@ export const FormAppointment = () => {
                     placeholder="Raza de la mascota"
                     value={inputsForm.petBreedAppointment}
                     onChange={handleInputChange("petBreedAppointment")}
+                    maxLength={15}                    
                     required
                 />
             </div>
             <div>
                 <label htmlFor="petAge">Edad de la Mascota:</label>
                 <Input
-                    type="number"
+                    type="text"
                     id="petAge"
                     name="petAge"
                     placeholder="Edad de la mascota (en años)"
                     value={inputsForm.petAgeAppointment}
                     onChange={handleInputChange("petAgeAppointment")}
+                    maxLength={2}                    
                     required
                 />
             </div>
@@ -214,12 +229,13 @@ export const FormAppointment = () => {
             <div>
                 <label htmlFor="petWeight">Peso de la Mascota:</label>
                 <Input
-                    type="number"
+                    type="text"
                     id="petWeight"
                     name="petWeight"
                     placeholder="Peso de la mascota (en kg)"
                     value={inputsForm.petWeightAppointment}
                     onChange={handleInputChange("petWeightAppointment")}
+                    maxLength={2}                    
                     required
                 />
             </div>
@@ -232,10 +248,17 @@ export const FormAppointment = () => {
                     placeholder="Motivo de la cita"
                     value={inputsForm.reasonAppointment}
                     onChange={handleInputChange("reasonAppointment")}
+                    maxLength={200}
                     required
                 />
             </div>
-            <Button type="submit" />
+
+            <PopNotification
+                actionComponent={<Button type="submit" />}
+                active={activePop}
+                titleAlert="¡Cita agendada con exito!"
+                descriptionAlert='Tu cita ha sido agendada exitosamente, puedes ver tus solicitudes de citas, en el apartado de "Mis solicitudes"'
+            />
         </Form>
     );
 };

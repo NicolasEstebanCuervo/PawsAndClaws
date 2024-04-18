@@ -24,6 +24,7 @@ import {
 } from "../../../redux/reducers/animalSlice";
 import { ImagesGenerator } from "../../../redux/Api";
 import { useDispatch, useSelector } from "react-redux";
+import { PopConfirmation } from "../../componentsGlobals/pop-up/popConfirmation";
 
 export const CardAdoptionRequests = ({
     requestInfo,
@@ -55,13 +56,40 @@ export const CardAdoptionRequests = ({
 
                 const breed = animalToLoad.breed;
                 const data = await ImagesGenerator(breed);
-                console.log("Image data:", data);
                 setImageUrl(data);
             }
         };
 
         fetchImages();
     }, [requestInfo]);
+
+    const [statusRequest, setStatusRequest] = useState<string>("");
+
+    useEffect(() => {
+        const startDate = new Date();
+        const currentDate = new Date();
+        const difference = currentDate.getTime() - startDate.getTime();
+        const daysPassed = Math.ceil(difference / (1000 * 3600 * 24));
+
+        if (daysPassed < 3) {
+            setStatusRequest("Pendiente");
+        } else if (daysPassed < 6) {
+            const random = Math.random();
+            if (random < 0.1) {
+                setStatusRequest("Rechazada");
+            } else {
+                setStatusRequest("En progreso");
+            }
+        } else if (daysPassed < 9) {
+            if (statusRequest !== "Rechazada") {
+                setStatusRequest("Aprobada");
+            }
+        } else {
+            if (statusRequest !== "Rechazada") {
+                setStatusRequest("Finalizada");
+            }
+        }
+    }, [statusRequest]);
 
     return (
         <Popover
@@ -70,12 +98,12 @@ export const CardAdoptionRequests = ({
             onClose={changeFalseClicked}
         >
             <PopoverTrigger>
-                <ContentTrigger clicked={clicked}>
+                <ContentTrigger status={statusRequest} clicked={clicked}>
                     <MM>
                         Solicitud de adopcion a nombre de:{" "}
                         {requestInfo.fullNameAdoption}
                     </MM>
-                    <SM>Estado de la solicitud: En progreso</SM>
+                    <SM>Estado de la solicitud: {statusRequest}</SM>
                 </ContentTrigger>
             </PopoverTrigger>
             <PopoverContent>
@@ -127,13 +155,19 @@ export const CardAdoptionRequests = ({
                         </List>
                     </ContentPopover>
 
-                    <Button
-                        onClick={deleteAdoptionRequest}
-                        margin="0 0 1rem 1rem"
-                        colorScheme="teal"
-                    >
-                        Borrar peticion
-                    </Button>
+                    <PopConfirmation
+                        functionActive={deleteAdoptionRequest}
+                        actionComponent={
+                            <Button
+                                margin="0 0 1rem 1rem"
+                                colorScheme="teal"
+                            >
+                                Borrar peticion
+                            </Button>
+                        }
+                        titleAlert="¿Estas seguro que quieres eliminar esta peticion de adopcion?"
+                        descriptionAlert="Si eliminas esta peticion, tendras que llenar el formulario de la mascota nuevamente."
+                    />
                 </PopoverBody>
             </PopoverContent>
         </Popover>
@@ -145,8 +179,14 @@ const ContentTrigger = styled.div`
     position: relative;
     padding: 1rem;
     border-radius: 0.3rem;
-    background: ${({ clicked }: { clicked: boolean }) =>
-        clicked ? `${color.LightGreen2}` : `${color.LightGreen}}`};
+    background: ${({ clicked, status }: { clicked: boolean; status: string }) =>
+        status === "Rechazada"
+            ? clicked
+                ? `${color.LightRed2}`
+                : `${color.LightRed}`
+            : clicked
+            ? `${color.Beige}`
+            : `${color.LightBrown}`};
 `;
 const HeaderPopover = styled.div`
     display: flex;

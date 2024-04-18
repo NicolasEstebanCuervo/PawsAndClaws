@@ -15,6 +15,10 @@ const globalStyles = css`
         box-sizing: border-box;
         font-family: "Archivo", sans-serif;
     }
+
+    .chakra-alert{
+        border-radius: 0.3rem;
+    }
 `;
 
 ReactDOM.render(

@@ -43,7 +43,7 @@ export const AboutAppointment = ()=>{
                 </IndividualTexts>
                 <IndividualTexts>
                     <TitleIndividual>Emergencias</TitleIndividual>
-                    <SM>Para emergencias, comunícate al 123456789.</SM>
+                    <SM>Para emergencias, comunícate al 3238092023.</SM>
                 </IndividualTexts>
             </SubContainerTexts>
 

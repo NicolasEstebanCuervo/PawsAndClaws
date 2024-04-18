@@ -13,14 +13,14 @@ import {
 } from "@chakra-ui/react";
 import { MM, SM } from "../../../theme/fonts";
 import * as color from "../../../theme/colors";
-import { useState } from "react";
+import { useEffect, useState } from "react";
 import { IoPawSharp } from "react-icons/io5";
 import {
     IFormAppointment,
-    deleteAdoptionsRequests,
     deleteAppointmentsRequests,
 } from "../../../redux/reducers/animalSlice";
 import { useDispatch } from "react-redux";
+import { PopConfirmation } from "../../componentsGlobals/pop-up/popConfirmation";
 
 export const CardAppointmentRequests = ({
     requestInfo,
@@ -42,6 +42,34 @@ export const CardAppointmentRequests = ({
         dispatch(deleteAppointmentsRequests(requestInfo));
     };
 
+    const [statusRequest, setStatusRequest] = useState<string>("");
+
+    useEffect(() => {
+        const startDate = new Date();
+        const currentDate = new Date();
+        const difference = currentDate.getTime() - startDate.getTime();
+        const daysPassed = Math.ceil(difference / (1000 * 3600 * 24));
+
+        if (daysPassed < 3) {
+            setStatusRequest("Pendiente");
+        } else if (daysPassed < 6) {
+            const random = Math.random();
+            if (random < 0.1) {
+                setStatusRequest("Rechazada");
+            } else {
+                setStatusRequest("En progreso");
+            }
+        } else if (daysPassed < 9) {
+            if (statusRequest !== "Rechazada") {
+                setStatusRequest("Aprobada");
+            }
+        } else {
+            if (statusRequest !== "Rechazada") {
+                setStatusRequest("Finalizada");
+            }
+        }
+    }, [statusRequest]);
+
     return (
         <Popover
             placement="top-start"
@@ -49,12 +77,12 @@ export const CardAppointmentRequests = ({
             onClose={changeFalseClicked}
         >
             <PopoverTrigger>
-                <ContentTrigger clicked={clicked}>
+                <ContentTrigger status={statusRequest} clicked={clicked}>
                     <MM>
                         Cita agendada en nombre de:{" "}
                         {requestInfo.fullNameAppointment}
                     </MM>
-                    <SM>Estado de la solicitud: En progreso</SM>
+                    <SM>Estado de la solicitud: {statusRequest}</SM>
                 </ContentTrigger>
             </PopoverTrigger>
             <PopoverContent>
@@ -105,13 +133,21 @@ export const CardAppointmentRequests = ({
                         </List>
                     </ContentPopover>
 
-                    <Button
-                        onClick={deleteAdoptionRequest}
-                        margin="0 0 1rem 1rem"
-                        colorScheme="teal"
-                    >
-                        Borrar peticion
-                    </Button>
+
+
+                    <PopConfirmation
+                        functionActive={deleteAdoptionRequest}
+                        actionComponent={
+                            <Button
+                            margin="0 0 1rem 1rem"
+                            colorScheme="teal"
+                            >
+                                Borrar peticion
+                            </Button>
+                        }
+                        titleAlert="¿Estas seguro que quieres eliminar esta cita agendada?"
+                        descriptionAlert="Si eliminas esta cita, tendras que llenar el formulario de tu mascota nuevamente."
+                    />
                 </PopoverBody>
             </PopoverContent>
         </Popover>
@@ -123,8 +159,15 @@ const ContentTrigger = styled.div`
     position: relative;
     padding: 1rem;
     border-radius: 0.3rem;
-    background: ${({ clicked }: { clicked: boolean }) =>
-        clicked ? `${color.Beige}` : `${color.LightBrown}}`};
+
+    background: ${({ clicked, status }: { clicked: boolean; status: string }) =>
+        status === "Rechazada"
+            ? clicked
+                ? `${color.LightRed2}`
+                : `${color.LightRed}`
+            : clicked
+            ? `${color.Beige}`
+            : `${color.LightBrown}`};
 `;
 
 const ContentPopover = styled.div`

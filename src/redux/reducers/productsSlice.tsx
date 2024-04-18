@@ -11,20 +11,47 @@ export interface IProduct {
             priceString: string;
         };
     };
-    shortDescription: string;
     quantity: number;
+    brand: string;
+    numberOfReviews: string;
 }
+
+export interface IComment {
+    id: string;
+    name: string;
+    date: string;
+    comment: string;
+    productId:number
+}
+
+export interface IFormPay {
+    fullNamePay: string;
+    addressPay: string;
+    phoneNumberPay: string;
+    emailPay: string;
+    cardNumberPay: string;
+    cardNamePay: string;
+    expiryDatePay: string;
+    cvvPay: string;
+}
+
 
 interface GlobalInterface {
     products: IProduct[];
     productSelected: IProduct | any;
     productsInTheCart: IProduct[];
+    comments: IComment[];
+    newComments: IComment[];
+    totalPrice: number;
 }
 
 const initialStates: GlobalInterface = {
     products: [],
-    productSelected: [],
     productsInTheCart: [],
+    comments: [],
+    newComments: [],
+    totalPrice: 0,
+    productSelected: [] 
 };
 
 export const ProductSlice = createSlice({
@@ -59,7 +86,7 @@ export const ProductSlice = createSlice({
         deleteProductInTheCart: (state, action) => {
             state.productsInTheCart = state.productsInTheCart.filter(
                 (product: IProduct) => {
-                    return product.usItemId !== action.payload.usItemId;
+                    return product.usItemId !== action.payload;
                 }
             );
         },
@@ -67,7 +94,7 @@ export const ProductSlice = createSlice({
         setIncrementProduct: (state, action) => {
             state.productsInTheCart = state.productsInTheCart.map(
                 (product: IProduct) => {
-                    if (product.usItemId === action.payload.usItemId) {
+                    if (product.usItemId === action.payload) {
                         product.quantity = product.quantity + 1;
                     }
                     return product;
@@ -77,7 +104,7 @@ export const ProductSlice = createSlice({
         setDecreaseProduct: (state, action) => {
             state.productsInTheCart = state.productsInTheCart.map(
                 (product: IProduct) => {
-                    if (product.usItemId === action.payload.usItemId) {
+                    if (product.usItemId === action.payload) {
                         if (product.quantity === 1) {
                             product.quantity = product.quantity;
                         } else {
@@ -88,6 +115,27 @@ export const ProductSlice = createSlice({
                 }
             );
         },
+        setComments: (state, action) => {
+            state.comments = [...state.comments, action.payload];
+        },
+        setComment: (state, action: PayloadAction<IComment>) => {
+            state.newComments = [action.payload, ...state.newComments];
+        },
+
+        deleteComment: (state, action) => {
+            state.newComments = state.newComments.filter(
+                (comment: IComment) => {
+                    return comment.id !== action.payload.id;
+                }
+            );
+        },
+        setTotalPrice: (state, action) => {
+            state.totalPrice = action.payload;
+        },
+        setInputValueChanged: (state, action) => {
+            const { fieldName, value } = action.payload;
+            (state as any)[fieldName] = value;
+        },
     },
 });
 
@@ -97,7 +145,12 @@ export const {
     setProductsInTheCart,
     deleteProductInTheCart,
     setIncrementProduct,
-    setDecreaseProduct
+    setDecreaseProduct,
+    setComments,
+    setComment,
+    deleteComment,
+    setTotalPrice,
+    setInputValueChanged
 } = ProductSlice.actions;
 
 export default ProductSlice.reducer;

@@ -8,7 +8,7 @@ import * as color from "../../../theme/colors"
 export const AnimalsAdoption = () => {
     const animals = useSelector((state: any) => state.AnimalSlice);
     const numRandomA = Math.floor(Math.random() * 27);
-    const animalsMap = animals.animals[0];
+    const animalsMap = animals.animals;
 
     return (
         <SectionCardsAdoption>

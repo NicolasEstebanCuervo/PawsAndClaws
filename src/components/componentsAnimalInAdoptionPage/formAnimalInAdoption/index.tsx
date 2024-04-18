@@ -2,17 +2,18 @@ import { Input, Select } from "@chakra-ui/react";
 import styled from "@emotion/styled";
 import * as color from "../../../theme/colors";
 import { useDispatch, useSelector } from "react-redux";
-import { ChangeEvent, FormEvent } from "react";
+import { ChangeEvent, FormEvent, useState } from "react";
 import {
     createAdoptionRequest,
     setInputValueChanged,
 } from "../../../redux/reducers/animalSlice";
 import { v4 as uuidv4 } from "uuid";
-
+import { PopNotification } from "../../componentsGlobals/pop-up/popNotification";
 
 export const FormAnimalInAdoption = () => {
     const inputsForm = useSelector((state: any) => state.AnimalSlice);
     const dispatch = useDispatch();
+    const [activePop, setActivePop] = useState(false);
 
     const handleInputChange =
         (inputName: string) => (e: ChangeEvent<HTMLInputElement>) => {
@@ -34,14 +35,13 @@ export const FormAnimalInAdoption = () => {
         e.preventDefault();
         dispatch(
             createAdoptionRequest({
-                id:uuidv4(),
+                id: uuidv4(),
                 fullNameAdoption: inputsForm.fullNameAdoption,
                 addressAdoption: inputsForm.addressAdoption,
                 phoneNumberAdoption: inputsForm.phoneNumberAdoption,
                 emailAdoption: inputsForm.emailAdoption,
                 housingAdoption: inputsForm.housingAdoption,
-                landlorTenantAdoption:
-                    inputsForm.landlorTenantAdoption,
+                landlorTenantAdoption: inputsForm.landlorTenantAdoption,
                 fencedYardAdoption: inputsForm.fencedYardAdoption,
                 previousPetsAdoption: inputsForm.previousPetsAdoption,
                 currentPetsAdoption: inputsForm.currentPetsAdoption,
@@ -50,6 +50,12 @@ export const FormAnimalInAdoption = () => {
                 theAnimalAdoption: inputsForm.animalSelected,
             })
         );
+
+        setActivePop(true);
+
+        setInterval(() => {
+            setActivePop(false);
+        }, 100);
 
         dispatch(
             setInputValueChanged({ fieldName: "fullNameAdoption", value: "" })
@@ -120,6 +126,7 @@ export const FormAnimalInAdoption = () => {
                         }}
                         focusBorderColor={color.Gray}
                         required
+                        maxLength={30}
                         type="text"
                         id="fullName"
                         name="fullName"
@@ -138,6 +145,7 @@ export const FormAnimalInAdoption = () => {
                         }}
                         focusBorderColor={color.Gray}
                         required
+                        maxLength={50}                    
                         type="text"
                         id="address"
                         name="address"
@@ -156,6 +164,7 @@ export const FormAnimalInAdoption = () => {
                         }}
                         focusBorderColor={color.Gray}
                         required
+                        maxLength={15}                    
                         type="text"
                         id="phoneNumber"
                         name="phoneNumber"
@@ -176,6 +185,7 @@ export const FormAnimalInAdoption = () => {
                         }}
                         focusBorderColor={color.Gray}
                         required
+                        maxLength={50}                    
                         type="email"
                         id="email"
                         name="emailAdoption"
@@ -199,7 +209,9 @@ export const FormAnimalInAdoption = () => {
                         value={inputsForm.housingAdoption}
                         onChange={handleSelectChange("housingAdoption")}
                     >
-                        <option disabled selected>Selecciona una opción</option>
+                        <option disabled selected>
+                            Selecciona una opción
+                        </option>
                         <option value="casa">Casa</option>
                         <option value="apartamento">Apartamento</option>
                     </Select>
@@ -217,11 +229,11 @@ export const FormAnimalInAdoption = () => {
                         id="homeOwner"
                         name="homeOwner"
                         value={inputsForm.landlorTenantAdoption}
-                        onChange={handleSelectChange(
-                            "landlorTenantAdoption"
-                        )}
+                        onChange={handleSelectChange("landlorTenantAdoption")}
                     >
-                        <option disabled selected>Selecciona una opción</option>
+                        <option disabled selected>
+                            Selecciona una opción
+                        </option>
                         <option value="propietario">Propietario</option>
                         <option value="inquilino">Inquilino</option>
                     </Select>
@@ -241,7 +253,9 @@ export const FormAnimalInAdoption = () => {
                         value={inputsForm.fencedYardAdoption}
                         onChange={handleSelectChange("fencedYardAdoption")}
                     >
-                        <option disabled selected>Selecciona una opción</option>
+                        <option disabled selected>
+                            Selecciona una opción
+                        </option>
                         <option value="si">Sí</option>
                         <option value="no">No</option>
                     </Select>
@@ -261,11 +275,11 @@ export const FormAnimalInAdoption = () => {
                         id="previousPets"
                         name="previousPets"
                         value={inputsForm.previousPetsAdoption}
-                        onChange={handleSelectChange(
-                            "previousPetsAdoption"
-                        )}
+                        onChange={handleSelectChange("previousPetsAdoption")}
                     >
-                        <option disabled selected>Selecciona una opción</option>
+                        <option disabled selected>
+                            Selecciona una opción
+                        </option>
                         <option value="si">Sí</option>
                         <option value="no">No</option>
                     </Select>
@@ -285,11 +299,11 @@ export const FormAnimalInAdoption = () => {
                         id="currentPets"
                         name="currentPets"
                         value={inputsForm.currentPetsAdoption}
-                        onChange={handleSelectChange(
-                            "currentPetsAdoption"
-                        )}
+                        onChange={handleSelectChange("currentPetsAdoption")}
                     >
-                        <option disabled selected>Selecciona una opción</option>
+                        <option disabled selected>
+                            Selecciona una opción
+                        </option>
                         <option value="si">Sí</option>
                         <option value="no">No</option>
                     </Select>
@@ -310,16 +324,21 @@ export const FormAnimalInAdoption = () => {
                         id="adoptedPets"
                         name="adoptedPets"
                         value={inputsForm.adoptedPetsAdoption}
-                        onChange={handleSelectChange(
-                            "adoptedPetsAdoption"
-                        )}
+                        onChange={handleSelectChange("adoptedPetsAdoption")}
                     >
-                        <option disabled selected>Selecciona una opción</option>
+                        <option disabled selected>
+                            Selecciona una opción
+                        </option>
                         <option value="si">Sí</option>
                         <option value="no">No</option>
                     </Select>
                 </div>
-                <Button type="submit" />
+                <PopNotification
+                    actionComponent={<Button type="submit" />}
+                    active={activePop}
+                    titleAlert="¡Solicitud de adopcion agendad con exito!"
+                    descriptionAlert='Tu solicitud de adopcion ha sido agendada exitosamente, puedes ver tus solicitudes de adopciones, en el apartado de "Mis solicitudes"'
+                />
             </Form>
         </SectionFormAnimalInAdoption>
     );

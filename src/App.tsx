@@ -2,7 +2,7 @@ import { FC, ReactNode, useEffect, useLayoutEffect } from "react";
 import { BrowserRouter, Routes, Route, useLocation } from "react-router-dom";
 import { useDispatch } from "react-redux";
 import { setAnimals } from "./redux/reducers/animalSlice";
-import { FetchAnimals } from "./redux/Api";
+import { FetchAnimals, FetchComments } from "./redux/Api";
 import { StorePage } from "./pages/StorePage";
 import { IndexPage } from "./pages/IndexPage";
 import { AnimalInAdoptionPage } from "./pages/AnimalInAdoptionPage";
@@ -10,9 +10,12 @@ import { ReviewProductPage } from "./pages/ReviewProductPage";
 import { AdoptionPage } from "./pages/AdoptionPage";
 import { AppointmentPage } from "./pages/AppointmentPage";
 import { RequestsPage } from "./pages/RequestsPage";
+import { setComments } from "./redux/reducers/productsSlice";
+import { PayPage } from "./pages/PayPage";
+import { ThanksPage } from "./pages/ThanksPage";
+import { FormPayPage } from "./pages/FormPayPage";
 
-
-const Wrapper= ({ children }:{children: ReactNode}) => {
+const Wrapper  = ({ children }: { children: ReactNode }) => {
     const location = useLocation();
     useLayoutEffect(() => {
         document.documentElement.scrollTo(0, 0);
@@ -20,9 +23,8 @@ const Wrapper= ({ children }:{children: ReactNode}) => {
     return <>{children}</>;
 };
 
-const App:FC = () => {
+const App: FC = () => {
     const dispatch = useDispatch();
-
     useEffect(() => {
         dispatch(setAnimals(FetchAnimals()));
     }, [dispatch]);
@@ -42,11 +44,12 @@ const App:FC = () => {
                         path="/products/:id"
                         element={<ReviewProductPage />}
                     />
-                    <Route
-                        path="/appointment"
-                        element={<AppointmentPage />}
-                    />
+                    <Route path="/pay" element={<PayPage />} />
+
+                    <Route path="/appointment" element={<AppointmentPage />} />
                     <Route path="/requests" element={<RequestsPage />} />
+                    <Route path="/formPay" element={<FormPayPage />} />
+                    <Route path="/thanks" element={<ThanksPage />} />
                 </Routes>
             </Wrapper>
         </BrowserRouter>

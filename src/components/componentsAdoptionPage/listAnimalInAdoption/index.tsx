@@ -5,15 +5,14 @@ import { useSelector } from "react-redux";
 
 export const ListAnimalInAdoption = ({indexArray1,indexArray2}:{indexArray1:number,indexArray2:number}) => {
     const animals = useSelector((state: any) => state.AnimalSlice);
-    const animalsMap = animals.animalsFiltered[0];
+    const animalsFiltered = animals.animalsFiltered;
 
     return (
         <SectionCardsAdoption>
             <SubContainerCardsAdoption>
-                {animalsMap &&
-                    animalsMap
-                    .slice(indexArray1,indexArray2)
-                        .map((animal: IAnimal, index: number) => (
+                {animalsFiltered &&
+                    animalsFiltered
+                        .slice(indexArray1,indexArray2).map((animal: IAnimal, index: number) => (
                             <CardAdoption animal={animal} key={index} />
                         ))}
             </SubContainerCardsAdoption>

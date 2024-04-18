@@ -1,7 +1,8 @@
 import animals from "./index.json";
+import comments from "./comments.json"
 
 export const FetchAnimals = () => {
-    return [...animals.animals];
+    return animals.animals;
 };
 
 export const ImagesGenerator = async (breed: string) => {
@@ -27,4 +28,9 @@ export const FetchProducts = async (category:string) => {
         const response = await fetch(url, options);
         const result = await response.json();
         return result.itemsV2;
+};
+
+
+export const FetchComments = () => {
+    return [...comments.comments];
 };

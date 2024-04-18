@@ -4,22 +4,23 @@ import { NavBar } from "../components/componentsGlobals/navbar";
 import Footer from "../components/componentsGlobals/footer";
 import { ListProductsStore } from "../components/componentsStorePage/listProductsStore";
 import { SearchInput } from "../components/componentsStorePage/searchInput";
-import { HeaderAdoption } from "../components/componentsAdoptionPage/headerAdoption";
-import { FunFactsAdoption } from "../components/componentsAdoptionPage/funFactsAdoption";
+import { FunFactsStore } from "../components/componentsStorePage/funFactsStore";
+import { ContenStorePage } from "../components/componentsStorePage/contentStorePage";
+import { HeaderStore } from "../components/componentsStorePage/headerStorePage";
 
 export const StorePage = () => {
     return (
         <ContainerPage>
             <NavBar />
-            <HeaderAdoption />
+            <HeaderStore />
             <SearchInput />
-            <ListProductsStore background={true} indexA={0} indexB={8} />
-            <ListProductsStore background={true} indexA={9} indexB={17} />
-            <FunFactsAdoption />
-            <ListProductsStore background={true} indexA={18} indexB={26} />
-            <ListProductsStore background={true} indexA={27} indexB={35} />
-            <FunFactsAdoption />
-            <ListProductsStore background={true} indexA={36} indexB={50} />
+            <ListProductsStore indexA={0} indexB={8} />
+            <ListProductsStore indexA={9} indexB={17} />
+            <FunFactsStore />
+            <ListProductsStore indexA={18} indexB={26} />
+            <ListProductsStore indexA={27} indexB={35} />
+            <ContenStorePage />
+            <ListProductsStore indexA={36} indexB={50} />
             <Footer />
         </ContainerPage>
     );

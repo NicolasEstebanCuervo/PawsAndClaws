@@ -8,24 +8,40 @@ import {
 } from "../../../redux/reducers/productsSlice";
 import { Link } from "react-router-dom";
 import { useDispatch } from "react-redux";
-import { useEffect, useState } from "react";
+import { PopNotification } from "../pop-up/popNotification";
+import { useState } from "react";
+import { PopConfirmation } from "../pop-up/popConfirmation";
 
-export const CardProduct = ({ product }: { product: IProduct }) => {
-    const [numberRandom, setNumberRandom] = useState(1);
+export const StarComponent = ({
+    colorStar,
+    fontSize,
+}: {
+    colorStar?: string;
+    fontSize?: number;
+}) => {
+    const stars = [];
+    for (let i = 0; i < 5; i++) {
+        stars.push(
+            <Star
+                key={i}
+                className="bi bi-star-fill"
+                colorStar={colorStar}
+                fontSize={fontSize}
+            ></Star>
+        );
+    }
+    return stars;
+};
 
-    useEffect(() => {
-        setNumberRandom(Math.floor(Math.random() * 2 + 4));
-    }, []);
-
-    const StarComponent = () => {
-        const stars = [];
-        for (let i = 0; i < numberRandom; i++) {
-            stars.push(<Star key={i} className="bi bi-star-fill"></Star>);
-        }
-        return stars;
-    };
-
+export const CardProduct = ({
+    product,
+    alert,
+}: {
+    product: IProduct;
+    alert?: boolean;
+}) => {
     const dispatch = useDispatch();
+    const [activePop, setActivePop] = useState(false);
 
     const setProduct = () => {
         dispatch(setProductSelected(product));
@@ -33,9 +49,20 @@ export const CardProduct = ({ product }: { product: IProduct }) => {
 
     const addInTheCart = () => {
         dispatch(setProductsInTheCart(product));
+        setActivePop(true);
+
+        setInterval(() => {
+            setActivePop(false);
+        }, 100);
     };
 
-    const quantityProduct = parseFloat((product.priceInfo?.currentPrice?.priceString).slice(1,7)) ;
+    let quantityProduct = 0;
+
+    if (product.priceInfo?.currentPrice?.priceString) {
+        quantityProduct = parseFloat(
+            product.priceInfo.currentPrice.priceString.slice(1, 7)
+        );
+    }
 
     return (
         <SectionCardProduct>
@@ -53,7 +80,7 @@ export const CardProduct = ({ product }: { product: IProduct }) => {
 
             <TextsProduct>
                 {product.name ? (
-                    <ContainerStars>{StarComponent()}</ContainerStars>
+                    <ContainerStars>{StarComponent({})}</ContainerStars>
                 ) : (
                     <></>
                 )}
@@ -69,22 +96,21 @@ export const CardProduct = ({ product }: { product: IProduct }) => {
                 <ContainerPrices>
                     {product.priceInfo?.currentPrice?.priceString && (
                         <div>
-                            <TextTach>
-                                $
-                                {quantityProduct.toFixed(2)}
-                            </TextTach>
+                            <TextTach>${quantityProduct.toFixed(2)}</TextTach>
                         </div>
                     )}
 
                     {product.priceInfo?.currentPrice?.priceString ? (
                         <MM>
                             $
-                            {(parseFloat(
-                                (product.priceInfo?.currentPrice?.priceString).slice(
-                                    1,
-                                    7
-                                )
-                            ) - 2).toFixed(2)}
+                            {(
+                                parseFloat(
+                                    (product.priceInfo?.currentPrice?.priceString).slice(
+                                        1,
+                                        7
+                                    )
+                                ) - 2
+                            ).toFixed(2)}
                         </MM>
                     ) : (
                         <MM>Agotado</MM>
@@ -92,9 +118,21 @@ export const CardProduct = ({ product }: { product: IProduct }) => {
                 </ContainerPrices>
                 <ContainerButtons>
                     <LinkAnimal to={`/products/${product.usItemId}`}>
-                        <Button onClick={setProduct}>Vista rapida</Button>
+                                <Button onClick={setProduct}>
+                                    Vista rapida
+                                </Button>
                     </LinkAnimal>
-                    <Cart onClick={addInTheCart} className="bi bi-cart4"></Cart>
+                    <PopNotification
+                        actionComponent={
+                            <Cart
+                                onClick={addInTheCart}
+                                className="bi bi-cart4"
+                            ></Cart>
+                        }
+                        active={activePop}
+                        titleAlert="¡Producto agregado al carrito!"
+                        descriptionAlert='Este producto se ha agregado al carrito, puedes ver tus productos agendados en el apartado de "Mi carrito"'
+                    />
                 </ContainerButtons>
             </TextsProduct>
         </SectionCardProduct>
@@ -144,9 +182,9 @@ const ContainerStars = styled.div`
     display: flex;
     gap: 0.2rem;
 `;
-const Star = styled.i`
-    color: #f1c40f;
-    font-size: 1.3rem;
+const Star = styled.i<{ colorStar?: string; fontSize?: number }>`
+    color: ${({ colorStar }) => (colorStar ? colorStar : `${color.Yellow}`)};
+    font-size: ${({ fontSize }) => (fontSize ? `${fontSize}rem` : "1.3rem")};
 `;
 const LinkAnimal = styled(Link)`
     width: 90%;

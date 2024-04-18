@@ -7,6 +7,8 @@ import {
 } from "../../../redux/reducers/productsSlice";
 import { useDispatch } from "react-redux";
 import { LM, MM } from "../../../theme/fonts";
+import { PopNotification } from "../pop-up/popNotification";
+import { PopConfirmation } from "../pop-up/popConfirmation";
 
 export const ProductCart = ({
     product,
@@ -18,20 +20,16 @@ export const ProductCart = ({
     const dispatch = useDispatch();
 
     const deleteProduct = () => {
-        dispatch(deleteProductInTheCart(product));
+        dispatch(deleteProductInTheCart(product.usItemId));
     };
 
     const incrementProduct = () => {
-        dispatch(setIncrementProduct(product));
+        dispatch(setIncrementProduct(product.usItemId));
     };
 
     const decreaseProduct = () => {
-        dispatch(setDecreaseProduct(product));
+        dispatch(setDecreaseProduct(product.usItemId));
     };
-
-    const quantityProduct =
-        parseFloat((product.priceInfo?.currentPrice?.priceString).slice(1, 7)) *
-        quantity;
 
     return (
         <ContainerProductCart>
@@ -41,7 +39,20 @@ export const ProductCart = ({
             />
             <div>
                 <MM>{product.name}</MM>
-                <MM style={{fontWeight:"bold"}}>$ {quantityProduct.toFixed(2)}</MM>
+                <MM style={{ fontWeight: "bold" }}>
+                    $
+                    {(
+                        (parseFloat(
+                            (product.priceInfo?.currentPrice?.priceString).slice(
+                                1,
+                                7
+                            )
+                        ) -
+                            2) *
+                        quantity
+                    ).toFixed(2)}
+                </MM>
+
                 <button onClick={incrementProduct}>
                     <Icons className="bi bi-plus"></Icons>
                 </button>
@@ -50,9 +61,16 @@ export const ProductCart = ({
                     <Icons className="bi bi-dash"></Icons>
                 </button>
 
-                <ButtonDelete onClick={deleteProduct}>
-                    <Icons className="bi bi-x"></Icons>
-                </ButtonDelete>
+                <PopConfirmation
+                    functionActive={deleteProduct}
+                    actionComponent={
+                        <ButtonDelete>
+                            <Icons className="bi bi-x"></Icons>
+                        </ButtonDelete>
+                    }
+                    titleAlert="¿Estas seguro que quieres eliminar este producto de tu carrito?"
+                    descriptionAlert="Si eliminas este producto del carrito tendras que volver a agregarlo para poder realizar la compra"
+                />
             </div>
         </ContainerProductCart>
     );
@@ -72,7 +90,7 @@ const ImgProductCart = styled.img`
 `;
 
 const Icons = styled.i`
-    font-size: 2.1rem;
+    font-size: 2rem;
     cursor: pointer;
     transition: opacity 0.2s ease-in-out;
     &:hover {
@@ -83,5 +101,6 @@ const Icons = styled.i`
 const ButtonDelete = styled.button`
     position: absolute;
     top: -0.5rem;
-    right: 0;
-`
+    right: -1rem;
+    margin-left: 1rem;
+`;
