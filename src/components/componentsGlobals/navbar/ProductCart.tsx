@@ -6,8 +6,7 @@ import {
     setIncrementProduct,
 } from "../../../redux/reducers/productsSlice";
 import { useDispatch } from "react-redux";
-import { LM, MM } from "../../../theme/fonts";
-import { PopNotification } from "../pop-up/popNotification";
+import { MM } from "../../../theme/fonts";
 import { PopConfirmation } from "../pop-up/popConfirmation";
 
 export const ProductCart = ({
@@ -32,8 +31,8 @@ export const ProductCart = ({
     };
 
     return (
-        <ContainerProductCart>
-            <ImgProductCart
+        <Container>
+            <Image
                 src={product.imageInfo.thumbnailUrl}
                 alt={`Imagen de ${product.name}`}
             />
@@ -54,29 +53,29 @@ export const ProductCart = ({
                 </MM>
 
                 <button onClick={incrementProduct}>
-                    <Icons className="bi bi-plus"></Icons>
+                    <Icon className="bi bi-plus"></Icon>
                 </button>
 
                 <button onClick={decreaseProduct}>
-                    <Icons className="bi bi-dash"></Icons>
+                    <Icon className="bi bi-dash"></Icon>
                 </button>
 
                 <PopConfirmation
                     functionActive={deleteProduct}
                     actionComponent={
                         <ButtonDelete>
-                            <Icons className="bi bi-x"></Icons>
+                            <IconTrash className="bi bi-trash"></IconTrash>
                         </ButtonDelete>
                     }
                     titleAlert="¿Estas seguro que quieres eliminar este producto de tu carrito?"
                     descriptionAlert="Si eliminas este producto del carrito tendras que volver a agregarlo para poder realizar la compra"
                 />
             </div>
-        </ContainerProductCart>
+        </Container>
     );
 };
 
-const ContainerProductCart = styled.div`
+const Container = styled.div`
     display: flex;
     gap: 1rem;
     justify-content: center;
@@ -84,17 +83,26 @@ const ContainerProductCart = styled.div`
     width: 100%;
     position: relative;
 `;
-const ImgProductCart = styled.img`
+const Image = styled.img`
     width: 9rem;
     padding: 0 10px;
 `;
 
-const Icons = styled.i`
+const Icon = styled.i`
     font-size: 2rem;
     cursor: pointer;
     transition: opacity 0.2s ease-in-out;
     &:hover {
         opacity: 0.5;
+    }
+`;
+
+const IconTrash = styled.i`
+    font-size: 1.7rem;
+    cursor: pointer;
+    transition: opacity 0.2s ease-in-out;
+    &:hover {
+        opacity: 0.6;
     }
 `;
 

@@ -5,15 +5,11 @@ import styled from "@emotion/styled";
 import * as color from "../../../theme/colors";
 
 export const ListProductsCart = () => {
-    const productsInTheCart = useSelector(
-        (state: any) => state.ProductSlice.productsInTheCart
-    );
-
+    const productSlice = useSelector((state: any) => state.ProductSlice);
     const dispatch = useDispatch();
-
     let totalPrice = 0;
 
-    productsInTheCart.forEach((product: IProduct) => {
+    productSlice.productsInTheCart.forEach((product: IProduct) => {
         const price =
             parseFloat(
                 (product.priceInfo?.currentPrice?.priceString).slice(1, 7)
@@ -24,9 +20,9 @@ export const ListProductsCart = () => {
     dispatch(setTotalPrice(totalPrice));
 
     return (
-        <SectionProductCart>
-            {productsInTheCart.length > 0 ? (
-                productsInTheCart.map((product: IProduct) => {
+        <Section>
+            {productSlice.productsInTheCart.length > 0 ? (
+                productSlice.productsInTheCart.map((product: IProduct) => {
                     return (
                         <ContainerProduct key={product.usItemId}>
                             <ProductCart
@@ -40,11 +36,11 @@ export const ListProductsCart = () => {
             ) : (
                 <></>
             )}
-        </SectionProductCart>
+        </Section>
     );
 };
 
-const SectionProductCart = styled.section`
+const Section = styled.section`
     display: flex;
     flex-direction: column;
     gap: 1rem;

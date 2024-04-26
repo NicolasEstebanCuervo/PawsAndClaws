@@ -6,7 +6,6 @@ import * as color from "../../../theme/colors";
 import { MLM } from "../../../theme/fonts";
 import { useDisclosure } from "@chakra-ui/react";
 import { Cart } from "./Cart";
-import { isOmittedExpression } from "typescript";
 
 export const NavBar = () => {
     const [open, setOpen] = useState(false);
@@ -18,8 +17,8 @@ export const NavBar = () => {
     const { isOpen, onOpen, onClose } = useDisclosure();
 
     return (
-        <NavSection>
-            <NavBarContainer
+        <SectionNav>
+            <SubContainerNav
                 data-testid="nav-bar"
                 expand="lg"
                 data-bs-theme="dark"
@@ -29,8 +28,8 @@ export const NavBar = () => {
                     onClick={handleClick}
                 />
 
-                <div className="container_nav">
-                    <ImageLogo
+                <div className="SubContainerNav_nav">
+                    <Image
                         className="imagen_logo"
                         onClick={() => {
                             window.location.href = `/`;
@@ -45,7 +44,7 @@ export const NavBar = () => {
                     id="basic-navbar-nav"
                     className={`${isOpen ? "show" : ""}`}
                 >
-                    <LinksContainer className="mr-auto">
+                    <ContainerLinksNav className="mr-auto">
                         <MLM as={Link} to="/">
                             Inicio
                         </MLM>
@@ -70,14 +69,14 @@ export const NavBar = () => {
                         <MLM as={Link} to="/requests">
                             Mis solicitudes
                         </MLM>
-                    </LinksContainer>
+                    </ContainerLinksNav>
                 </Navbar.Collapse>
-            </NavBarContainer>
-        </NavSection>
+            </SubContainerNav>
+        </SectionNav>
     );
 };
 
-const NavSection = styled.nav`
+const SectionNav = styled.nav`
     width: 100%;
     display: flex;
     justify-content: center;
@@ -94,17 +93,17 @@ const NavSection = styled.nav`
     }
 `;
 
-const NavBarContainer = styled(Navbar)`
+const SubContainerNav = styled(Navbar)`
     width: 90%;
 `;
 
-const LinksContainer = styled(Nav)`
+const ContainerLinksNav = styled(Nav)`
     display: flex;
     justify-content: end;
     width: 100%;
 `;
 
-const ImageLogo = styled.img`
+const Image = styled.img`
     width: 4.5rem;
 `;
 

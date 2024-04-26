@@ -11,7 +11,7 @@ import {
 import { useRef } from "react";
 import { ListProductsCart } from "./ListProductsCart";
 import { useSelector } from "react-redux";
-import { LM, XLM } from "../../../theme/fonts";
+import { LM } from "../../../theme/fonts";
 import { Link } from "react-router-dom";
 
 export const Cart = ({
@@ -22,7 +22,6 @@ export const Cart = ({
     onClose: () => void;
 }) => {
     const firstField = useRef<HTMLInputElement>(null);
-
     const productsInTheCart = useSelector((state: any) => state.ProductSlice);
 
     return (

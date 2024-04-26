@@ -2,19 +2,17 @@ import styled from "@emotion/styled";
 import * as color from "../../../theme/colors"
 import { MM } from "../../../theme/fonts";
 
-function Footer () {
+export const Footer = () => {
     return (
         <FooterContainer>
-                <ImageLogo src={require("../../../assets/images/LogoLarge.webp")}>
-                </ImageLogo>
+                <Image src={require("../../../assets/images/LogoLarge.webp")}>
+                </Image>
                 <MM colorText={color.White}>
                     &copy; {new Date().getFullYear()} Paws and Claws. All Rights Reserved.
                 </MM>
         </FooterContainer>
     );
 };
-
-export default Footer;
 
 const FooterContainer = styled.footer`
     display: flex;
@@ -27,6 +25,6 @@ const FooterContainer = styled.footer`
     width: 100%;
 `;
 
-const ImageLogo = styled.img`
+const Image = styled.img`
     width: 20rem;
 `;

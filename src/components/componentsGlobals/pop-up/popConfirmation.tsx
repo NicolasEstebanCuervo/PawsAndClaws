@@ -35,7 +35,6 @@ export const PopConfirmation = ({
         functionActive()
     }
 
-
     return (
         <>
             <div style={{ width: `${width ? width : "auto"}` }}  onClick={onOpen}>{actionComponent}</div>

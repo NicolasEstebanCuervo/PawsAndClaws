@@ -1,10 +1,12 @@
 import animals from "./index.json";
 import comments from "./comments.json"
 
+// Fetches animals data
 export const FetchAnimals = () => {
     return animals.animals;
 };
 
+// Generates images based on the provided breed
 export const ImagesGenerator = async (breed: string) => {
     const data = await fetch(
         `https://pixabay.com/api/?key=37848833-62f906d3f5b6f66e64578261a&q=${breed}&image_type=photo&category=animals`
@@ -14,6 +16,7 @@ export const ImagesGenerator = async (breed: string) => {
     return image;
 };
 
+// Fetches products based on the provided category
 export const FetchProducts = async (category:string) => {
     const url = `https://walmart2.p.rapidapi.com/searchV2?query=${category}`;
     const options = {
@@ -30,7 +33,7 @@ export const FetchProducts = async (category:string) => {
         return result.itemsV2;
 };
 
-
+// Fetches comments data
 export const FetchComments = () => {
     return [...comments.comments];
 };

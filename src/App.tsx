@@ -2,18 +2,17 @@ import { FC, ReactNode, useEffect, useLayoutEffect } from "react";
 import { BrowserRouter, Routes, Route, useLocation } from "react-router-dom";
 import { useDispatch } from "react-redux";
 import { setAnimals } from "./redux/reducers/animalSlice";
-import { FetchAnimals, FetchComments } from "./redux/Api";
-import { StorePage } from "./pages/StorePage";
-import { IndexPage } from "./pages/IndexPage";
-import { AnimalInAdoptionPage } from "./pages/AnimalInAdoptionPage";
-import { ReviewProductPage } from "./pages/ReviewProductPage";
-import { AdoptionPage } from "./pages/AdoptionPage";
-import { AppointmentPage } from "./pages/AppointmentPage";
-import { RequestsPage } from "./pages/RequestsPage";
-import { setComments } from "./redux/reducers/productsSlice";
-import { PayPage } from "./pages/PayPage";
-import { ThanksPage } from "./pages/ThanksPage";
-import { FormPayPage } from "./pages/FormPayPage";
+import { FetchAnimals } from "./redux/Api";
+import { Store } from "./pages/Store";
+import { Index } from "./pages/Index";
+import { AnimalInAdoption } from "./pages/AnimalInAdoption";
+import { ReviewProduct } from "./pages/ReviewProduct";
+import { Adoption } from "./pages/Adoption";
+import { Appointment } from "./pages/Appointment";
+import { Requests } from "./pages/Requests";
+import { Pay } from "./pages/Pay";
+import { Thanks } from "./pages/Thanks";
+import { FormPay } from "./pages/FormPay";
 
 const Wrapper  = ({ children }: { children: ReactNode }) => {
     const location = useLocation();
@@ -33,23 +32,22 @@ const App: FC = () => {
         <BrowserRouter>
             <Wrapper>
                 <Routes>
-                    <Route path="/" element={<IndexPage />} />
-                    <Route path="/adoption" element={<AdoptionPage />} />
+                    <Route path="/" element={<Index />} />
+                    <Route path="/adoption" element={<Adoption />} />
                     <Route
                         path="/animals/adoption/:id"
-                        element={<AnimalInAdoptionPage />}
+                        element={<AnimalInAdoption />}
                     />
-                    <Route path="/store" element={<StorePage />} />
+                    <Route path="/store" element={<Store />} />
                     <Route
                         path="/products/:id"
-                        element={<ReviewProductPage />}
+                        element={<ReviewProduct />}
                     />
-                    <Route path="/pay" element={<PayPage />} />
-
-                    <Route path="/appointment" element={<AppointmentPage />} />
-                    <Route path="/requests" element={<RequestsPage />} />
-                    <Route path="/formPay" element={<FormPayPage />} />
-                    <Route path="/thanks" element={<ThanksPage />} />
+                    <Route path="/pay" element={<Pay />} />
+                    <Route path="/appointment" element={<Appointment />} />
+                    <Route path="/requests" element={<Requests />} />
+                    <Route path="/formPay" element={<FormPay />} />
+                    <Route path="/thanks" element={<Thanks />} />
                 </Routes>
             </Wrapper>
         </BrowserRouter>

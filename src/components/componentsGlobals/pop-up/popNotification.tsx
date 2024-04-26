@@ -10,14 +10,14 @@ import {
     Box,
     CloseButton,
 } from "@chakra-ui/react";
-import { ReactNode, useEffect, useRef, useState } from "react";
+import { ReactNode, useEffect, useRef } from "react";
 
 interface IAlertNotification {
     actionComponent: ReactNode;
     titleAlert?: string;
     descriptionAlert?: string;
     active?: boolean;
-    width?:string | undefined
+    width?: string | undefined;
 }
 
 export const PopNotification = ({
@@ -25,7 +25,7 @@ export const PopNotification = ({
     titleAlert,
     descriptionAlert,
     active,
-    width
+    width,
 }: IAlertNotification) => {
     const { isOpen, onOpen, onClose } = useDisclosure();
     const cancelRef = useRef<HTMLDivElement>(null);
@@ -48,7 +48,12 @@ export const PopNotification = ({
 
     return (
         <>
-            <div style={{ width: `${width ? width : "auto"}` }} onClick={active ? onOpen : undefined}>{actionComponent}</div>
+            <div
+                style={{ width: `${width ? width : "auto"}` }}
+                onClick={active ? onOpen : undefined}
+            >
+                {actionComponent}
+            </div>
 
             <AlertDialog
                 motionPreset="slideInBottom"
