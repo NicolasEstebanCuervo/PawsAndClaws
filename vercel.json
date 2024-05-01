@@ -11,3 +11,4 @@
         { "source": "^/@api/(.*)", "destination": "/src/redux/api/$1" }
     ]
 }
+
