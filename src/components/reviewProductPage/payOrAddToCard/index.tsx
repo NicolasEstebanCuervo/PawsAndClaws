@@ -1,11 +1,11 @@
 import styled from "@emotion/styled";
-import * as color from "../../../theme/colors";
-import { MM, SM, SMM, XLLM, XLM } from "../../../theme/fonts";
-import { StarComponent } from "../../componentsGlobals/productCard";
+import * as color from "@theme/colors";
+import { MM, SM, SMM, XLLM, XLM } from "@theme/fonts";
+import { StarComponent } from "../../componentsGlobals/cardProduct";
 import {
     IProduct,
     setProductsInTheCart,
-} from "../../../redux/reducers/productsSlice";
+} from "@reducers/productsSlice";
 import { useEffect, useState } from "react";
 import { useDispatch } from "react-redux";
 import { Link } from "react-router-dom";
@@ -95,7 +95,7 @@ export const PayOrAddToCart = ({ product }: { product: IProduct }) => {
                         descriptionAlert='Este producto se ha agregado al carrito, puedes ver tus productos agendados en el apartado de "Mi carrito"'
                     />
 
-                    <LinkProduct to="/pay">
+                    <LinkProduct to="/products/product/pay">
                         <Button onClick={addInTheCart}>Comprar ahora</Button>
                     </LinkProduct>
                 </SubContainerButtons>

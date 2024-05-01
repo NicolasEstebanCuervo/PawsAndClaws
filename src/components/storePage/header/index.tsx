@@ -1,7 +1,7 @@
 import styled from "@emotion/styled";
-import * as color from "../../../theme/colors";
-import ImageBackground from "../../../assets/images/BgStore.webp";
-import { XLLLM, XLM } from "../../../theme/fonts";
+import * as color from "@theme/colors";
+import ImageBackground from "@assets/images//BgStore.webp";
+import { XLLLM, XLM } from "@theme/fonts";
 
 export const Header = () => {
     return (
@@ -27,25 +27,43 @@ export const Header = () => {
     );
 };
 
-const Container = styled.section`
+const Container = styled.header`
     width: 100%;
     max-width: 2000px;
-    height: 50rem;
+    padding: 5% 0 10%;
     display: flex;
     flex-direction: column;
-    align-items: end;
-    background: ${color.Cream};
+    align-items: center;
     background: url(${ImageBackground});
     background-size: cover;
     background-position: center bottom;
+    margin-bottom: 10rem;
+
+    @media (min-width: 1600px) {
+        height: 50rem;
+    }
+
+    @media (min-width: 1250px) and (max-width: 1599px) {
+        height: 40rem;
+    }
+    
+    @media (max-width: 750px) {
+        background: ${color.LightBeige};
+    }
 `;
 
 const SubContainer = styled.div`
     display: flex;
-    justify-content: center;
-    align-items: center;
+    justify-content: end;
     width: 80%;
-    height: 80%;
+    height: 90%;
+
+    @media (max-width: 750px) {
+        width: 95%;
+        height: 100%;
+        justify-content: center;
+        text-align: center;
+    }
 `;
 
 const Texts = styled.div`
@@ -53,7 +71,11 @@ const Texts = styled.div`
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    width: 60%;
+    width: 70%;
+
+    @media (max-width: 750px) {
+        width: 100%;
+    }
 `;
 
 const Title = styled(XLLLM)`

@@ -1,7 +1,7 @@
 import styled from "@emotion/styled";
-import { NavBar } from "../components/componentsGlobals/navbar";
-import { FormPayProduct } from "../components/formPayPage/formPayProduct";
-import { Footer } from "../components/componentsGlobals/footer";
+import { NavBar } from "@components/componentsGlobals/navbar";
+import { FormPayProduct } from "@components/formPayPage/formPayProduct";
+import { Footer } from "@components/componentsGlobals/footer";
 
 export const FormPay = () => {
     return (

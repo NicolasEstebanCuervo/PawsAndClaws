@@ -1,11 +1,11 @@
 import styled from "@emotion/styled";
-import { LM, MM } from "../../../theme/fonts";
-import * as color from "../../../theme/colors";
+import { LM, MM } from "@theme/fonts";
+import * as color from "@theme/colors";
 import {
     IProduct,
     setProductSelected,
     setProductsInTheCart,
-} from "../../../redux/reducers/productsSlice";
+} from "@reducers/productsSlice";
 import { Link } from "react-router-dom";
 import { useDispatch } from "react-redux";
 import { PopNotification } from "../pop-up/popNotification";
@@ -70,7 +70,7 @@ export const ProductCard = ({
                 />
             ) : (
                 <Image
-                    src={require("../../../assets/images/NoProductExist.webp")}
+                    src={require("@assets/images//NoProductExist.webp")}
                     alt={`Imagen de no encontrado`}
                 />
             )}
@@ -114,7 +114,7 @@ export const ProductCard = ({
                     )}
                 </ContainerPrices>
                 <ContainerButtons>
-                    <LinkAnimal to={`/products/${product.usItemId}`}>
+                    <LinkAnimal to={`/products/product/${product.usItemId}`}>
                                 <Button onClick={setProduct}>
                                     Vista rapida
                                 </Button>
@@ -147,6 +147,10 @@ const Container = styled.div`
     background: ${color.Beige};
     padding: 1rem;
     border-radius: 0.3rem;
+
+    @media (max-width: 1000px) {
+        margin: 0 1rem;
+    }
 `;
 const Image = styled.img`
     width: 18rem;

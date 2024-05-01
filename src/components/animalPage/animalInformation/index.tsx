@@ -1,10 +1,10 @@
 import { useSelector } from "react-redux";
-import { IAnimal } from "../../../redux/reducers/animalSlice";
-import { LM, SM, XLM } from "../../../theme/fonts";
+import { IAnimal } from "@reducers/animalSlice";
+import { LM, SM, XLM } from "@theme/fonts";
 import styled from "@emotion/styled";
 import { useEffect, useState } from "react";
-import { ImagesGenerator } from "../../../redux/Api";
-import * as color from "../../../theme/colors";
+import { ImagesGenerator } from "@api/";
+import * as color from "@theme/colors";
 
 export const AnimalInformation = () => {
     const animalSlice = useSelector((state: any) => state.AnimalSlice);
@@ -13,7 +13,7 @@ export const AnimalInformation = () => {
     useEffect(() => {
         const fetchImage = async () => {
             if (animalSlice.animalSelected.length > 0) {
-                const breed = animalSlice.animalSelected.breed;
+                const breed = animalSlice.animalSelected[0].breed;
                 const data = await ImagesGenerator(breed);
                 setImageUrl(data);
             }
@@ -90,6 +90,10 @@ const Container = styled.section`
     align-items: center;
     flex-direction: column;
     gap: 2rem;
+
+    @media (max-width: 1250px) {
+        width: 100%;
+    }
 `;
 
 const Image = styled.img`
@@ -97,6 +101,10 @@ const Image = styled.img`
     border-radius: 0.3rem;
     height: 30rem;
     object-fit: cover;
+
+    @media (max-width: 1250px) {
+        width: 100%;
+    }
 `;
 
 const Texts = styled.div`
@@ -118,12 +126,17 @@ const ContainerName = styled.div`
     background: ${color.LightGray2};
     padding: 1rem 1rem;
     border-radius: 0.3rem;
+    width: 100%;
 `;
 
 const SubTexts = styled.div`
     display: grid;
-    grid-template-columns: repeat(2, 1fr);
+    grid-template-columns: repeat(2, auto);
     gap: 1rem;
+
+    @media (max-width: 450px) {
+        grid-template-columns: repeat(1, auto);
+    }
 `;
 
 const TextsIndividual = styled.div`
@@ -133,6 +146,7 @@ const TextsIndividual = styled.div`
     background: ${color.LightGray};
     padding: 1rem 1rem;
     border-radius: 0.3rem;
+    width: 100%;
 `;
 
 const Title = styled(SM)`

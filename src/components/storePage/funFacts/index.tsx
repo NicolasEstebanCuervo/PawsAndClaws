@@ -1,9 +1,9 @@
 import styled from "@emotion/styled";
 import { motion } from "framer-motion";
 import { useInView } from "react-intersection-observer";
-import * as color from "../../../theme/colors";
-import { MM, XLLM } from "../../../theme/fonts";
-import ImageBackground from "../../../assets/images/BgFunFactsIndex.webp";
+import * as color from "@theme/colors";
+import { MM, XLLM } from "@theme/fonts";
+import ImageBackground from "@assets/images//BgFunFactsStore.webp";
 
 export const FunFacts = () => {
     const [ref, inView] = useInView({
@@ -24,19 +24,21 @@ export const FunFacts = () => {
     };
 
     const facts = [
-        "Los gatos tienen un sentido del olfato muy agudo, siendo capaces de detectar olores hasta 14 veces mejor que los humanos.",
-        "Los gatos tienen la habilidad de enderezar su cuerpo durante una caída desde una gran altura, lo que les permite aterrizar en sus patas. Esto se conoce como el 'reflejo de enderezamiento'.",
-        "Los gatos pueden dormir hasta 16 horas al día, pero esta cantidad varía según la edad y el nivel de actividad del gato.",
-        "La pupila vertical de los gatos les permite una mejor visión nocturna y la capacidad de percibir movimientos rápidos con mayor claridad.",
-        "Los gatos tienen un tercer párpado llamado 'membrana nictitante' que les protege los ojos y ayuda a mantenerlos lubricados.",
-        "Algunos gatos tienen la capacidad de caminar en una superficie muy estrecha, como una barandilla o un alféizar, gracias a su extraordinario equilibrio.",
-        "Los gatos tienen glándulas odoríferas en varias partes de su cuerpo, incluyendo la barbilla, la frente y las patas, que utilizan para marcar su territorio.",
-        "Los gatos son conocidos por su agilidad y capacidad de saltar. Pueden saltar hasta seis veces la longitud de su cuerpo en un solo salto.",
+        "Algunos juguetes están diseñados para dispensar golosinas cuando el perro resuelve un rompecabezas.",
+        "La comida deshidratada para perros conserva los nutrientes naturales de los ingredientes.",
+        "Los accesorios de moda para perros, como collares, pueden tener beneficios prácticos, como aumentar la visibilidad durante paseos nocturnos.",
+        "Las camas ortopédicas para perros proporcionan un soporte óptimo para las articulaciones y la columna vertebral de tu mascota.",
+        "Existen juguetes especialmente diseñados con materiales duraderos y resistentes, como caucho natural o nylon, para perros más vigorosos.",
+        "Hay una amplia gama de opciones de alimentos especializados para perros, desde alimentos hipoalergénicos hasta dietas específicas para perros mayores.",
+        "Los juguetes interactivos para perros no solo mantienen a tu mascota entretenida, sino que también pueden ayudar a estimular su mente y reducir el aburrimiento.",
+        "La ropa para perros puede ayudar a mantener caliente a tu mascota en climas fríos o protegerlo de la lluvia.",
+        "Los collares equipados con luces LED aumentan la visibilidad durante paseos nocturnos, mejorando la seguridad de tu perro.",
+        "Algunos perros mayores o con problemas de salud, como la artritis, se benefician de las camas ortopédicas que alivian la presión en sus articulaciones.",
     ];
 
     return (
         <Container ref={ref}>
-            <XLLM>¿Sabías esto de los gatos?</XLLM>
+            <XLLM>¿Sabías esto de los perros?</XLLM>
             <SubContainer
                 variants={container}
                 initial="hidden"
@@ -51,7 +53,7 @@ export const FunFacts = () => {
                                     x:
                                         Math.cos(
                                             (index / facts.length) * 2 * Math.PI
-                                        ) * 500,
+                                        ) * 650,
                                     y:
                                         Math.sin(
                                             (index / facts.length) * 2 * Math.PI
@@ -68,7 +70,7 @@ export const FunFacts = () => {
                         </ContainerFact>
                     ))}
                 <Image
-                    src={require("../../../assets/images/FunFact1.webp")}
+                    src={require("@assets/images//FunFact3.webp")}
                     alt="Imagen de una mascota"
                 />
             </SubContainer>
@@ -84,7 +86,6 @@ const Container = styled.section`
     flex-direction: column;
     align-items: center;
     position: relative;
-    margin-top: 10rem;
     padding: 5rem 0 50rem;
     background: ${color.Cream};
     background: url(${ImageBackground});
@@ -99,9 +100,9 @@ const SubContainer = styled(motion.div)`
 const Image = styled.img`
     position: relative !important;
     top: 5rem;
-    left: 7rem;
+    left: 17rem;
     transform: translate(-60%, -50%);
-    width: 15rem;
+    width: 30rem;
     margin-top: 20rem;
     filter: drop-shadow(1px 1px 20px ${color.Brown});
 `;
@@ -111,5 +112,5 @@ const ContainerFact = styled(motion.div)`
     position: absolute;
     width: 25rem;
     top: 25rem;
-    right: -5rem;
+    left: 5rem;
 `;

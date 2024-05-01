@@ -1,7 +1,7 @@
 import styled from "@emotion/styled";
-import { ProductCard } from "../../componentsGlobals/productCard";
+import { ProductCard } from "../../componentsGlobals/cardProduct";
 import { useSelector } from "react-redux";
-import { IProduct } from "../../../redux/reducers/productsSlice";
+import { IProduct } from "@reducers/productsSlice";
 
 export const ListProductsStore = ({
     indexArray1,
@@ -26,17 +26,40 @@ export const ListProductsStore = ({
     );
 };
 
-const Container = styled.div`
+const Container = styled.section`
     display: flex;
-    flex-direction: column;
     justify-content: center;
-    align-items: center;
-    min-width: 100%;
-    gap: 3rem;
-    padding: 3rem 0;
+    align-content: center;
+    width: 100%;
+    flex-wrap: wrap;
+    padding: 0.5rem;
 `;
+
 const SubContainer = styled.div`
     display: grid;
-    grid-template-columns: repeat(4, 1fr);
-    gap: 2rem;
+    align-items: center;
+    justify-content: center;
+    justify-items: center;
+    grid-template-columns: repeat(4, auto);
+    width: 100%;
+    max-width: 1600px;
+    gap: 1rem;
+
+    @media (max-width: 1600px) {
+        grid-template-columns: repeat(3, auto);
+    }
+
+    @media (max-width: 1000px) {
+        grid-template-columns: repeat(2, auto);
+        width: 80%;
+    }
+
+    @media (max-width: 750px) {
+        width: 100%;
+    }
+
+    @media (max-width: 550px) {
+        grid-template-columns: repeat(1, auto);
+        width: 85%;
+    }
 `;

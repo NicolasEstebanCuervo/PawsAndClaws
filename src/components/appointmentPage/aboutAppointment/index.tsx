@@ -1,8 +1,8 @@
 import styled from "@emotion/styled";
-import { LM, SM, XLM } from "../../../theme/fonts";
+import { LM, SM, XLM } from "@theme/fonts";
 import { useEffect, useState } from "react";
-import { ImagesGenerator } from "../../../redux/Api";
-import * as color from "../../../theme/colors";
+import { ImagesGenerator } from "@api/";
+import * as color from "@theme/colors";
 
 export const AboutAppointment = () => {
     const [imageUrl, setImageUrl] = useState<string | null>(null);

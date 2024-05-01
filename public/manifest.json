@@ -1,0 +1,7 @@
+{
+  "name": "Paws And Claws",
+  "short_name": "Paws&Claws",
+  "description": "Veterinaria en Bogotá, Colombia. Tienda de productos para animales, centro de adopción y atención veterinaria.",
+  "start_url": "https://paws-and-claws.vercel.app/",
+  "display": "browser"
+}

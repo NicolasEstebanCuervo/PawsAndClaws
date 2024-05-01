@@ -1,7 +1,7 @@
 import styled from "@emotion/styled";
-import { LM, SM, SMM } from "../../../theme/fonts";
-import * as color from "../../../theme/colors";
-import { IComment, deleteComment } from "../../../redux/reducers/productsSlice";
+import { LM, SM, SMM } from "@theme/fonts";
+import * as color from "@theme/colors";
+import { IComment, deleteComment } from "@reducers/productsSlice";
 import { useDispatch } from "react-redux";
 import { PopConfirmation } from "../../componentsGlobals/pop-up/popConfirmation";
 

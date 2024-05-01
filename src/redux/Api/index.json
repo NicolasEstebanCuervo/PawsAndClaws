@@ -36,7 +36,7 @@
             "sex": "macho",
             "breed": "Pastor Alemán",
             "information": {
-                "description": "Max es un perro altamente inteligente y enérgico que prosperaría en un hogar activo.",
+                "description": "Max es un perro altamente inteligente y enérgico.",
                 "description_large": "Max es un Pastor Alemán inteligente y enérgico que siempre está listo para un nuevo desafío. Con su mirada penetrante y su presencia imponente, es el compañero perfecto para cualquier aventura. Es leal y dedicado, siempre dispuesto a proteger y cuidar a su familia.",
                 "owner": "Paws and Claws",
                 "history": "Max fue rescatado por el refugio Paws and Claws después de ser abandonado en la calle. Desde entonces, ha demostrado ser un perro valiente y leal que está listo para encontrar un hogar lleno de amor y aventuras. Su historia de superación demuestra el increíble poder del cuidado y la compasión."
@@ -64,7 +64,7 @@
             "sex": "macho",
             "breed": "Golden Retriever",
             "information": {
-                "description": "Cooper es un perro amigable y extrovertido a quien le encanta hacer nuevos amigos.",
+                "description": "Cooper es un perro amigable y extrovertido.",
                 "description_large": "Cooper es un Golden Retriever amigable y extrovertido que siempre está listo para hacer nuevos amigos. Con su cola en constante movimiento y su mirada curiosa, es imposible resistirse a su encanto. Es un compañero leal y dedicado que trae alegría a cada momento con su energía positiva.",
                 "owner": "Paws and Claws",
                 "history": "Cooper fue rescatado por el refugio Paws and Claws después de ser encontrado solo en la calle. Desde entonces, ha demostrado ser un perro amoroso y juguetón que está listo para encontrar un hogar lleno de amor y aventuras. Su historia de superación demuestra el increíble poder del cuidado y la compasión."
@@ -78,7 +78,7 @@
             "sex": "macho",
             "breed": "Bengalí",
             "information": {
-                "description": "Milo es un gato juguetón y curioso que disfruta explorando su entorno.",
+                "description": "Milo es un gato juguetón y curioso que le gusta mucho explorar.",
                 "description_large": "Milo es un gato Bengalí juguetón y curioso que siempre está listo para explorar. Con su pelaje exótico y su mirada vivaz, es difícil resistirse a su encanto. Le encanta investigar cada rincón de su hogar y jugar con juguetes que estimulan su mente y su cuerpo.",
                 "owner": "Paws and Claws",
                 "history": "Milo fue rescatado por el refugio Paws and Claws después de ser encontrado solo en la calle. Desde entonces, ha demostrado ser un gato valiente y aventurero que está listo para encontrar un hogar lleno de amor y emoción. Su historia de superación demuestra el increíble poder del cuidado y la compasión."
@@ -92,7 +92,7 @@
             "sex": "hembra",
             "breed": "Caniche",
             "information": {
-                "description": "Lucy es una perra inteligente y obediente que está ansiosa por complacer a su dueño.",
+                "description": "Lucy es una perra inteligente y obediente que está ansiosa por jugar.",
                 "description_large": "Lucy es una Caniche inteligente y obediente que siempre está ansiosa por complacer a su dueño. Con su pelaje esponjoso y su mirada atenta, es el compañero perfecto para cualquier tarea. Es leal y dedicada, siempre dispuesta a aprender y a hacer feliz a su familia.",
                 "owner": "Paws and Claws",
                 "history": "Lucy fue rescatada por el refugio Paws and Claws después de ser encontrada sola en la calle. Desde entonces, ha demostrado ser una perra leal y cariñosa que está lista para encontrar un hogar lleno de amor y afecto. Su historia de superación demuestra el increíble poder del cuidado y la compasión."
@@ -148,7 +148,7 @@
             "sex": "hembra",
             "breed": "Azul Ruso",
             "information": {
-                "description": "Sasha es una gata tranquila y observadora a la que le encanta acurrucarse en lugares cálidos.",
+                "description": "Sasha es una gata tranquila y observadora a la que le encanta jugar.",
                 "description_large": "Sasha es una gata Azul Ruso tranquila y observadora que siempre busca un lugar cálido para acurrucarse. Con su pelaje suave y su mirada tranquila, es el compañero perfecto para momentos de tranquilidad y relajación. Le encanta observar su entorno y disfrutar de la compañía de su familia.",
                 "owner": "Paws and Claws",
                 "history": "Sasha fue rescatada por el refugio Paws and Claws después de ser encontrada sola en la calle. Desde entonces, ha demostrado ser una gata amorosa y tranquila que está lista para encontrar un hogar lleno de amor y calidez. Su historia de superación demuestra el increíble poder del cuidado y la compasión."
@@ -190,7 +190,7 @@
             "sex": "macho",
             "breed": "Husky",
             "information": {
-                "description": "Duke es un perro juguetón y enérgico que disfruta corriendo y jugando a buscar.",
+                "description": "Duke es un perro juguetón y enérgico que disfruta jugar.",
                 "description_large": "Duke es un Husky juguetón y enérgico que siempre está listo para correr y jugar. Con su pelaje espeso y su mirada traviesa, es el compañero perfecto para cualquier aventura al aire libre. Le encanta correr y jugar a buscar, mostrando su velocidad y agilidad en cada movimiento.",
                 "owner": "Paws and Claws",
                 "history": "Duke fue rescatado por el refugio Paws and Claws después de ser encontrado solo en la calle. Desde entonces, ha demostrado ser un perro amoroso y enérgico que está listo para encontrar un hogar lleno de amor y diversión. Su historia de superación demuestra el increíble poder del cuidado y la compasión."
@@ -204,7 +204,7 @@
             "sex": "hembra",
             "breed": "Persa",
             "information": {
-                "description": "Mia es una gata elegante y afectuosa que disfruta descansando en lugares soleados.",
+                "description": "Mia es una gata elegante y afectuosa que disfruta dormir.",
                 "description_large": "Mia es una gata Persa elegante y afectuosa que siempre busca un lugar soleado para descansar. Con su pelaje suave y su mirada tranquila, es el compañero perfecto para momentos de paz y tranquilidad. Le encanta disfrutar del sol y relajarse en lugares acogedores.",
                 "owner": "Paws and Claws",
                 "history": "Mia fue rescatada por el refugio Paws and Claws después de ser encontrada sola en la calle. Desde entonces, ha demostrado ser una gata amorosa y tranquila que está lista para encontrar un hogar lleno de amor y calidez. Su historia de superación demuestra el increíble poder del cuidado y la compasión."
@@ -218,7 +218,7 @@
             "sex": "macho",
             "breed": "Dálmata",
             "information": {
-                "description": "Rocky es un perro amistoso y juguetón que se lleva bien con otras mascotas.",
+                "description": "Rocky es un perro amistoso y juguetón que siempre quiere hacer amigos.",
                 "description_large": "Rocky es un Dálmata amistoso y juguetón que siempre está listo para hacer nuevos amigos. Con su pelaje moteado y su mirada alegre, es difícil resistirse a su encanto. Le encanta jugar y correr, mostrando su energía y entusiasmo en cada juego.",
                 "owner": "Paws and Claws",
                 "history": "Rocky fue rescatado por el refugio Paws and Claws después de ser encontrado solo en la calle. Desde entonces, ha demostrado ser un perro amoroso y enérgico que está listo para encontrar un hogar lleno de amor y diversión. Su historia de superación demuestra el increíble poder del cuidado y la compasión."
@@ -246,7 +246,7 @@
             "sex": "hembra",
             "breed": "Border Collie",
             "information": {
-                "description": "Bailey es una perra inteligente y leal que sobresale en el entrenamiento de obediencia.",
+                "description": "Bailey es una perra inteligente y leal que sobresale en el entrenamiento.",
                 "description_large": "Bailey es una Border Collie inteligente y leal que siempre está lista para aprender. Con su mirada atenta y su cola en constante movimiento, es la compañera perfecta para cualquier tarea. Es cariñosa y dedicada, siempre dispuesta a complacer a su familia.",
                 "owner": "Paws and Claws",
                 "history": "Bailey fue rescatada por el refugio Paws and Claws después de ser encontrada sola en la calle. Desde entonces, ha demostrado ser una perra valiente y leal que está lista para encontrar un hogar lleno de amor y aventuras. Su historia de superación demuestra el increíble poder del cuidado y la compasión."
@@ -274,7 +274,7 @@
             "sex": "macho",
             "breed": "Bulldog",
             "information": {
-                "description": "Charlie es un perro amistoso y juguetón que disfruta de la compañía de su familia.",
+                "description": "Charlie es un perro amistoso y juguetón que disfruta de la compañía.",
                 "description_large": "Charlie es un Bulldog Francés amistoso y juguetón que siempre busca la compañía de su familia. Con su nariz arrugada y su cola en constante movimiento, es difícil resistirse a su encanto. Le encanta jugar y recibir mimos suaves de sus seres queridos.",
                 "owner": "Paws and Claws",
                 "history": "Charlie fue rescatado por el refugio Paws and Claws después de ser encontrado solo en la calle. Desde entonces, ha demostrado ser un perro amoroso y enérgico que está listo para encontrar un hogar lleno de amor y diversión. Su historia de superación demuestra el increíble poder del cuidado y la compasión."
@@ -288,7 +288,7 @@
             "sex": "hembra",
             "breed": "Siamés",
             "information": {
-                "description": "Luna es una gata elegante y reservada que disfruta de momentos de tranquilidad.",
+                "description": "Luna es una gata elegante y reservada que ama dormir.",
                 "description_large": "Luna es una gata Siamés elegante y reservada que siempre busca momentos de paz y tranquilidad. Con su pelaje suave y su mirada misteriosa, es difícil resistirse a su encanto. Le encanta relajarse en lugares acogedores y disfrutar de la serenidad de su hogar.",
                 "owner": "Paws and Claws",
                 "history": "Luna fue rescatada por el refugio Paws and Claws después de ser encontrada sola en la calle. Desde entonces, ha demostrado ser una gata amorosa y tranquila que está lista para encontrar un hogar lleno de amor y calidez. Su historia de superación demuestra el increíble poder del cuidado y la compasión."
@@ -302,7 +302,7 @@
             "sex": "macho",
             "breed": "Chihuahua",
             "information": {
-                "description": "Milo es un perro pequeño y valiente que no tiene miedo de desafiar a perros más grandes.",
+                "description": "Milo es un perro pequeño y valiente que le gustan los desafios.",
                 "description_large": "Milo es un Chihuahua pequeño y valiente que siempre está listo para enfrentar nuevos desafíos. Con su personalidad intrépida y su mirada audaz, no tiene miedo de desafiar a perros más grandes que él. Es leal y dedicado, siempre dispuesto a proteger y cuidar a su familia.",
                 "owner": "Paws and Claws",
                 "history": "Milo fue rescatado por el refugio Paws and Claws después de ser encontrado solo en la calle. Desde entonces, ha demostrado ser un perro valiente y leal que está listo para encontrar un hogar lleno de amor y protección. Su historia de superación demuestra el increíble poder del cuidado y la compasión."
@@ -330,7 +330,7 @@
             "sex": "macho",
             "breed": "Pug",
             "information": {
-                "description": "Bentley es un perro encantador y juguetón que adora la compañía de las personas.",
+                "description": "Bentley es un perro encantador y juguetón que adora la compañía.",
                 "description_large": "Bentley es un Pug encantador y juguetón que siempre busca la compañía de las personas. Con su carácter travieso y su mirada tierna, es difícil resistirse a su encanto. Le encanta jugar y recibir mimos suaves de sus seres queridos.",
                 "owner": "Paws and Claws",
                 "history": "Bentley fue rescatado por el refugio Paws and Claws después de ser encontrado solo en la calle. Desde entonces, ha demostrado ser un perro amoroso y enérgico que está listo para encontrar un hogar lleno de amor y diversión. Su historia de superación demuestra el increíble poder del cuidado y la compasión."
@@ -344,7 +344,7 @@
             "sex": "hembra",
             "breed": "Shih Tzu",
             "information": {
-                "description": "Bailey es una perra cariñosa y tranquila que disfruta de largos paseos por el parque.",
+                "description": "Bailey es una perra cariñosa y tranquila que ama la compañia de sus dueños.",
                 "description_large": "Bailey es una Shih Tzu cariñosa y tranquila que siempre está lista para dar largos paseos por el parque. Con su pelaje suave y su mirada tierna, es el compañero perfecto para momentos de paz y tranquilidad. Le encanta explorar su entorno y disfrutar del aire fresco.",
                 "owner": "Paws and Claws",
                 "history": "Bailey fue rescatada por el refugio Paws and Claws después de ser encontrada sola en la calle. Desde entonces, ha demostrado ser una perra amorosa y tranquila que está lista para encontrar un hogar lleno de amor y aventuras. Su historia de superación demuestra el increíble poder del cuidado y la compasión."

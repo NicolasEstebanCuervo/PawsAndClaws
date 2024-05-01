@@ -1,10 +1,10 @@
 import styled from "@emotion/styled";
-import { NavBar } from "../components/componentsGlobals/navbar";
-import { Header } from "../components/payPage/headerPayPage";
-import {ListProductsPay} from "../components/payPage/listProductsPay";
-import { CardPay } from "../components/payPage/cardPay";
-import { CarouselProducts } from "../components/payPage/carouselProducts";
-import { Footer } from "../components/componentsGlobals/footer";
+import { NavBar } from "@components/componentsGlobals/navbar";
+import { Header } from "@components/payPage/header";
+import {ListProductsPay} from "@components/payPage/listProductsPay";
+import { CardPay } from "@components/payPage/cardPay";
+import { CarouselProducts } from "@components/componentsGlobals/carouselProducts";
+import { Footer } from "@components/componentsGlobals/footer";
 
 export const Pay= () => {
     return (
@@ -15,7 +15,7 @@ export const Pay= () => {
                 <ListProductsPay />
                 <CardPay />
             </Container>
-            <CarouselProducts />
+            <CarouselProducts title="Explora otros productos"/>
             <Footer />
         </ContainerPage>
     );

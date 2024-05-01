@@ -1,7 +1,7 @@
 import { FormEvent } from "react";
 import styled from "@emotion/styled";
-import * as color from "../../../theme/colors";
-import { XLLM } from "../../../theme/fonts";
+import * as color from "@theme/colors";
+import { XLLM } from "@theme/fonts";
 
 export const FormContact = () => {
 

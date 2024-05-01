@@ -1,5 +1,5 @@
 import { useEffect, useState } from "react";
-import { ImagesGenerator } from "../../../redux/Api";
+import { ImagesGenerator } from "@api/";
 import styled from "@emotion/styled";
 
 export const ImageAnimal = ({ breed }: { breed: string}) => {
@@ -26,6 +26,7 @@ export const ImageAnimal = ({ breed }: { breed: string}) => {
 const Image = styled.img`
     width: 18rem;
     border-radius: 0.3rem;
-    height: 13rem;
+    height: 12rem;
+    min-height: 12rem;
     object-fit: cover;
 `;

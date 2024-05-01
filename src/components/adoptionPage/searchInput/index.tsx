@@ -5,9 +5,9 @@ import {
     IAnimal,
     setFilteredAnimals,
     setInputValueChanged,
-} from "../../../redux/reducers/animalSlice";
+} from "@reducers/animalSlice";
 import styled from "@emotion/styled";
-import * as color from "../../../theme/colors";
+import * as color from "@theme/colors";
 
 export const SearchInput = () => {
     const animalSlice = useSelector((state: any) => state.AnimalSlice);
@@ -50,4 +50,9 @@ const Container = styled.div`
     align-items: center;
     width: 50%;
     margin-top: 5rem;
+
+
+    @media (max-width: 750px) {
+        width: 90%;
+    }
 `;

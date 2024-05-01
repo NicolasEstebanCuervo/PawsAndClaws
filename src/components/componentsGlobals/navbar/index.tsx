@@ -2,8 +2,8 @@ import { Link } from "react-router-dom";
 import styled from "@emotion/styled";
 import { Navbar, Nav, NavDropdown } from "react-bootstrap";
 import { useRef, useState } from "react";
-import * as color from "../../../theme/colors";
-import { MLM } from "../../../theme/fonts";
+import * as color from "@theme/colors";
+import { MLM } from "@theme/fonts";
 import { useDisclosure } from "@chakra-ui/react";
 import { Cart } from "./Cart";
 
@@ -34,7 +34,7 @@ export const NavBar = () => {
                         onClick={() => {
                             window.location.href = `/`;
                         }}
-                        src={require("../../../assets/images/Logo.webp")}
+                        src={require("@assets/images//Logo.webp")}
                     />
                 </div>
 
@@ -55,7 +55,7 @@ export const NavBar = () => {
                             title="Tienda"
                             id="basic-nav-dropdown"
                         >
-                            <NavDropdownItem  as={Link} to="/store" >
+                            <NavDropdownItem  as={Link} to="/products" >
                                 Tienda
                             </NavDropdownItem>
                             <NavDropdownItem onClick={onOpen}>

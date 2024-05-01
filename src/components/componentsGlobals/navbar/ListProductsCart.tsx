@@ -1,8 +1,8 @@
 import { useDispatch, useSelector } from "react-redux";
-import { IProduct, setTotalPrice } from "../../../redux/reducers/productsSlice";
+import { IProduct, setTotalPrice } from "@reducers/productsSlice";
 import { ProductCart } from "./ProductCart";
 import styled from "@emotion/styled";
-import * as color from "../../../theme/colors";
+import * as color from "@theme/colors";
 
 export const ListProductsCart = () => {
     const productSlice = useSelector((state: any) => state.ProductSlice);

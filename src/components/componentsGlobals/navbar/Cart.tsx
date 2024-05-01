@@ -11,7 +11,7 @@ import {
 import { useRef } from "react";
 import { ListProductsCart } from "./ListProductsCart";
 import { useSelector } from "react-redux";
-import { LM } from "../../../theme/fonts";
+import { LM } from "@theme/fonts";
 import { Link } from "react-router-dom";
 
 export const Cart = ({
@@ -48,7 +48,7 @@ export const Cart = ({
                             <Button variant="outline" mr={3} onClick={onClose}>
                                 Cancelar
                             </Button>
-                            <Link to="/pay">
+                            <Link to="/products/product/pay">
                             <Button colorScheme="green">Comprar</Button>
                             </Link>
                         </div>

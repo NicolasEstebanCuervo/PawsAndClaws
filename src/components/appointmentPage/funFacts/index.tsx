@@ -1,9 +1,9 @@
 import styled from "@emotion/styled";
 import { motion } from "framer-motion";
 import { useInView } from "react-intersection-observer";
-import * as color from "../../../theme/colors";
-import { MM, XLLM } from "../../../theme/fonts";
-import ImageBackground from "../../../assets/images/BgFunFactsMyRequests.webp";
+import * as color from "@theme/colors";
+import { MM, XLLM } from "@theme/fonts";
+import ImageBackground from "@assets/images//BgFunFactsAppointment.webp";
 
 export const FunFacts = () => {
     const [ref, inView] = useInView({
@@ -22,23 +22,22 @@ export const FunFacts = () => {
             },
         },
     };
-
     const facts = [
-        "Tanto los perros como los gatos son domesticados desde hace miles de años, convirtiéndolos en compañeros leales del ser humano.",
-        "Los perros y los gatos tienen diferentes tipos de huellas digitales en sus almohadillas, lo que los hace únicos y fácilmente identificables.",
-        "A pesar de ser depredadores naturales, algunos perros y gatos pueden llevarse sorprendentemente bien y formar vínculos de amistad duraderos.",
-        "Tanto los perros como los gatos tienen una variedad de vocalizaciones para comunicarse, incluyendo maullidos, ladridos, ronroneos y gruñidos.",
-        "Los perros y los gatos tienen sentidos agudos, como la vista y el oído, que les permiten percibir el mundo de manera única y especializada.",
-        "Perros y gatos pueden proporcionar apoyo emocional a las personas y ayudar en terapias para mejorar la salud mental.",
-        "Algunos perros y gatos son famosos en internet y en las redes sociales, ganando seguidores por su encanto y travesuras.",
-        "Tanto los perros como los gatos disfrutan de la interacción social con humanos y otros animales, lo que los hace compañeros sociales ideales.",
-        "Los perros y los gatos tienen habilidades de caza innatas, aunque la mayoría de las veces prefieren ser mimados por sus dueños.",
-        "Los perros y los gatos pueden ser entrenados para realizar trucos y obedecer comandos, lo que demuestra su inteligencia y capacidad de aprendizaje."
+        "Paws and Claws fue fundada en 2005 por Nicolás Rojas, un apasionado amante de los animales que se dedicó a crear un refugio seguro y amoroso para mascotas sin hogar en las afueras de la ciudad.",
+        "La mascota más inusual que Paws and Claws ha ayudado a encontrar un hogar fue un hurón albino llamado Snowball, que fue adoptado por una familia de entusiastas de los animales exóticos.",
+        "Cada año, Paws and Claws organiza un evento llamado 'Paws in the Park', donde los dueños de mascotas pueden participar en concursos de disfraces, juegos y actividades para recaudar fondos para el refugio.",
+        "El gato más longevo que ha sido atendido por Paws and Claws fue un gato siamés llamado Whiskers, que vivió hasta los 23 años y fue adoptado por una pareja de jubilados.",
+        "El equipo de Paws and Claws está compuesto por un grupo diverso de voluntarios, que van desde estudiantes universitarios hasta profesionales jubilados, todos unidos por su amor por los animales.",
+        "Paws and Claws ofrece programas de terapia asistida con animales en colaboración con centros de atención médica locales, donde los perros del refugio visitan a pacientes en hospitales y centros de rehabilitación.",
+        "El perro más grande que Paws and Claws ha tenido en su refugio fue un Gran Danés llamado Titan, que pesaba más de 90 kilogramos y fue adoptado por una familia que vivía en una granja.",
+        "Paws and Claws ha sido reconocida por su compromiso con el bienestar animal y recibió el premio 'Community Paw-sitivity Award' en 2019 por su impacto positivo en la comunidad.",
+        "El logo de Paws and Claws fue diseñado por un artista local y representa una huella de perro rodeada de corazones, simbolizando el amor y el compromiso de la organización con sus mascotas.",
+        "Paws and Claws ofrece servicios de adopción responsables, que incluyen chequeos médicos, vacunas y esterilización de todas las mascotas antes de ser entregadas a sus nuevos hogares, garantizando así la salud y el bienestar de los animales."
     ];
 
     return (
         <Container ref={ref}>
-            <XLLM>¿Sabías esto de los perros y gatos?</XLLM>
+            <XLLM>¿Sabías esto de los perros?</XLLM>
             <SubContainer
                 variants={container}
                 initial="hidden"
@@ -53,7 +52,7 @@ export const FunFacts = () => {
                                     x:
                                         Math.cos(
                                             (index / facts.length) * 2 * Math.PI
-                                        ) * 650,
+                                        ) * 700,
                                     y:
                                         Math.sin(
                                             (index / facts.length) * 2 * Math.PI
@@ -70,7 +69,7 @@ export const FunFacts = () => {
                         </ContainerFact>
                     ))}
                 <Image
-                    src={require("../../../assets/images/FunFact2.webp")}
+                    src={require("@assets/images//FunFact5.webp")}
                     alt="Imagen de una mascota"
                 />
             </SubContainer>
@@ -86,6 +85,7 @@ const Container = styled.section`
     flex-direction: column;
     align-items: center;
     position: relative;
+    margin-top: 10rem;
     padding: 5rem 0 50rem;
     background: ${color.Cream};
     background: url(${ImageBackground});

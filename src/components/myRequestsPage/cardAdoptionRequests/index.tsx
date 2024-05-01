@@ -13,16 +13,16 @@ import {
     Button,
     useDisclosure,
 } from "@chakra-ui/react";
-import { MM, SM, SMM } from "../../../theme/fonts";
-import * as color from "../../../theme/colors";
+import { MM, SM, SMM } from "@theme/fonts";
+import * as color from "@theme/colors";
 import { useEffect, useRef, useState } from "react";
 import { IoPawSharp } from "react-icons/io5";
 import {
     IAnimal,
     IFormAdoption,
     deleteAdoptionsRequests,
-} from "../../../redux/reducers/animalSlice";
-import { ImagesGenerator } from "../../../redux/Api";
+} from "@reducers/animalSlice";
+import { ImagesGenerator } from "@api/";
 import { useDispatch, useSelector } from "react-redux";
 import { PopConfirmation } from "../../componentsGlobals/pop-up/popConfirmation";
 

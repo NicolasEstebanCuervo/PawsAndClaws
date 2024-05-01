@@ -1,7 +1,7 @@
 import styled from "@emotion/styled";
-import { NavBar } from "../components/componentsGlobals/navbar";
-import { Header } from "../components/thanksPage/headerThanksPage";
-import { Footer } from "../components/componentsGlobals/footer";
+import { NavBar } from "@components/componentsGlobals/navbar";
+import { Header } from "@components/thanksPage/header";
+import { Footer } from "@components/componentsGlobals/footer";
 
 export const Thanks= () => {
     return (

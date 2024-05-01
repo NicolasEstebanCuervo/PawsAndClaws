@@ -1,11 +1,10 @@
 import { Input } from "@chakra-ui/react";
 import styled from "@emotion/styled";
-import * as color from "../../../theme/colors";
-import {  XLLM } from "../../../theme/fonts";
-import { Link } from "react-router-dom";
+import * as color from "@theme/colors";
+import {  XLLM } from "@theme/fonts";
 import { ChangeEvent, FormEvent, useState } from "react";
 import { useDispatch, useSelector } from "react-redux";
-import { setInputValueChanged } from "../../../redux/reducers/productsSlice";
+import { setInputValueChanged } from "@reducers/productsSlice";
 import { PopNotification } from "../../componentsGlobals/pop-up/popNotification";
 
 export const FormPayProduct = () => {
@@ -70,7 +69,7 @@ export const FormPayProduct = () => {
 
     const navigate = () => {
         setTimeout(() => {
-            window.location.href = "/thanks";
+            window.location.href = "/products/product/thanks";
         }, 5000);
     };
 
@@ -93,7 +92,7 @@ export const FormPayProduct = () => {
                         id="fullName"
                         name="fullName"
                         placeholder="Nombre completo"
-                        value={productSlice.fullNamePay}
+                        value={productSlice.fullNamePay || ""}
                         onChange={handleInputChange("fullNamePay")}
                     />
                 </div>
@@ -113,7 +112,7 @@ export const FormPayProduct = () => {
                         id="address"
                         name="address"
                         placeholder="Dirección"
-                        value={productSlice.addressPay}
+                        value={productSlice.addressPay  || ""}
                         onChange={handleInputChange("addressPay")}
                     />
                 </div>
@@ -133,7 +132,7 @@ export const FormPayProduct = () => {
                         id="phoneNumber"
                         name="phoneNumber"
                         placeholder="Número de teléfono"
-                        value={productSlice.phoneNumberPay}
+                        value={productSlice.phoneNumberPay  || ""}
                         onChange={handleInputChange("phoneNumberPay")}
                     />
                 </div>
@@ -155,7 +154,7 @@ export const FormPayProduct = () => {
                         id="email"
                         name="emailAdoption"
                         placeholder="Correo electrónico"
-                        value={productSlice.emailPay}
+                        value={productSlice.emailPay  || ""}
                         onChange={handleInputChange("emailPay")}
                     />
                 </div>
@@ -175,7 +174,7 @@ export const FormPayProduct = () => {
                         id="cardNumber"
                         name="cardNumber"
                         placeholder="Número de tarjeta"
-                        value={productSlice.cardNumberPay}
+                        value={productSlice.cardNumberPay  || ""}
                         onChange={handleInputChange("cardNumberPay")}
                     />
                 </div>
@@ -195,7 +194,7 @@ export const FormPayProduct = () => {
                         id="cardName"
                         name="cardName"
                         placeholder="Nombre en la tarjeta"
-                        value={productSlice.cardNamePay}
+                        value={productSlice.cardNamePay  || ""}
                         onChange={handleInputChange("cardNamePay")}
                     />
                 </div>
@@ -215,7 +214,7 @@ export const FormPayProduct = () => {
                         id="expiryDate"
                         name="expiryDate"
                         placeholder="MM/YY"
-                        value={productSlice.expiryDatePay}
+                        value={productSlice.expiryDatePay  || ""}
                         onChange={handleInputChange("expiryDatePay")}
                     />
                 </div>
@@ -235,7 +234,7 @@ export const FormPayProduct = () => {
                         id="cvv"
                         name="cvv"
                         placeholder="CVV"
-                        value={productSlice.cvvPay}
+                        value={productSlice.cvvPay || ""}
                         onChange={handleInputChange("cvvPay")}
                     />
                 </div>

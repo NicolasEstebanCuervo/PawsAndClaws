@@ -11,14 +11,14 @@ import {
     ListIcon,
     Button,
 } from "@chakra-ui/react";
-import { MM, SM } from "../../../theme/fonts";
-import * as color from "../../../theme/colors";
+import { MM, SM } from "@theme/fonts";
+import * as color from "@theme/colors";
 import { useEffect, useState } from "react";
 import { IoPawSharp } from "react-icons/io5";
 import {
     IFormAppointment,
     deleteAppointmentsRequests,
-} from "../../../redux/reducers/animalSlice";
+} from "@reducers/animalSlice";
 import { useDispatch } from "react-redux";
 import { PopConfirmation } from "../../componentsGlobals/pop-up/popConfirmation";
 

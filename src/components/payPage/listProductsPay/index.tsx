@@ -1,10 +1,10 @@
 import styled from "@emotion/styled";
 import { useSelector } from "react-redux";
-import { ProductCardPay } from "../../formPayPage/cardProductPay";
-import { IProduct } from "../../../redux/reducers/productsSlice";
-import { SM, XLLM } from "../../../theme/fonts";
+import { CardProductPay } from "../../formPayPage/cardProductPay";
+import { IProduct } from "@reducers/productsSlice";
+import { SM, XLLM } from "@theme/fonts";
 import { Link } from "react-router-dom";
-import * as color from "../../../theme/colors";
+import * as color from "@theme/colors";
 
 export const ListProductsPay = () => {
     const productSlice = useSelector(
@@ -27,7 +27,7 @@ export const ListProductsPay = () => {
                                 que se sientan especiales ahora!
                             </SM>
                         </div>
-                        <Link to="/store">
+                        <Link to="/products">
                             <Button>Explorar la Tienda</Button>
                         </Link>
                     </Texts>
@@ -37,7 +37,7 @@ export const ListProductsPay = () => {
             )}
             {productSlice.productsInTheCart &&
                 productSlice.productsInTheCart.map((product: IProduct) => (
-                    <ProductCardPay
+                    <CardProductPay
                         quantity={product.quantity}
                         product={product}
                         key={product.usItemId}

@@ -1,5 +1,6 @@
 import styled from "@emotion/styled";
-import { LM, SM, XLLM } from "../../../theme/fonts";
+import { LM, SM, XLLM } from "@theme/fonts";
+import * as color from "@theme/colors"
 
 export const AboutUs = () => {
     return (
@@ -24,6 +25,8 @@ export const AboutUs = () => {
                         </SM>
                     </ContainerIndividual>
 
+                    <LineDivider></LineDivider>
+
                     <ContainerIndividual>
                         <LM>Nuestra visión</LM>
                         <SM>
@@ -40,6 +43,8 @@ export const AboutUs = () => {
                         </SM>
                     </ContainerIndividual>
 
+                    <LineDivider></LineDivider>
+
                     <ContainerIndividual>
                         <LM>Responsabilidad Social</LM>
                         <SM>
@@ -55,6 +60,8 @@ export const AboutUs = () => {
                             duradero en nuestra sociedad.{" "}
                         </SM>
                     </ContainerIndividual>
+
+                    <LineDivider></LineDivider>
 
                     <ContainerIndividual>
                         <LM>Educación y Concientización</LM>
@@ -90,6 +97,10 @@ const Container = styled.section`
 
 const Title = styled(XLLM)`
     align-self: start;
+
+    @media (max-width: 1150px) {
+        text-align: center;
+    }
 `;
 
 const SubContainer = styled.div`
@@ -101,13 +112,35 @@ const SubContainer = styled.div`
     align-items: center;
 `;
 
+
 const Texts = styled.div`
     width: 100%;
     display: grid;
     gap: 2rem;
     grid-template-columns: repeat(2, 1fr);
+
+    @media (max-width: 1150px) {
+        display: flex;
+        flex-direction: column;
+    }
 `;
 
 const ContainerIndividual = styled.div`
     width: 90%;
+
+    @media (max-width: 1150px) {
+        width: 100%;
+    }
+`;
+
+const LineDivider = styled.div`
+    width: 100%;
+    height: 0.1rem;
+    background: ${color.LightGray};
+    display: none;
+
+    @media (max-width: 1150px) {
+        display: block;
+        width: 100%;
+    }
 `;

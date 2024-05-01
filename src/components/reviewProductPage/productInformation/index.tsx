@@ -1,7 +1,7 @@
 import { useSelector } from "react-redux";
-import { SM, XLM } from "../../../theme/fonts";
+import { SM, XLM } from "@theme/fonts";
 import styled from "@emotion/styled";
-import * as color from "../../../theme/colors";
+import * as color from "@theme/colors";
 
 export const ProductInformation = () => {
     const productSlice = useSelector(

@@ -1,17 +1,43 @@
 import styled from "@emotion/styled";
 import { Carousel } from "react-bootstrap";
-import { XLLM } from "../../../theme/fonts";
+import { XLLM } from "@theme/fonts";
 import { useSelector } from "react-redux";
-import { IProduct } from "../../../redux/reducers/productsSlice";
-import { ProductCard } from "../../componentsGlobals/productCard";
-import * as color from "../../../theme/colors";
+import { IProduct } from "@reducers/productsSlice";
+import { ProductCard } from "../cardProduct";
+import * as color from "@theme/colors";
+import { useEffect, useState } from "react";
 
-export const CarouselProducts = () => {
+export const CarouselProducts = ({title}:{title:string}) => {
     const productSlice = useSelector((state: any) => state.ProductSlice);
+    const [viewport, setViewport] = useState(5);
+
+    useEffect(() => {
+        const calculateWidth = () => {
+            if (window.screen.availWidth > 1750) {
+                setViewport(5);
+            } else if (
+                window.screen.availWidth <= 1750 &&
+                window.screen.availWidth >= 1450
+            ) {
+                setViewport(4);
+            } else if (
+                window.screen.availWidth <= 1450 &&
+                window.screen.availWidth >= 950
+            ) {
+                setViewport(3);
+            } else if (window.screen.availWidth <= 950 && window.screen.availWidth >= 550) {
+                setViewport(2);
+            } else{
+                setViewport(1)
+            }
+        };
+
+        calculateWidth();
+    }, []);
 
     return (
         <Container>
-            <Title>Otros productos</Title>
+            <Title>{title}</Title>
             <CarouselCustom
                 indicators={false}
                 interval={4000}
@@ -28,7 +54,7 @@ export const CarouselProducts = () => {
                                 >
                                     <ContainerProducts>
                                         {productSlice.products
-                                            .slice(index, index + 5)
+                                            .slice(index, index + viewport)
                                             .map(
                                                 (
                                                     product: IProduct,
@@ -63,6 +89,7 @@ const Container = styled.section`
 
 const Title = styled(XLLM)`
     font-weight: bold;
+    text-align: center;
 `;
 
 const CarouselCustom = styled(Carousel)`
@@ -78,4 +105,8 @@ const ContainerProducts = styled.div`
     justify-content: center;
     align-items: center;
     gap: 2rem;
+
+    @media (max-width: 1000px) {
+        gap: 0rem;
+    }
 `;

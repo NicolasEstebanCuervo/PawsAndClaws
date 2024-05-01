@@ -1,12 +1,12 @@
 import { Input, Select } from "@chakra-ui/react";
 import styled from "@emotion/styled";
-import * as color from "../../../theme/colors";
+import * as color from "@theme/colors";
 import { useDispatch, useSelector } from "react-redux";
 import { ChangeEvent, FormEvent, useState } from "react";
 import {
     createAppointmentRequest,
     setInputValueChanged,
-} from "../../../redux/reducers/animalSlice";
+} from "@reducers/animalSlice";
 import { v4 as uuidv4 } from "uuid";
 import { PopNotification } from "../../componentsGlobals/pop-up/popNotification";
 
@@ -128,7 +128,7 @@ export const FormAppointment = () => {
                     placeholder="Nombre completo"
                     maxLength={30}                    
                     required
-                    value={animalSlice.fullNameAppointment}
+                    value={animalSlice.fullNameAppointment || ""}
                     onChange={handleInputChange("fullNameAppointment")}
                 />
             </div>
@@ -139,7 +139,7 @@ export const FormAppointment = () => {
                     id="phoneNumber"
                     name="phoneNumber"
                     placeholder="Número de teléfono"
-                    value={animalSlice.phoneNumberAppointment}
+                    value={animalSlice.phoneNumberAppointment || ""}
                     onChange={handleInputChange("phoneNumberAppointment")}
                     maxLength={15}                    
                     required
@@ -152,7 +152,7 @@ export const FormAppointment = () => {
                     id="email"
                     name="email"
                     placeholder="Correo electrónico"
-                    value={animalSlice.emailAppointment}
+                    value={animalSlice.emailAppointment || ""}
                     onChange={handleInputChange("emailAppointment")}
                     maxLength={50}                    
                     required
@@ -165,7 +165,7 @@ export const FormAppointment = () => {
                     id="petName"
                     name="petName"
                     placeholder="Nombre de la mascota"
-                    value={animalSlice.petNameAppointment}
+                    value={animalSlice.petNameAppointment || ""}
                     onChange={handleInputChange("petNameAppointment")}
                     maxLength={30}                    
                     required
@@ -178,7 +178,7 @@ export const FormAppointment = () => {
                     id="petSpecies"
                     name="petSpecies"
                     placeholder="Especie de la mascota"
-                    value={animalSlice.petSpeciesAppointment}
+                    value={animalSlice.petSpeciesAppointment || ""}
                     onChange={handleInputChange("petSpeciesAppointment")}
                     maxLength={15}                    
                     required
@@ -191,7 +191,7 @@ export const FormAppointment = () => {
                     id="petBreed"
                     name="petBreed"
                     placeholder="Raza de la mascota"
-                    value={animalSlice.petBreedAppointment}
+                    value={animalSlice.petBreedAppointment || ""}
                     onChange={handleInputChange("petBreedAppointment")}
                     maxLength={15}                    
                     required
@@ -204,7 +204,7 @@ export const FormAppointment = () => {
                     id="petAge"
                     name="petAge"
                     placeholder="Edad de la mascota (en años)"
-                    value={animalSlice.petAgeAppointment}
+                    value={animalSlice.petAgeAppointment || ""}
                     onChange={handleInputChange("petAgeAppointment")}
                     maxLength={2}                    
                     required
@@ -216,10 +216,10 @@ export const FormAppointment = () => {
                     id="petSex"
                     name="petSex"
                     required
-                    value={animalSlice.petSexAppointment}
+                    value={animalSlice.petSexAppointment || ""}
                     onChange={handleSelectChange("petSexAppointment")}
                 >
-                    <option disabled selected>
+                    <option  value="">
                         Selecciona una opción
                     </option>
                     <option value="macho">Macho</option>
@@ -233,7 +233,7 @@ export const FormAppointment = () => {
                     id="petWeight"
                     name="petWeight"
                     placeholder="Peso de la mascota (en kg)"
-                    value={animalSlice.petWeightAppointment}
+                    value={animalSlice.petWeightAppointment || ""}
                     onChange={handleInputChange("petWeightAppointment")}
                     maxLength={2}                    
                     required
@@ -246,7 +246,7 @@ export const FormAppointment = () => {
                     id="appointmentReason"
                     name="appointmentReason"
                     placeholder="Motivo de la cita"
-                    value={animalSlice.reasonAppointment}
+                    value={animalSlice.reasonAppointment || ""}
                     onChange={handleInputChange("reasonAppointment")}
                     maxLength={200}
                     required

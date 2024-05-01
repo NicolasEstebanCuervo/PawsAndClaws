@@ -1,13 +1,13 @@
 import styled from "@emotion/styled";
-import * as color from "../theme/colors";
-import { NavBar } from "../components/componentsGlobals/navbar";
-import { Header } from "../components/appointmentPage/headerAppointment";
-import { AboutAppointment } from "../components/appointmentPage/aboutAppointment";
-import { FormAppointment } from "../components/appointmentPage/formAppointment";
-import { ReviewsPawsAndClaws } from "../components/appointmentPage/reviewsPawsAndClaws";
-import { FrequentQuestions } from "../components/appointmentPage/frequentQuestions";
-import { FunFacts } from "../components/appointmentPage/funFactsAppointment";
-import { Footer } from "../components/componentsGlobals/footer";
+import * as color from "@theme/colors";
+import { NavBar } from "@components/componentsGlobals/navbar";
+import { Header } from "@components/appointmentPage/header";
+import { AboutAppointment } from "@components/appointmentPage/aboutAppointment";
+import { FormAppointment } from "@components/appointmentPage/formAppointment";
+import { ReviewsPawsAndClaws } from "@components/appointmentPage/reviewsPawsAndClaws";
+import { FrequentQuestions } from "@components/appointmentPage/frequentQuestions";
+import { FunFacts } from "@components/appointmentPage/funFacts";
+import { Footer } from "@components/componentsGlobals/footer";
 
 
 export const Appointment= () => {

@@ -6,16 +6,16 @@ import {
     IComment,
     createANewComment,
     createANewComments,
-} from "../../../redux/reducers/productsSlice";
+} from "@reducers/productsSlice";
 import { ChangeEvent, FormEvent, useEffect, useState } from "react";
 import { v4 as uuidv4 } from "uuid";
-import { FetchComments } from "../../../redux/Api";
-import * as color from "../../../theme/colors";
-import { LM, SM, XLLM} from "../../../theme/fonts";
-import { StarComponent } from "../../componentsGlobals/productCard";
+import { FetchComments } from "@api/";
+import * as color from "@theme/colors";
+import { LM, SM, XLLM } from "@theme/fonts";
+import { StarComponent } from "../../componentsGlobals/cardProduct";
 import { PopNotification } from "../../componentsGlobals/pop-up/popNotification";
 
-export const SectionComments = () => {
+export const CommentsSection = () => {
     const productSlice = useSelector((state: any) => state.ProductSlice);
     const [numRandom, setNumrandom] = useState(1);
 
@@ -30,7 +30,6 @@ export const SectionComments = () => {
         setNumrandom(Math.floor(Math.random() * 27));
 
         setProduct(productSlice.productSelected.usItemId);
-        
     }, []);
 
     const onChangeName = (e: ChangeEvent<HTMLInputElement>) => {
@@ -199,7 +198,7 @@ export const SectionComments = () => {
                     <SubContainerComments>
                         {filteredComments ? (
                             filteredComments.map((comment: IComment) => (
-                                <>
+                                <div key={comment.id}>
                                     <Comment
                                         position="absolute"
                                         newComment={true}
@@ -207,7 +206,7 @@ export const SectionComments = () => {
                                         key={comment.id}
                                     />
                                     <Divider />
-                                </>
+                                </div>
                             ))
                         ) : (
                             <></>
@@ -217,14 +216,14 @@ export const SectionComments = () => {
                             commentProduct
                                 .slice(numRandom, numRandom + 3)
                                 .map((comment: IComment) => (
-                                    <>
+                                    <div key={comment.id}>
                                         <Comment
                                             comment={comment}
                                             key={comment.id}
                                         />
 
                                         <Divider />
-                                    </>
+                                    </div>
                                 ))}
                     </SubContainerComments>
                 </CommentsComments>

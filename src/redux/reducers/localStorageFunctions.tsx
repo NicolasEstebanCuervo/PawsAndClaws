@@ -3,20 +3,6 @@ import { IComment, IProduct } from "./productsSlice";
 
 // Functions localStorage for the animals
 
-export const setAnimalsLC = ({animals}:{animals:IAnimal[]})=>{
-    localStorage.setItem("animals", JSON.stringify(animals));
-}
-
-export const getAnimalsLC = () => {
-    const dataString = localStorage.getItem("animals");
-    if (dataString) {
-        const animals = JSON.parse(dataString);
-        return animals;
-    } else {
-        return null; 
-    }
-};
-
 export const setAnimalSelectedLC = ({animals}:{animals:IAnimal})=>{
     localStorage.setItem("animalSelected", JSON.stringify(animals));
 }

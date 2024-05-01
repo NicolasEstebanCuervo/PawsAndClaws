@@ -1,6 +1,6 @@
 import styled from "@emotion/styled";
-import * as color from "../../../theme/colors";
-import { LM, SM, XLLLM } from "../../../theme/fonts";
+import * as color from "@theme/colors";
+import { LM, SM, XLLLM } from "@theme/fonts";
 
 export const ReviewsPawsAndClaws = () => {
     return (

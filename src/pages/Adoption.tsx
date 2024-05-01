@@ -1,10 +1,10 @@
 import styled from "@emotion/styled";
-import { NavBar } from "../components/componentsGlobals/navbar";
-import { Header } from "../components/adoptionPage/header";
-import { SearchInput } from "../components/adoptionPage/searchInput";
-import { ListAnimalInAdoption } from "../components/adoptionPage/listAnimalInAdoption";
-import { FunFacts } from "../components/adoptionPage/funFacts";
-import { Footer } from "../components/componentsGlobals/footer";
+import { NavBar } from "@components/componentsGlobals/navbar";
+import { Header } from "@components/adoptionPage/headerAdoption";
+import { SearchInput } from "@components/adoptionPage/searchInput";
+import { ListAnimalInAdoption } from "@components/adoptionPage/listAnimalInAdoption";
+import { FunFacts } from "@components/adoptionPage/funFacts";
+import { Footer } from "@components/componentsGlobals/footer";
 
 export const Adoption= () => {
 
@@ -14,7 +14,7 @@ export const Adoption= () => {
             <Header/>
             <SearchInput />
             <ListAnimalInAdoption indexArray1={0} indexArray2={12}/>
-            <FunFacts />
+            {/* <FunFacts /> */}
             <ListAnimalInAdoption indexArray1={13} indexArray2={30}/>
             <Footer />
         </ContainerPage>

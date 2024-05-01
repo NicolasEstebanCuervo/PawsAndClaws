@@ -7,8 +7,8 @@ import {
     AccordionIcon,
     Box,
 } from "@chakra-ui/react";
-import * as color from "../../../theme/colors";
-import { XLLLM } from "../../../theme/fonts";
+import * as color from "@theme/colors";
+import { XLLLM } from "@theme/fonts";
 
 export const FrequentQuestions = () => {
     return (

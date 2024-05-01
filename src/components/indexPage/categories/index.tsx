@@ -1,10 +1,10 @@
 import styled from "@emotion/styled";
-import { LM, SM, XLLM } from "../../../theme/fonts";
+import { LM, SM, XLLM } from "@theme/fonts";
 
 export const Categories = () => {
     return (
         <Container>
-            <XLLM>Conoce Nuestros Servicios para Mascotas</XLLM>
+            <XLLM style={{textAlign:"center"}}>Conoce Nuestros Servicios para Mascotas</XLLM>
             <SubContainer>
                 <ContainerIndividual>
                     <Icon className="bi bi-shop"></Icon>
@@ -58,13 +58,21 @@ const Container = styled.section`
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    width: 100%;
-    gap: 3rem;  
+    width: 95%;
+    gap: 3rem;
     margin-top: 10rem;
 `;
 
 const SubContainer = styled.div`
     display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+
+    @media (max-width: 1150px) {
+        flex-direction: column;
+        gap: 2rem;
+    }
 `;
 
 const ContainerIndividual = styled.div`
@@ -72,6 +80,14 @@ const ContainerIndividual = styled.div`
     gap: 1rem;
     padding: 0 1rem;
     width: 28rem;
+
+    @media (max-width: 1600px) {
+        width: 23rem;
+    }
+
+    @media (max-width: 1150px) {
+        width: 100%;
+    }
 `;
 
 const Icon = styled.i`

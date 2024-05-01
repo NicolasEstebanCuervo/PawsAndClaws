@@ -1,6 +1,6 @@
 import styled from "@emotion/styled";
-import { MM, XLLM, XLM } from "../../../theme/fonts";
-import * as color from "../../../theme/colors";
+import { MM, XLLM, XLM } from "@theme/fonts";
+import * as color from "@theme/colors";
 
 export const SocialNetworks = () => {
     return (

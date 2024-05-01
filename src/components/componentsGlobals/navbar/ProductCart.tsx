@@ -4,9 +4,9 @@ import {
     deleteProductInTheCart,
     setDecreaseProduct,
     setIncrementProduct,
-} from "../../../redux/reducers/productsSlice";
+} from "@reducers/productsSlice";
 import { useDispatch } from "react-redux";
-import { MM } from "../../../theme/fonts";
+import { MM } from "@theme/fonts";
 import { PopConfirmation } from "../pop-up/popConfirmation";
 
 export const ProductCart = ({

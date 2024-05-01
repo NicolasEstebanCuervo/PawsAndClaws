@@ -1,7 +1,7 @@
 import styled from "@emotion/styled";
-import { XLLM, XLM } from "../../../theme/fonts";
-import * as color from "../../../theme/colors";
-import ImageHeader from "../../../assets/images/BgHeaderIndex.webp";
+import { XLLM, XLM } from "@theme/fonts";
+import * as color from "@theme/colors";
+import ImageHeader from "@assets/images//BgHeaderIndex.webp";
 
 export const Header = () => {
     return (
@@ -33,6 +33,7 @@ const Container = styled.header`
         url(${ImageHeader});
     background-size: cover;
     background-attachment: fixed;
+    background-position: center;
 `;
 
 const SubContainer = styled.div`

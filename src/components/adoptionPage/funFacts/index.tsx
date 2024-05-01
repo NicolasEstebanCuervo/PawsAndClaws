@@ -1,9 +1,9 @@
 import styled from "@emotion/styled";
 import { motion } from "framer-motion";
 import { useInView } from "react-intersection-observer";
-import * as color from "../../../theme/colors";
-import { MM, XLLM } from "../../../theme/fonts";
-import ImageBackground from "../../../assets/images/BgFunFactsAdoption.webp";
+import * as color from "@theme/colors";
+import { MM, XLLM } from "@theme/fonts";
+import ImageBackground from "@assets/images/BgFunFactsAdoption.webp";
 
 export const FunFacts = () => {
     const [ref, inView] = useInView({
@@ -68,7 +68,7 @@ export const FunFacts = () => {
                         </ContainerFact>
                     ))}
                 <Image
-                    src={require("../../../assets/images/FunFact4.webp")}
+                    src={require("@assets/images//FunFact4.webp")}
                     alt="Imagen de una mascota"
                 />
             </SubContainer>

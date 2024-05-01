@@ -4,13 +4,13 @@ import {
     deleteProductInTheCart,
     setDecreaseProduct,
     setIncrementProduct,
-} from "../../../redux/reducers/productsSlice";
-import { LM, MM, SM } from "../../../theme/fonts";
-import * as color from "../../../theme/colors";
+} from "@reducers/productsSlice";
+import { MM } from "@theme/fonts";
+import * as color from "@theme/colors";
 import { PopConfirmation } from "../../componentsGlobals/pop-up/popConfirmation";
 import { useDispatch } from "react-redux";
 
-export const ProductCardPay = ({
+export const CardProductPay = ({
     product,
     quantity,
 }: {
@@ -23,14 +23,6 @@ export const ProductCardPay = ({
         dispatch(deleteProductInTheCart(product.usItemId));
     };
 
-    const incrementProduct = () => {
-        dispatch(setIncrementProduct(product.usItemId));
-    };
-
-    const decreaseProduct = () => {
-        dispatch(setDecreaseProduct(product.usItemId));
-    };
-
     return (
         <ContainerProductCart>
             <ImgProductCart
@@ -39,22 +31,19 @@ export const ProductCardPay = ({
             />
             <TextsProduct>
                 <NameProduct>{product.name}</NameProduct>
-                    <MM>
-                        $
-                        {(
-                            (parseFloat(
-                                (product.priceInfo?.currentPrice?.priceString).slice(
-                                    1,
-                                    7
-                                )
-                            ) -
-                                2) *
-                            quantity
-                        ).toFixed(2)}
-                    </MM>
-                    <button onClick={decreaseProduct}>
-                </button>
-
+                <MM>
+                    $
+                    {(
+                        (parseFloat(
+                            (product.priceInfo?.currentPrice?.priceString).slice(
+                                1,
+                                7
+                            )
+                        ) -
+                            2) *
+                        quantity
+                    ).toFixed(2)}
+                </MM>
 
                 <PopConfirmation
                     functionActive={deleteProduct}

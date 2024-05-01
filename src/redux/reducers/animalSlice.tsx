@@ -2,11 +2,9 @@ import { createSlice } from "@reduxjs/toolkit";
 import {
     getAdoptionRQLC,
     getAnimalSelectedLC,
-    getAnimalsLC,
     getAppointmentRQLC,
     setAdoptionRQLC,
     setAnimalSelectedLC,
-    setAnimalsLC,
     setAppointmentRQLC,
 } from "./localStorageFunctions";
 
@@ -70,7 +68,7 @@ interface GlobalInterface {
 
 // Initial state setup
 const initialStates: GlobalInterface = {
-    animals: getAnimalsLC() || [],
+    animals: [],
     animalSelected: getAnimalSelectedLC() || [],
     animalsFiltered: [],
     inputFilterAnimals: "",
@@ -87,8 +85,6 @@ export const AnimalSlice = createSlice({
         setAnimals: (state, action) => {
             state.animals = [...state.animals, ...action.payload];
             state.animalsFiltered = [...state.animals, ...action.payload];
-            const animalsObject = { animals: state.animals };
-            setAnimalsLC(animalsObject);
         },
         // Function to set the selected animal
         setAnimalSelected: (state, action) => {

@@ -1,6 +1,6 @@
 import styled from "@emotion/styled";
-import { SM, XLLM } from "../../../theme/fonts";
-import * as color from "../../../theme/colors";
+import { SM, XLLM } from "@theme/fonts";
+import * as color from "@theme/colors";
 import { Link } from "react-router-dom";
 
 export const ContentAppointmentRequests = () => {

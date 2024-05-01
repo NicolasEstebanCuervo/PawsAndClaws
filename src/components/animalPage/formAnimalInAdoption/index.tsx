@@ -1,14 +1,15 @@
 import { Input, Select } from "@chakra-ui/react";
 import styled from "@emotion/styled";
-import * as color from "../../../theme/colors";
+import * as color from "@theme/colors";
 import { useDispatch, useSelector } from "react-redux";
 import { ChangeEvent, FormEvent, useState } from "react";
 import {
     createAdoptionRequest,
     setInputValueChanged,
-} from "../../../redux/reducers/animalSlice";
+} from "@reducers/animalSlice";
 import { v4 as uuidv4 } from "uuid";
 import { PopNotification } from "../../componentsGlobals/pop-up/popNotification";
+import { XLLM } from "@theme/fonts";
 
 export const FormAnimalInAdoption = () => {
     const animalSlice = useSelector((state: any) => state.AnimalSlice);
@@ -114,6 +115,7 @@ export const FormAnimalInAdoption = () => {
 
     return (
         <Container>
+            <Title>Formulario de contacto</Title>
             <Form onSubmit={handleSubmit}>
                 <div>
                     <label htmlFor="fullName">Nombre completo:</label>
@@ -130,7 +132,7 @@ export const FormAnimalInAdoption = () => {
                         id="fullName"
                         name="fullName"
                         placeholder="Nombre completo"
-                        value={animalSlice.fullNameAdoption}
+                        value={animalSlice.fullNameAdoption || ""}
                         onChange={handleInputChange("fullNameAdoption")}
                     />
                 </div>
@@ -144,12 +146,12 @@ export const FormAnimalInAdoption = () => {
                         }}
                         focusBorderColor={color.Gray}
                         required
-                        maxLength={50}                    
+                        maxLength={50}
                         type="text"
                         id="address"
                         name="address"
                         placeholder="Dirección"
-                        value={animalSlice.addressAdoption}
+                        value={animalSlice.addressAdoption || ""}
                         onChange={handleInputChange("addressAdoption")}
                     />
                 </div>
@@ -163,12 +165,12 @@ export const FormAnimalInAdoption = () => {
                         }}
                         focusBorderColor={color.Gray}
                         required
-                        maxLength={15}                    
+                        maxLength={15}
                         type="text"
                         id="phoneNumber"
                         name="phoneNumber"
                         placeholder="Número de teléfono"
-                        value={animalSlice.phoneNumberAdoption}
+                        value={animalSlice.phoneNumberAdoption || ""}
                         onChange={handleInputChange("phoneNumberAdoption")}
                     />
                 </div>
@@ -184,12 +186,12 @@ export const FormAnimalInAdoption = () => {
                         }}
                         focusBorderColor={color.Gray}
                         required
-                        maxLength={50}                    
+                        maxLength={50}
                         type="email"
                         id="email"
                         name="emailAdoption"
                         placeholder="Correo electrónico"
-                        value={animalSlice.emailAdoption}
+                        value={animalSlice.emailAdoption || ""}
                         onChange={handleInputChange("emailAdoption")}
                     />
                 </div>
@@ -205,12 +207,10 @@ export const FormAnimalInAdoption = () => {
                         required
                         id="housingType"
                         name="housingType"
-                        value={animalSlice.housingAdoption}
+                        value={animalSlice.housingAdoption || ""}
                         onChange={handleSelectChange("housingAdoption")}
                     >
-                        <option disabled selected>
-                            Selecciona una opción
-                        </option>
+                        <option value="">Selecciona una opción</option>
                         <option value="casa">Casa</option>
                         <option value="apartamento">Apartamento</option>
                     </Select>
@@ -230,9 +230,7 @@ export const FormAnimalInAdoption = () => {
                         value={animalSlice.landlorTenantAdoption}
                         onChange={handleSelectChange("landlorTenantAdoption")}
                     >
-                        <option disabled selected>
-                            Selecciona una opción
-                        </option>
+                        <option value="">Selecciona una opción</option>
                         <option value="propietario">Propietario</option>
                         <option value="inquilino">Inquilino</option>
                     </Select>
@@ -252,9 +250,7 @@ export const FormAnimalInAdoption = () => {
                         value={animalSlice.fencedYardAdoption}
                         onChange={handleSelectChange("fencedYardAdoption")}
                     >
-                        <option disabled selected>
-                            Selecciona una opción
-                        </option>
+                        <option value="">Selecciona una opción</option>
                         <option value="si">Sí</option>
                         <option value="no">No</option>
                     </Select>
@@ -276,9 +272,7 @@ export const FormAnimalInAdoption = () => {
                         value={animalSlice.previousPetsAdoption}
                         onChange={handleSelectChange("previousPetsAdoption")}
                     >
-                        <option disabled selected>
-                            Selecciona una opción
-                        </option>
+                        <option value="">Selecciona una opción</option>
                         <option value="si">Sí</option>
                         <option value="no">No</option>
                     </Select>
@@ -300,9 +294,7 @@ export const FormAnimalInAdoption = () => {
                         value={animalSlice.currentPetsAdoption}
                         onChange={handleSelectChange("currentPetsAdoption")}
                     >
-                        <option disabled selected>
-                            Selecciona una opción
-                        </option>
+                        <option value="">Selecciona una opción</option>
                         <option value="si">Sí</option>
                         <option value="no">No</option>
                     </Select>
@@ -325,9 +317,7 @@ export const FormAnimalInAdoption = () => {
                         value={animalSlice.adoptedPetsAdoption}
                         onChange={handleSelectChange("adoptedPetsAdoption")}
                     >
-                        <option disabled selected>
-                            Selecciona una opción
-                        </option>
+                        <option value="">Selecciona una opción</option>
                         <option value="si">Sí</option>
                         <option value="no">No</option>
                     </Select>
@@ -345,15 +335,29 @@ export const FormAnimalInAdoption = () => {
 
 const Container = styled.section`
     width: 40%;
-    padding: 2rem;
-    border-radius: 0.3rem;
-    border: 1px solid ${color.LightGray};
+
+    @media (max-width: 1250px) {
+        width: 100%;
+    }
+`;
+
+const Title = styled(XLLM)`
+    display: none;
+
+    @media (max-width: 1250px) {
+        display: block;
+        text-align: center;
+        margin-bottom: 2rem;
+    }
 `;
 
 const Form = styled.form`
     display: flex;
     flex-direction: column;
     gap: 2rem;
+    padding: 2rem;
+    border-radius: 0.3rem;
+    border: 1px solid ${color.LightGray};
 
     div {
         display: flex;

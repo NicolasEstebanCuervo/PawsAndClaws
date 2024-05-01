@@ -1,10 +1,10 @@
 import styled from "@emotion/styled";
 import { useSelector } from "react-redux";
-import { IFormAppointment } from "../../../redux/reducers/animalSlice";
-import { LM, SM, XLLM } from "../../../theme/fonts";
+import { IFormAppointment } from "@reducers/animalSlice";
+import { LM, SM, XLLM } from "@theme/fonts";
 import { CardAppointmentRequests } from "../cardAppointmentRequest";
 import { ListItem, OrderedList } from "@chakra-ui/react";
-import * as color from "../../../theme/colors";
+import * as color from "@theme/colors";
 
 export const ListAppointmentRequests = () => {
     const animalSlice = useSelector(

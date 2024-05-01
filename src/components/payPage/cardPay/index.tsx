@@ -1,13 +1,13 @@
 import styled from "@emotion/styled";
-import { LM, MM, SMM, XLM } from "../../../theme/fonts";
-import NequiIcon from "../../../assets/icons/Nequi.svg";
-import MasterCardIcon from "../../../assets/icons/MasterCard.svg";
-import VisaIcon from "../../../assets/icons/Visa.svg";
-import FireIcon from "../../../assets/icons/Fire.svg";
-import ThunderIcon from "../../../assets/icons/Thunder.svg";
-import * as color from "../../../theme/colors";
+import { LM, MM, SMM, XLM } from "@theme/fonts";
+import NequiIcon from "@assets/icons/Nequi.svg";
+import MasterCardIcon from "@assets/icons/MasterCard.svg";
+import VisaIcon from "@assets/icons/Visa.svg";
+import FireIcon from "@assets/icons/Fire.svg";
+import ThunderIcon from "@assets/icons/Thunder.svg";
+import * as color from "@theme/colors";
 import { useDispatch, useSelector } from "react-redux";
-import { IProduct, setTotalPrice } from "../../../redux/reducers/productsSlice";
+import { IProduct, setTotalPrice } from "@reducers/productsSlice";
 import { Link } from "react-router-dom";
 
 export const CardPay = () => {
@@ -82,7 +82,7 @@ export const CardPay = () => {
                         </ContainerIndividualExtra>
                     </ContainerExtras>
 
-                    <LinkPay to="/FormPay">
+                    <LinkPay to="/products/product/formPay">
                         <Button>Pagar</Button>
                     </LinkPay>
                 </SubContainer>

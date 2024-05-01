@@ -1,10 +1,10 @@
 import styled from "@emotion/styled";
-import * as color from "../theme/colors";
-import { NavBar } from "../components/componentsGlobals/navbar";
-import { ProductInformation } from "../components/reviewProductPage/productInformation";
-import { PayOrAddToCart } from "../components/reviewProductPage/payOrAddToCard";
-import { SectionComments } from "../components/reviewProductPage/commentsSection";
-import { Footer } from "../components/componentsGlobals/footer";
+import * as color from "@theme/colors";
+import { NavBar } from "@components/componentsGlobals/navbar";
+import { ProductInformation } from "@components/reviewProductPage/productInformation";
+import { PayOrAddToCart } from "@components/reviewProductPage/payOrAddToCard";
+import { CommentsSection } from "@components/reviewProductPage/commentsSection";
+import { Footer } from "@components/componentsGlobals/footer";
 import { useSelector } from "react-redux";
 
 export const ReviewProduct= () => {
@@ -20,7 +20,7 @@ export const ReviewProduct= () => {
                 <ProductInformation />
                 <PayOrAddToCart product={productSlice.productSelected}/>
             </Container>
-            <SectionComments />
+            <CommentsSection />
             <Footer />
         </ContainerPage>
     );

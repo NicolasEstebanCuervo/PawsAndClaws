@@ -1,15 +1,15 @@
 import styled from "@emotion/styled";
-import * as color from "../theme/colors";
-import { NavBar } from "../components/componentsGlobals/navbar";
-import { ListAdoptionRequests } from "../components/myRequestsPage/listAdoptionRequests";
-import { ContentAdoptionRequests } from "../components/myRequestsPage/contentAdoptionRequests";
-import { ListAppointmentRequests } from "../components/myRequestsPage/listAppointmentRequests";
-import { ContentAppointmentRequests } from "../components/myRequestsPage/contentAppointmentRequest";
-import { FormContact } from "../components/myRequestsPage/formContact";
-import { SocialNetworks } from "../components/myRequestsPage/socialNetworks";
-import { FunFacts } from "../components/myRequestsPage/funFactsMyRequests";
-import { Footer } from "../components/componentsGlobals/footer";
-import { XLLLM } from "../theme/fonts";
+import * as color from "@theme/colors";
+import { NavBar } from "@components/componentsGlobals/navbar";
+import { ListAdoptionRequests } from "@components/myRequestsPage/listAdoptionRequests";
+import { ContentAdoptionRequests } from "@components/myRequestsPage/contentAdoptionRequests";
+import { ListAppointmentRequests } from "@components/myRequestsPage/listAppointmentRequests";
+import { ContentAppointmentRequests } from "@components/myRequestsPage/contentAppointmentRequest";
+import { FormContact } from "@components/myRequestsPage/formContact";
+import { SocialNetworks } from "@components/myRequestsPage/socialNetworks";
+import { FunFacts } from "@components/myRequestsPage/funFacts";
+import { Footer } from "@components/componentsGlobals/footer";
+import { XLLLM } from "@theme/fonts";
 
 export const Requests = () => {
     return (
