@@ -1,0 +1,11 @@
+{
+    "rewrites": [
+      { "source": "^/@components/(.*)", "destination": "/src/components/$1" },
+      { "source": "^/@assets/(.*)", "destination": "/src/assets/$1" },
+      { "source": "^/@theme/(.*)", "destination": "/src/theme/$1" },
+      { "source": "^/@pages/(.*)", "destination": "/src/pages/$1" },
+      { "source": "^/@reducers/(.*)", "destination": "/src/redux/reducers/$1" },
+      { "source": "^/@api/(.*)", "destination": "/src/redux/api/$1" }
+    ]
+  }
+  
