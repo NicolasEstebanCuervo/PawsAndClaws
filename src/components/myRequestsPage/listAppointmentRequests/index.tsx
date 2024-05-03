@@ -15,7 +15,7 @@ export const ListAppointmentRequests = () => {
         <Container>
             {!animalSlice.appointmentRequests || animalSlice.appointmentRequests.length === 0 ? (
                 <ContainerTutorial>
-                    <TextsTutorial>
+                    <Texts>
                         <Title>
                             ¡No tienes citas agendadas! Aquí te explicamos cómo
                             agendar una cita con nuestro veterinario:
@@ -94,7 +94,7 @@ export const ListAppointmentRequests = () => {
                                 </SM>
                             </ListItem>
                         </OrderedListComponent>
-                    </TextsTutorial>
+                    </Texts>
                 </ContainerTutorial>
             ) : (
                 <SectionListRequest>
@@ -130,20 +130,29 @@ const Container = styled.section`
 const ContainerTutorial = styled.div`
     display: flex;
     justify-content: center;
-    padding: 2rem;
+    padding: 5% 2rem;
     width: 100%;
     background: ${color.LightGray};
 `;
 
 const Title = styled(XLLM)`
     font-weight: bold;
+
+    @media (max-width: 1250px) {
+        text-align: center;
+    }
 `;
 
-const TextsTutorial = styled.div`
+const Texts = styled.div`
     display: flex;
     gap: 2rem;
     flex-direction: column;
-    width: 50%;
+    width: 70%;
+
+    @media (max-width: 1250px) {
+        width: 100%;
+        align-items: center;
+    }
 `;
 
 const OrderedListComponent = styled(OrderedList)`

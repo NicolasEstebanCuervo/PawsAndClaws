@@ -192,41 +192,38 @@ export const CommentsSection = () => {
                         </SM>
                     </ContainerProgressBars>
                 </Rating>
-
-                <CommentsComments>
+                <SubContainerComments>
                     <LM>Comentarios destacados</LM>
-                    <SubContainerComments>
-                        {filteredComments ? (
-                            filteredComments.map((comment: IComment) => (
-                                <div key={comment.id}>
+                    {filteredComments ? (
+                        filteredComments.map((comment: IComment) => (
+                            <div key={comment.id}>
+                                <Comment
+                                    position="absolute"
+                                    newComment={true}
+                                    comment={comment}
+                                    key={comment.id}
+                                />
+                                <Divider />
+                            </div>
+                        ))
+                    ) : (
+                        <></>
+                    )}
+
+                    {commentProduct &&
+                        commentProduct
+                            .slice(numRandom, numRandom + 3)
+                            .map((comment: IComment) => (
+                                <ContainerCommentIndividual key={comment.id}>
                                     <Comment
-                                        position="absolute"
-                                        newComment={true}
                                         comment={comment}
                                         key={comment.id}
                                     />
+
                                     <Divider />
-                                </div>
-                            ))
-                        ) : (
-                            <></>
-                        )}
-
-                        {commentProduct &&
-                            commentProduct
-                                .slice(numRandom, numRandom + 3)
-                                .map((comment: IComment) => (
-                                    <div key={comment.id}>
-                                        <Comment
-                                            comment={comment}
-                                            key={comment.id}
-                                        />
-
-                                        <Divider />
-                                    </div>
-                                ))}
-                    </SubContainerComments>
-                </CommentsComments>
+                                </ContainerCommentIndividual>
+                            ))}
+                </SubContainerComments>
             </ContainerComments>
         </Container>
     );
@@ -235,30 +232,48 @@ export const CommentsSection = () => {
 const Container = styled.section`
     display: flex;
     flex-direction: column;
+    justify-content: center;
+    align-items: center;
     gap: 2rem;
-    width: 50%;
+    width: 60%;
+
+    @media (max-width: 1250px) {
+        width: 70%;
+    }
+
+    @media (max-width: 1000px) {
+        width: 85%;
+    }
+
+    @media (max-width: 750px) {
+        width: 100%;
+    }
 `;
 
 const Title = styled(XLLM)`
     text-align: center;
 `;
 
-const ContainerComments = styled.div`
-    display: flex;
-    justify-content: center;
-    gap: 2rem;
-`;
-
 const ContainerFormComments = styled.div`
     display: flex;
     flex-direction: column;
-    justify-content: center;
+    align-items: start;
+    width: 100%;
+
+    @media (max-width: 750px) {
+        width: 80%;
+    }
 `;
+
 const Form = styled.form`
     display: flex;
     flex-direction: column;
     gap: 1rem;
-    width: 50%;
+    width: 60%;
+
+    @media (max-width: 750px) {
+        width: 80%;
+    }
 `;
 
 const Button = styled.input`
@@ -273,14 +288,33 @@ const Button = styled.input`
     &:hover {
         opacity: 0.9;
     }
+
+    @media (max-width: 750px) {
+        font-size: 1rem;
+    }
+`;
+
+const ContainerComments = styled.div`
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+
+    @media (max-width: 750px) {
+        flex-direction: column;
+    }
 `;
 
 const Rating = styled.div`
     display: flex;
     flex-direction: column;
-    justify-content: start;
-    width: 60%;
+    width: 70%;
     height: 50vh;
+
+    @media (max-width: 750px) {
+        height: auto;
+        margin-bottom: 3rem;
+    }
 `;
 
 const ContainerRaiting = styled.div`
@@ -307,13 +341,18 @@ const ContainerProgressBars = styled.div`
     grid-template-columns: 90% 10%;
 `;
 
-const CommentsComments = styled.div`
-    display: flex;
-    flex-direction: column;
-    gap: 2rem;
-`;
-
 const SubContainerComments = styled.div`
     display: flex;
     flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 2rem;
+`;
+
+const ContainerCommentIndividual = styled.div`
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
 `;

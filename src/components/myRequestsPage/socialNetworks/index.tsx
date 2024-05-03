@@ -53,10 +53,22 @@ const Container = styled.div`
     flex-direction: column;
     justify-content: center;
     border-radius: 0rem 0.5rem 0.5rem 0rem;
+
+    @media (max-width: 1250px) {
+        width: 80%;
+    }
+
+    @media (max-width: 750px) {
+        width: 95%;
+    }
 `;
 
 const Title = styled(XLLM)`
     font-weight: bold;
+
+    @media (max-width: 1250px) {
+        text-align: center;
+    }
 `;
 
 const Texts = styled.div`
@@ -73,6 +85,10 @@ const ContainerIndividual = styled.div`
 const Icon = styled.i`
     font-size: 3rem;
     cursor: pointer;
+
+    @media (max-width: 550px) {
+        font-size: 2.5rem;
+    }
 `;
 
 const TitleIndividual = styled(XLM)`

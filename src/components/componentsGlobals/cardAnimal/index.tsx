@@ -120,4 +120,8 @@ const Button = styled.button`
     &:hover {
         opacity: 0.9;
     }
+
+    @media (max-width: 750px) {
+        font-size: 1rem;
+    }
 `;

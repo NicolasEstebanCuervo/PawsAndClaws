@@ -92,7 +92,6 @@ export const CardAdoptionRequests = ({
 
     return (
         <Popover
-            placement="top-start"
             onOpen={changeTrueClicked}
             onClose={changeFalseClicked}
         >
@@ -174,7 +173,7 @@ export const CardAdoptionRequests = ({
 };
 
 const ContentTrigger = styled.div`
-    width: 50rem;
+    width: 50%;
     position: relative;
     padding: 1rem;
     border-radius: 0.3rem;
@@ -186,6 +185,10 @@ const ContentTrigger = styled.div`
             : clicked
             ? `${color.Beige}`
             : `${color.LightBrown}`};
+
+    @media (max-width: 750px) {
+        width: 95%;
+    }       
 `;
 const HeaderPopover = styled.div`
     display: flex;

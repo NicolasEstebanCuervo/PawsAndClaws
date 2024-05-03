@@ -150,6 +150,14 @@ const Container = styled.section`
     padding: 2rem;
     gap: 1rem;
     border-radius: 0.3rem;
+
+    @media (max-width: 1250px) {
+        width: 80%;
+    }
+
+    @media (max-width: 750px) {
+        width: 100%;
+    }
 `;
 
 const ContainerStars = styled.div`
@@ -219,6 +227,10 @@ const Button = styled.button`
     transition: opacity 0.2s ease-in-out;
     &:hover {
         opacity: 0.9;
+    }
+
+    @media (max-width: 750px) {
+        font-size: 1rem;
     }
 `;
 

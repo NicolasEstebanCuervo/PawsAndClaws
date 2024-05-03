@@ -1,5 +1,5 @@
 import styled from "@emotion/styled";
-import { SM, XLM } from "@theme/fonts";
+import { SM, XLLM } from "@theme/fonts";
 import * as color from "@theme/colors";
 import { Link } from "react-router-dom";
 
@@ -8,10 +8,10 @@ export const Appointment = () => {
         <Container>
             <Texts>
                 <div>
-                    <XLM>
+                    <XLLM>
                         ¡Agenda Ahora y Dale a tu Mascota la Atención que
                         Merece!
-                    </XLM>
+                    </XLLM>
                     <SM>
                         En nuestra veterinaria, entendemos el amor y la
                         responsabilidad que viene con tener una mascota. Nuestro
@@ -79,6 +79,10 @@ const Button = styled.button`
     transition: opacity 0.2s ease-in-out;
     &:hover {
         opacity: 0.9;
+    }
+
+    @media (max-width: 750px) {
+        font-size: 1rem;
     }
 `;
 

@@ -242,8 +242,13 @@ const Container = styled.section`
 
 const Title = styled(XLLLM)`
     font-weight: bold;
+    text-align: center;
 `;
 
 const SubContainer = styled.div`
     width: 70%;
+
+    @media (max-width: 750px) {
+        width: 90%;
+    }
 `;

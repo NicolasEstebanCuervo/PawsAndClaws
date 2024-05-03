@@ -42,6 +42,16 @@ const Container = styled.div`
     width: 40rem;
     height: 35rem;
     border-radius: 0.5rem 0 0 0.5rem;
+
+    @media (max-width: 1250px) {
+        width: 80%;
+    }
+
+    @media (max-width: 750px) {
+        width: 95%;
+        height: auto;
+        padding: 2rem ;
+    }
 `;
 
 const Title = styled(XLLM)`
@@ -59,6 +69,12 @@ const Form = styled.form`
 
     div {
         width: 100%;
+    }
+
+    
+    @media (max-width: 750px) {
+        width: 100%;
+        padding: 1rem;
     }
 `;
 
@@ -97,5 +113,9 @@ const Button = styled.input`
     transition: opacity 0.2s ease-in-out;
     &:hover {
         opacity: 0.9;
+    }
+
+    @media (max-width: 750px) {
+        font-size: 1rem;
     }
 `;

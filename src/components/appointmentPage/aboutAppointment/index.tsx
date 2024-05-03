@@ -67,6 +67,10 @@ const Container = styled.section`
     align-items: center;
     flex-direction: column;
     gap: 2rem;
+
+    @media (max-width: 1250px) {
+        width: 100%;
+    }
 `;
 
 const Image = styled.img`
@@ -74,6 +78,10 @@ const Image = styled.img`
     border-radius: 0.3rem;
     height: 30rem;
     object-fit: cover;
+
+    @media (max-width: 1250px) {
+        width: 100%;
+    }
 `;
 
 const Texts = styled.div`

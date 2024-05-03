@@ -26,7 +26,7 @@ export const Requests = () => {
                     <SocialNetworks />
                 </SubContainerContact>
             </Container>
-            <FunFacts />
+            {/* <FunFacts />  */}
             <Footer />
         </ContainerPage>
     );
@@ -58,4 +58,12 @@ const Title = styled(XLLLM)`
 
 const SubContainerContact = styled.div`
     display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 95%;
+
+    @media (max-width: 1250px) {
+        flex-direction: column;
+        gap: 2rem;
+    }
 `;

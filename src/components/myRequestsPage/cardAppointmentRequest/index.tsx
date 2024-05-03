@@ -72,7 +72,6 @@ export const CardAppointmentRequests = ({
 
     return (
         <Popover
-            placement="top-start"
             onOpen={changeTrueClicked}
             onClose={changeFalseClicked}
         >
@@ -133,15 +132,10 @@ export const CardAppointmentRequests = ({
                         </List>
                     </ContentPopover>
 
-
-
                     <PopConfirmation
                         functionActive={deleteAdoptionRequest}
                         actionComponent={
-                            <Button
-                            margin="0 0 1rem 1rem"
-                            colorScheme="teal"
-                            >
+                            <Button margin="0 0 1rem 1rem" colorScheme="teal">
                                 Borrar peticion
                             </Button>
                         }
@@ -155,7 +149,7 @@ export const CardAppointmentRequests = ({
 };
 
 const ContentTrigger = styled.div`
-    width: 50rem;
+    width: 50%;
     position: relative;
     padding: 1rem;
     border-radius: 0.3rem;
@@ -168,6 +162,10 @@ const ContentTrigger = styled.div`
             : clicked
             ? `${color.Beige}`
             : `${color.LightBrown}`};
+
+    @media (max-width: 1000px) {
+        width: 95%;
+    }
 `;
 
 const ContentPopover = styled.div`

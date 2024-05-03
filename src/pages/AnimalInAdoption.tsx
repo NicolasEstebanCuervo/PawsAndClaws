@@ -30,6 +30,8 @@ const ContainerPage = styled.main`
 
 const Container = styled.div`
     display: flex;
+    justify-content: center;
+    align-items: center;
     gap: 5rem;
     width: 80%;
     margin: 5rem 0;

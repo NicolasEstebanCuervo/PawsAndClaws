@@ -51,7 +51,7 @@ export const ReviewsPawsAndClaws = () => {
                             alt=""
                         />
                         <div>
-                            <LM>Juan Pérez</LM>
+                            <LM>Diego Granados</LM>
                             <SM colorText={color.LightGray2}>Nuevo cliente</SM>
                         </div>
                     </ContainerIndividualInformation>
@@ -78,7 +78,7 @@ export const ReviewsPawsAndClaws = () => {
                         <div>
                             <LM>Carlos Gómez</LM>
                             <SM colorText={color.LightGray2}>
-                                Amante de los animales
+                                Cliente leal
                             </SM>
                         </div>
                     </ContainerIndividualInformation>
@@ -124,6 +124,10 @@ const Container = styled.section`
     padding: 5rem;
     gap: 2rem;
     margin-top: 5rem;
+
+    @media (max-width: 1250px) {
+        padding: 5rem 0;
+    }
 `;
 
 const Title = styled(XLLLM)`
@@ -136,6 +140,14 @@ const SubContainer = styled.div`
     justify-content: center;
     width: 90%;
     gap: 3rem;
+
+    @media (max-width: 1250px) {
+        width: 95%;
+    }
+
+    @media (max-width: 1000px) {
+        flex-direction: column;
+    }
 `;
 
 const IndividualReview = styled.section`
@@ -146,12 +158,26 @@ const IndividualReview = styled.section`
     gap: 2rem;
     border-radius: 0.3rem;
     background: ${color.White};
+
+    @media (max-width: 1000px) {
+        flex-direction: row-reverse;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+    }
+
+    @media (max-width: 750px) {
+        flex-direction: column-reverse;
+        justify-content: center;
+        align-items: center;
+    }
 `;
 
 const ContainerIndividualInformation = styled.div`
     display: flex;
     flex-direction: column;
     gap: 1rem;
+
 `;
 
 const Image = styled.img`

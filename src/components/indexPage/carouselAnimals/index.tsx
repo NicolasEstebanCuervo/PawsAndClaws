@@ -100,7 +100,7 @@ const CarouselCustom = styled(Carousel)`
     align-items: center;
 
     @media (max-width: 750px) {
-        width: 70%;
+        width: 100%;
     }
 
     @media (max-width: 450px) {

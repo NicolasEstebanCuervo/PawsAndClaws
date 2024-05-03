@@ -1,6 +1,6 @@
 import styled from "@emotion/styled";
 import { NavBar } from "@components/componentsGlobals/navbar";
-import { Header } from "@components/adoptionPage/headerAdoption";
+import { Header } from "@components/adoptionPage/header";
 import { SearchInput } from "@components/adoptionPage/searchInput";
 import { ListAnimalInAdoption } from "@components/adoptionPage/listAnimalInAdoption";
 import { FunFacts } from "@components/adoptionPage/funFacts";

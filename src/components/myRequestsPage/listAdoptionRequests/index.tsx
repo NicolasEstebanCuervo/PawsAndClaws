@@ -6,6 +6,7 @@ import ImageBackgroundWithoutAdoption from "@assets/images//BgWithoutAnimalInAdo
 import ImageBackgroundWithAdoption from "@assets/images//BgWithAnimalsInAdoption.webp";
 import { ListItem, OrderedList } from "@chakra-ui/react";
 import { CardAdoptionRequests } from "../cardAdoptionRequests";
+import * as color from "@theme/colors"
 
 export const ListAdoptionRequests = () => {
     const animalSlice = useSelector(
@@ -140,21 +141,38 @@ const ContainerTutorial = styled.div`
     justify-content: center;
     padding-top: 2rem;
     width: 100%;
-    height: 65rem;
+    height: 90%;
     background: url(${ImageBackgroundWithoutAdoption});
     background-size: cover;
-    background-position: center bottom;
+    background-position: center;
+    padding: 3rem 1rem;
+
+    @media (max-width: 1150px) {
+        background: ${color.LightBeige};
+        height: 80%;
+    }
 `;
 
 const Title = styled(XLLM)`
     font-weight: bold;
+    width: 90%;
+
+    @media (max-width: 750px) {
+        text-align: center;
+    }
 `;
 
 const Texts = styled.div`
     display: flex;
     gap: 2rem;
     flex-direction: column;
-    width: 50%;
+    width: 55%;
+
+    @media (max-width: 1150px) {
+        width: 95%;
+        height: 100%;
+        justify-content: center;
+    }
 `;
 
 const OrderedListComponent = styled(OrderedList)`
@@ -175,4 +193,12 @@ const ContainerListRequest = styled.div`
     background: url(${ImageBackgroundWithAdoption});
     background-size: cover;
     background-position: center bottom;
+
+    @media (min-width: 1250px) and (max-width: 1599px) {
+        height: 40rem;
+    }
+    
+    @media (max-width: 750px) {
+        background: ${color.LightBeige};
+    }
 `;

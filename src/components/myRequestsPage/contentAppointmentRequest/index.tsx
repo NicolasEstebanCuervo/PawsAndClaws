@@ -50,6 +50,14 @@ const Texts = styled.div`
     text-align: center;
     width: 50%;
     gap: 2rem;
+
+    @media (max-width: 1600px) {
+        width: 70%;
+    }
+
+    @media (max-width: 750px) {
+        width: 90%;
+    }
 `;
 
 const Button = styled.button`
@@ -63,5 +71,10 @@ const Button = styled.button`
     transition: opacity 0.2s ease-in-out;
     &:hover {
         opacity: 0.9;
+    }
+
+    @media (max-width: 750px) {
+        font-size: 1rem;
+        width: 100%;
     }
 `;
