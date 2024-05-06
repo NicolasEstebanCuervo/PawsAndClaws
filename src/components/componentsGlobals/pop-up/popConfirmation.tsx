@@ -48,7 +48,7 @@ export const PopConfirmation = ({
             >
                 <AlertDialogOverlay />
 
-                <AlertDialogContent>
+                <AlertDialogContent width={"90%"}>
                     <AlertDialogHeader>{titleAlert}</AlertDialogHeader>
                     <AlertDialogCloseButton />
                     <AlertDialogBody>{descriptionAlert}</AlertDialogBody>

@@ -64,7 +64,7 @@ export const PopNotification = ({
             >
                 <AlertDialogOverlay />
 
-                <AlertDialogContent>
+                <AlertDialogContent width={"90%"}>
                     <Alert status="success" borderRadius="md">
                         <AlertIcon />
                         <Box flex="1">

@@ -62,7 +62,6 @@ const SubContainer = styled.div`
         width: 95%;
         height: 100%;
         justify-content: center;
-        text-align: center;
     }
 `;
 

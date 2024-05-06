@@ -41,6 +41,10 @@ const SubContainer = styled.div`
     flex-direction: column;
     width: 90%;
     text-align: center;
+
+    @media (max-width: 750px) {
+        text-align: left;
+    }
 `
 const Subtitle = styled(XLM)`
     @media (max-width: 750px) {

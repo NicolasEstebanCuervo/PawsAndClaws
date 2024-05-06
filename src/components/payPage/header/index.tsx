@@ -41,8 +41,9 @@ const Container = styled.section`
     }
 
     @media (max-width: 750px) {
-        background: ${color.LightBeige};
+        justify-content: center;
         align-items: center;
+        background: ${color.LightBeige};
     }
 `;
 
@@ -72,7 +73,6 @@ const Texts = styled.div`
 
     @media (max-width: 750px) {
         width: 100%;
-        text-align: center;
     }
 `;
 
