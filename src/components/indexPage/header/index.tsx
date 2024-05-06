@@ -1,5 +1,5 @@
 import styled from "@emotion/styled";
-import { XLLM } from "@theme/fonts";
+import { XLLM, XLM } from "@theme/fonts";
 import * as color from "@theme/colors";
 import ImageHeader from "@assets/images//BgHeaderIndex.webp";
 
@@ -11,6 +11,9 @@ export const Header = () => {
                     Dedicados a la Salud y Felicidad de tus Mascotas. Clínica
                     Veterinaria de Confianza y Cariño
                 </XLLM>
+                <Subtitle colorText={color.White}>
+                    Expertos en Cuidado y Prevención para tus peludos amigos.
+                </Subtitle>
             </SubContainer>
         </Container>
     );
@@ -38,4 +41,9 @@ const SubContainer = styled.div`
     flex-direction: column;
     width: 90%;
     text-align: center;
+`
+const Subtitle = styled(XLM)`
+    @media (max-width: 750px) {
+        display:none   
+    }
 `
