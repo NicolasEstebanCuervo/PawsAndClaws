@@ -145,7 +145,7 @@ const SubContainer = styled.div`
         width: 95%;
     }
 
-    @media (max-width: 1000px) {
+    @media (max-width: 1250px) {
         flex-direction: column;
     }
 `;
@@ -159,7 +159,11 @@ const IndividualReview = styled.section`
     border-radius: 0.3rem;
     background: ${color.White};
 
-    @media (max-width: 1000px) {
+    @media (max-width: 1600px) {
+        width: 40%;
+    }
+
+    @media (max-width: 1250px) {
         flex-direction: row-reverse;
         justify-content: center;
         align-items: center;
