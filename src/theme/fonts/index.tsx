@@ -49,17 +49,18 @@ export const XLM = styled.h2`
 
 `;
 export const XLLM = styled.h1`
-    font-size: 3rem;
+    font-size: 2.3rem;
     margin: 0;
     color: ${({ colorText }: { colorText?: string }) =>
         colorText ? `${colorText}` : `${color.Black}`};
-    
+    font-weight: bold;
+
     @media (max-width: 1600px) {
-        font-size: 2.7rem;
+        font-size: 2.2rem;
     }
 
     @media (max-width: 1250px) {
-        font-size: 2.5rem;
+        font-size: 2.1rem;
     }
 
     @media (max-width: 1000px) {
@@ -67,11 +68,7 @@ export const XLLM = styled.h1`
     }
 
     @media (max-width: 700px) {
-        font-size: 1.8rem;
-    }
-
-    @media (max-width: 450px) {
-        font-size: 1.5rem;
+        font-size: 1.6rem;
     }
 `;
 export const XLLLM = styled.h1`

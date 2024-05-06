@@ -1,5 +1,5 @@
 import { useSelector } from "react-redux";
-import { SM, XLLM, XLM } from "@theme/fonts";
+import { SM, XLLM } from "@theme/fonts";
 import styled from "@emotion/styled";
 import * as color from "@theme/colors";
 
@@ -16,7 +16,7 @@ export const ProductInformation = () => {
                 <LineDivider></LineDivider>
 
                 <Texts>
-                    <XLM>Información del producto</XLM>
+                    <XLLM>Información del producto</XLLM>
                     <ContainerName>
                         <Title>Nombre</Title>
                         <SM>{productSlice.productSelected.name}</SM>

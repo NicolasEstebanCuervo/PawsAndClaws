@@ -37,7 +37,7 @@ export const PayOrAddToCart = ({ product }: { product: IProduct }) => {
     return (
         <Container>
             <div>
-                <XLM>{product.name.substring(0, 59)}...</XLM>
+                <XLLM>{product.name.substring(0, 59)}...</XLLM>
                 <ContainerStars>{StarComponent({})}</ContainerStars>
             </div>
             <ContainerPrices>

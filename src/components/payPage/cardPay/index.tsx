@@ -1,5 +1,5 @@
 import styled from "@emotion/styled";
-import { LM, MM, SMM, XLM } from "@theme/fonts";
+import { LM, MM, SMM, XLLM } from "@theme/fonts";
 import NequiIcon from "@assets/icons/Nequi.svg";
 import MasterCardIcon from "@assets/icons/MasterCard.svg";
 import VisaIcon from "@assets/icons/Visa.svg";
@@ -112,7 +112,7 @@ const FirstContainer = styled.div`
     margin-bottom: 2rem;
 `;
 
-const Title = styled(XLM)`
+const Title = styled(XLLM)`
     font-weight: bold;
 `;
 

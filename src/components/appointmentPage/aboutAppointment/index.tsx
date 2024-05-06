@@ -1,5 +1,5 @@
 import styled from "@emotion/styled";
-import { LM, SM, XLM } from "@theme/fonts";
+import { SM, XLLM } from "@theme/fonts";
 import { useEffect, useState } from "react";
 import { ImagesGenerator } from "@api/";
 import * as color from "@theme/colors";
@@ -24,7 +24,7 @@ export const AboutAppointment = () => {
 
             <Texts>
                 <SubTexts>
-                    <XLM>¡Recuerda estos consejos!</XLM>
+                    <XLLM>¡Recuerda estos consejos!</XLLM>
 
                     <TextsIndividual>
                         <Title>Preparación</Title>
@@ -47,7 +47,7 @@ export const AboutAppointment = () => {
                 </SubTexts>
 
                 <ContainerDescription>
-                    <LM>Nuestro compromiso con tu mascota:</LM>
+                    <XLLM>Nuestro compromiso con tu mascota:</XLLM>
                     <SM>
                         Nuestro equipo está comprometido con brindar la mejor
                         atención médica y cuidado para tu mascota. ¡Confía en

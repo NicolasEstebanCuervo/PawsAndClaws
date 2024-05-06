@@ -258,6 +258,11 @@ const Container = styled.section`
     flex-direction: column;
     justify-content: center;
     margin: 5rem 0;
+    gap: 1rem;
+
+    @media (max-width: 1250px) {
+        width: 95%;
+    }
 `;
 
 const Title = styled(XLLM)`
