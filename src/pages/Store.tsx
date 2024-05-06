@@ -2,7 +2,7 @@ import styled from "@emotion/styled";
 import * as color from "@theme/colors";
 import { NavBar } from "@components/componentsGlobals/navbar";
 import { Header } from "@components/storePage/header";
-import { ListProductsStore } from "@components/storePage/listProductsStore";
+import { ListProductsStore } from "@components/storePage/header/listProductsStore";
 import { FunFacts } from "@components/storePage/funFacts";
 import { ContentStore } from "@components/storePage/contentStorePage";
 import { Footer } from "@components/componentsGlobals/footer";

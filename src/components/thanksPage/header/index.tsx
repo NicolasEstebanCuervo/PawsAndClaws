@@ -9,8 +9,7 @@ export const Header = () => {
             <SubContainer>
                 <Texts>
                     <Title>
-                        ¡Gracias por Consentir a tu Peludo Amigo con una Compra
-                        Llena de Alegría!
+                        ¡Gracias por Consentir a tu Peludo Amigo con tu compra!
                     </Title>
                     <XLM>
                         ¡Woof-tastic! ¡Tu decisión de consentir a tu peludo
@@ -32,7 +31,7 @@ export const Header = () => {
 const Container = styled.section`
     width: 100%;
     max-width: 2000px;
-    height: 70rem;
+    height: 50rem;
     display: flex;
     flex-direction: column;
     align-items: end;
@@ -40,6 +39,21 @@ const Container = styled.section`
     background: url(${ImageBackground});
     background-size: cover;
     background-position: center bottom;
+
+    @media (max-width: 1800px) {
+        height: 55rem;
+    }
+
+    @media (max-width: 1250px) {
+        height: 35rem;
+        background: ${color.LightBeige};
+        align-items: center;
+    }
+
+    @media (max-width: 750px) {
+        height: auto;
+        padding: 2rem 0;
+    }
 `;
 
 const SubContainer = styled.div`
@@ -55,6 +69,15 @@ const Texts = styled.div`
     justify-content: center;
     align-items: center;
     width: 50%;
+
+    @media (max-width: 1250px) {
+        height: 90%;
+        width: 90%;
+    }
+
+    @media (max-width: 750px) {
+        height: 100%;
+    }
 `;
 
 const Title = styled(XLLLM)`

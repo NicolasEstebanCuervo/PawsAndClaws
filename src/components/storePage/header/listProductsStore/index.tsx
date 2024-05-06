@@ -1,5 +1,5 @@
 import styled from "@emotion/styled";
-import { ProductCard } from "../../componentsGlobals/cardProduct";
+import { ProductCard } from "../../../componentsGlobals/cardProduct";
 import { useSelector } from "react-redux";
 import { IProduct } from "@reducers/productsSlice";
 
@@ -56,10 +56,10 @@ const SubContainer = styled.div`
 
     @media (max-width: 750px) {
         width: 100%;
+        grid-template-columns: repeat(1, auto);
     }
 
     @media (max-width: 550px) {
-        grid-template-columns: repeat(1, auto);
         width: 85%;
     }
 `;

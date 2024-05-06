@@ -53,7 +53,7 @@ const SubContainer = styled.div`
     width: 80%;
     height: 80%;
 
-    @media (max-width: 750px) {
+    @media (max-width: 1250px) {
         height: 90%;
     }
 
