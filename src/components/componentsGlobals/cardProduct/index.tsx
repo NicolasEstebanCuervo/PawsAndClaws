@@ -32,11 +32,7 @@ export const StarComponent = ({
     return stars;
 };
 
-export const ProductCard = ({
-    product,
-}: {
-    product: IProduct;
-}) => {
+export const ProductCard = ({ product }: { product: IProduct }) => {
     const dispatch = useDispatch();
     const [activePop, setActivePop] = useState(false);
 
@@ -57,7 +53,7 @@ export const ProductCard = ({
 
     if (product.priceInfo?.currentPrice?.priceString) {
         quantityProduct = parseFloat(
-            product.priceInfo.currentPrice.priceString.slice(1, 7)
+            product.priceInfo.currentPrice.priceString
         );
     }
 
@@ -85,9 +81,7 @@ export const ProductCard = ({
                 {product.name ? (
                     <Title>{product.name}</Title>
                 ) : (
-                    <Title>
-                        Producto agotado o retirado del mercado
-                    </Title>
+                    <Title>Producto agotado o retirado del mercado</Title>
                 )}
 
                 <ContainerPrices>
@@ -102,10 +96,7 @@ export const ProductCard = ({
                             $
                             {(
                                 parseFloat(
-                                    (product.priceInfo?.currentPrice?.priceString).slice(
-                                        1,
-                                        7
-                                    )
+                                    product.priceInfo?.currentPrice?.priceString
                                 ) - 2
                             ).toFixed(2)}
                         </MM>
@@ -115,9 +106,7 @@ export const ProductCard = ({
                 </ContainerPrices>
                 <ContainerButtons>
                     <LinkAnimal to={`/products/product/${product.usItemId}`}>
-                                <Button onClick={setProduct}>
-                                    Vista rapida
-                                </Button>
+                        <Button onClick={setProduct}>Vista rapida</Button>
                     </LinkAnimal>
                     <PopNotification
                         actionComponent={

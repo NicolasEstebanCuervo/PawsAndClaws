@@ -17,7 +17,7 @@ export const ListProductsPay = () => {
                 <SubContainer>
                     <Texts>
                         <div>
-                            <XLLM>¡Tu carrito está vacío!</XLLM>
+                            <Title>¡Tu carrito está vacío!</Title>
                             <SM>
                                 ¿Aún no has agregado productos? ¡No te
                                 preocupes! Explora nuestra tienda y encuentra
@@ -33,7 +33,7 @@ export const ListProductsPay = () => {
                     </Texts>
                 </SubContainer>
             ) : (
-                <XLLM>Tus productos</XLLM>
+                <Title>Tus productos</Title>
             )}
             {productSlice.productsInTheCart &&
                 productSlice.productsInTheCart.map((product: IProduct) => (
@@ -53,6 +53,10 @@ const Container = styled.section`
     padding: 2% 0;
     gap: 2rem;
     width: 50%;
+
+    @media (max-width: 1250px) {
+        width: 100%;
+    }
 `;
 
 const SubContainer = styled.section`
@@ -94,3 +98,7 @@ const Button = styled.button`
         font-size: 1rem;
     }
 `;
+
+const Title = styled(XLLM)`
+
+`

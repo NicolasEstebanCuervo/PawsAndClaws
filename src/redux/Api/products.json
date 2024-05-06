@@ -1,0 +1,769 @@
+{
+    "products": [
+        {
+            "name": "Croquetas para perro pequeño",
+            "usItemId": "1aB2cD3eF",
+            "imageInfo": {
+                "thumbnailUrl": "https://example.com/croquetas_cachorros.jpg"
+            },
+            "priceInfo": {
+                "currentPrice": {
+                    "priceString": "15.99"
+                }
+            },
+            "quantity": 50,
+            "brand": "PuppyLove",
+            "numberOfReviews": "25"
+        },
+        {
+            "name": "Champú hipoalergénico para perros",
+            "usItemId": "4GhI5jKlM",
+            "imageInfo": {
+                "thumbnailUrl": "https://example.com/champu_perros.jpg"
+            },
+            "priceInfo": {
+                "currentPrice": {
+                    "priceString": "12.75"
+                }
+            },
+            "quantity": 30,
+            "brand": "HealthyPets",
+            "numberOfReviews": "12"
+        },
+        {
+            "name": "Juguete interactivo para gatos",
+            "usItemId": "7nOp8QrSt",
+            "imageInfo": {
+                "thumbnailUrl": "https://example.com/juguete_gatos.jpg"
+            },
+            "priceInfo": {
+                "currentPrice": {
+                    "priceString": "9.99"
+                }
+            },
+            "quantity": 20,
+            "brand": "MeowFiesta",
+            "numberOfReviews": "8"
+        },
+        {
+            "name": "Arnés reflectante para perros medianos",
+            "usItemId": "uVwX9Yz10",
+            "imageInfo": {
+                "thumbnailUrl": "https://example.com/arnes_perros.jpg"
+            },
+            "priceInfo": {
+                "currentPrice": {
+                    "priceString": "11.50"
+                }
+            },
+            "quantity": 40,
+            "brand": "SafetyPaws",
+            "numberOfReviews": "15"
+        },
+        {
+            "name": "Arena aglomerante para gatos",
+            "usItemId": "11AbCdEf12",
+            "imageInfo": {
+                "thumbnailUrl": "https://example.com/arena_gatos.jpg"
+            },
+            "priceInfo": {
+                "currentPrice": {
+                    "priceString": "9.99"
+                }
+            },
+            "quantity": 25,
+            "brand": "KittyClean",
+            "numberOfReviews": "20"
+        },
+        {
+            "name": "Cepillo de dientes para perros",
+            "usItemId": "13GhIjKl14",
+            "imageInfo": {
+                "thumbnailUrl": "https://example.com/cepillo_perros.jpg"
+            },
+            "priceInfo": {
+                "currentPrice": {
+                    "priceString": "10.25"
+                }
+            },
+            "quantity": 35,
+            "brand": "DentaPaws",
+            "numberOfReviews": "10"
+        },
+        {
+            "name": "Cama ortopédica para perros grandes",
+            "usItemId": "15MnOpQr16",
+            "imageInfo": {
+                "thumbnailUrl": "https://example.com/cama_perros.jpg"
+            },
+            "priceInfo": {
+                "currentPrice": {
+                    "priceString": "35.99"
+                }
+            },
+            "quantity": 15,
+            "brand": "ComfortCanine",
+            "numberOfReviews": "18"
+        },
+        {
+            "name": "Comedero automático para gatos",
+            "usItemId": "17StUvWx18",
+            "imageInfo": {
+                "thumbnailUrl": "https://example.com/comedero_gatos.jpg"
+            },
+            "priceInfo": {
+                "currentPrice": {
+                    "priceString": "19.50"
+                }
+            },
+            "quantity": 20,
+            "brand": "AutoFeeder",
+            "numberOfReviews": "22"
+        },
+        {
+            "name": "Juguete mordedor para cachorros",
+            "usItemId": "19Yz10Ab20",
+            "imageInfo": {
+                "thumbnailUrl": "https://example.com/juguete_cachorros.jpg"
+            },
+            "priceInfo": {
+                "currentPrice": {
+                    "priceString": "14.99"
+                }
+            },
+            "quantity": 50,
+            "brand": "PupPlay",
+            "numberOfReviews": "30"
+        },
+        {
+            "name": "Rascador de gatos con plataforma",
+            "usItemId": "21CdEf22Mn",
+            "imageInfo": {
+                "thumbnailUrl": "https://example.com/rascador_gatos.jpg"
+            },
+            "priceInfo": {
+                "currentPrice": {
+                    "priceString": "27.75"
+                }
+            },
+            "quantity": 10,
+            "brand": "ScratchHaven",
+            "numberOfReviews": "15"
+        },
+        {
+            "name": "Juguete interactivo para cachorros",
+            "usItemId": "23XY24Z56",
+            "imageInfo": {
+                "thumbnailUrl": "https://example.com/juguete_cachorros.jpg"
+            },
+            "priceInfo": {
+                "currentPrice": {
+                    "priceString": "8.99"
+                }
+            },
+            "quantity": 30,
+            "brand": "PupFun",
+            "numberOfReviews": "20"
+        },
+        {
+            "name": "Collar de cuero para perros",
+            "usItemId": "57LM58N59",
+            "imageInfo": {
+                "thumbnailUrl": "https://example.com/collar_perros.jpg"
+            },
+            "priceInfo": {
+                "currentPrice": {
+                    "priceString": "15.75"
+                }
+            },
+            "quantity": 20,
+            "brand": "LeatherPaws",
+            "numberOfReviews": "15"
+        },
+        {
+            "name": "Alimento húmedo para gatos",
+            "usItemId": "60RS61T62",
+            "imageInfo": {
+                "thumbnailUrl": "https://example.com/alimento_gatos.jpg"
+            },
+            "priceInfo": {
+                "currentPrice": {
+                    "priceString": "9.50"
+                }
+            },
+            "quantity": 40,
+            "brand": "WhiskerDelight",
+            "numberOfReviews": "25"
+        },
+        {
+            "name": "Rascador de sisal para gatos",
+            "usItemId": "63UV64W65",
+            "imageInfo": {
+                "thumbnailUrl": "https://example.com/rascador_gatos.jpg"
+            },
+            "priceInfo": {
+                "currentPrice": {
+                    "priceString": "12.99"
+                }
+            },
+            "quantity": 15,
+            "brand": "ScratchMaster",
+            "numberOfReviews": "10"
+        },
+        {
+            "name": "Correa retráctil para perros",
+            "usItemId": "66AB67CD68",
+            "imageInfo": {
+                "thumbnailUrl": "https://example.com/correa_perros.jpg"
+            },
+            "priceInfo": {
+                "currentPrice": {
+                    "priceString": "11.25"
+                }
+            },
+            "quantity": 25,
+            "brand": "FlexiLead",
+            "numberOfReviews": "18"
+        },
+        {
+            "name": "Snacks de pollo para perros",
+            "usItemId": "69EF70GH71",
+            "imageInfo": {
+                "thumbnailUrl": "https://example.com/snacks_perros.jpg"
+            },
+            "priceInfo": {
+                "currentPrice": {
+                    "priceString": "8.75"
+                }
+            },
+            "quantity": 30,
+            "brand": "ChewyTreats",
+            "numberOfReviews": "22"
+        },
+        {
+            "name": "Cama térmica para gatos",
+            "usItemId": "72IJ73KL74",
+            "imageInfo": {
+                "thumbnailUrl": "https://example.com/cama_gatos.jpg"
+            },
+            "priceInfo": {
+                "currentPrice": {
+                    "priceString": "20.50"
+                }
+            },
+            "quantity": 20,
+            "brand": "WarmPaws",
+            "numberOfReviews": "15"
+        },
+        {
+            "name": "Juguete de plumas para gatos",
+            "usItemId": "75MN76OP77",
+            "imageInfo": {
+                "thumbnailUrl": "https://example.com/juguete_plumas_gatos.jpg"
+            },
+            "priceInfo": {
+                "currentPrice": {
+                    "priceString": "7.99"
+                }
+            },
+            "quantity": 40,
+            "brand": "FeatherFrenzy",
+            "numberOfReviews": "28"
+        },
+        {
+            "name": "Cepillo de pelo para gatos",
+            "usItemId": "78QR79ST80",
+            "imageInfo": {
+                "thumbnailUrl": "https://example.com/cepillo_pelo_gatos.jpg"
+            },
+            "priceInfo": {
+                "currentPrice": {
+                    "priceString": "10.99"
+                }
+            },
+            "quantity": 25,
+            "brand": "GroomingGuru",
+            "numberOfReviews": "20"
+        },
+        {
+            "name": "Comedero elevado para perros",
+            "usItemId": "81UV82WX83",
+            "imageInfo": {
+                "thumbnailUrl": "https://example.com/comedero_elevado_perros.jpg"
+            },
+            "priceInfo": {
+                "currentPrice": {
+                    "priceString": "13.75"
+                }
+            },
+            "quantity": 20,
+            "brand": "ElevateDine",
+            "numberOfReviews": "15"
+        },
+        {
+            "name": "Pelota resistente para perros",
+            "usItemId": "84AB85CD86",
+            "imageInfo": {
+                "thumbnailUrl": "https://example.com/pelota_perros.jpg"
+            },
+            "priceInfo": {
+                "currentPrice": {
+                    "priceString": "9.25"
+                }
+            },
+            "quantity": 30,
+            "brand": "ToughToys",
+            "numberOfReviews": "20"
+        },
+        {
+            "name": "Cepillo de dientes eléctrico para perros",
+            "usItemId": "87EF88GH89",
+            "imageInfo": {
+                "thumbnailUrl": "https://example.com/cepillo_electrico_perros.jpg"
+            },
+            "priceInfo": {
+                "currentPrice": {
+                    "priceString": "15.99"
+                }
+            },
+            "quantity": 25,
+            "brand": "ElectricSmile",
+            "numberOfReviews": "18"
+        },
+        {
+            "name": "Casa de madera para gatos",
+            "usItemId": "90IJ91KL92",
+            "imageInfo": {
+                "thumbnailUrl": "https://example.com/casa_madera_gatos.jpg"
+            },
+            "priceInfo": {
+                "currentPrice": {
+                    "priceString": "19.50"
+                }
+            },
+            "quantity": 20,
+            "brand": "WoodenWhisker",
+            "numberOfReviews": "15"
+        },
+        {
+            "name": "Cama refrescante para perros",
+            "usItemId": "93MN94OP95",
+            "imageInfo": {
+                "thumbnailUrl": "https://example.com/cama_refrescante_perros.jpg"
+            },
+            "priceInfo": {
+                "currentPrice": {
+                    "priceString": "17.75"
+                }
+            },
+            "quantity": 20,
+            "brand": "CoolPaws",
+            "numberOfReviews": "12"
+        },
+        {
+            "name": "Bandeja sanitaria autolimpiable para gatos",
+            "usItemId": "96QR97ST98",
+            "imageInfo": {
+                "thumbnailUrl": "https://example.com/bandeja_sanitaria_autolimpiable_gatos.jpg"
+            },
+            "priceInfo": {
+                "currentPrice": {
+                    "priceString": "29.99"
+                }
+            },
+            "quantity": 15,
+            "brand": "SelfCleanKitty",
+            "numberOfReviews": "25"
+        },
+        {
+            "name": "Corral plegable para cachorros",
+            "usItemId": "99UV100WX101",
+            "imageInfo": {
+                "thumbnailUrl": "https://example.com/corral_plegable_cachorros.jpg"
+            },
+            "priceInfo": {
+                "currentPrice": {
+                    "priceString": "24.99"
+                }
+            },
+            "quantity": 10,
+            "brand": "FoldablePups",
+            "numberOfReviews": "8"
+        },
+        {
+            "name": "Chaleco salvavidas para perros",
+            "usItemId": "102YZ103AB104",
+            "imageInfo": {
+                "thumbnailUrl": "https://example.com/chaleco_salvavidas_perros.jpg"
+            },
+            "priceInfo": {
+                "currentPrice": {
+                    "priceString": "22.50"
+                }
+            },
+            "quantity": 20,
+            "brand": "SafePaws",
+            "numberOfReviews": "15"
+        },
+        {
+            "name": "Alfombra rascadora para gatos",
+            "usItemId": "105CD106EF107",
+            "imageInfo": {
+                "thumbnailUrl": "https://example.com/alfombra_rascadora_gatos.jpg"
+            },
+            "priceInfo": {
+                "currentPrice": {
+                    "priceString": "14.75"
+                }
+            },
+            "quantity": 30,
+            "brand": "ScratchMat",
+            "numberOfReviews": "20"
+        },
+        {
+            "name": "Arnés acolchado para perros",
+            "usItemId": "108GH109IJ110",
+            "imageInfo": {
+                "thumbnailUrl": "https://example.com/arnes_acolchado_perros.jpg"
+            },
+            "priceInfo": {
+                "currentPrice": {
+                    "priceString": "11.99"
+                }
+            },
+            "quantity": 25,
+            "brand": "ComfortHarness",
+            "numberOfReviews": "18"
+        },
+        {
+            "name": "Bola dispensadora de comida para gatos",
+            "usItemId": "111KL112MN113",
+            "imageInfo": {
+                "thumbnailUrl": "https://example.com/bola_dispensadora_gatos.jpg"
+            },
+            "priceInfo": {
+                "currentPrice": {
+                    "priceString": "10.99"
+                }
+            },
+            "quantity": 20,
+            "brand": "FoodieBall",
+            "numberOfReviews": "15"
+        },
+        {
+            "name": "Cepillo de pelo deslanador para perros",
+            "usItemId": "114OP115QR116",
+            "imageInfo": {
+                "thumbnailUrl": "https://example.com/cepillo_deslanador_perros.jpg"
+            },
+            "priceInfo": {
+                "currentPrice": {
+                    "priceString": "13.50"
+                }
+            },
+            "quantity": 20,
+            "brand": "ShedBeGone",
+            "numberOfReviews": "10"
+        },
+        {
+            "name": "Cama acolchada para perros",
+            "usItemId": "84YZ85AB86",
+            "imageInfo": {
+                "thumbnailUrl": "https://example.com/cama_acolchada_perros.jpg"
+            },
+            "priceInfo": {
+                "currentPrice": {
+                    "priceString": "29.99"
+                }
+            },
+            "quantity": 15,
+            "brand": "CozyPaws",
+            "numberOfReviews": "10"
+        },
+        {
+            "name": "Juguete para masticar para cachorros",
+            "usItemId": "87CD88EF89",
+            "imageInfo": {
+                "thumbnailUrl": "https://example.com/juguete_masticar_cachorros.jpg"
+            },
+            "priceInfo": {
+                "currentPrice": {
+                    "priceString": "8.50"
+                }
+            },
+            "quantity": 25,
+            "brand": "ChewBuddy",
+            "numberOfReviews": "18"
+        },
+        {
+            "name": "Cuna suave para gatos",
+            "usItemId": "90GH91IJ92",
+            "imageInfo": {
+                "thumbnailUrl": "https://example.com/cuna_suave_gatos.jpg"
+            },
+            "priceInfo": {
+                "currentPrice": {
+                    "priceString": "17.25"
+                }
+            },
+            "quantity": 20,
+            "brand": "SoftNest",
+            "numberOfReviews": "15"
+        },
+        {
+            "name": "Arnés reflectante para perros grandes",
+            "usItemId": "93KL94MN95",
+            "imageInfo": {
+                "thumbnailUrl": "https://example.com/arnes_reflectante_perros.jpg"
+            },
+            "priceInfo": {
+                "currentPrice": {
+                    "priceString": "11.99"
+                }
+            },
+            "quantity": 30,
+            "brand": "ReflectiveGear",
+            "numberOfReviews": "22"
+        },
+        {
+            "name": "Bolso de viaje para gatos",
+            "usItemId": "96OP97QR98",
+            "imageInfo": {
+                "thumbnailUrl": "https://example.com/bolso_viaje_gatos.jpg"
+            },
+            "priceInfo": {
+                "currentPrice": {
+                    "priceString": "19.99"
+                }
+            },
+            "quantity": 15,
+            "brand": "TravelKitty",
+            "numberOfReviews": "12"
+        },
+        {
+            "name": "Comedero elevado para gatos",
+            "usItemId": "99ST100UV101",
+            "imageInfo": {
+                "thumbnailUrl": "https://example.com/comedero_elevado_gatos.jpg"
+            },
+            "priceInfo": {
+                "currentPrice": {
+                    "priceString": "14.50"
+                }
+            },
+            "quantity": 20,
+            "brand": "ElevateDine",
+            "numberOfReviews": "18"
+        },
+        {
+            "name": "Rascador de cartón para gatos",
+            "usItemId": "102WX103YZ104",
+            "imageInfo": {
+                "thumbnailUrl": "https://example.com/rascador_carton_gatos.jpg"
+            },
+            "priceInfo": {
+                "currentPrice": {
+                    "priceString": "8.75"
+                }
+            },
+            "quantity": 40,
+            "brand": "CardboardScratch",
+            "numberOfReviews": "30"
+        },
+        {
+            "name": "Correa de cuero para perros",
+            "usItemId": "105AB106CD107",
+            "imageInfo": {
+                "thumbnailUrl": "https://example.com/correa_cuero_perros.jpg"
+            },
+            "priceInfo": {
+                "currentPrice": {
+                    "priceString": "12.25"
+                }
+            },
+            "quantity": 35,
+            "brand": "LeatherLead",
+            "numberOfReviews": "25"
+        },
+        {
+            "name": "Pelota rellenable para perros",
+            "usItemId": "108EF109GH110",
+            "imageInfo": {
+                "thumbnailUrl": "https://example.com/pelota_rellenable_perros.jpg"
+            },
+            "priceInfo": {
+                "currentPrice": {
+                    "priceString": "9.99"
+                }
+            },
+            "quantity": 20,
+            "brand": "FillNFetch",
+            "numberOfReviews": "20"
+        },
+        {
+            "name": "Set de juguetes variados para gatos",
+            "usItemId": "111IJ112KL113",
+            "imageInfo": {
+                "thumbnailUrl": "https://example.com/set_juguetes_gatos.jpg"
+            },
+            "priceInfo": {
+                "currentPrice": {
+                    "priceString": "15.99"
+                }
+            },
+            "quantity": 25,
+            "brand": "MeowMix",
+            "numberOfReviews": "18"
+        },
+        {
+            "name": "Juguete para gatos 'Ratón Rodante'",
+            "usItemId": "123AB456CD789",
+            "imageInfo": {
+                "thumbnailUrl": "https://example.com/raton_rodante_juguete_gatos.jpg"
+            },
+            "priceInfo": {
+                "currentPrice": {
+                    "priceString": "7.99"
+                }
+            },
+            "quantity": 15,
+            "brand": "PurrPlay",
+            "numberOfReviews": 25
+        },
+        {
+            "name": "Cama de perro 'Sueño Acogedor'",
+            "usItemId": "234BC567DE890",
+            "imageInfo": {
+                "thumbnailUrl": "https://example.com/cama_perro_sueno_acogedor.jpg"
+            },
+            "priceInfo": {
+                "currentPrice": {
+                    "priceString": "29.99"
+                }
+            },
+            "quantity": 30,
+            "brand": "ComfyPaws",
+            "numberOfReviews": 50
+        },
+        {
+            "name": "Correa de paseo 'WalkBuddy' para perros",
+            "usItemId": "345CD678EF901",
+            "imageInfo": {
+                "thumbnailUrl": "https://example.com/correa_paseo_walkbuddy_perros.jpg"
+            },
+            "priceInfo": {
+                "currentPrice": {
+                    "priceString": "12.99"
+                }
+            },
+            "quantity": 25,
+            "brand": "PawGear",
+            "numberOfReviews": 15
+        },
+        {
+            "name": "Peluche para gatos 'Fishy Fun'",
+            "usItemId": "456DE789FG012",
+            "imageInfo": {
+                "thumbnailUrl": "https://example.com/peluche_gatos_fishy_fun.jpg"
+            },
+            "priceInfo": {
+                "currentPrice": {
+                    "priceString": "5.49"
+                }
+            },
+            "quantity": 40,
+            "brand": "MeowMania",
+            "numberOfReviews": 35
+        },
+        {
+            "name": "Casita para pájaros 'CozyNest'",
+            "usItemId": "567EF901GH123",
+            "imageInfo": {
+                "thumbnailUrl": "https://example.com/casita_pajaros_cozynest.jpg"
+            },
+            "priceInfo": {
+                "currentPrice": {
+                    "priceString": "19.99"
+                }
+            },
+            "quantity": 10,
+            "brand": "FeatherHaven",
+            "numberOfReviews": 20
+        },
+        {
+            "name": "Rascador para gatos 'ScratchTower'",
+            "usItemId": "678FG012HI234",
+            "imageInfo": {
+                "thumbnailUrl": "https://example.com/rascador_gatos_scratchtower.jpg"
+            },
+            "priceInfo": {
+                "currentPrice": {
+                    "priceString": "39.99"
+                }
+            },
+            "quantity": 20,
+            "brand": "ClimbNPlay",
+            "numberOfReviews": 30
+        },
+        {
+            "name": "Bola de ejercicio 'RunBall' para gatos",
+            "usItemId": "789GH123IJ345",
+            "imageInfo": {
+                "thumbnailUrl": "https://example.com/bola_ejercicio_runball_gatos.jpg"
+            },
+            "priceInfo": {
+                "currentPrice": {
+                    "priceString": "8.99"
+                }
+            },
+            "quantity": 35,
+            "brand": "PlayfulPaws",
+            "numberOfReviews": 25
+        },
+        {
+            "name": "Cepillo de pelo 'GroomMaster' para perros",
+            "usItemId": "890HI234JK456",
+            "imageInfo": {
+                "thumbnailUrl": "https://example.com/cepillo_pelo_groommaster_perros.jpg"
+            },
+            "priceInfo": {
+                "currentPrice": {
+                    "priceString": "15.99"
+                }
+            },
+            "quantity": 30,
+            "brand": "FurryFinesse",
+            "numberOfReviews": 20
+        },
+        {
+            "name": "Bolso de transporte 'TravelPaws' para gatos",
+            "usItemId": "901IJ345KL567",
+            "imageInfo": {
+                "thumbnailUrl": "https://example.com/bolso_transporte_travelpaws_gatos.jpg"
+            },
+            "priceInfo": {
+                "currentPrice": {
+                    "priceString": "24.99"
+                }
+            },
+            "quantity": 15,
+            "brand": "PurrfectTravel",
+            "numberOfReviews": 10
+        },
+        {
+            "name": "Arnés ajustable 'FitFido' para perros",
+            "usItemId": "012KL567MN890",
+            "imageInfo": {
+                "thumbnailUrl": "https://example.com/arnes_ajustable_fitfido_perros.jpg"
+            },
+            "priceInfo": {
+                "currentPrice": {
+                    "priceString": "17.99"
+                }
+            },
+            "quantity": 25,
+            "brand": "BarkBuddy",
+            "numberOfReviews": 15
+        }
+    ]
+}

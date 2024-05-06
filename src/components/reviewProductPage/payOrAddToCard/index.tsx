@@ -13,7 +13,7 @@ import { PopNotification } from "../../componentsGlobals/pop-up/popNotification"
 
 export const PayOrAddToCart = ({ product }: { product: IProduct }) => {
     const quantityProduct = parseFloat(
-        (product.priceInfo?.currentPrice?.priceString).slice(1, 7)
+        (product.priceInfo?.currentPrice?.priceString)
     );
 
     const [numberRandom, setNumberRandom] = useState(1);
@@ -48,11 +48,7 @@ export const PayOrAddToCart = ({ product }: { product: IProduct }) => {
                             $
                             {(
                                 parseFloat(
-                                    (product.priceInfo?.currentPrice?.priceString).slice(
-                                        1,
-                                        7
-                                    )
-                                ) - 2
+                                    (product.priceInfo?.currentPrice?.priceString)) - 2
                             ).toFixed(2)}
                         </Price>
                     </div>

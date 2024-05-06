@@ -1,5 +1,6 @@
-import animals from "./index.json";
+import animals from "./animals.json";
 import comments from "./comments.json"
+import products from "./products.json"
 
 // Fetches animals data
 export const FetchAnimals = () => {
@@ -17,20 +18,8 @@ export const ImagesGenerator = async (breed: string) => {
 };
 
 // Fetches products based on the provided category
-export const FetchProducts = async (category:string) => {
-    const url = `https://walmart2.p.rapidapi.com/searchV2?query=${category}`;
-    const options = {
-        method: "GET",
-        headers: {
-            "X-RapidAPI-Key":
-                "dc11881de1msh65e18f63e3d7f8ep1176e8jsnbf3ed15883e9",
-            "X-RapidAPI-Host": "walmart2.p.rapidapi.com",
-        },
-    };
-
-        const response = await fetch(url, options);
-        const result = await response.json();
-        return result.itemsV2;
+export const FetchProducts = async () => {
+    return products.products;
 };
 
 // Fetches comments data

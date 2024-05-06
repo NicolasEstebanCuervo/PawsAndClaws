@@ -35,10 +35,7 @@ export const CardProductPay = ({
                     $
                     {(
                         (parseFloat(
-                            (product.priceInfo?.currentPrice?.priceString).slice(
-                                1,
-                                7
-                            )
+                            product.priceInfo?.currentPrice?.priceString
                         ) -
                             2) *
                         quantity

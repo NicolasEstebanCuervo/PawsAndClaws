@@ -7,7 +7,7 @@ import { ProductCard } from "../cardProduct";
 import * as color from "@theme/colors";
 import { useEffect, useState } from "react";
 
-export const CarouselProducts = ({title}:{title:string}) => {
+export const CarouselProducts = ({ title }: { title: string }) => {
     const productSlice = useSelector((state: any) => state.ProductSlice);
     const [viewport, setViewport] = useState(5);
 
@@ -25,10 +25,13 @@ export const CarouselProducts = ({title}:{title:string}) => {
                 window.screen.availWidth >= 950
             ) {
                 setViewport(3);
-            } else if (window.screen.availWidth <= 950 && window.screen.availWidth >= 550) {
+            } else if (
+                window.screen.availWidth <= 950 &&
+                window.screen.availWidth >= 550
+            ) {
                 setViewport(2);
-            } else{
-                setViewport(1)
+            } else {
+                setViewport(1);
             }
         };
 
@@ -38,12 +41,7 @@ export const CarouselProducts = ({title}:{title:string}) => {
     return (
         <Container>
             <Title>{title}</Title>
-            <CarouselCustom
-                indicators={false}
-                interval={4000}
-                prevIcon={<></>}
-                nextIcon={<></>}
-            >
+            <CarouselCustom indicators={false} interval={4000}>
                 {productSlice.products &&
                     productSlice.products.map(
                         (product: IProduct, index: number) =>
@@ -85,6 +83,18 @@ const Container = styled.section`
     margin-top: 5rem;
     padding: 5rem 0;
     background: ${color.Cream};
+
+    .carousel-control-next:focus,
+    .carousel-control-next:hover,
+    .carousel-control-prev:focus,
+    .carousel-control-prev:hover {
+        display: none;
+    }
+
+    .carousel-control-prev,
+    .carousel-control-next {
+        display: none;
+    }
 `;
 
 const Title = styled(XLLM)`

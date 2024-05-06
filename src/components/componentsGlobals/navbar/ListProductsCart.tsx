@@ -12,7 +12,7 @@ export const ListProductsCart = () => {
     productSlice.productsInTheCart.forEach((product: IProduct) => {
         const price =
             parseFloat(
-                (product.priceInfo?.currentPrice?.priceString).slice(1, 7)
+                (product.priceInfo?.currentPrice?.priceString)
             ) - 2;
         totalPrice += price * product.quantity;
     });

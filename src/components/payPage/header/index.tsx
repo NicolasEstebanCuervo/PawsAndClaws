@@ -35,6 +35,15 @@ const Container = styled.section`
     background: url(${ImageBackground});
     background-size: cover;
     background-position: center bottom;
+
+    @media (max-width: 1250px) {
+        height: 35rem;
+    }
+
+    @media (max-width: 750px) {
+        background: ${color.LightBeige};
+        align-items: center;
+    }
 `;
 
 const SubContainer = styled.div`
@@ -43,6 +52,15 @@ const SubContainer = styled.div`
     align-items: center;
     width: 80%;
     height: 80%;
+
+    @media (max-width: 750px) {
+        height: 90%;
+    }
+
+    @media (max-width: 750px) {
+        height: 100%;
+        width: 90%;
+    }
 `;
 
 const Texts = styled.div`
@@ -50,7 +68,12 @@ const Texts = styled.div`
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    width: 60%;
+    width: 65%;
+
+    @media (max-width: 750px) {
+        width: 100%;
+        text-align: center;
+    }
 `;
 
 const Title = styled(XLLLM)`

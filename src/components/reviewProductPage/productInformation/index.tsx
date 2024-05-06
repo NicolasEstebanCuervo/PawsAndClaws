@@ -19,7 +19,7 @@ export const ProductInformation = () => {
                     <XLM>Información del producto</XLM>
                     <ContainerName>
                         <Title>Nombre</Title>
-                        <Name>{productSlice.productSelected.name}</Name>
+                        <SM>{productSlice.productSelected.name}</SM>
                     </ContainerName>
 
                     <SubTexts>
@@ -61,23 +61,6 @@ const Container = styled.section`
     }
 `;
 
-const SubContainer = styled.section`
-    width: 50%;
-    padding: 0 1rem;
-    display: flex;
-    align-items: center;
-    flex-direction: column;
-    gap: 2rem;
-
-    @media (max-width: 1250px) {
-        width: 80%;
-    }
-
-    @media (max-width: 750px) {
-        width: 100%;
-    }
-`;
-
 const Image = styled.img`
     width: 45rem;
     border-radius: 0.3rem;
@@ -93,6 +76,7 @@ const Texts = styled.div`
     display: flex;
     flex-direction: column;
     gap: 1.5rem;
+    width: 100%;
 `;
 
 const LineDivider = styled.div`
@@ -134,12 +118,4 @@ const TextsIndividual = styled.div`
 
 const Title = styled(SM)`
     font-weight: bold;
-`;
-
-const Name = styled(SM)`
-    overflow: hidden;
-    text-overflow: ellipsis;
-    display: -webkit-box;
-    -webkit-line-clamp: 3;
-    -webkit-box-orient: vertical;
 `;

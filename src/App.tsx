@@ -29,7 +29,7 @@ const App: FC = () => {
         dispatch(setAnimals(FetchAnimals()));
 
         const fetchData = async () => {
-            const data = await FetchProducts("food%20dogs%20cats");
+            const data = await FetchProducts();
             dispatch(setProducts(data));
         };
         fetchData();
