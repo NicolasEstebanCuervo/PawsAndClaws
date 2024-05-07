@@ -1,4 +1,3 @@
-import ReactDOM from "react-dom";
 import { Global, css } from "@emotion/react";
 import App from "./App";
 import "bootstrap/dist/css/bootstrap.min.css";

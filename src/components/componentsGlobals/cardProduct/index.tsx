@@ -132,7 +132,7 @@ const Container = styled.div`
     align-items: center;
     gap: 1rem;
     width: 20rem;
-    height: 30rem;
+    height: 32rem;
     background: ${color.Beige};
     padding: 1rem;
     border-radius: 0.3rem;
@@ -143,8 +143,9 @@ const Container = styled.div`
 `;
 const Image = styled.img`
     width: 18rem;
-    height: 15rem;
+    height: 18rem;
     border-radius: 0.3rem;
+    object-fit: contain;
     background: ${color.White};
 `;
 
