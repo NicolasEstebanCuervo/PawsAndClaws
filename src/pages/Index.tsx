@@ -19,7 +19,7 @@ export const Index = () => {
             <AboutUs />
             <CarouselProducts title="Explora nuestra tienda en linea"/>
             <Appointment/>
-            {/* <FunFacts/> */}
+            <FunFacts/>
             <Footer /> 
         </ContainerPage>
     );

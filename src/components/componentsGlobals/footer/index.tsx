@@ -5,7 +5,7 @@ import { MM } from "@theme/fonts";
 export const Footer = () => {
     return (
         <FooterContainer>
-                <Image src={require("@assets/images//LogoLarge.webp")}>
+                <Image src={require("@assets/images/LogoLarge.webp")}>
                 </Image>
                 <MM colorText={color.White}>
                     &copy; {new Date().getFullYear()} Paws and Claws. All Rights Reserved.

@@ -34,7 +34,7 @@ export const NavBar = () => {
                         onClick={() => {
                             window.location.href = `/`;
                         }}
-                        src={require("@assets/images//Logo.webp")}
+                        src={require("@assets/images/Logo.webp")}
                     />
                 </div>
 

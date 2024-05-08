@@ -66,7 +66,7 @@ export const ProductCard = ({ product }: { product: IProduct }) => {
                 />
             ) : (
                 <Image
-                    src={require("@assets/images//NoProductExist.webp")}
+                    src={require("@assets/images/NoProductExist.webp")}
                     alt={`Imagen de no encontrado`}
                 />
             )}

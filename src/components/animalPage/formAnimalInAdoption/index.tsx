@@ -115,7 +115,7 @@ export const FormAnimalInAdoption = () => {
 
     return (
         <Container>
-            <Title>Formulario de contacto</Title>
+            <Title>Formulario de adopción</Title>
             <Form onSubmit={handleSubmit}>
                 <div>
                     <label htmlFor="fullName">Nombre completo:</label>

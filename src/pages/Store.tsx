@@ -14,7 +14,7 @@ export const Store = () => {
             <Header />
             <ListProductsStore indexArray1={0} indexArray2={8} />
             <ListProductsStore indexArray1={9} indexArray2={17} />
-            {/* <FunFacts /> */}
+            <FunFacts />
             <ListProductsStore indexArray1={18} indexArray2={26} />
             <ContentStore />
             <ListProductsStore indexArray1={27} indexArray2={35} />

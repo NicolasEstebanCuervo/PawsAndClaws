@@ -21,7 +21,7 @@ export const Appointment = () => {
             </Container>
             <ReviewsPawsAndClaws />
             <FrequentQuestions />
-            {/* <FunFacts />  */}
+            <FunFacts /> 
             <Footer />
         </ContainerPage>
     );

@@ -2,8 +2,8 @@ import styled from "@emotion/styled";
 import { useSelector } from "react-redux";
 import { IFormAdoption } from "@reducers/animalSlice";
 import { LM, SM, XLLM } from "@theme/fonts";
-import ImageBackgroundWithoutAdoption from "@assets/images//BgWithoutAnimalInAdoption.webp";
-import ImageBackgroundWithAdoption from "@assets/images//BgWithAnimalsInAdoption.webp";
+import ImageBackgroundWithoutAdoption from "@assets/images/BgWithoutAnimalInAdoption.webp";
+import ImageBackgroundWithAdoption from "@assets/images/BgWithAnimalsInAdoption.webp";
 import { ListItem, OrderedList } from "@chakra-ui/react";
 import { CardAdoptionRequests } from "../cardAdoptionRequests";
 import * as color from "@theme/colors"

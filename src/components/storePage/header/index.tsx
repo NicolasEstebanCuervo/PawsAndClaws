@@ -1,6 +1,6 @@
 import styled from "@emotion/styled";
 import * as color from "@theme/colors";
-import ImageBackground from "@assets/images//BgStore.webp";
+import ImageBackground from "@assets/images/BgStore.webp";
 import { XLLLM, XLM } from "@theme/fonts";
 
 export const Header = () => {

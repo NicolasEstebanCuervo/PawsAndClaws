@@ -3,22 +3,32 @@ import { motion } from "framer-motion";
 import { useInView } from "react-intersection-observer";
 import * as color from "@theme/colors";
 import { MM, XLLM } from "@theme/fonts";
-import ImageBackground from "@assets/images//BgFunFactsIndex.webp";
+import ImageBackground from "@assets/images/BgFunFactsIndex.webp";
+import { useEffect, useState } from "react";
 
 export const FunFacts = () => {
+    const [xViewport, setXViewport] = useState(500);
+    const [yViewport, setYViewport] = useState(350);
+
     const [ref, inView] = useInView({
         triggerOnce: true,
         threshold: 0.1,
     });
 
-    const container = {
-        hidden: { opacity: 0 },
-        visible: {
+    const variants = {
+        show: {
             opacity: 1,
             transition: {
-                delayChildren: 0.3,
-                staggerChildren: 0.2,
-                duration: 2,
+                staggerChildren: 0.05,
+                delayChildren: 0,
+            },
+        },
+        hide: {
+            opacity: 0.9,
+            transition: {
+                staggerChildren: 0.05,
+                staggerDirection: -1,
+                duration: 0.5,
             },
         },
     };
@@ -34,41 +44,62 @@ export const FunFacts = () => {
         "Los gatos son conocidos por su agilidad y capacidad de saltar. Pueden saltar hasta seis veces la longitud de su cuerpo en un solo salto.",
     ];
 
+    useEffect(() => {
+        const calculateWidth = () => {
+            if (window.screen.availWidth > 1600) {
+                setXViewport(500);
+                setYViewport(350);
+            } else if (
+                window.screen.availWidth <= 1600 &&
+                window.screen.availWidth > 1250
+            ) {
+                setXViewport(350);
+                setYViewport(400);
+            } else {
+                setXViewport(0);
+                setYViewport(0);
+            }
+        };
+
+        calculateWidth();
+    }, []);
+
     return (
         <Container ref={ref}>
             <XLLM>¿Sabías esto de los gatos?</XLLM>
             <SubContainer
-                variants={container}
-                initial="hidden"
-                animate={inView ? "visible" : "hidden"}
+                variants={variants}
+                initial="hide"
+                animate={inView ? "show" : "hide"}
             >
-                    {facts.map((fact, index) => (
-                        <ContainerFact
-                            key={index}
-                            variants={{
-                                hidden: { x: 0, y: 0, opacity: 0 },
-                                visible: {
-                                    x:
-                                        Math.cos(
-                                            (index / facts.length) * 2 * Math.PI
-                                        ) * 500,
-                                    y:
-                                        Math.sin(
-                                            (index / facts.length) * 2 * Math.PI
-                                        ) * 350,
-                                    opacity: 1,
-                                    transition: {
-                                        delay: 1 * index,
-                                        duration: 0.5,
-                                    },
+                {facts.map((fact, index) => (
+                    <ContainerFact
+                        key={index}
+                        variants={{
+                            hide: { x: 0, y: 0, opacity: 0 },
+                            show: {
+                                x:
+                                    Math.cos(
+                                        (index / facts.length) * 2 * Math.PI
+                                    ) * xViewport,
+                                y:
+                                    Math.sin(
+                                        (index / facts.length) * 2 * Math.PI
+                                    ) * yViewport,
+                                opacity: 1,
+                                transition: {
+                                    delay: 1 * index,
+                                    duration: 0.5,
                                 },
-                            }}
-                        >
-                            <MM>{fact}</MM>
-                        </ContainerFact>
-                    ))}
+                            },
+                        }}
+                    >
+                        <MM>{fact}</MM>
+                    </ContainerFact>
+                ))}
+
                 <Image
-                    src={require("@assets/images//FunFact1.webp")}
+                    src={require("@assets/images/FunFact1.webp")}
                     alt="Imagen de una mascota"
                 />
             </SubContainer>
@@ -85,15 +116,30 @@ const Container = styled.section`
     align-items: center;
     position: relative;
     margin-top: 10rem;
-    padding: 5rem 0 50rem;
+    gap: 3rem;
     background: ${color.Cream};
     background: url(${ImageBackground});
     background-size: cover;
     background-position: center bottom;
+    padding: 5% 0;
+    text-align: center;
+
+    @media (max-width: 1250px) {
+        background: ${color.LightBeige};
+        height: auto;
+    }
 `;
 
-const SubContainer = styled(motion.div)`
+const SubContainer = styled(motion.ul)`
     position: relative;
+
+    @media (max-width: 1250px) {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 2rem;
+        width: 100%;
+    }
 `;
 
 const Image = styled.img`
@@ -104,12 +150,27 @@ const Image = styled.img`
     width: 15rem;
     margin-top: 20rem;
     filter: drop-shadow(1px 1px 20px ${color.Brown});
+
+    @media (max-width: 1250px) {
+        display: none;
+    }
 `;
 
-const ContainerFact = styled(motion.div)`
+const ContainerFact = styled(motion.li)`
     text-align: center;
     position: absolute;
     width: 25rem;
     top: 25rem;
     right: -5rem;
+    list-style: none;
+
+    @media (max-width: 1250px) {
+        position: static;
+        text-align: left;
+        list-style: disc outside none;
+    }
+
+    @media (max-width: 1000px) {
+        width: 90%;
+    }
 `;

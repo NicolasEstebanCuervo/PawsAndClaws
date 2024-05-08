@@ -120,7 +120,7 @@ export const FormAppointment = () => {
 
     return (
         <Container>
-            <Title>Formulario de adopción</Title>
+            <Title>Formulario de contacto</Title>
             <Form onSubmit={handleSubmit}>
                 <div>
                     <label htmlFor="ownerName">Nombre del Propietario:</label>

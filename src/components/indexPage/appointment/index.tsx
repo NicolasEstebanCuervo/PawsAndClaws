@@ -30,7 +30,7 @@ export const Appointment = () => {
                     </Link>
                 </ContainerButton>
             </Texts>
-            <Image src={require("@assets/images//ImgAppointmentIndex.webp")} />
+            <Image src={require("@assets/images/ImgAppointmentIndex.webp")} />
         </Container>
     );
 };

@@ -14,7 +14,7 @@ export const Adoption= () => {
             <Header/>
             <SearchInput />
             <ListAnimalInAdoption indexArray1={0} indexArray2={12}/>
-            {/* <FunFacts /> */}
+            <FunFacts />
             <ListAnimalInAdoption indexArray1={13} indexArray2={30}/>
             <Footer />
         </ContainerPage>

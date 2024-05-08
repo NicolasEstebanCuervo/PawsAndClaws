@@ -1,7 +1,7 @@
 import styled from "@emotion/styled";
 import { XLLM, XLM } from "@theme/fonts";
 import * as color from "@theme/colors";
-import ImageHeader from "@assets/images//BgHeaderIndex.webp";
+import ImageHeader from "@assets/images/BgHeaderIndex.webp";
 
 export const Header = () => {
     return (

@@ -4,14 +4,18 @@ import { useInView } from "react-intersection-observer";
 import * as color from "@theme/colors";
 import { MM, XLLM } from "@theme/fonts";
 import ImageBackground from "@assets/images/BgFunFactsAdoption.webp";
+import { useEffect, useState } from "react";
 
 export const FunFacts = () => {
+    const [xViewport, setXViewport] = useState(500);
+    const [yViewport, setYViewport] = useState(350);
+
     const [ref, inView] = useInView({
         triggerOnce: true,
         threshold: 0.1,
     });
 
-    const container = {
+    const variants = {
         hidden: { opacity: 0 },
         visible: {
             opacity: 1,
@@ -34,41 +38,62 @@ export const FunFacts = () => {
         "Los perros pueden aprender rápidamente nuevos trucos y comandos, lo que los convierte en mascotas muy inteligentes y adaptables.",
     ];
 
+    useEffect(() => {
+        const calculateWidth = () => {
+            if (window.screen.availWidth > 1600) {
+                setXViewport(500);
+                setYViewport(350);
+            } else if (
+                window.screen.availWidth <= 1600 &&
+                window.screen.availWidth > 1250
+            ) {
+                setXViewport(350);
+                setYViewport(400);
+            } else {
+                setXViewport(0);
+                setYViewport(0);
+            }
+        };
+
+        calculateWidth();
+    }, []);
+
     return (
         <Container ref={ref}>
-            <XLLM>¿Sabías esto de los perros?</XLLM>
+            <XLLM>¿Sabías esto de los gatos?</XLLM>
             <SubContainer
-                variants={container}
-                initial="hidden"
-                animate={inView ? "visible" : "hidden"}
+                variants={variants}
+                initial="hide"
+                animate={inView ? "show" : "hide"}
             >
-                    {facts.map((fact, index) => (
-                        <ContainerFact
-                            key={index}
-                            variants={{
-                                hidden: { x: 0, y: 0, opacity: 0 },
-                                visible: {
-                                    x:
-                                        Math.cos(
-                                            (index / facts.length) * 2 * Math.PI
-                                        ) * 500,
-                                    y:
-                                        Math.sin(
-                                            (index / facts.length) * 2 * Math.PI
-                                        ) * 350,
-                                    opacity: 1,
-                                    transition: {
-                                        delay: 1 * index,
-                                        duration: 0.5,
-                                    },
+                {facts.map((fact, index) => (
+                    <ContainerFact
+                        key={index}
+                        variants={{
+                            hide: { x: 0, y: 0, opacity: 0 },
+                            show: {
+                                x:
+                                    Math.cos(
+                                        (index / facts.length) * 2 * Math.PI
+                                    ) * xViewport,
+                                y:
+                                    Math.sin(
+                                        (index / facts.length) * 2 * Math.PI
+                                    ) * yViewport,
+                                opacity: 1,
+                                transition: {
+                                    delay: 1 * index,
+                                    duration: 0.5,
                                 },
-                            }}
-                        >
-                            <MM>{fact}</MM>
-                        </ContainerFact>
-                    ))}
+                            },
+                        }}
+                    >
+                        <MM>{fact}</MM>
+                    </ContainerFact>
+                ))}
+
                 <Image
-                    src={require("@assets/images//FunFact4.webp")}
+                    src={require("@assets/images/FunFact2.webp")}
                     alt="Imagen de una mascota"
                 />
             </SubContainer>
@@ -84,30 +109,62 @@ const Container = styled.section`
     flex-direction: column;
     align-items: center;
     position: relative;
-    padding: 5rem 0 50rem;
+    margin-top: 10rem;
+    gap: 3rem;
     background: ${color.Cream};
     background: url(${ImageBackground});
     background-size: cover;
     background-position: center bottom;
+    padding: 5% 0;
+    text-align: center;
+
+    @media (max-width: 1250px) {
+        background: ${color.LightBeige};
+        height: auto;
+    }
 `;
 
-const SubContainer = styled(motion.div)`
+const SubContainer = styled(motion.ul)`
     position: relative;
+
+    @media (max-width: 1250px) {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 2rem;
+        width: 100%;
+    }
 `;
 
 const Image = styled.img`
     position: relative !important;
     top: 5rem;
-    left: 15rem;
+    left: 11rem;
     transform: translate(-60%, -50%);
-    width: 25rem;
+    width: 20rem;
     margin-top: 20rem;
     filter: drop-shadow(1px 1px 20px ${color.Brown});
+
+    @media (max-width: 1250px) {
+        display: none;
+    }
 `;
 
-const ContainerFact = styled(motion.div)`
+const ContainerFact = styled(motion.li)`
     text-align: center;
     position: absolute;
     width: 25rem;
     top: 25rem;
+    left: 0rem;
+    list-style: none;
+
+    @media (max-width: 1250px) {
+        position: static;
+        text-align: left;
+        list-style: disc outside none;
+    }
+
+    @media (max-width: 1000px) {
+        width: 90%;
+    }
 `;

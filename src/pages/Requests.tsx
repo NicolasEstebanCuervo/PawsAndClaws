@@ -26,7 +26,7 @@ export const Requests = () => {
                     <SocialNetworks />
                 </SubContainerContact>
             </Container>
-            {/* <FunFacts />  */}
+            <FunFacts /> 
             <Footer />
         </ContainerPage>
     );
