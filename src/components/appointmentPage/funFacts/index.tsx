@@ -48,7 +48,7 @@ export const FunFacts = () => {
                 window.screen.availWidth <= 1600 &&
                 window.screen.availWidth > 1250
             ) {
-                setXViewport(350);
+                setXViewport(420);
                 setYViewport(400);
             } else {
                 setXViewport(0);
@@ -110,7 +110,6 @@ const Container = styled.section`
     flex-direction: column;
     align-items: center;
     position: relative;
-    margin-top: 10rem;
     gap: 3rem;
     background: ${color.Cream};
     background: url(${ImageBackground});
@@ -140,9 +139,9 @@ const SubContainer = styled(motion.ul)`
 const Image = styled.img`
     position: relative !important;
     top: 5rem;
-    left: 7rem;
+    left: 10rem;
     transform: translate(-60%, -50%);
-    width: 15rem;
+    width: 20rem;
     margin-top: 20rem;
     filter: drop-shadow(1px 1px 20px ${color.Brown});
 
@@ -156,7 +155,7 @@ const ContainerFact = styled(motion.li)`
     position: absolute;
     width: 25rem;
     top: 25rem;
-    right: -5rem;
+    right: -1rem;
     list-style: none;
 
     @media (max-width: 1250px) {

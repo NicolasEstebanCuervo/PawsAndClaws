@@ -48,7 +48,7 @@ export const FunFacts = () => {
                 window.screen.availWidth <= 1600 &&
                 window.screen.availWidth > 1250
             ) {
-                setXViewport(350);
+                setXViewport(420);
                 setYViewport(400);
             } else {
                 setXViewport(0);
@@ -61,7 +61,7 @@ export const FunFacts = () => {
 
     return (
         <Container ref={ref}>
-            <XLLM>¿Sabías esto de los gatos?</XLLM>
+            <XLLM>¿Sabías esto de estos productos?</XLLM>
             <SubContainer
                 variants={variants}
                 initial="hide"

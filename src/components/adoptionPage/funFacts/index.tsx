@@ -47,7 +47,7 @@ export const FunFacts = () => {
                 window.screen.availWidth <= 1600 &&
                 window.screen.availWidth > 1250
             ) {
-                setXViewport(350);
+                setXViewport(420);
                 setYViewport(400);
             } else {
                 setXViewport(0);
