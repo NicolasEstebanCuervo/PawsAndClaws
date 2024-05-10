@@ -237,7 +237,7 @@ const Container = styled.section`
     justify-content: center;
     width: 100%;
     gap: 3rem;
-    margin-top: 5rem;
+    margin: 5rem 0;
 `;
 
 const Title = styled(XLLLM)`
