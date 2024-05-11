@@ -14,7 +14,7 @@ export const AnimalCard = ({ animal }: { animal: IAnimal }) => {
     };
 
     return (
-        <Container>
+        <Container data-testid="container">
             <ImageAnimal breed={animal.breed} />
             <Texts>
                 <div>
@@ -43,7 +43,7 @@ export const AnimalCard = ({ animal }: { animal: IAnimal }) => {
                 </SubTexts>
             </Texts>
             <LinkAnimal to={`/adoption/animal/${animal.id}`}>
-                <Button onClick={setAnimal}>Mas información</Button>
+                <Button onClick={setAnimal} data-testid="button">Mas información</Button>
             </LinkAnimal>
         </Container>
     );

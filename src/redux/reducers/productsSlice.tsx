@@ -13,7 +13,7 @@ import {
 // Interface for product data structure
 export interface IProduct {
     name: string;
-    usItemId: number;
+    usItemId: string;
     imageInfo: {
         thumbnailUrl: string;
     };

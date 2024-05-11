@@ -27,7 +27,7 @@ export const SearchInput = () => {
         dispatch(setFilteredAnimals(animalsFiltered));
     };
     return (
-        <Container>
+        <Container data-testid="container">
             <InputGroup>
                 <Input
                     pr="4.5rem"

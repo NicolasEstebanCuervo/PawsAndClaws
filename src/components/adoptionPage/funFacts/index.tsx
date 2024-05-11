@@ -59,8 +59,8 @@ export const FunFacts = () => {
     }, []);
 
     return (
-        <Container ref={ref}>
-            <XLLM>¿Sabías esto de los gatos?</XLLM>
+        <Container ref={ref} data-testid="fun-facts-container">
+            <XLLM>¿Sabías esto de los perros?</XLLM>
             <SubContainer
                 variants={variants}
                 initial="hide"
@@ -93,7 +93,7 @@ export const FunFacts = () => {
                 ))}
 
                 <Image
-                    src={require("@assets/images/FunFact2.webp")}
+                    src={require("@assets/images/FunFact4.webp")}
                     alt="Imagen de una mascota"
                 />
             </SubContainer>

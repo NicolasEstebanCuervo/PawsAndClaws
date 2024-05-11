@@ -5,7 +5,7 @@ import { Link } from "react-router-dom";
 
 export const ContentAppointmentRequests = () => {
     return (
-        <Container>
+        <Container data-testid="container">
             <Texts>
                 <div>
                     <XLLM>
@@ -26,7 +26,7 @@ export const ContentAppointmentRequests = () => {
                     </SM>
                 </div>
                 <Link to="/appointment">
-                    <Button>Agendar cita</Button>
+                    <Button data-testid="button">Agendar cita</Button>
                 </Link>
             </Texts>
         </Container>

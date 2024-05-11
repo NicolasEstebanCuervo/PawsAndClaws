@@ -116,7 +116,7 @@ export const FormAnimalInAdoption = () => {
     return (
         <Container>
             <Title>Formulario de adopción</Title>
-            <Form onSubmit={handleSubmit}>
+            <Form onSubmit={handleSubmit} data-testid="form">
                 <div>
                     <label htmlFor="fullName">Nombre completo:</label>
                     <Input
@@ -323,7 +323,7 @@ export const FormAnimalInAdoption = () => {
                     </Select>
                 </div>
                 <PopNotification
-                    actionComponent={<Button type="submit" />}
+                    actionComponent={<Button data-testid="button" type="submit" />}
                     active={activePop}
                     titleAlert="¡Solicitud de adopcion agendad con exito!"
                     descriptionAlert='Tu solicitud de adopcion ha sido agendada exitosamente, puedes ver tus solicitudes de adopciones, en el apartado de "Mis solicitudes"'

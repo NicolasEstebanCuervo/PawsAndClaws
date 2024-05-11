@@ -1,7 +1,7 @@
 import { Link } from "react-router-dom";
 import styled from "@emotion/styled";
 import { Navbar, Nav, NavDropdown } from "react-bootstrap";
-import { useRef, useState } from "react";
+import { useState } from "react";
 import * as color from "@theme/colors";
 import { MLM } from "@theme/fonts";
 import { useDisclosure } from "@chakra-ui/react";
@@ -17,9 +17,8 @@ export const NavBar = () => {
     const { isOpen, onOpen, onClose } = useDisclosure();
 
     return (
-        <SectionNav>
+        <SectionNav data-testid="nav-bar">
             <SubContainerNav
-                data-testid="nav-bar"
                 expand="lg"
                 data-bs-theme="dark"
             >
@@ -45,17 +44,18 @@ export const NavBar = () => {
                     className={`${isOpen ? "show" : ""}`}
                 >
                     <ContainerLinksNav className="mr-auto">
-                        <MLM as={Link} to="/">
+                        <MLM as={Link} to="/" data-testid="home-button">
                             Inicio
                         </MLM>
-                        <MLM as={Link} to="/adoption">
+                        <MLM as={Link} to="/adoption" data-testid="adoption-button"> 
                             Adoptar
                         </MLM>
                         <CustomNavDropdown
                             title="Tienda"
                             id="basic-nav-dropdown"
+                            data-testid="products-button"
                         >
-                            <NavDropdownItem  as={Link} to="/products" >
+                            <NavDropdownItem  as={Link} to="/products">
                                 Tienda
                             </NavDropdownItem>
                             <NavDropdownItem onClick={onOpen}>
@@ -63,10 +63,10 @@ export const NavBar = () => {
                             </NavDropdownItem>
                         </CustomNavDropdown>
 
-                        <MLM as={Link} to="/appointment">
+                        <MLM as={Link} to="/appointment" data-testid="appointment-button">
                             Citas
                         </MLM>
-                        <MLM as={Link} to="/requests">
+                        <MLM as={Link} to="/requests" data-testid="requests-button">
                             Mis solicitudes
                         </MLM>
                     </ContainerLinksNav>

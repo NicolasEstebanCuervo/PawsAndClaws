@@ -76,7 +76,7 @@ export const FormPayProduct = () => {
     return (
         <Container>
             <Title>Formulario de compra</Title>
-            <Form onSubmit={handleSubmit}>
+            <Form onSubmit={handleSubmit} data-testid="form">
                 <div>
                     <label htmlFor="fullName">Nombre completo:</label>
                     <Input
@@ -241,7 +241,7 @@ export const FormPayProduct = () => {
 
                 <PopNotification
                     actionComponent={
-                        <Button onClick={navigate} type="submit" />
+                        <Button onClick={navigate} type="submit" data-testid="button"/>
                     }
                     active={activePop}
                     titleAlert="¡Tu compra se ha realizado con exito!"

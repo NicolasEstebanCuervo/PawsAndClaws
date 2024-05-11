@@ -91,84 +91,98 @@ export const CardAdoptionRequests = ({
     }, [statusRequest]);
 
     return (
-        <Popover
-            onOpen={changeTrueClicked}
-            onClose={changeFalseClicked}
-        >
-            <PopoverTrigger>
-                <ContentTrigger status={statusRequest} clicked={clicked}>
-                    <MM>
-                        Solicitud de adopcion a nombre de:{" "}
-                        {requestInfo.fullNameAdoption}
-                    </MM>
-                    <SM>Estado de la solicitud: {statusRequest}</SM>
-                </ContentTrigger>
-            </PopoverTrigger>
-            <PopoverContent>
-                <PopoverArrow />
-                <PopoverCloseButton />
-                <PopoverBody>
-                    <HeaderPopover>
-                        <ImagePopover
-                            src={imageUrl}
-                            alt={`Imagen de: ${imageUrl}`}
+        <div data-testid="container">
+            <Popover onOpen={changeTrueClicked} onClose={changeFalseClicked}>
+                <PopoverTrigger>
+                    <ContentTrigger status={statusRequest} clicked={clicked} data-testid="trigger-container">
+                        <MM>
+                            Solicitud de adopcion a nombre de:{" "}
+                            {requestInfo.fullNameAdoption}
+                        </MM>
+                        <SM>Estado de la solicitud: {statusRequest}</SM>
+                    </ContentTrigger>
+                </PopoverTrigger>
+                <PopoverContent>
+                    <PopoverArrow />
+                    <PopoverCloseButton />
+                    <PopoverBody>
+                        <HeaderPopover>
+                            <ImagePopover
+                                src={imageUrl}
+                                alt={`Imagen de: ${imageUrl}`}
+                            />
+
+                            <TextsHeader>
+                                <TitleHeader>
+                                    Nombre: {animal?.name}
+                                </TitleHeader>
+                                <SubtitleHeader colorText={color.LightGray2}>
+                                    Dueño: {animal?.information.owner}
+                                </SubtitleHeader>
+                            </TextsHeader>
+                        </HeaderPopover>
+
+                        <Divider />
+
+                        <ContentPopover>
+                            <TitleContentPopover>
+                                Informacion del solicitante:
+                            </TitleContentPopover>
+                            <List spacing={3}>
+                                <ListItem>
+                                    <ListIcon
+                                        as={IoPawSharp}
+                                        color={color.Green}
+                                    />
+                                    <b>Nombre completo: </b>
+                                    {requestInfo.fullNameAdoption}
+                                </ListItem>
+                                <ListItem>
+                                    <ListIcon
+                                        as={IoPawSharp}
+                                        color={color.Green}
+                                    />
+                                    <b>Dirección: </b>
+                                    {requestInfo.addressAdoption}
+                                </ListItem>
+                                <ListItem>
+                                    <ListIcon
+                                        as={IoPawSharp}
+                                        color={color.Green}
+                                    />
+                                    <b>Email: </b>
+                                    {requestInfo.emailAdoption}
+                                </ListItem>
+
+                                <ListItem>
+                                    <ListIcon
+                                        as={IoPawSharp}
+                                        color={color.Green}
+                                    />
+                                    <b>Numero de telefono: </b>
+                                    {requestInfo.phoneNumberAdoption}
+                                </ListItem>
+                            </List>
+                        </ContentPopover>
+
+                        <PopConfirmation
+                            functionActive={deleteAdoptionRequest}
+                            actionComponent={
+                                <Button
+                                    margin="0 0 1rem 1rem"
+                                    colorScheme="teal"
+                                    data-testid="button"
+                                >
+                                    Borrar peticion
+                                </Button>
+                            }
+                            titleAlert="¿Estas seguro que quieres eliminar esta peticion de adopcion?"
+                            descriptionAlert="Si eliminas esta peticion, tendras que llenar el formulario de la mascota nuevamente."
                         />
-
-                        <TextsHeader>
-                            <TitleHeader>Nombre: {animal?.name}</TitleHeader>
-                            <SubtitleHeader colorText={color.LightGray2}>
-                                Dueño: {animal?.information.owner}
-                            </SubtitleHeader>
-                        </TextsHeader>
-                    </HeaderPopover>
-
-                    <Divider />
-
-                    <ContentPopover>
-                        <TitleContentPopover>
-                            Informacion del solicitante:
-                        </TitleContentPopover>
-                        <List spacing={3}>
-                            <ListItem>
-                                <ListIcon as={IoPawSharp} color={color.Green} />
-                                <b>Nombre completo: </b>
-                                {requestInfo.fullNameAdoption}
-                            </ListItem>
-                            <ListItem>
-                                <ListIcon as={IoPawSharp} color={color.Green} />
-                                <b>Dirección: </b>
-                                {requestInfo.addressAdoption}
-                            </ListItem>
-                            <ListItem>
-                                <ListIcon as={IoPawSharp} color={color.Green} />
-                                <b>Email: </b>
-                                {requestInfo.emailAdoption}
-                            </ListItem>
-
-                            <ListItem>
-                                <ListIcon as={IoPawSharp} color={color.Green} />
-                                <b>Numero de telefono: </b>
-                                {requestInfo.phoneNumberAdoption}
-                            </ListItem>
-                        </List>
-                    </ContentPopover>
-
-                    <PopConfirmation
-                        functionActive={deleteAdoptionRequest}
-                        actionComponent={
-                            <Button
-                                margin="0 0 1rem 1rem"
-                                colorScheme="teal"
-                            >
-                                Borrar peticion
-                            </Button>
-                        }
-                        titleAlert="¿Estas seguro que quieres eliminar esta peticion de adopcion?"
-                        descriptionAlert="Si eliminas esta peticion, tendras que llenar el formulario de la mascota nuevamente."
-                    />
-                </PopoverBody>
-            </PopoverContent>
-        </Popover>
+                    </PopoverBody>
+                </PopoverContent>
+            </Popover>
+        </div>
     );
 };
 
@@ -188,7 +202,7 @@ const ContentTrigger = styled.div`
 
     @media (max-width: 750px) {
         width: 95%;
-    }       
+    }
 `;
 const HeaderPopover = styled.div`
     display: flex;

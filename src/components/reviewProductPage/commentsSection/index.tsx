@@ -74,7 +74,7 @@ export const CommentsSection = () => {
             <Title>Comentarios</Title>
 
             <ContainerFormComments>
-                <Form onSubmit={handleSubmit}>
+                <Form onSubmit={handleSubmit} data-testid="form"> 
                     <LM>Deja un comentario</LM>
                     <Input
                         onChange={onChangeName}
@@ -92,7 +92,7 @@ export const CommentsSection = () => {
                     ></Input>
 
                     <PopNotification
-                        actionComponent={<Button type="submit" />}
+                        actionComponent={<Button data-testid="button" type="submit" />}
                         active={activePop}
                         titleAlert="¡Comentario agregado con exito!"
                         descriptionAlert="¡Ahora puedes ver tu comentario en la seccion de comentarios!"

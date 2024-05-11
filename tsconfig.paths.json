@@ -7,7 +7,8 @@
             "@theme/*": ["./src/theme/*", "./src/theme"],
             "@pages/*": ["./src/pages/*", "./src/pages"],
             "@reducers/*": ["./src/redux/reducers/*", "./src/redux/reducers"],
-            "@api/*": ["./src/redux/api/*", "./src/redux/api"]
+            "@api/*": ["./src/redux/api/*", "./src/redux/api"],
+            "@store/*": ["./src/redux/store/*", "./src/redux/store"]
         }
     }
 }

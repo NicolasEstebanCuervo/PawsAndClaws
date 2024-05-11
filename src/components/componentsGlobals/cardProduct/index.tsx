@@ -58,7 +58,7 @@ export const ProductCard = ({ product }: { product: IProduct }) => {
     }
 
     return (
-        <Container>
+        <Container data-testid="container">
             {product.imageInfo?.thumbnailUrl ? (
                 <Image
                     src={product.imageInfo?.thumbnailUrl}
@@ -106,11 +106,12 @@ export const ProductCard = ({ product }: { product: IProduct }) => {
                 </ContainerPrices>
                 <ContainerButtons>
                     <LinkAnimal to={`/products/product/${product.usItemId}`}>
-                        <Button onClick={setProduct}>Vista rapida</Button>
+                        <Button onClick={setProduct} data-testid="preview-button">Vista rapida</Button>
                     </LinkAnimal>
                     <PopNotification
                         actionComponent={
                             <Cart
+                                data-testid="add-cart-button"
                                 onClick={addInTheCart}
                                 className="bi bi-cart4"
                             ></Cart>

@@ -31,7 +31,7 @@ export const ProductCart = ({
     };
 
     return (
-        <Container>
+        <Container data-testid="container">
             <Image
                 src={product.imageInfo.thumbnailUrl}
                 alt={`Imagen de ${product.name}`}
@@ -49,18 +49,18 @@ export const ProductCart = ({
                     ).toFixed(2)}
                 </MM>
 
-                <button onClick={incrementProduct}>
+                <button onClick={incrementProduct} data-testid="increment-button">
                     <Icon className="bi bi-plus"></Icon>
                 </button>
 
-                <button onClick={decreaseProduct}>
+                <button onClick={decreaseProduct} data-testid="decrease-button">
                     <Icon className="bi bi-dash"></Icon>
                 </button>
 
                 <PopConfirmation
                     functionActive={deleteProduct}
                     actionComponent={
-                        <ButtonDelete>
+                        <ButtonDelete data-testid="delete-button">
                             <IconTrash className="bi bi-trash"></IconTrash>
                         </ButtonDelete>
                     }
@@ -75,14 +75,12 @@ export const ProductCart = ({
 const Container = styled.div`
     display: flex;
     gap: 1rem;
-    justify-content: center;
     align-items: center;
     width: 100%;
     position: relative;
 `;
 const Image = styled.img`
     width: 9rem;
-    padding: 0 10px;
 `;
 
 const Icon = styled.i`

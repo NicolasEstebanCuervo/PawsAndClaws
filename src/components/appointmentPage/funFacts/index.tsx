@@ -61,7 +61,7 @@ export const FunFacts = () => {
 
     return (
         <Container ref={ref}>
-            <XLLM>¿Sabías esto de los gatos?</XLLM>
+            <XLLM>¿Sabías esto de Paws And Claws?</XLLM>
             <SubContainer
                 variants={variants}
                 initial="hide"

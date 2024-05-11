@@ -28,7 +28,7 @@ export const CardPay = () => {
     dispatch(setTotalPrice(totalPrice));
 
     return (
-        <Container>
+        <Container data-testid="container">
             {productSlice.productsInTheCart >= 0 ? (
                 <></>
             ) : (

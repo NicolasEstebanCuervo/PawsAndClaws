@@ -9,10 +9,10 @@ import {
     Button,
 } from "@chakra-ui/react";
 import { useRef } from "react";
-import { ListProductsCart } from "./ListProductsCart";
 import { useSelector } from "react-redux";
 import { LM } from "@theme/fonts";
 import { Link } from "react-router-dom";
+import { ListProductsCart } from "./ListProductsCart";
 
 export const Cart = ({
     isOpen,
@@ -45,11 +45,11 @@ export const Cart = ({
                     <DrawerFooter justifyContent={"space-between"} borderTopWidth="1px">
                         <LM>Total: {productsInTheCart.totalPrice.toFixed(2)}</LM>
                         <div>
-                            <Button variant="outline" mr={3} onClick={onClose}>
+                            <Button variant="outline" mr={3} onClick={onClose} data-testid="cancel-button">
                                 Cancelar
                             </Button>
                             <Link to="/products/product/pay">
-                            <Button colorScheme="green">Comprar</Button>
+                            <Button colorScheme="green" data-testid="buy-button">Comprar</Button>
                             </Link>
                         </div>
                     </DrawerFooter>

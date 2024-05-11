@@ -24,13 +24,13 @@ export const CardProductPay = ({
     };
 
     return (
-        <ContainerProductCart>
-            <ImgProductCart
+        <Container data-testid="container">
+            <Image
                 src={product.imageInfo.thumbnailUrl}
                 alt={`Imagen de ${product.name}`}
             />
-            <TextsProduct>
-                <NameProduct>{product.name}</NameProduct>
+            <Texts>
+                <Name>{product.name}</Name>
                 <MM>
                     $
                     {(
@@ -45,19 +45,19 @@ export const CardProductPay = ({
                 <PopConfirmation
                     functionActive={deleteProduct}
                     actionComponent={
-                        <ButtonDelete>
+                        <Button data-testid="button">
                             <IconTrash className="bi bi-trash"></IconTrash>
-                        </ButtonDelete>
+                        </Button>
                     }
                     titleAlert="¿Estas seguro que quieres eliminar este producto de tu carrito?"
                     descriptionAlert="Si eliminas este producto del carrito tendras que volver a agregarlo para poder realizar la compra"
                 />
-            </TextsProduct>
-        </ContainerProductCart>
+            </Texts>
+        </Container>
     );
 };
 
-const ContainerProductCart = styled.div`
+const Container = styled.div`
     display: flex;
     gap: 1rem;
     justify-content: start;
@@ -71,18 +71,18 @@ const ContainerProductCart = styled.div`
     border: 1px solid ${color.LightGray};
 `;
 
-const ImgProductCart = styled.img`
+const Image = styled.img`
     width: 10rem;
     padding: 0 10px;
     background: ${color.White};
 `;
 
-const TextsProduct = styled.div`
+const Texts = styled.div`
     display: flex;
     flex-direction: column;
 `;
 
-const NameProduct = styled(MM)`
+const Name = styled(MM)`
     font-weight: bold;
     max-width: 90%;
 `;
@@ -96,7 +96,7 @@ const IconTrash = styled.i`
     }
 `;
 
-const ButtonDelete = styled.button`
+const Button = styled.button`
     position: absolute;
     top: 0.5rem;
     right: 0.5rem;

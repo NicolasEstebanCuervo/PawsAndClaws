@@ -18,7 +18,7 @@ export const ContentAdoptionRequests = () => {
     }, []);
 
     return (
-        <Container>
+        <Container data-testid="container">
             <SubContainer>
                 <Texts>
                     <div>
@@ -47,7 +47,9 @@ export const ContentAdoptionRequests = () => {
                     </div>
                     <ContainerButton>
                         <Link to="/adoption">
-                            <Button>Explorar Más Opciones de Adopción</Button>
+                            <Button data-testid="button">
+                                Explorar Más Opciones de Adopción
+                            </Button>
                         </Link>
                     </ContainerButton>
                 </Texts>
@@ -76,7 +78,7 @@ const SubContainer = styled.div`
     @media (max-width: 1250px) {
         flex-direction: column;
     }
-`
+`;
 
 const Texts = styled.div`
     display: flex;
@@ -125,7 +127,7 @@ const Image = styled.img`
     border-radius: 0.3rem;
 
     @media (max-width: 1600px) {
-        width:30rem;
+        width: 30rem;
     }
 
     @media (max-width: 1250px) {

@@ -94,7 +94,7 @@ export const FunFacts = () => {
                 ))}
 
                 <Image
-                    src={require("@assets/images/FunFact3.webp")}
+                    src={require("@assets/images/FunFact5.webp")}
                     alt="Imagen de una mascota"
                 />
             </SubContainer>

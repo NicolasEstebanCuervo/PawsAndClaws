@@ -71,80 +71,101 @@ export const CardAppointmentRequests = ({
     }, [statusRequest]);
 
     return (
-        <Popover
-            onOpen={changeTrueClicked}
-            onClose={changeFalseClicked}
-        >
-            <PopoverTrigger>
-                <ContentTrigger status={statusRequest} clicked={clicked}>
-                    <MM>
-                        Cita agendada en nombre de:{" "}
-                        {requestInfo.fullNameAppointment}
-                    </MM>
-                    <SM>Estado de la solicitud: {statusRequest}</SM>
-                </ContentTrigger>
-            </PopoverTrigger>
-            <PopoverContent>
-                <PopoverArrow />
-                <PopoverCloseButton />
-                <PopoverBody>
-                    <ContentPopover>
-                        <TitleContentPopover>
-                            Informacion del solicitante:
-                        </TitleContentPopover>
-                        <List spacing={3}>
-                            <ListItem>
-                                <ListIcon as={IoPawSharp} color={color.Green} />
+        <div data-testid="container">
+            <Popover onOpen={changeTrueClicked} onClose={changeFalseClicked}>
+                <PopoverTrigger>
+                    <ContentTrigger status={statusRequest} clicked={clicked} data-testid="trigger-container">
+                        <MM>
+                            Cita agendada en nombre de:{" "}
+                            {requestInfo.fullNameAppointment}
+                        </MM>
+                        <SM>Estado de la solicitud: {statusRequest}</SM>
+                    </ContentTrigger>
+                </PopoverTrigger>
+                <PopoverContent>
+                    <PopoverArrow />
+                    <PopoverCloseButton />
+                    <PopoverBody>
+                        <ContentPopover>
+                            <TitleContentPopover>
+                                Informacion del solicitante:
+                            </TitleContentPopover>
+                            <List spacing={3}>
+                                <ListItem>
+                                    <ListIcon
+                                        as={IoPawSharp}
+                                        color={color.Green}
+                                    />
 
-                                <b>Nombre completo: </b>
+                                    <b>Nombre completo: </b>
 
-                                {requestInfo.fullNameAppointment}
-                            </ListItem>
-                            <ListItem>
-                                <ListIcon as={IoPawSharp} color={color.Green} />
-                                <b>Email: </b>
-                                {requestInfo.emailAppointment}
-                            </ListItem>
+                                    {requestInfo.fullNameAppointment}
+                                </ListItem>
+                                <ListItem>
+                                    <ListIcon
+                                        as={IoPawSharp}
+                                        color={color.Green}
+                                    />
+                                    <b>Email: </b>
+                                    {requestInfo.emailAppointment}
+                                </ListItem>
 
-                            <ListItem>
-                                <ListIcon as={IoPawSharp} color={color.Green} />
-                                <b>Numero de telefono: </b>
-                                {requestInfo.phoneNumberAppointment}
-                            </ListItem>
+                                <ListItem>
+                                    <ListIcon
+                                        as={IoPawSharp}
+                                        color={color.Green}
+                                    />
+                                    <b>Numero de telefono: </b>
+                                    {requestInfo.phoneNumberAppointment}
+                                </ListItem>
 
-                            <ListItem>
-                                <ListIcon as={IoPawSharp} color={color.Green} />
-                                <b> Nombre de la mascota: </b>
-                                {requestInfo.petNameAppointment}
-                            </ListItem>
+                                <ListItem>
+                                    <ListIcon
+                                        as={IoPawSharp}
+                                        color={color.Green}
+                                    />
+                                    <b> Nombre de la mascota: </b>
+                                    {requestInfo.petNameAppointment}
+                                </ListItem>
 
-                            <ListItem>
-                                <ListIcon as={IoPawSharp} color={color.Green} />
-                                <b> Edad de la mascota: </b>
-                                {requestInfo.petAgeAppointment}
-                            </ListItem>
+                                <ListItem>
+                                    <ListIcon
+                                        as={IoPawSharp}
+                                        color={color.Green}
+                                    />
+                                    <b> Edad de la mascota: </b>
+                                    {requestInfo.petAgeAppointment}
+                                </ListItem>
 
-                            <ListItem>
-                                <ListIcon as={IoPawSharp} color={color.Green} />
-                                <b> Motivo de la consulta: </b>
-                                {requestInfo.reasonAppointment}
-                            </ListItem>
-                        </List>
-                    </ContentPopover>
+                                <ListItem>
+                                    <ListIcon
+                                        as={IoPawSharp}
+                                        color={color.Green}
+                                    />
+                                    <b> Motivo de la consulta: </b>
+                                    {requestInfo.reasonAppointment}
+                                </ListItem>
+                            </List>
+                        </ContentPopover>
 
-                    <PopConfirmation
-                        functionActive={deleteAdoptionRequest}
-                        actionComponent={
-                            <Button margin="0 0 1rem 1rem" colorScheme="teal">
-                                Borrar peticion
-                            </Button>
-                        }
-                        titleAlert="¿Estas seguro que quieres eliminar esta cita agendada?"
-                        descriptionAlert="Si eliminas esta cita, tendras que llenar el formulario de tu mascota nuevamente."
-                    />
-                </PopoverBody>
-            </PopoverContent>
-        </Popover>
+                        <PopConfirmation
+                            functionActive={deleteAdoptionRequest}
+                            actionComponent={
+                                <Button
+                                    margin="0 0 1rem 1rem"
+                                    colorScheme="teal"
+                                    data-testid="button"
+                                >
+                                    Borrar peticion
+                                </Button>
+                            }
+                            titleAlert="¿Estas seguro que quieres eliminar esta cita agendada?"
+                            descriptionAlert="Si eliminas esta cita, tendras que llenar el formulario de tu mascota nuevamente."
+                        />
+                    </PopoverBody>
+                </PopoverContent>
+            </Popover>
+        </div>
     );
 };
 

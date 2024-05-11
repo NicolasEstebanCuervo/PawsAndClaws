@@ -12,22 +12,22 @@ export const FormContact = () => {
     return (
         <Container>
             <Title>Formulario de contacto</Title>
-            <Form onSubmit={handleSubmit}>
+            <Form onSubmit={handleSubmit} data-testid="form">
                 <div>
                     <Label htmlFor="from_name">Nombre</Label>
-                    <Input type="text" name="from_name" id="from_name"  required />
+                    <Input type="text" name="from_name" id="from_name" placeholder="Nombre completo" required />
                 </div>
 
                 <div>
                     <Label htmlFor="from_email">Correo Electrónico</Label>
-                    <Input type="email" name="from_email" id="from_email"  required />
+                    <Input type="email" name="from_email" id="from_email" placeholder="Correo electrónico"  required />
                 </div>
 
                 <div>
                     <Label htmlFor="message">Mensaje</Label>
-                    <TextArea name="message" id="message" required />
+                    <TextArea name="message" id="message" required placeholder="Mensaje"/>
                 </div>
-                <Button type="submit" value="Enviar" />
+                <Button type="submit" value="Enviar" data-testid="button"/>
             </Form>
         </Container>
     );

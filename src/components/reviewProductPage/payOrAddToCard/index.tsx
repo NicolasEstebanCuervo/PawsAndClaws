@@ -35,7 +35,7 @@ export const PayOrAddToCart = ({ product }: { product: IProduct }) => {
     };
 
     return (
-        <Container>
+        <Container data-testid="container">
             <div>
                 <XLLM>{product.name.substring(0, 59)}...</XLLM>
                 <ContainerStars>{StarComponent({})}</ContainerStars>
@@ -81,7 +81,7 @@ export const PayOrAddToCart = ({ product }: { product: IProduct }) => {
                 <SubContainerButtons>
                     <PopNotification
                         actionComponent={
-                            <Button onClick={addInTheCart}>
+                            <Button onClick={addInTheCart} data-testid="add-cart-button">
                                 Agregar al carrito
                             </Button>
                         }
@@ -92,7 +92,7 @@ export const PayOrAddToCart = ({ product }: { product: IProduct }) => {
                     />
 
                     <LinkProduct to="/products/product/pay">
-                        <Button onClick={addInTheCart}>Comprar ahora</Button>
+                        <Button onClick={addInTheCart} data-testid="buy-button">Comprar ahora</Button>
                     </LinkProduct>
                 </SubContainerButtons>
                 <TextsContainerButtons>
