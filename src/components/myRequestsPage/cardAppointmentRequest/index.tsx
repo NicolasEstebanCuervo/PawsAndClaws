@@ -71,7 +71,7 @@ export const CardAppointmentRequests = ({
     }, [statusRequest]);
 
     return (
-        <div data-testid="container">
+        <Container data-testid="container">
             <Popover onOpen={changeTrueClicked} onClose={changeFalseClicked}>
                 <PopoverTrigger>
                     <ContentTrigger status={statusRequest} clicked={clicked} data-testid="trigger-container">
@@ -165,9 +165,16 @@ export const CardAppointmentRequests = ({
                     </PopoverBody>
                 </PopoverContent>
             </Popover>
-        </div>
+        </Container>
     );
 };
+
+const Container = styled.div`
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+`
 
 const ContentTrigger = styled.div`
     width: 50%;

@@ -54,7 +54,6 @@
     "@types/uuid": "^9.0.8",
     "add": "^2.0.6",
     "bootstrap-icons": "^1.11.3",
-    "cypress": "^13.7.1",
     "framer-motion": "^11.0.25",
     "react-bootstrap": "^2.10.2",
     "react-icons": "^5.0.1",

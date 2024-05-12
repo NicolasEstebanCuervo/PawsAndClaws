@@ -6,16 +6,15 @@ import ImageBackgroundWithoutAdoption from "@assets/images/BgWithoutAnimalInAdop
 import ImageBackgroundWithAdoption from "@assets/images/BgWithAnimalsInAdoption.webp";
 import { ListItem, OrderedList } from "@chakra-ui/react";
 import { CardAdoptionRequests } from "../cardAdoptionRequests";
-import * as color from "@theme/colors"
+import * as color from "@theme/colors";
 
 export const ListAdoptionRequests = () => {
-    const animalSlice = useSelector(
-        (state: any) => state.AnimalSlice
-    );
+    const animalSlice = useSelector((state: any) => state.AnimalSlice);
 
     return (
         <Container>
-            {!animalSlice.adoptionsRequests || animalSlice.adoptionsRequests.length === 0 ? (
+            {!animalSlice.adoptionsRequests ||
+            animalSlice.adoptionsRequests.length === 0 ? (
                 <ContainerTutorial>
                     <Texts>
                         <Title>
@@ -106,18 +105,18 @@ export const ListAdoptionRequests = () => {
                         </OrderedListComponent>
                     </Texts>
                 </ContainerTutorial>
-            ) : ( 
+            ) : (
                 <ContainerListRequest>
-                    <Title>
-                        Lista de tus solicitudes de adopcion
-                    </Title>
+                    <Title>Lista de tus solicitudes de adopcion</Title>
 
-                    {animalSlice.adoptionsRequests.map((request: IFormAdoption) => (
-                        <CardAdoptionRequests
-                            requestInfo={request}
-                            key={request.id}
-                        />
-                    ))}
+                    {animalSlice.adoptionsRequests.map(
+                        (request: IFormAdoption) => (
+                            <CardAdoptionRequests
+                                requestInfo={request}
+                                key={request.id}
+                            />
+                        )
+                    )}
                 </ContainerListRequest>
             )}
         </Container>
@@ -156,10 +155,7 @@ const ContainerTutorial = styled.div`
 const Title = styled(XLLM)`
     font-weight: bold;
     width: 90%;
-
-    @media (max-width: 750px) {
-        text-align: center;
-    }
+    text-align: center;
 `;
 
 const Texts = styled.div`
@@ -197,7 +193,7 @@ const ContainerListRequest = styled.div`
     @media (min-width: 1250px) and (max-width: 1599px) {
         height: 40rem;
     }
-    
+
     @media (max-width: 750px) {
         background: ${color.LightBeige};
     }

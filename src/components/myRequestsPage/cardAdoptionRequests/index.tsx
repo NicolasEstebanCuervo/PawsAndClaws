@@ -91,7 +91,7 @@ export const CardAdoptionRequests = ({
     }, [statusRequest]);
 
     return (
-        <div data-testid="container">
+        <Container data-testid="container">
             <Popover onOpen={changeTrueClicked} onClose={changeFalseClicked}>
                 <PopoverTrigger>
                     <ContentTrigger status={statusRequest} clicked={clicked} data-testid="trigger-container">
@@ -182,12 +182,19 @@ export const CardAdoptionRequests = ({
                     </PopoverBody>
                 </PopoverContent>
             </Popover>
-        </div>
+        </Container>
     );
 };
 
+const Container = styled.div`
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+`
+
 const ContentTrigger = styled.div`
-    width: 50%;
+    width: 40%;
     position: relative;
     padding: 1rem;
     border-radius: 0.3rem;
