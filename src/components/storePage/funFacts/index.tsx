@@ -5,28 +5,30 @@ import * as color from "@theme/colors";
 import { MM, XLLM } from "@theme/fonts";
 import ImageBackground from "@assets/images/BgFunFactsStore.webp";
 import { useEffect, useState } from "react";
+import { useViewportSize } from "@components/componentsGlobals/useViewportSize";
 
 export const FunFacts = () => {
-
-    const [xViewport, setXViewport] = useState(500);
-    const [yViewport, setYViewport] = useState(350);
-
-    const [ref, inView] = useInView({
+    const [ref] = useInView({
         triggerOnce: true,
         threshold: 0.1,
     });
 
-    const variants = {
-        hidden: { opacity: 0 },
-        visible: {
-            opacity: 1,
-            transition: {
-                delayChildren: 0.3,
-                staggerChildren: 0.2,
-                duration: 2,
-            },
-        },
-    };
+    const { width } = useViewportSize();
+    const [xViewport, setXViewport] = useState(0);
+    const [yViewport, setYViewport] = useState(0);
+
+    useEffect(() => {
+        if (width > 1600) {
+            setXViewport(500);
+            setYViewport(350);
+        } else if (width <= 1600 && width > 1250) {
+            setXViewport(420);
+            setYViewport(400);
+        } else {
+            setXViewport(0);
+            setYViewport(0);
+        }
+    }, [width]);
 
     const facts = [
         "Algunos juguetes están diseñados para dispensar golosinas cuando el perro resuelve un rompecabezas.",
@@ -39,54 +41,21 @@ export const FunFacts = () => {
         "Algunos perros mayores o con problemas de salud, como la artritis, se benefician de las camas ortopédicas que alivian la presión en sus articulaciones.",
     ];
 
-    useEffect(() => {
-        const calculateWidth = () => {
-            if (window.screen.availWidth > 1600) {
-                setXViewport(500);
-                setYViewport(350);
-            } else if (
-                window.screen.availWidth <= 1600 &&
-                window.screen.availWidth > 1250
-            ) {
-                setXViewport(420);
-                setYViewport(400);
-            } else {
-                setXViewport(0);
-                setYViewport(0);
-            }
-        };
-
-        calculateWidth();
-    }, []);
-
     return (
         <Container ref={ref}>
-            <XLLM>¿Sabías esto de estos productos?</XLLM>
-            <SubContainer
-                variants={variants}
-                initial="hide"
-                animate={inView ? "show" : "hide"}
-            >
+            <XLLM>¿Sabías esto de los gatos?</XLLM>
+            <SubContainer>
                 {facts.map((fact, index) => (
                     <ContainerFact
                         key={index}
-                        variants={{
-                            hide: { x: 0, y: 0, opacity: 0 },
-                            show: {
-                                x:
-                                    Math.cos(
-                                        (index / facts.length) * 2 * Math.PI
-                                    ) * xViewport,
-                                y:
-                                    Math.sin(
-                                        (index / facts.length) * 2 * Math.PI
-                                    ) * yViewport,
-                                opacity: 1,
-                                transition: {
-                                    delay: 1 * index,
-                                    duration: 0.5,
-                                },
-                            },
+                        style={{
+                            transform: `translate(${
+                                Math.cos((index / facts.length) * 2 * Math.PI) *
+                                xViewport
+                            }px, ${
+                                Math.sin((index / facts.length) * 2 * Math.PI) *
+                                yViewport
+                            }px)`,
                         }}
                     >
                         <MM>{fact}</MM>
@@ -94,7 +63,7 @@ export const FunFacts = () => {
                 ))}
 
                 <Image
-                    src={require("@assets/images/FunFact5.webp")}
+                    src={require("@assets/images/FunFact2.webp")}
                     alt="Imagen de una mascota"
                 />
             </SubContainer>
@@ -110,6 +79,7 @@ const Container = styled.section`
     flex-direction: column;
     align-items: center;
     position: relative;
+    overflow: hidden;
     margin-top: 10rem;
     gap: 3rem;
     background: ${color.Cream};

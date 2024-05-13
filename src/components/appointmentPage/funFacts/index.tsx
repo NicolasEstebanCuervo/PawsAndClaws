@@ -5,28 +5,31 @@ import * as color from "@theme/colors";
 import { MM, XLLM } from "@theme/fonts";
 import ImageBackground from "@assets/images/BgFunFactsAppointment.webp";
 import { useEffect, useState } from "react";
+import { useViewportSize } from "@components/componentsGlobals/useViewportSize";
 
 export const FunFacts = () => {
 
-    const [xViewport, setXViewport] = useState(500);
-    const [yViewport, setYViewport] = useState(350);
-
-    const [ref, inView] = useInView({
+    const [ref] = useInView({
         triggerOnce: true,
         threshold: 0.1,
     });
 
-    const variants = {
-        hidden: { opacity: 0 },
-        visible: {
-            opacity: 1,
-            transition: {
-                delayChildren: 0.3,
-                staggerChildren: 0.2,
-                duration: 2,
-            },
-        },
-    };
+    const { width } = useViewportSize();
+    const [xViewport, setXViewport] = useState(0);
+    const [yViewport, setYViewport] = useState(0);
+
+    useEffect(() => {
+        if (width > 1600) {
+            setXViewport(500);
+            setYViewport(350);
+        } else if (width <= 1600 && width > 1250) {
+            setXViewport(420);
+            setYViewport(400);
+        } else { 
+            setXViewport(0);
+            setYViewport(0);
+        }
+    }, [width]);
     
     const facts = [
         "Paws and Claws fue fundada en 2005 por Nicolás Rojas, un apasionado amante de los animales que se dedicó a crear un refugio seguro y amoroso para mascotas sin hogar en las afueras de la ciudad.",
@@ -39,54 +42,21 @@ export const FunFacts = () => {
         "Paws and Claws ofrece servicios de adopción responsables, que incluyen chequeos médicos, vacunas y esterilización de todas las mascotas antes de ser entregadas a sus nuevos hogares, garantizando así la salud y el bienestar de los animales."
     ];
 
-    useEffect(() => {
-        const calculateWidth = () => {
-            if (window.screen.availWidth > 1600) {
-                setXViewport(500);
-                setYViewport(350);
-            } else if (
-                window.screen.availWidth <= 1600 &&
-                window.screen.availWidth > 1250
-            ) {
-                setXViewport(420);
-                setYViewport(400);
-            } else {
-                setXViewport(0);
-                setYViewport(0);
-            }
-        };
-
-        calculateWidth();
-    }, []);
-
     return (
         <Container ref={ref}>
-            <XLLM>¿Sabías esto de Paws And Claws?</XLLM>
-            <SubContainer
-                variants={variants}
-                initial="hide"
-                animate={inView ? "show" : "hide"}
-            >
+            <XLLM>¿Sabías esto de los gatos?</XLLM>
+            <SubContainer>
                 {facts.map((fact, index) => (
                     <ContainerFact
                         key={index}
-                        variants={{
-                            hide: { x: 0, y: 0, opacity: 0 },
-                            show: {
-                                x:
-                                    Math.cos(
-                                        (index / facts.length) * 2 * Math.PI
-                                    ) * xViewport,
-                                y:
-                                    Math.sin(
-                                        (index / facts.length) * 2 * Math.PI
-                                    ) * yViewport,
-                                opacity: 1,
-                                transition: {
-                                    delay: 1 * index,
-                                    duration: 0.5,
-                                },
-                            },
+                        style={{
+                            transform: `translate(${
+                                Math.cos((index / facts.length) * 2 * Math.PI) *
+                                xViewport
+                            }px, ${
+                                Math.sin((index / facts.length) * 2 * Math.PI) *
+                                yViewport
+                            }px)`,
                         }}
                     >
                         <MM>{fact}</MM>
@@ -110,6 +80,7 @@ const Container = styled.section`
     flex-direction: column;
     align-items: center;
     position: relative;
+    overflow: hidden;
     gap: 3rem;
     background: ${color.Cream};
     background: url(${ImageBackground});

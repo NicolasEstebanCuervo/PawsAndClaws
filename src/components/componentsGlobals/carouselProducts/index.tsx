@@ -6,38 +6,27 @@ import { IProduct } from "@reducers/productsSlice";
 import { ProductCard } from "../cardProduct";
 import * as color from "@theme/colors";
 import { useEffect, useState } from "react";
+import { useViewportSize } from "../useViewportSize";
 
 export const CarouselProducts = ({ title }: { title: string }) => {
     const productSlice = useSelector((state: any) => state.ProductSlice);
+    const animalsSlice = useSelector((state: any) => state.AnimalSlice);
     const [viewport, setViewport] = useState(5);
+    const { width } = useViewportSize();
 
     useEffect(() => {
-        const calculateWidth = () => {
-            if (window.screen.availWidth > 1750) {
-                setViewport(5);
-            } else if (
-                window.screen.availWidth <= 1750 &&
-                window.screen.availWidth >= 1450
-            ) {
-                setViewport(4);
-            } else if (
-                window.screen.availWidth <= 1450 &&
-                window.screen.availWidth >= 950
-            ) {
-                setViewport(3);
-            } else if (
-                window.screen.availWidth <= 950 &&
-                window.screen.availWidth >= 550
-            ) {
-                setViewport(2);
-            } else {
-                setViewport(1);
-            }
-        };
-
-        calculateWidth();
-    }, []);
-
+        if (width > 1750) {
+            setViewport(5);
+        } else if (width <= 1750 && width > 1450) {
+            setViewport(4);
+        } else if (width <= 1450 && width > 950) {
+            setViewport(3);
+        }else if (width <= 950 && width > 550) {
+            setViewport(2);
+        }else { 
+            setViewport(1);
+        }
+    }, [width]);
     return (
         <Container>
             <Title>{title}</Title>

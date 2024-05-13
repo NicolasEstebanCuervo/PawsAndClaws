@@ -5,33 +5,30 @@ import * as color from "@theme/colors";
 import { MM, XLLM } from "@theme/fonts";
 import ImageBackground from "@assets/images/BgFunFactsMyRequests.webp";
 import { useEffect, useState } from "react";
+import { useViewportSize } from "@components/componentsGlobals/useViewportSize";
 
 export const FunFacts = () => {
-    const [xViewport, setXViewport] = useState(500);
-    const [yViewport, setYViewport] = useState(350);
-
-    const [ref, inView] = useInView({
+    const [ref] = useInView({
         triggerOnce: true,
         threshold: 0.1,
     });
 
-    const variants = {
-        show: {
-            opacity: 1,
-            transition: {
-                staggerChildren: 0.05,
-                delayChildren: 0,
-            },
-        },
-        hide: {
-            opacity: 0.9,
-            transition: {
-                staggerChildren: 0.05,
-                staggerDirection: -1,
-                duration: 0.5,
-            },
-        },
-    };
+    const { width } = useViewportSize();
+    const [xViewport, setXViewport] = useState(0);
+    const [yViewport, setYViewport] = useState(0);
+
+    useEffect(() => {
+        if (width > 1600) {
+            setXViewport(500);
+            setYViewport(350);
+        } else if (width <= 1600 && width > 1250) {
+            setXViewport(420);
+            setYViewport(400);
+        } else { 
+            setXViewport(0);
+            setYViewport(0);
+        }
+    }, [width]);
 
     const facts = [
         "Los gatos tienen un sentido del olfato muy agudo, siendo capaces de detectar olores hasta 14 veces mejor que los humanos.",
@@ -44,54 +41,21 @@ export const FunFacts = () => {
         "Los gatos son conocidos por su agilidad y capacidad de saltar. Pueden saltar hasta seis veces la longitud de su cuerpo en un solo salto.",
     ];
 
-    useEffect(() => {
-        const calculateWidth = () => {
-            if (window.screen.availWidth > 1600) {
-                setXViewport(500);
-                setYViewport(350);
-            } else if (
-                window.screen.availWidth <= 1600 &&
-                window.screen.availWidth > 1250
-            ) {
-                setXViewport(420);
-                setYViewport(400);
-            } else {
-                setXViewport(0);
-                setYViewport(0);
-            }
-        };
-
-        calculateWidth();
-    }, []);
-
     return (
         <Container ref={ref}>
             <XLLM>¿Sabías esto de los gatos?</XLLM>
-            <SubContainer
-                variants={variants}
-                initial="hide"
-                animate={inView ? "show" : "hide"}
-            >
+            <SubContainer>
                 {facts.map((fact, index) => (
                     <ContainerFact
                         key={index}
-                        variants={{
-                            hide: { x: 0, y: 0, opacity: 0 },
-                            show: {
-                                x:
-                                    Math.cos(
-                                        (index / facts.length) * 2 * Math.PI
-                                    ) * xViewport,
-                                y:
-                                    Math.sin(
-                                        (index / facts.length) * 2 * Math.PI
-                                    ) * yViewport,
-                                opacity: 1,
-                                transition: {
-                                    delay: 1 * index,
-                                    duration: 0.5,
-                                },
-                            },
+                        style={{
+                            transform: `translate(${
+                                Math.cos((index / facts.length) * 2 * Math.PI) *
+                                xViewport
+                            }px, ${
+                                Math.sin((index / facts.length) * 2 * Math.PI) *
+                                yViewport
+                            }px)`,
                         }}
                     >
                         <MM>{fact}</MM>
