@@ -27,7 +27,6 @@ export const CarouselAnimals = () => {
         }
     }, [width]);
 
-
     return (
         <Container>
             <Title>Adopta un nuevo amigo</Title>

@@ -41,6 +41,29 @@ export const FunFacts = () => {
         "Los gatos son conocidos por su agilidad y capacidad de saltar. Pueden saltar hasta seis veces la longitud de su cuerpo en un solo salto.",
     ];
 
+<<<<<<< HEAD
+=======
+    useEffect(() => {
+        const calculateWidth = () => {
+            if (document.documentElement.clientWidth > 1600) {
+                setXViewport(500);
+                setYViewport(350);
+            } else if (
+                document.documentElement.clientWidth <= 1600 &&
+                document.documentElement.clientWidth > 1250
+            ) {
+                setXViewport(420);
+                setYViewport(400);
+            } else {
+                setXViewport(0);
+                setYViewport(0);
+            }
+        };
+
+        calculateWidth();
+    }, []);
+
+>>>>>>> 7a21735
     return (
         <Container ref={ref}>
             <XLLM>¿Sabías esto de los gatos?</XLLM>
