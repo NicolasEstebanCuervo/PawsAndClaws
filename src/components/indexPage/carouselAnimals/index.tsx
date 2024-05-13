@@ -13,19 +13,19 @@ export const CarouselAnimals = () => {
 
     useEffect(() => {
         const calculateWidth = () => {
-            if (window.screen.availWidth > 1750) {
+            if (document.documentElement.clientWidth > 1750) {
                 setViewport(5);
             } else if (
-                window.screen.availWidth <= 1750 &&
-                window.screen.availWidth >= 1450
+                document.documentElement.clientWidth <= 1750 &&
+                document.documentElement.clientWidth >= 1450
             ) {
                 setViewport(4);
             } else if (
-                window.screen.availWidth <= 1450 &&
-                window.screen.availWidth >= 950
+                document.documentElement.clientWidth <= 1450 &&
+                document.documentElement.clientWidth >= 950
             ) {
                 setViewport(3);
-            } else if (window.screen.availWidth <= 950 && window.screen.availWidth >= 550) {
+            } else if (document.documentElement.clientWidth <= 950 && document.documentElement.clientWidth >= 550) {
                 setViewport(2);
             } else{
                 setViewport(1)

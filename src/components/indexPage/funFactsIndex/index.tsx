@@ -10,6 +10,9 @@ export const FunFacts = () => {
     const [xViewport, setXViewport] = useState(500);
     const [yViewport, setYViewport] = useState(350);
 
+
+
+
     const [ref, inView] = useInView({
         triggerOnce: true,
         threshold: 0.1,
@@ -46,12 +49,12 @@ export const FunFacts = () => {
 
     useEffect(() => {
         const calculateWidth = () => {
-            if (window.screen.availWidth > 1600) {
+            if (document.documentElement.clientWidth > 1600) {
                 setXViewport(500);
                 setYViewport(350);
             } else if (
-                window.screen.availWidth <= 1600 &&
-                window.screen.availWidth > 1250
+                document.documentElement.clientWidth <= 1600 &&
+                document.documentElement.clientWidth > 1250
             ) {
                 setXViewport(420);
                 setYViewport(400);
