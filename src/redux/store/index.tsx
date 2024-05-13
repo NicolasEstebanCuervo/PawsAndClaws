@@ -1,10 +1,15 @@
-import {configureStore} from "@reduxjs/toolkit"
-import AnimalSlice from "@reducers/animalSlice"
-import ProductSlice  from "@reducers/productsSlice"
+import { configureStore } from "@reduxjs/toolkit";
+import AnimalSlice from "@reducers/animalSlice";
+import ProductSlice from "@reducers/productsSlice";
 
 export default configureStore({
-    reducer:({
-        AnimalSlice:AnimalSlice,
-        ProductSlice:ProductSlice,
-    })
-})
+    reducer: {
+        AnimalSlice: AnimalSlice,
+        ProductSlice: ProductSlice,
+    },
+    middleware: (getDefaultMiddleware) =>
+        getDefaultMiddleware({
+            immutableCheck: false,
+            serializableCheck: false,
+        }),
+});
