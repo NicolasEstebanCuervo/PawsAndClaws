@@ -1,7 +1,7 @@
 <div id="Header" align="center">
 
    <img src="https://media.giphy.com/media/MDJ9IbxxvDUQM/giphy.gif" width="300">   
-   <h1 align="center">Paws And Claws 😾 </h1>
+   <h1 align="center">Paws And Claws 😾 - Finalizado </h1>
 
 </div>
 
