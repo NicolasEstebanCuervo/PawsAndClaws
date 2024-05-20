@@ -41,9 +41,9 @@ En caso tal de que te interese alguna de las librerias usadas aca te dejo una li
 
 - Uuid : npm install uuid.
 - Emotion : npm install @emotion/react @emotion/styled.
-- Bootstrap - icons : npm install bootstrap-icons.
-- Chakra - ui : npm install @chakra-ui/react.
-- Framer - motion : npm install framer-motion.
+- Bootstrap-icons : npm install bootstrap-icons.
+- Chakra-ui : npm install @chakra-ui/react.
+- Framer-motion : npm install framer-motion.
 - Redux: npm install redux.
-- Redux - toolkit : npm install redux-toolkit.
-- Jest - Testing Library : (Vienen por defecto en React)
+- Redux-toolkit : npm install redux-toolkit.
+- Jest-Testing Library : (Vienen por defecto en React)
