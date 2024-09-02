@@ -44,7 +44,7 @@ export const FunFacts = () => {
 
     return (
         <Container ref={ref}>
-            <XLLM>¿Sabías esto de los gatos?</XLLM>
+            <XLLM>¿Sabías esto de los perros?</XLLM>
             <SubContainer>
                 {facts.map((fact, index) => (
                     <ContainerFact
