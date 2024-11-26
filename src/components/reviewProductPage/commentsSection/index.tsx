@@ -9,7 +9,7 @@ import {
 } from "@reducers/productsSlice";
 import { ChangeEvent, FormEvent, useEffect, useState } from "react";
 import { v4 as uuidv4 } from "uuid";
-import { FetchComments } from "@api/index";
+import { FetchComments } from "src/redux/temp_api/index";
 import * as color from "@theme/colors";
 import { LM, SM, XLLM } from "@theme/fonts";
 import { StarComponent } from "../../componentsGlobals/cardProduct";
