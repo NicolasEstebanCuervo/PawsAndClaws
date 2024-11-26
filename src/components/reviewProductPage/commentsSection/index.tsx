@@ -9,7 +9,7 @@ import {
 } from "@reducers/productsSlice";
 import { ChangeEvent, FormEvent, useEffect, useState } from "react";
 import { v4 as uuidv4 } from "uuid";
-import { FetchComments } from "@api/";
+import { FetchComments } from "@api/index";
 import * as color from "@theme/colors";
 import { LM, SM, XLLM } from "@theme/fonts";
 import { StarComponent } from "../../componentsGlobals/cardProduct";
@@ -74,7 +74,7 @@ export const CommentsSection = () => {
             <Title>Comentarios</Title>
 
             <ContainerFormComments>
-                <Form onSubmit={handleSubmit} data-testid="form"> 
+                <Form onSubmit={handleSubmit} data-testid="form">
                     <LM>Deja un comentario</LM>
                     <Input
                         onChange={onChangeName}
@@ -92,7 +92,9 @@ export const CommentsSection = () => {
                     ></Input>
 
                     <PopNotification
-                        actionComponent={<Button data-testid="button" type="submit" />}
+                        actionComponent={
+                            <Button data-testid="button" type="submit" />
+                        }
                         active={activePop}
                         titleAlert="¡Comentario agregado con exito!"
                         descriptionAlert="¡Ahora puedes ver tu comentario en la seccion de comentarios!"

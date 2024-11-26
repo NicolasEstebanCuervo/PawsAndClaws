@@ -11,19 +11,18 @@ import {
     ListItem,
     ListIcon,
     Button,
-    useDisclosure,
 } from "@chakra-ui/react";
 import { MM, SM, SMM } from "@theme/fonts";
 import * as color from "@theme/colors";
-import { useEffect, useRef, useState } from "react";
+import { useEffect, useState } from "react";
 import { IoPawSharp } from "react-icons/io5";
 import {
     IAnimal,
     IFormAdoption,
     deleteAdoptionsRequests,
 } from "@reducers/animalSlice";
-import { ImagesGenerator } from "@api/";
-import { useDispatch, useSelector } from "react-redux";
+import { ImagesGenerator } from "@api/index";
+import { useDispatch } from "react-redux";
 import { PopConfirmation } from "../../componentsGlobals/pop-up/popConfirmation";
 
 export const CardAdoptionRequests = ({
@@ -94,7 +93,11 @@ export const CardAdoptionRequests = ({
         <Container data-testid="container">
             <Popover onOpen={changeTrueClicked} onClose={changeFalseClicked}>
                 <PopoverTrigger>
-                    <ContentTrigger status={statusRequest} clicked={clicked} data-testid="trigger-container">
+                    <ContentTrigger
+                        status={statusRequest}
+                        clicked={clicked}
+                        data-testid="trigger-container"
+                    >
                         <MM>
                             Solicitud de adopcion a nombre de:{" "}
                             {requestInfo.fullNameAdoption}
@@ -191,7 +194,7 @@ const Container = styled.div`
     display: flex;
     justify-content: center;
     align-items: center;
-`
+`;
 
 const ContentTrigger = styled.div`
     width: 40%;

@@ -1,5 +1,5 @@
 import { useEffect, useState } from "react";
-import { ImagesGenerator } from "@api/";
+import { ImagesGenerator } from "@api/index";
 import styled from "@emotion/styled";
 import { SM, XLLM } from "@theme/fonts";
 import * as color from "@theme/colors";

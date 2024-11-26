@@ -1,8 +1,8 @@
 import { useEffect, useState } from "react";
-import { ImagesGenerator } from "@api/";
+import { ImagesGenerator } from "@api/index";
 import styled from "@emotion/styled";
 
-export const ImageAnimal = ({ breed }: { breed: string}) => {
+export const ImageAnimal = ({ breed }: { breed: string }) => {
     const [imageUrl, setImageUrl] = useState<string | null>(null);
 
     useEffect(() => {
@@ -16,9 +16,7 @@ export const ImageAnimal = ({ breed }: { breed: string}) => {
 
     return (
         <div>
-            {imageUrl && (
-                <Image src={imageUrl} alt={`Imagen de ${breed}`} />
-            )}
+            {imageUrl && <Image src={imageUrl} alt={`Imagen de ${breed}`} />}
         </div>
     );
 };

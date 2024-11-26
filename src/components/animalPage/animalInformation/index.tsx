@@ -3,7 +3,7 @@ import { IAnimal } from "@reducers/animalSlice";
 import { LM, SM, XLM } from "@theme/fonts";
 import styled from "@emotion/styled";
 import { useEffect, useState } from "react";
-import { ImagesGenerator } from "@api/";
+import { ImagesGenerator } from "@api/index";
 import * as color from "@theme/colors";
 
 export const AnimalInformation = () => {
@@ -26,10 +26,7 @@ export const AnimalInformation = () => {
         <>
             {animalSlice.animalSelected.map((animal: IAnimal) => (
                 <Container key={animal.id}>
-                    <Image
-                        src={imageUrl}
-                        alt={`Imagen de ${animal.breed}`}
-                    />
+                    <Image src={imageUrl} alt={`Imagen de ${animal.breed}`} />
 
                     <LineDivider></LineDivider>
 
@@ -73,7 +70,7 @@ export const AnimalInformation = () => {
                         </ContainerDescription>
 
                         <ContainerDescription>
-                        <LM>Historia de rescate de {animal.name}</LM>
+                            <LM>Historia de rescate de {animal.name}</LM>
                             <SM>{animal.information.history}</SM>
                         </ContainerDescription>
                     </Texts>
