@@ -8,7 +8,7 @@
             "source": "^/@reducers/(.*)",
             "destination": "/src/redux/reducers/$1"
         },
-        { "source": "^/@api/(.*)", "destination": "/src/redux/api/$1" }
+        { "source": "^/@api/(.*)", "destination": "/src/redux/Api/$1" }
     ]
 }
 
