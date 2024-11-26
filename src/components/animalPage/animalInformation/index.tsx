@@ -3,7 +3,7 @@ import { IAnimal } from "@reducers/animalSlice";
 import { LM, SM, XLM } from "@theme/fonts";
 import styled from "@emotion/styled";
 import { useEffect, useState } from "react";
-import { ImagesGenerator } from "src/redux/temp_api/index";
+import { ImagesGenerator } from "@api/index";
 import * as color from "@theme/colors";
 
 export const AnimalInformation = () => {

@@ -2,7 +2,7 @@ import { FC, ReactNode, useEffect, useLayoutEffect } from "react";
 import { BrowserRouter, Routes, Route, useLocation } from "react-router-dom";
 import { useDispatch } from "react-redux";
 import { setAnimals } from "@reducers/animalSlice";
-import { FetchAnimals, FetchProducts } from "src/redux/temp_api/index";
+import { FetchAnimals, FetchProducts } from "@api/index";
 import { Store } from "@pages/Store";
 import { Index } from "@pages/Index";
 import { AnimalInAdoption } from "@pages/AnimalInAdoption";

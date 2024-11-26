@@ -1,5 +1,5 @@
 import { useEffect, useState } from "react";
-import { ImagesGenerator } from "src/redux/temp_api/index";
+import { ImagesGenerator } from "@api/index";
 import styled from "@emotion/styled";
 
 export const ImageAnimal = ({ breed }: { breed: string }) => {

@@ -21,7 +21,7 @@ import {
     IFormAdoption,
     deleteAdoptionsRequests,
 } from "@reducers/animalSlice";
-import { ImagesGenerator } from "src/redux/temp_api/index";
+import { ImagesGenerator } from "@api/index";
 import { useDispatch } from "react-redux";
 import { PopConfirmation } from "../../componentsGlobals/pop-up/popConfirmation";
 
